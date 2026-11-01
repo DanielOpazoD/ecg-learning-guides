@@ -1,0 +1,2820 @@
+{
+  "source": "https://www.cliffreid.com/culprit/",
+  "modules": [
+    {
+      "id": "m1",
+      "title": "Leads are cameras",
+      "sub": "The injury vector and why reciprocity is arithmetic",
+      "time": "20 min",
+      "goals": [
+        "Predict ST elevation or depression in any lead from the direction of the injury vector",
+        "Explain reciprocal change as geometry, not a second ischaemic area",
+        "Know which leads look at the posterior wall"
+      ],
+      "cards": {
+        "deck": "territory",
+        "cats": [
+          "proxLAD",
+          "proxRCA",
+          "LCx"
+        ]
+      },
+      "steps": [
+        {
+          "id": "m1s1",
+          "type": "read",
+          "title": "The injury current points at the injured wall",
+          "body": [
+            "Ischaemic myocardium is partly depolarised at rest, so during the ST segment current flows from healthy to injured muscle. Add up those currents and you get one ST vector pointing toward the injured wall.",
+            "Each lead is a camera. If the vector points at a lead’s positive electrode, that lead records ST elevation; if it points away, ST depression; if it runs side-on, little change.",
+            "Most machines record leads I and II and calculate III, aVR, aVL and aVF from them (III = II − I). Reciprocal change in the limb leads is therefore arithmetic, not a second area of ischaemia."
+          ],
+          "show": {
+            "scenario": "proxLAD",
+            "ui": {
+              "showVector": true,
+              "showLeads": true
+            }
+          }
+        },
+        {
+          "id": "m1s2",
+          "type": "task",
+          "title": "Look from V2",
+          "mission": {
+            "mode": "explore",
+            "setup": {
+              "scenario": "proxLAD",
+              "ui": {
+                "showVector": true
+              }
+            },
+            "text": "Click lead V2 on the ECG to see the heart from V2’s electrode. The yellow ST vector points straight at you, so V2 is elevated.",
+            "check": {
+              "_expression": "(c) => c.ui.focusLead === 'V2'"
+            }
+          }
+        },
+        {
+          "id": "m1s3",
+          "type": "task",
+          "title": "Look from behind",
+          "mission": {
+            "mode": "explore",
+            "setup": {
+              "scenario": "proxLAD"
+            },
+            "text": "Now click a lead that shows ST depression. From that electrode the injured wall is on the far side of the heart.",
+            "check": {
+              "_expression": "(c) => c.ui.focusLead && c.state.occlusion && st(c, c.ui.focusLead) <= -0.5"
+            }
+          }
+        },
+        {
+          "id": "m1s4",
+          "type": "task",
+          "title": "Make lead III win",
+          "mission": {
+            "mode": "explore",
+            "setup": {
+              "scenario": "proxLAD"
+            },
+            "text": "Move the clot to a different artery so that lead III elevates more than lead II. Think about where +120° points.",
+            "check": {
+              "_expression": "(c) => st(c, 'III') >= 1 && st(c, 'III') > st(c, 'II')"
+            }
+          }
+        },
+        {
+          "id": "m1s5",
+          "type": "task",
+          "title": "Predict before you look",
+          "mission": {
+            "mode": "explore",
+            "setup": {
+              "scenario": "proxRCA",
+              "ui": {
+                "predict": true
+              }
+            },
+            "text": "Predict first is on. Occlude any artery (or keep this one), predict all 12 leads, then reveal. Score 10 of 12 or better.",
+            "check": {
+              "_expression": "(c) => c.predictScore >= 10"
+            }
+          }
+        },
+        {
+          "id": "m1s6",
+          "type": "check",
+          "title": "Check: vectors and leads",
+          "qs": [
+            {
+              "q": "An ST vector points down and to the patient’s right, toward +120°. Which limb lead shows the most ST elevation?",
+              "a": [
+                "III",
+                "II",
+                "aVF",
+                "aVL"
+              ],
+              "e": "Lead III sits at +120°, so the vector projects fully onto it. aVL, at −30°, lies almost opposite and shows the deepest depression. This is why RCA occlusions raise III more than II."
+            },
+            {
+              "q": "In inferior OMI, why is aVL depressed?",
+              "a": [
+                "Its axis (−30°) is nearly opposite lead III, so the same ST vector projects negatively",
+                "The high lateral wall is also ischaemic",
+                "aVL is a right-sided lead",
+                "The heart rotates during infarction"
+              ],
+              "e": "Reciprocal depression is the same vector seen from the other side. It is why aVL depression is such a sensitive early sign of inferior OMI."
+            },
+            {
+              "q": "Injury to the posterior (inferolateral) wall appears on the standard 12-lead as:",
+              "a": [
+                "ST depression maximal in V1–V3 with upright T waves",
+                "ST elevation in V5–V6 only",
+                "ST elevation in aVR",
+                "No change at all"
+              ],
+              "e": "V1–V3 face the posterior wall from the front, so posterior STE appears inverted as anterior STD. V7–V9 show it directly."
+            },
+            {
+              "q": "On most ECG machines, lead III is:",
+              "a": [
+                "Calculated as II − I",
+                "A separate electrode on the left leg",
+                "Calculated as I − II",
+                "The average of aVL and aVF"
+              ],
+              "e": "Only I and II need to be recorded; III and the augmented leads follow from Einthoven’s law. Limb-lead reciprocity always balances for that reason."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m2",
+      "title": "Territories and branch points",
+      "sub": "Which leads drop out as the clot moves",
+      "time": "25 min",
+      "goals": [
+        "Map LAD, circumflex and RCA territories onto the 17 segments and the RV",
+        "Use V1, aVL and V4R to locate the clot relative to S1, D1 and the RV branch",
+        "Recognise high lateral OMI"
+      ],
+      "cards": {
+        "deck": "territory",
+        "cats": [
+          "proxLAD",
+          "distLAD",
+          "highLat",
+          "proxRCA",
+          "infRCA",
+          "LCx",
+          "LM"
+        ]
+      },
+      "steps": [
+        {
+          "id": "m2s1",
+          "type": "read",
+          "title": "Branch order decides the ECG",
+          "body": [
+            "The LAD supplies the anterior wall and septum (through septal perforators) and the anterolateral wall (through diagonals). It often wraps the apex. The circumflex supplies the lateral and inferolateral walls through obtuse marginals. The RCA supplies the RV through its marginal branch, and in most people the inferior wall and inferior septum.",
+            "A clot cuts off everything downstream. Before S1, V1 rises (septum). Before D1, I and aVL rise (high lateral wall). Before the RV branch, V1 and V4R rise (right ventricle). Move the clot past a branch and those leads fall away."
+          ],
+          "show": {
+            "scenario": "proxLAD",
+            "ui": {
+              "showVector": true
+            }
+          }
+        },
+        {
+          "id": "m2s2",
+          "type": "task",
+          "title": "Slide down the LAD",
+          "mission": {
+            "mode": "explore",
+            "setup": {
+              "scenario": "proxLAD"
+            },
+            "text": "Press the ▸ travel button on the occlusion chip and let the clot slide all the way down the LAD. Watch V1 fall after S1 and aVL after D1.",
+            "check": {
+              "_expression": "(c) => c.travelDone === 'LAD'"
+            }
+          }
+        },
+        {
+          "id": "m2s3",
+          "type": "task",
+          "title": "Find the RV branch",
+          "mission": {
+            "mode": "explore",
+            "setup": {
+              "scenario": "proxRCA",
+              "ui": {
+                "extra": true
+              }
+            },
+            "text": "Find an RCA position where V4R is elevated (RV involved), then move the clot so V4R is no longer elevated.",
+            "check": {
+              "_expression": "(c, m) => { if (occIs(c, 'RCA') && st(c, 'V4R') >= 1) m.rv = true; return m.rv && occIs(c, 'RCA') && st(c, 'V4R') < 0.5; }"
+            }
+          }
+        },
+        {
+          "id": "m2s4",
+          "type": "task",
+          "title": "Raise the South African flag",
+          "mission": {
+            "mode": "explore",
+            "setup": {
+              "state": {
+                "occlusion": null
+              }
+            },
+            "text": "Without loading the preset, occlude the branch that produces STE in I, aVL and V2 with STD in III.",
+            "check": {
+              "_expression": "(c) => pat(c, 'saflag') && !c.scenario"
+            }
+          }
+        },
+        {
+          "id": "m2s5",
+          "type": "drill",
+          "title": "Territory drill",
+          "mission": {
+            "mode": "drill",
+            "drill": {
+              "deck": "territory"
+            },
+            "text": "Answer 15 Territory items with 70% or better.",
+            "check": {
+              "_expression": "drillOK('territory', 15, 0.7)"
+            }
+          }
+        },
+        {
+          "id": "m2s6",
+          "type": "check",
+          "title": "Check: territories",
+          "qs": [
+            {
+              "q": "STE in V1 alongside anterior STE suggests the occlusion is:",
+              "a": [
+                "Proximal to the first septal perforator",
+                "Distal to the second diagonal",
+                "In the right coronary artery",
+                "In the circumflex"
+              ],
+              "e": "S1 supplies the basal septum, which V1 faces. Losing it adds V1 elevation, so V1 STE marks a proximal LAD clot."
+            },
+            {
+              "q": "STE in I, aVL and V2 with STD in III, and little change in V3–V5, points to:",
+              "a": [
+                "The first diagonal (high lateral wall)",
+                "The distal RCA",
+                "A wraparound LAD",
+                "The left main"
+              ],
+              "e": "This is the South African flag of high lateral OMI from D1, a ramus or a high OM."
+            },
+            {
+              "q": "In proximal RCA occlusion with RV infarction, V1 is typically:",
+              "a": [
+                "Elevated, while V2 is depressed",
+                "Depressed along with V2",
+                "Unchanged",
+                "Elevated more than V3 and V4"
+              ],
+              "e": "The RV vector raises V1 while the posterior component depresses V2. V4R confirms the RV involvement."
+            },
+            {
+              "q": "Which territory most often produces an ECG with no diagnostic ST change?",
+              "a": [
+                "Circumflex and obtuse marginals",
+                "Proximal LAD",
+                "Proximal RCA",
+                "Left main"
+              ],
+              "e": "The lateral and inferolateral walls face away from most standard leads. Echo and posterior leads matter most here."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m3",
+      "title": "Anatomical variants",
+      "sub": "Dominance, wraparound LAD and the ramus",
+      "time": "15 min",
+      "goals": [
+        "Predict how dominance changes the inferior-wall ECG",
+        "Recognise a wraparound LAD",
+        "Separate a dominant circumflex from the RCA"
+      ],
+      "cards": {
+        "deck": "territory",
+        "cats": [
+          "domLCx",
+          "infRCA",
+          "distLAD"
+        ]
+      },
+      "steps": [
+        {
+          "id": "m3s1",
+          "type": "read",
+          "title": "Who owns the inferior wall?",
+          "body": [
+            "About 70% of people are right-dominant (the RCA gives the PDA), about 20% co-dominant and about 10% left-dominant (the circumflex gives the PDA). The dominant artery also gives the AV nodal artery, so dominant-vessel occlusions cause AV block.",
+            "A \"type III\" LAD wraps round the apex to supply the inferior apex, so a distal LAD clot can raise II, III and aVF. A ramus intermedius, present in roughly a fifth of people, supplies the high lateral wall like D1."
+          ],
+          "show": {
+            "scenario": "leftDomLCx"
+          }
+        },
+        {
+          "id": "m3s2",
+          "type": "task",
+          "title": "Hand the inferior wall to the circumflex",
+          "mission": {
+            "mode": "explore",
+            "setup": {
+              "scenario": "proxLCx"
+            },
+            "text": "Keep the clot in the proximal circumflex and switch Anatomy → dominance to Left. Watch the inferior leads join in.",
+            "check": {
+              "_expression": "(c) => c.state.anatomy.dominance === 'left' && occIs(c, 'LCx') && st(c, 'II') >= 1"
+            }
+          }
+        },
+        {
+          "id": "m3s3",
+          "type": "task",
+          "title": "Wrap the LAD",
+          "mission": {
+            "mode": "explore",
+            "setup": {
+              "scenario": "midLAD"
+            },
+            "text": "Make a distal LAD occlusion raise II, III and aVF as well as the chest leads. Hint: look in Anatomy.",
+            "check": {
+              "_expression": "(c) => c.state.anatomy.wrap && occIs(c, 'LAD') && c.state.occlusion.s > 0.45 && st(c, 'II') >= 1 && st(c, 'V4') >= 1"
+            }
+          }
+        },
+        {
+          "id": "m3s4",
+          "type": "task",
+          "title": "Occlude a ramus",
+          "mission": {
+            "mode": "explore",
+            "setup": {
+              "state": {
+                "occlusion": null
+              }
+            },
+            "text": "Add a ramus intermedius (Anatomy) and occlude it. Compare its ECG with a D1 occlusion.",
+            "check": {
+              "_expression": "(c) => occIs(c, 'RI')"
+            }
+          }
+        },
+        {
+          "id": "m3s5",
+          "type": "drill",
+          "title": "Contrast drill: dominant circumflex vs distal RCA",
+          "mission": {
+            "mode": "drill",
+            "drill": {
+              "deck": "territory",
+              "pair": [
+                "domLCx",
+                "infRCA"
+              ]
+            },
+            "text": "Ten items, 80% or better. Look at II versus III and at lead I.",
+            "check": {
+              "_expression": "drillOK('territory', 10, 0.8)"
+            }
+          }
+        },
+        {
+          "id": "m3s6",
+          "type": "check",
+          "title": "Check: variants",
+          "qs": [
+            {
+              "q": "In a left-dominant system the posterior descending artery arises from:",
+              "a": [
+                "The circumflex",
+                "The RCA",
+                "The LAD",
+                "The ramus"
+              ],
+              "e": "Left dominance means the circumflex reaches the crux and gives the PDA (and the AV nodal artery)."
+            },
+            {
+              "q": "Inferior STE with II ≥ III and no STD in lead I favours:",
+              "a": [
+                "A (dominant) circumflex culprit",
+                "The RCA",
+                "The LAD",
+                "Pericarditis"
+              ],
+              "e": "The circumflex injury vector points leftward, toward II and away from III."
+            },
+            {
+              "q": "A distal LAD occlusion causes anterior and inferior STE when:",
+              "a": [
+                "The LAD wraps round the apex",
+                "The patient is left-dominant",
+                "A ramus is present",
+                "The RCA is also occluded"
+              ],
+              "e": "The wraparound segment supplies the inferior apex."
+            },
+            {
+              "q": "Roughly what proportion of people are right-dominant?",
+              "a": [
+                "About 70%",
+                "About 10%",
+                "About 40%",
+                "Almost everyone"
+              ],
+              "e": "Roughly 70% right, 20% co-dominant and 10% left; quoted figures vary between series."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m4",
+      "title": "Subtle OMI",
+      "sub": "Occlusions that fail STEMI criteria",
+      "time": "30 min",
+      "goals": [
+        "Recognise hyperacute T waves, posterior OMI, de Winter, Aslanger and LBBB with OMI",
+        "Use posterior leads purposefully",
+        "Act on OMI without waiting for STEMI criteria"
+      ],
+      "cards": {
+        "deck": "signs",
+        "cats": [
+          "hyper",
+          "dewinter",
+          "saflag",
+          "aslanger",
+          "postOMI",
+          "sgarb"
+        ]
+      },
+      "steps": [
+        {
+          "id": "m4s1",
+          "type": "read",
+          "title": "OMI, not STEMI",
+          "body": [
+            "STEMI criteria miss a large share of acute occlusions. The occlusion is what matters, and it has many ECG faces: hyperacute T waves before the ST lifts, posterior STE seen as anterior STD, high lateral changes in non-contiguous leads, de Winter T waves, the Aslanger pattern, and OMI hidden in LBBB.",
+            "In each of these, the vector logic from Module 1 still holds. The patterns only look strange because the vector points somewhere the standard criteria don’t look."
+          ],
+          "show": {
+            "scenario": "hyperLAD"
+          }
+        },
+        {
+          "id": "m4s2",
+          "type": "task",
+          "title": "Watch hyperacute T waves evolve",
+          "mission": {
+            "mode": "explore",
+            "setup": {
+              "scenario": "hyperLAD"
+            },
+            "text": "This is minutes after LAD occlusion. Drag the timeline to Acute and watch the bulky T waves give way to ST elevation.",
+            "check": {
+              "_expression": "(c, m) => { if (occIs(c, 'LAD') && c.state.tau < 0.3) m.saw = true; return m.saw && occIs(c, 'LAD') && c.state.tau >= 1 && !c.state.reperfusion; }"
+            }
+          }
+        },
+        {
+          "id": "m4s3",
+          "type": "task",
+          "title": "Confirm a posterior OMI",
+          "mission": {
+            "mode": "explore",
+            "setup": {
+              "scenario": "proxLCx",
+              "ui": {
+                "extra": false
+              }
+            },
+            "text": "The 12-lead shows only V1–V3 depression. Switch on V4R · V7–V9 and confirm the posterior STE.",
+            "check": {
+              "_expression": "(c) => c.ui.extra && occIs(c, 'LCx') && st(c, 'V8') >= 0.5"
+            }
+          }
+        },
+        {
+          "id": "m4s4",
+          "type": "task",
+          "title": "Build the Aslanger pattern",
+          "mission": {
+            "mode": "explore",
+            "setup": {
+              "state": {
+                "occlusion": null
+              }
+            },
+            "text": "Without loading the preset, occlude an inferior branch (try partway down the PDA) and add diffuse subendocardial ischaemia in Modifiers until only lead III stays elevated.",
+            "check": {
+              "_expression": "(c) => pat(c, 'aslanger') && !c.scenario"
+            }
+          }
+        },
+        {
+          "id": "m4s5",
+          "type": "drill",
+          "title": "Signs drill",
+          "mission": {
+            "mode": "drill",
+            "drill": {
+              "deck": "signs"
+            },
+            "text": "Answer 20 Signs items with 75% or better.",
+            "check": {
+              "_expression": "drillOK('signs', 20, 0.75)"
+            }
+          }
+        },
+        {
+          "id": "m4s6",
+          "type": "case",
+          "title": "Two patients",
+          "cases": [
+            "c-hyperacute",
+            "c-posterior"
+          ],
+          "min": 70,
+          "text": "Run both cases and score at least 70 in each."
+        },
+        {
+          "id": "m4s7",
+          "type": "check",
+          "title": "Check: subtle OMI",
+          "qs": [
+            {
+              "q": "Hyperacute T waves are best judged by:",
+              "a": [
+                "Their size and bulk relative to the QRS in the same lead",
+                "An absolute height above 10 mm",
+                "Their presence in aVR",
+                "Whether the QT is long"
+              ],
+              "e": "Proportion is the key: a broad, bulky T wave that dwarfs a modest QRS is suspicious whatever its absolute height."
+            },
+            {
+              "q": "de Winter T waves show:",
+              "a": [
+                "Upsloping J-point depression with tall, symmetric precordial T waves",
+                "Deep symmetric T inversion in V1–V4",
+                "Diffuse STE with PR depression",
+                "Peaked narrow T waves with a wide QRS"
+              ],
+              "e": "A STEMI equivalent of proximal LAD occlusion."
+            },
+            {
+              "q": "In LBBB, the Smith-modified Sgarbossa rule flags OMI when:",
+              "a": [
+                "Discordant STE is ≥25% of the preceding S wave",
+                "Any STE ≥1 mm appears in V1–V3",
+                "The QRS is wider than 140 ms",
+                "The T waves are discordant"
+              ],
+              "e": "Concordant STE or STD in V1–V3 also count; excessive discordance is the commonest positive."
+            },
+            {
+              "q": "The Aslanger pattern is STE in lead III only plus:",
+              "a": [
+                "STD in V4–V6 but not V2, with V1 higher than V2",
+                "STE in aVR and V1 only",
+                "Posterior STE in V7–V9",
+                "Q waves in V1–V3"
+              ],
+              "e": "An inferior OMI vector plus a subendocardial vector toward aVR."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m5",
+      "title": "Time course and reperfusion",
+      "sub": "Hyperacute, acute, evolving, reperfused, re-occluded",
+      "time": "20 min",
+      "goals": [
+        "Date an occlusion from the ECG",
+        "Recognise reperfusion T waves, including posterior",
+        "Spot pseudo-normalisation from re-occlusion"
+      ],
+      "cards": {
+        "deck": "signs",
+        "cats": [
+          "wellens",
+          "postRep",
+          "hyper"
+        ]
+      },
+      "steps": [
+        {
+          "id": "m5s1",
+          "type": "read",
+          "title": "The ECG is a clock",
+          "body": [
+            "Occlusion brings hyperacute T waves within minutes, then ST elevation, then over hours Q waves (loss of R) and T inversion as the ST settles.",
+            "Reperfusion is different: the ST resolves quickly and the T waves invert in the leads that were elevated (Wellens in the LAD). Seen from the front, posterior reperfusion gives tall T waves in V1–V3. If reperfusion T waves turn upright again while pain returns, the artery has re-occluded. The echo stays abnormal for days because reperfused muscle is stunned."
+          ],
+          "show": {
+            "scenario": "wellensB"
+          }
+        },
+        {
+          "id": "m5s2",
+          "type": "task",
+          "title": "Run the clock",
+          "mission": {
+            "mode": "explore",
+            "setup": {
+              "scenario": "proxLAD"
+            },
+            "text": "Press ▶ on the timeline and let the occlusion run to Completed. Watch the Q waves form and the T waves invert.",
+            "check": {
+              "_expression": "(c) => occIs(c, 'LAD') && c.state.tau >= 2.9 && !c.state.reperfusion"
+            }
+          }
+        },
+        {
+          "id": "m5s3",
+          "type": "task",
+          "title": "Make Wellens",
+          "mission": {
+            "mode": "explore",
+            "setup": {
+              "scenario": "midLAD"
+            },
+            "text": "Reperfuse the artery (Artery → Reperfused · late) and find the Wellens T waves.",
+            "check": {
+              "_expression": "(c) => pat(c, 'wellensB')"
+            }
+          }
+        },
+        {
+          "id": "m5s4",
+          "type": "task",
+          "title": "Posterior reperfusion",
+          "mission": {
+            "mode": "explore",
+            "setup": {
+              "scenario": "proxLCx"
+            },
+            "text": "Reperfuse this circumflex occlusion (late) and find the tall T waves in V1–V3.",
+            "check": {
+              "_expression": "(c) => pat(c, 'postRep')"
+            }
+          }
+        },
+        {
+          "id": "m5s5",
+          "type": "case",
+          "title": "Two patients",
+          "cases": [
+            "c-wellens",
+            "c-evolving"
+          ],
+          "min": 70,
+          "text": "Run both cases and score at least 70 in each."
+        },
+        {
+          "id": "m5s6",
+          "type": "check",
+          "title": "Check: time course",
+          "qs": [
+            {
+              "q": "Wellens T waves mean the LAD:",
+              "a": [
+                "Occluded and reperfused, leaving a critical lesion that can re-occlude",
+                "Is occluded right now",
+                "Was never involved",
+                "Is filled by collaterals"
+              ],
+              "e": "Urgent angiography; stress testing can provoke re-occlusion."
+            },
+            {
+              "q": "Tall upright T waves in V1–V3 after a circumflex occlusion settles suggest:",
+              "a": [
+                "Posterior reperfusion",
+                "A new anterior OMI",
+                "Hyperkalaemia",
+                "LVH"
+              ],
+              "e": "Posterior T inversion seen from the front."
+            },
+            {
+              "q": "Wellens T waves become upright again as pain returns. This is:",
+              "a": [
+                "Pseudo-normalisation from re-occlusion",
+                "Healing",
+                "Reperfusion",
+                "A benign variant"
+              ],
+              "e": "Treat it as an occlusion: the next ECG may show STE."
+            },
+            {
+              "q": "After successful reperfusion, regional wall motion:",
+              "a": [
+                "Can stay abnormal for days (stunning) before recovering",
+                "Normalises immediately",
+                "Becomes hyperkinetic",
+                "Is unaffected because the artery is open"
+              ],
+              "e": "So an echo after reperfusion still shows the territory."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m6",
+      "title": "Mimics and the echo",
+      "sub": "ST elevation without occlusion, and the echo as tiebreaker",
+      "time": "30 min",
+      "goals": [
+        "Separate pericarditis, early repolarisation, LVH, hyperkalaemia, aneurysm and Takotsubo from OMI",
+        "Use regional wall motion to support or refute OMI",
+        "Know when angiography is still needed"
+      ],
+      "cards": {
+        "deck": "mimics",
+        "cats": [
+          "peri",
+          "ber",
+          "lvh",
+          "hyperk",
+          "aneurysm",
+          "tako",
+          "infOMI",
+          "antOMI"
+        ]
+      },
+      "steps": [
+        {
+          "id": "m6s1",
+          "type": "read",
+          "title": "What each mimic lacks",
+          "body": [
+            "Pericarditis has diffuse STE without reciprocal STD except in aVR and V1, and never depresses aVL. Early repolarisation has proportionate T waves and preserved S waves. LVH STE is proportional to the S wave. Hyperkalaemic T waves are narrow-based with a wide QRS. An aneurysm has small T waves relative to the QRS. Takotsubo crosses territories.",
+            "Echo is the tiebreaker. OMI gives a regional wall motion abnormality in one coronary distribution within seconds. Pericarditis, early repolarisation and hyperkalaemia do not. Takotsubo gives one that no single artery could cause, and still needs angiography."
+          ],
+          "show": {
+            "scenario": "pericarditis"
+          }
+        },
+        {
+          "id": "m6s2",
+          "type": "task",
+          "title": "aVL: pericarditis vs inferior OMI",
+          "mission": {
+            "mode": "explore",
+            "setup": {
+              "scenario": "pericarditis"
+            },
+            "text": "Note aVL in pericarditis. Then click the RCA to occlude it and compare aVL.",
+            "check": {
+              "_expression": "(c, m) => { if (c.state.mimic === 'pericarditis') m.peri = true; return m.peri && occIs(c, 'RCA') && st(c, 'aVL') <= -0.5; }"
+            }
+          }
+        },
+        {
+          "id": "m6s3",
+          "type": "task",
+          "title": "Takotsubo on echo",
+          "mission": {
+            "mode": "explore",
+            "setup": {
+              "scenario": "takotsubo"
+            },
+            "text": "Switch the echo highlight on and open the PSAX view. The abnormality runs all the way round, which no single artery can do.",
+            "check": {
+              "_expression": "(c) => c.state.mimic === 'takotsubo' && c.echoUi.highlight && c.echoUi.view === 'PSAX'"
+            }
+          }
+        },
+        {
+          "id": "m6s4",
+          "type": "drill",
+          "title": "Mimics drill",
+          "mission": {
+            "mode": "drill",
+            "drill": {
+              "deck": "mimics"
+            },
+            "text": "Answer 20 Mimics items with 75% or better.",
+            "check": {
+              "_expression": "drillOK('mimics', 20, 0.75)"
+            }
+          }
+        },
+        {
+          "id": "m6s5",
+          "type": "drill",
+          "title": "Echo drill",
+          "mission": {
+            "mode": "drill",
+            "drill": {
+              "deck": "echo"
+            },
+            "text": "Answer 10 Echo items with 70% or better.",
+            "check": {
+              "_expression": "drillOK('echo', 10, 0.7)"
+            }
+          }
+        },
+        {
+          "id": "m6s6",
+          "type": "case",
+          "title": "Three patients",
+          "cases": [
+            "c-peri",
+            "c-om",
+            "c-ber"
+          ],
+          "min": 70,
+          "text": "Run all three cases and score at least 70 in each."
+        },
+        {
+          "id": "m6s7",
+          "type": "check",
+          "title": "Check: mimics",
+          "qs": [
+            {
+              "q": "The single most useful ECG feature separating inferior OMI from pericarditis is:",
+              "a": [
+                "STD in aVL (present in OMI, absent in pericarditis)",
+                "PR depression",
+                "Tachycardia",
+                "STE in V5–V6"
+              ],
+              "e": "PR depression supports pericarditis but also occurs in OMI with atrial involvement; aVL is the stronger discriminator."
+            },
+            {
+              "q": "An old LV aneurysm rather than acute OMI is suggested when, in V1–V4:",
+              "a": [
+                "Every T/QRS amplitude ratio is below 0.36",
+                "The T waves are bulky",
+                "There is STE in aVR",
+                "The QRS is narrow"
+              ],
+              "e": "A ratio above 0.36 in any of V1–V4 suggests new occlusion on top of old infarction."
+            },
+            {
+              "q": "Takotsubo’s echo is distinctive because:",
+              "a": [
+                "The wall motion abnormality crosses coronary territories, with a hyperkinetic base",
+                "The apex is hyperkinetic",
+                "There is always a large effusion",
+                "Wall motion is normal"
+              ],
+              "e": "Even so, the ECG cannot exclude LAD occlusion, so angiography is needed."
+            },
+            {
+              "q": "Hyperkalaemic T waves differ from hyperacute T waves because they are:",
+              "a": [
+                "Narrow-based and peaked, with a wide QRS and flat P waves",
+                "Broad-based and bulky",
+                "Confined to one coronary territory",
+                "Inverted"
+              ],
+              "e": "Hyperacute T waves are broad, bulky and territorial with a normal QRS."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "m7",
+      "title": "Capstone: run the shift",
+      "sub": "Five patients, real time, no hints",
+      "time": "30 min",
+      "capstone": true,
+      "goals": [
+        "Integrate ECG, serial change, echo and history into one decision",
+        "Activate early for OMI and hold back for mimics"
+      ],
+      "steps": [
+        {
+          "id": "m7s1",
+          "type": "shift",
+          "title": "The shift",
+          "text": "Complete any five cases, counted from when you start this step, with a mean score of 75 or more and no missed OMI or false activation."
+        }
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "id": "c-classic",
+      "title": "Inferior STEMI with RV involvement",
+      "who": "58-year-old man",
+      "complaint": "Crushing chest pain for 70 minutes, vomiting, clammy",
+      "vitals": "HR 50 · BP 88/56 · SpO₂ 95% · RR 20",
+      "truth": "omi",
+      "occ": {
+        "vessel": "RCA",
+        "s": 0.12
+      },
+      "occAt": -70,
+      "opportunity": 0,
+      "pain": [
+        [
+          0,
+          "Ongoing, 9/10"
+        ]
+      ],
+      "trop": "omi",
+      "teach": "Inferior STE with III > II, reciprocal STD in aVL and I, STE in V1 with V4R elevation: proximal RCA occlusion with RV infarction. Bradycardia and hypotension fit, so avoid nitrates and give fluid cautiously. This one should be activated on the first ECG."
+    },
+    {
+      "id": "c-hyperacute",
+      "title": "Hyperacute T waves before STE",
+      "who": "52-year-old man",
+      "complaint": "Two hours of intermittent chest pressure, constant and worse for the last 10 minutes",
+      "vitals": "HR 92 · BP 148/90 · SpO₂ 97% · RR 18",
+      "truth": "omi",
+      "occ": {
+        "vessel": "LAD",
+        "s": 0.2
+      },
+      "occAt": -5,
+      "opportunity": 0,
+      "anatomy": {
+        "dominance": "right",
+        "wrap": false,
+        "ramus": false
+      },
+      "pain": [
+        [
+          0,
+          "Ongoing, 7/10"
+        ]
+      ],
+      "trop": "omi",
+      "teach": "The arrival ECG showed hyperacute T waves in V2–V4: broad, bulky and out of proportion to the QRS, with little STE yet. STEMI criteria were met only on the repeat. An expert reader activates on the first tracing; at worst, the 15-minute repeat makes it obvious."
+    },
+    {
+      "id": "c-posterior",
+      "title": "Isolated posterior OMI",
+      "who": "64-year-old woman",
+      "complaint": "One hour of interscapular and central chest pain with nausea",
+      "vitals": "HR 84 · BP 132/80 · SpO₂ 96% · RR 18",
+      "truth": "omi",
+      "occ": {
+        "vessel": "LCx",
+        "s": 0.1
+      },
+      "occAt": -60,
+      "opportunity": 0,
+      "pain": [
+        [
+          0,
+          "Ongoing, 8/10"
+        ]
+      ],
+      "trop": "omi",
+      "teach": "STD maximal in V1–V3 with upright T waves is posterior STE seen from the front. Posterior leads (V7–V9) confirm it, but the 12-lead alone is enough to activate. This pattern fails STEMI criteria and is one of the commonest missed OMIs."
+    },
+    {
+      "id": "c-evolving",
+      "title": "Occlusion after arrival: the value of serial ECGs",
+      "who": "61-year-old man",
+      "complaint": "20 minutes of epigastric discomfort he thinks is indigestion",
+      "vitals": "HR 78 · BP 152/88 · SpO₂ 98% · RR 16",
+      "truth": "omi",
+      "occ": {
+        "vessel": "RCA",
+        "s": 0.5
+      },
+      "occAt": 12,
+      "opportunity": 15,
+      "pain": [
+        [
+          0,
+          "Mild, 3/10"
+        ],
+        [
+          12,
+          "Suddenly worse, 8/10, now clammy and nauseated"
+        ]
+      ],
+      "trop": "omi",
+      "teach": "The arrival ECG was normal because the artery had not yet occluded. At 12 minutes the pain escalated; the 15-minute ECG showed hyperacute inferior T waves with T-wave inversion in aVL, and by 30 minutes there was inferior STE. A normal first ECG never excludes OMI: repeat it every 15–30 minutes while symptoms continue, and immediately when they change."
+    },
+    {
+      "id": "c-wellens",
+      "title": "Wellens syndrome with re-occlusion",
+      "who": "47-year-old man",
+      "complaint": "Three hours of chest pain earlier today, now pain-free",
+      "vitals": "HR 70 · BP 138/84 · SpO₂ 98% · RR 14",
+      "truth": "omi",
+      "occ": {
+        "vessel": "LAD",
+        "s": 0.22
+      },
+      "occAt": -330,
+      "reperfuseAt": -150,
+      "reoccludeAt": 45,
+      "opportunity": 0,
+      "anatomy": {
+        "dominance": "right",
+        "wrap": false,
+        "ramus": false
+      },
+      "pain": [
+        [
+          0,
+          "Pain-free"
+        ],
+        [
+          45,
+          "Pain has returned, 8/10, sweaty"
+        ]
+      ],
+      "trop": "omi",
+      "teach": "Deep symmetric T inversion in V1–V4 in a pain-free patient is Wellens B: the LAD occluded, then reperfused, and the critical lesion is still there. At 45 minutes it re-occluded: the T waves \"pseudo-normalised\" (upright again) before STE appeared. Wellens needs urgent angiography; activating from the first ECG would have prevented the re-occlusion infarct."
+    },
+    {
+      "id": "c-om",
+      "title": "ECG-silent obtuse marginal occlusion",
+      "who": "70-year-old woman",
+      "complaint": "90 minutes of persistent central chest pressure, unrelieved by GTN",
+      "vitals": "HR 88 · BP 144/86 · SpO₂ 96% · RR 18",
+      "truth": "omi",
+      "occ": {
+        "vessel": "OM1",
+        "s": 0.1
+      },
+      "occAt": -90,
+      "opportunity": 10,
+      "pain": [
+        [
+          0,
+          "Ongoing, 7/10, refractory to GTN"
+        ]
+      ],
+      "trop": "omi",
+      "teach": "The ECGs barely moved: obtuse marginal territory faces away from the standard leads. Refractory ischaemic pain plus a new lateral wall motion abnormality on bedside echo is enough to activate. Waiting for troponin, or for STE that may never appear, costs myocardium."
+    },
+    {
+      "id": "c-aslanger",
+      "title": "Aslanger pattern",
+      "who": "66-year-old woman with diabetes",
+      "complaint": "Two hours of malaise, breathlessness and vague chest heaviness",
+      "vitals": "HR 96 · BP 118/72 · SpO₂ 94% · RR 22",
+      "truth": "omi",
+      "occ": {
+        "vessel": "PDA_R",
+        "s": 0.5
+      },
+      "occAt": -120,
+      "subendo": 1.3,
+      "opportunity": 0,
+      "pain": [
+        [
+          0,
+          "Ongoing, 5/10"
+        ]
+      ],
+      "trop": "omi",
+      "teach": "STE only in III, STD in V4–V6 but not V2, and V1 higher than V2: the Aslanger pattern of inferior OMI with multivessel disease. It does not meet STEMI criteria. Activate on the first ECG."
+    },
+    {
+      "id": "c-lbbb",
+      "title": "LBBB with anterior OMI",
+      "who": "75-year-old man with known LBBB",
+      "complaint": "45 minutes of crushing chest pain",
+      "vitals": "HR 104 · BP 102/64 · SpO₂ 93% · RR 24",
+      "truth": "omi",
+      "occ": {
+        "vessel": "LAD",
+        "s": 0.05
+      },
+      "occAt": -40,
+      "conduction": "lbbb",
+      "opportunity": 0,
+      "pain": [
+        [
+          0,
+          "Ongoing, 9/10"
+        ]
+      ],
+      "trop": "omi",
+      "teach": "In LBBB the ST segment normally runs opposite the QRS and stays proportional to it. Here the discordant STE in V1–V3 exceeds 25% of the S wave and there is concordant STE laterally: Smith-modified Sgarbossa positive. Activate."
+    },
+    {
+      "id": "c-dewinter",
+      "title": "de Winter T waves",
+      "who": "50-year-old man",
+      "complaint": "30 minutes of crushing central chest pain",
+      "vitals": "HR 88 · BP 146/92 · SpO₂ 97% · RR 18",
+      "truth": "omi",
+      "occ": {
+        "vessel": "LAD",
+        "s": 0.05
+      },
+      "occAt": -30,
+      "deWinter": true,
+      "opportunity": 0,
+      "pain": [
+        [
+          0,
+          "Ongoing, 8/10"
+        ]
+      ],
+      "trop": "omi",
+      "teach": "Upsloping J-point depression with tall, symmetric precordial T waves and slight STE in aVR: de Winter T waves, a STEMI equivalent of proximal LAD occlusion. Activate on the first ECG."
+    },
+    {
+      "id": "c-tako",
+      "title": "Takotsubo syndrome",
+      "who": "68-year-old woman",
+      "complaint": "Chest pain and breathlessness on the morning of her husband’s funeral",
+      "vitals": "HR 98 · BP 112/70 · SpO₂ 95% · RR 22",
+      "truth": "cath",
+      "mimic": "takotsubo",
+      "opportunity": 0,
+      "pain": [
+        [
+          0,
+          "Ongoing, 6/10"
+        ]
+      ],
+      "trop": 250,
+      "teach": "Anterior and inferior STE, STD in aVR and no STE in V1, with apical ballooning and a hyperkinetic base on echo: the picture favours Takotsubo. But the ECG cannot exclude LAD occlusion, so angiography is the right call. It showed unobstructed coronaries."
+    },
+    {
+      "id": "c-peri",
+      "title": "Acute pericarditis",
+      "who": "28-year-old man",
+      "complaint": "Two days of sharp chest pain, worse lying flat and better sitting forward, after a viral illness",
+      "vitals": "HR 104 · BP 128/76 · SpO₂ 98% · RR 18 · T 38.1 °C",
+      "truth": "notomi",
+      "mimic": "pericarditis",
+      "pain": [
+        [
+          0,
+          "Sharp, pleuritic, 5/10"
+        ]
+      ],
+      "trop": 35,
+      "teach": "Diffuse concave STE (II > III), PR depression and STD only in aVR and V1, with no STD in aVL. Echo shows a small effusion and normal wall motion. Serial ECGs do not evolve. This is pericarditis: activating the cath lab would be a false alarm."
+    },
+    {
+      "id": "c-ber",
+      "title": "Benign early repolarisation",
+      "who": "34-year-old man, a keen runner",
+      "complaint": "Brief twinges of left chest discomfort after the gym, now well",
+      "vitals": "HR 56 · BP 124/72 · SpO₂ 99% · RR 14",
+      "truth": "notomi",
+      "mimic": "ber",
+      "pain": [
+        [
+          0,
+          "Pain-free"
+        ]
+      ],
+      "trop": 6,
+      "teach": "STE in V2–V4 with a notched J point, tall but proportionate T waves and preserved S waves; serial ECGs are identical and the echo is normal. Benign early repolarisation, no activation. Compare it with the hyperacute-T case: there the T waves were bulky relative to the QRS and changed within 15 minutes."
+    },
+    {
+      "id": "c-lvh",
+      "title": "LVH with strain",
+      "who": "72-year-old man with long-standing hypertension",
+      "complaint": "Exertional chest tightness this morning, resolved at rest",
+      "vitals": "HR 72 · BP 186/98 · SpO₂ 97% · RR 16",
+      "truth": "notomi",
+      "mimic": "lvh",
+      "pain": [
+        [
+          0,
+          "Pain-free"
+        ]
+      ],
+      "trop": 18,
+      "teach": "Large voltages with discordant STE in V1–V3 that stays proportional to the deep S waves (well under 25%), lateral strain, no change on serial ECGs, a thick-walled LV with normal motion and a flat troponin. Not OMI."
+    },
+    {
+      "id": "c-hyperk",
+      "title": "Hyperkalaemia",
+      "who": "55-year-old man on haemodialysis",
+      "complaint": "Missed his last two dialysis sessions; weak, with vague chest discomfort",
+      "vitals": "HR 64 · BP 162/94 · SpO₂ 96% · RR 18",
+      "truth": "notomi",
+      "mimic": "hyperk",
+      "pain": [
+        [
+          0,
+          "Vague, 2/10"
+        ]
+      ],
+      "trop": 22,
+      "teach": "Narrow-based peaked T waves, flat P waves, a long PR and a wide QRS with pseudo-STE in V1–V2: hyperkalaemia, not OMI. Give calcium now, then insulin–dextrose and arrange urgent dialysis."
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "proxLAD",
+      "group": "classic",
+      "title": "Proximal LAD",
+      "sub": "Before S1 and D1",
+      "family": "proxLAD",
+      "level": "core",
+      "pattern": null,
+      "state": {
+        "_expression": "base({ occlusion: { vessel: 'LAD', s: 0.04 } })"
+      },
+      "teach": "Occlusion before the first septal and first diagonal puts the anterior wall, septum and high lateral wall at risk. Look for STE in V1–V4 plus I and aVL, with reciprocal STD in III and aVF. STE in V1 (septum, via S1) and in aVL (high lateral wall, via D1) shows the occlusion is proximal."
+    },
+    {
+      "id": "midLAD",
+      "group": "classic",
+      "title": "Mid LAD",
+      "sub": "After D1, no wrap",
+      "family": "distLAD",
+      "level": "core",
+      "state": {
+        "_expression": "base({ anatomy: RNW, occlusion: { vessel: 'LAD', s: 0.22 } })"
+      },
+      "teach": "After D1 the high lateral wall is spared. Expect STE in V2–V5 without elevation in I or aVL, and without inferior reciprocal STD. If the LAD does not wrap the apex, the inferior leads stay quiet."
+    },
+    {
+      "id": "wrapLAD",
+      "group": "classic",
+      "title": "Wraparound LAD",
+      "sub": "Distal, wraps apex",
+      "family": "distLAD",
+      "level": "core",
+      "pattern": {
+        "key": "wrap",
+        "name": "Anterior + inferior STE (wraparound LAD)"
+      },
+      "state": {
+        "_expression": "base({ occlusion: { vessel: 'LAD', s: 0.6 } })"
+      },
+      "teach": "A \"type III\" LAD wraps round the apex to supply the inferior apex. Distal occlusion gives STE in V3–V6 and in II, III and aVF. aVL is not depressed, because no high lateral injury opposes the inferior vector. Do not mistake it for pericarditis."
+    },
+    {
+      "id": "proxRCA",
+      "group": "classic",
+      "title": "Proximal RCA",
+      "sub": "With RV infarction",
+      "family": "proxRCA",
+      "level": "core",
+      "pattern": {
+        "key": "rv",
+        "name": "Right ventricular infarction"
+      },
+      "extra": true,
+      "state": {
+        "_expression": "base({ occlusion: { vessel: 'RCA', s: 0.12 } })"
+      },
+      "teach": "Proximal RCA occlusion takes the RV branch with it. There is inferior STE with III > II, and reciprocal STD in aVL and I. V1 is elevated (from the RV) while V2 is depressed (posterior wall), and V4R shows STE. Expect bradycardia or AV block, and hypotension if nitrates are given."
+    },
+    {
+      "id": "distRCA",
+      "group": "classic",
+      "title": "Distal RCA",
+      "sub": "Inferoposterior",
+      "family": "infRCA",
+      "level": "core",
+      "extra": true,
+      "state": {
+        "_expression": "base({ occlusion: { vessel: 'RCA', s: 0.75 } })"
+      },
+      "teach": "Beyond the RV branch the RV is spared, so V1 joins V2–V3 in posterior STD. Inferior STE with III > II, reciprocal aVL depression, and STE in V7–V9 from the posterolateral branch."
+    },
+    {
+      "id": "proxLCx",
+      "group": "classic",
+      "title": "Circumflex",
+      "sub": "Posterior OMI",
+      "family": "LCx",
+      "level": "core",
+      "extra": true,
+      "pattern": {
+        "key": "posterior",
+        "name": "Posterior OMI"
+      },
+      "state": {
+        "_expression": "base({ occlusion: { vessel: 'LCx', s: 0.1 } })"
+      },
+      "teach": "The circumflex supplies the lateral and inferolateral (posterior) walls, which face away from the standard leads. The main clue is STD maximal in V1–V3 with upright T waves: posterior STE seen from the front. V7–V9 show it directly. Many circumflex occlusions do not meet STEMI criteria."
+    },
+    {
+      "id": "leftDomLCx",
+      "group": "classic",
+      "title": "Dominant circumflex",
+      "sub": "Left-dominant system",
+      "family": "domLCx",
+      "level": "core",
+      "extra": true,
+      "state": {
+        "_expression": "base({ anatomy: { dominance: 'left', wrap: true, ramus: false }, occlusion: { vessel: 'LCx', s: 0.1 } })"
+      },
+      "teach": "In a left-dominant system (about 1 in 10 people) the circumflex gives off the PDA. Expect inferior STE with II ≥ III, STE in I and V5–V6, and posterior STD in V1–V3. The RV is not involved because the RCA is small."
+    },
+    {
+      "id": "LM",
+      "group": "classic",
+      "title": "Left main",
+      "sub": "Total occlusion",
+      "family": "LM",
+      "level": "core",
+      "state": {
+        "_expression": "base({ occlusion: { vessel: 'LM', s: 0.3 } })"
+      },
+      "teach": "Total left main occlusion infarcts the LAD and circumflex territories together. There is extensive STE in I, aVL and V2–V6 with inferior reciprocal STD, and the patient usually presents in shock or arrest. Contrast this with subtotal left main disease, which gives diffuse STD with STE in aVR."
+    },
+    {
+      "id": "hyperLAD",
+      "group": "subtle",
+      "title": "Hyperacute T waves",
+      "sub": "Minutes after LAD occlusion",
+      "family": "proxLAD",
+      "level": "advanced",
+      "pattern": {
+        "key": "hyperacute",
+        "name": "Hyperacute T waves"
+      },
+      "state": {
+        "_expression": "base({ occlusion: { vessel: 'LAD', s: 0.04 }, tau: 0 })"
+      },
+      "teach": "In the first minutes the T waves become broad-based, bulky and symmetric before the ST segment lifts much. Their area grows relative to the QRS, and proportion is the key. A T wave this large in V2–V4 is OMI until proven otherwise. Repeat the ECG every 15–30 minutes."
+    },
+    {
+      "id": "hyperRCA",
+      "group": "subtle",
+      "title": "Earliest inferior OMI",
+      "sub": "Watch aVL",
+      "family": "infRCA",
+      "level": "advanced",
+      "pattern": {
+        "key": "avl",
+        "name": "Reciprocal change in aVL"
+      },
+      "state": {
+        "_expression": "base({ occlusion: { vessel: 'RCA', s: 0.5 }, tau: 0.05 })"
+      },
+      "teach": "In early inferior OMI there are subtle hyperacute T waves in III and aVF, with T-wave flattening or inversion and slight STD in aVL. The reciprocal change in aVL is often the earliest and most specific sign, and it helps separate OMI from benign variants."
+    },
+    {
+      "id": "saflag",
+      "group": "subtle",
+      "title": "South African flag",
+      "sub": "First diagonal",
+      "family": "highLat",
+      "level": "core",
+      "pattern": {
+        "key": "saflag",
+        "name": "South African flag sign"
+      },
+      "state": {
+        "_expression": "base({ occlusion: { vessel: 'D1', s: 0.1 } })"
+      },
+      "teach": "High lateral OMI from the first diagonal gives STE in I, aVL and V2 and STD in III, with V3–V5 relatively spared. On the standard 3×4 layout this resembles the South African flag. The \"two contiguous leads\" rule is only barely met, so this occlusion is easily missed."
+    },
+    {
+      "id": "ramus",
+      "group": "subtle",
+      "title": "Ramus intermedius",
+      "sub": "High lateral, subtle",
+      "family": "highLat",
+      "level": "advanced",
+      "state": {
+        "_expression": "base({ anatomy: { dominance: 'right', wrap: true, ramus: true }, occlusion: { vessel: 'RI', s: 0.1 } })"
+      },
+      "teach": "When present (in roughly a fifth of people), the ramus supplies the same high lateral wall as D1 or a high OM. Occlusion gives small changes in I and aVL with inferior reciprocal STD, often under STEMI thresholds. The reciprocal STD in III can be the most obvious sign."
+    },
+    {
+      "id": "aslanger",
+      "group": "subtle",
+      "title": "Aslanger pattern",
+      "sub": "Inferior OMI + multivessel",
+      "family": "infRCA",
+      "level": "advanced",
+      "pattern": {
+        "key": "aslanger",
+        "name": "Aslanger pattern"
+      },
+      "state": {
+        "_expression": "base({ occlusion: { vessel: 'PDA_R', s: 0.5 }, subendo: 1.3 })"
+      },
+      "teach": "This is inferior OMI (here the PDA) with diffuse subendocardial ischaemia from multivessel disease. Adding the inferior vector to a vector pointing at aVR leaves STE only in III. V4–V6 are depressed while V2 is not, and V1 sits higher than V2. Aslanger and colleagues (2020) described it as a sign of inferior OMI with multivessel disease, and STEMI criteria miss it."
+    },
+    {
+      "id": "dewinter",
+      "group": "subtle",
+      "title": "de Winter T waves",
+      "sub": "Proximal LAD equivalent",
+      "family": "proxLAD",
+      "level": "advanced",
+      "pattern": {
+        "key": "dewinter",
+        "name": "de Winter T waves"
+      },
+      "state": {
+        "_expression": "base({ occlusion: { vessel: 'LAD', s: 0.04 }, tau: 0.7, deWinter: true })"
+      },
+      "teach": "In about 2% of proximal LAD occlusions the ECG shows upsloping 1–3 mm J-point depression with tall, symmetric precordial T waves instead of STE, often with ~1 mm STE in aVR. It is a STEMI equivalent: activate the cath lab."
+    },
+    {
+      "id": "om",
+      "group": "subtle",
+      "title": "Obtuse marginal",
+      "sub": "The \"silent\" OMI",
+      "family": "LCx",
+      "level": "advanced",
+      "pattern": {
+        "key": "silent",
+        "name": "Electrically subtle (\"silent\") OMI"
+      },
+      "extra": true,
+      "state": {
+        "_expression": "base({ occlusion: { vessel: 'OM1', s: 0.1 } })"
+      },
+      "teach": "An obtuse marginal supplies a patch of lateral wall that the standard leads barely see, so ST shifts stay under 1 mm. With ongoing ischaemic pain, an ECG like this does not exclude OMI. Use serial ECGs, posterior leads, echo for a wall-motion abnormality, and refractory symptoms."
+    },
+    {
+      "id": "lbbb",
+      "group": "subtle",
+      "title": "LBBB + OMI",
+      "sub": "Smith-modified Sgarbossa",
+      "family": "proxLAD",
+      "level": "advanced",
+      "pattern": {
+        "key": "sgarbossa",
+        "name": "Smith-modified Sgarbossa positive"
+      },
+      "state": {
+        "_expression": "base({ occlusion: { vessel: 'LAD', s: 0.04 }, conduction: 'lbbb' })"
+      },
+      "teach": "LBBB normally produces ST/T changes that are discordant to the QRS and proportional to it. OMI appears as concordant STE (here in V5, where the QRS is positive), or as discordant STE that is excessive for the depth of the S wave. The Smith-modified Sgarbossa rule is positive when discordant STE is ≥25% of the preceding S wave, as in V1–V3 here."
+    },
+    {
+      "id": "rbbbLAD",
+      "group": "subtle",
+      "title": "New RBBB + LAD",
+      "sub": "S1 supplies the bundle",
+      "family": "proxLAD",
+      "level": "advanced",
+      "state": {
+        "_expression": "base({ occlusion: { vessel: 'LAD', s: 0.04 }, conduction: 'rbbb' })"
+      },
+      "teach": "The right bundle is supplied by the first septal perforator. A new RBBB with anterior STE marks proximal LAD occlusion and a large territory at risk. RBBB does not hide STE, so read the ST segments as usual. T inversion in V1–V2 is expected with RBBB."
+    },
+    {
+      "id": "wellensA",
+      "group": "evolution",
+      "title": "Wellens A",
+      "sub": "Early reperfusion",
+      "family": "distLAD",
+      "level": "advanced",
+      "pattern": {
+        "key": "wellensA",
+        "name": "Wellens pattern A (biphasic T)"
+      },
+      "state": {
+        "_expression": "base({ anatomy: RNW, occlusion: { vessel: 'LAD', s: 0.22 }, reperfusion: 'early' })"
+      },
+      "teach": "After spontaneous reperfusion of a critical LAD lesion, the pain settles and the ST segments resolve. The T waves in V2–V3 then develop a terminal negative deflection (Wellens A). The artery is open but unstable and likely to re-occlude: arrange urgent angiography and avoid stress testing."
+    },
+    {
+      "id": "wellensB",
+      "group": "evolution",
+      "title": "Wellens B",
+      "sub": "Later reperfusion",
+      "family": "distLAD",
+      "level": "advanced",
+      "pattern": {
+        "key": "wellensB",
+        "name": "Wellens pattern B (deep T inversion)"
+      },
+      "state": {
+        "_expression": "base({ anatomy: RNW, occlusion: { vessel: 'LAD', s: 0.22 }, reperfusion: 'late' })"
+      },
+      "teach": "Hours later the reperfusion T waves deepen into symmetric inversion across V1–V4 (Wellens B). This means reperfusion, not ongoing occlusion, but the culprit lesion remains. If the T waves \"pseudo-normalise\" with recurrent pain, the artery has re-occluded."
+    },
+    {
+      "id": "postRep",
+      "group": "evolution",
+      "title": "Posterior reperfusion",
+      "sub": "Tall T waves V1–V3",
+      "family": "LCx",
+      "level": "advanced",
+      "extra": true,
+      "pattern": {
+        "key": "postRep",
+        "name": "Posterior reperfusion T waves"
+      },
+      "state": {
+        "_expression": "base({ occlusion: { vessel: 'LCx', s: 0.1 }, reperfusion: 'late' })"
+      },
+      "teach": "Reperfusion of a posterior (circumflex) occlusion inverts the T waves over the posterior wall. Seen from the front, that inversion becomes tall, broad, upright T waves in V1–V3. It is easily dismissed as normal."
+    },
+    {
+      "id": "completed",
+      "group": "evolution",
+      "title": "Completed anterior MI",
+      "sub": "Late presentation",
+      "family": "proxLAD",
+      "level": "advanced",
+      "pattern": {
+        "key": "completed",
+        "name": "Completed infarction (Q waves, T inversion)"
+      },
+      "state": {
+        "_expression": "base({ occlusion: { vessel: 'LAD', s: 0.04 }, tau: 3 })"
+      },
+      "teach": "Hours to days after occlusion, Q waves appear as the R waves are lost, the ST elevation subsides and the T waves invert. Q waves with residual STE suggest a completed infarct or an aneurysm. The size of the T wave relative to the QRS helps date the infarct."
+    },
+    {
+      "id": "subendo",
+      "group": "evolution",
+      "title": "Subendocardial ischaemia",
+      "sub": "STE aVR: not OMI",
+      "family": "none",
+      "level": "core",
+      "pattern": {
+        "key": "subendo",
+        "name": "Diffuse subendocardial ischaemia (STE aVR)"
+      },
+      "state": {
+        "_expression": "base({ occlusion: null, subendo: 1.5 })"
+      },
+      "teach": "Diffuse STD, maximal in V4–V6, I and II, with STE in aVR is the signature of subendocardial ischaemia from demand, left main or three-vessel disease. The ST vector points into the cavity toward aVR, not at an occluded wall. It is high risk, but on its own it is neither OMI nor a STEMI equivalent."
+    },
+    {
+      "id": "pericarditis",
+      "group": "mimics",
+      "title": "Pericarditis",
+      "sub": "Diffuse STE, PR depression",
+      "family": "mimic",
+      "level": "core",
+      "pattern": {
+        "key": "pericarditis",
+        "name": "Acute pericarditis"
+      },
+      "state": {
+        "_expression": "base({ mimic: 'pericarditis' })"
+      },
+      "teach": "STE is diffuse and concave, spanning inferior and lateral territories at once, with II > III. PR depression (and PR elevation in aVR) is a clue. The decisive point is what is missing: no reciprocal STD except in aVR and V1, and in particular no STD in aVL, which accompanies nearly every inferior OMI. Echo shows normal wall motion, sometimes with an effusion."
+    },
+    {
+      "id": "ber",
+      "group": "mimics",
+      "title": "Early repolarisation",
+      "sub": "J-point notch, V2–V4",
+      "family": "mimic",
+      "level": "core",
+      "pattern": {
+        "key": "ber",
+        "name": "Benign early repolarisation"
+      },
+      "state": {
+        "_expression": "base({ mimic: 'ber' })"
+      },
+      "teach": "STE is maximal in V2–V4 and concave, with a notched or slurred J point, large QRS voltages and tall T waves that stay in proportion to the QRS. S waves in V2–V3 are preserved and there is no reciprocal STD. Subtle anterior OMI is the mimic of the mimic: bulky T waves, a lower R wave in V4, a longer QTc or any terminal QRS distortion should make you think again."
+    },
+    {
+      "id": "lvh",
+      "group": "mimics",
+      "title": "LVH with strain",
+      "sub": "Discordant STE V1–V3",
+      "family": "mimic",
+      "level": "core",
+      "pattern": {
+        "key": "lvh",
+        "name": "LVH with strain"
+      },
+      "state": {
+        "_expression": "base({ mimic: 'lvh' })"
+      },
+      "teach": "Deep S waves in V1–V3 carry discordant STE, and tall lateral R waves carry strain STD with asymmetric T inversion. The STE is proportional to the S wave, much as in LBBB, so judge it by ratio rather than millimetres. Echo shows thick walls, a small cavity and normal wall motion."
+    },
+    {
+      "id": "hyperk",
+      "group": "mimics",
+      "title": "Hyperkalaemia",
+      "sub": "Peaked, narrow T waves",
+      "family": "mimic",
+      "level": "advanced",
+      "pattern": {
+        "key": "hyperk",
+        "name": "Hyperkalaemia"
+      },
+      "state": {
+        "_expression": "base({ mimic: 'hyperk' })"
+      },
+      "teach": "T waves are tall, narrow-based and symmetrically peaked, P waves are flat, the PR is long and the QRS wide, and V1–V2 can show pseudo-STE. Hyperacute T waves of OMI are broad-based and bulky, follow a coronary territory and come with a normal QRS. Echo is normal."
+    },
+    {
+      "id": "aneurysm",
+      "group": "mimics",
+      "title": "LV aneurysm",
+      "sub": "Old MI, persistent STE",
+      "family": "mimic",
+      "level": "advanced",
+      "pattern": {
+        "key": "aneurysm",
+        "name": "LV aneurysm morphology"
+      },
+      "state": {
+        "_expression": "base({ mimic: 'aneurysm' })"
+      },
+      "teach": "An old anterior infarct leaves QS waves in V1–V4 with persistent STE, but the T waves are small. If the T/QRS amplitude ratio is below 0.36 in every lead from V1 to V4, aneurysm is more likely than acute OMI; above that in any lead, suspect new occlusion. Echo shows a thinned, dyskinetic apex, and the 3D heart shows the old LAD scar."
+    },
+    {
+      "id": "takotsubo",
+      "group": "mimics",
+      "title": "Takotsubo",
+      "sub": "Apical ballooning",
+      "family": "mimic",
+      "level": "advanced",
+      "pattern": {
+        "key": "takotsubo",
+        "name": "Takotsubo syndrome"
+      },
+      "state": {
+        "_expression": "base({ mimic: 'takotsubo' })"
+      },
+      "teach": "Anterior and often inferior STE, STD in aVR and no STE in V1 favour Takotsubo, but the ECG cannot exclude LAD occlusion, so angiography is still needed. The echo is the giveaway: the mid and apical walls stop moving all the way round while the base is hyperkinetic, crossing every coronary territory."
+    }
+  ],
+  "scenarioGroups": {
+    "classic": "Classic territories",
+    "subtle": "Subtle & advanced OMI",
+    "evolution": "Reperfusion, evolution & subendocardial",
+    "mimics": "OMI mimics"
+  },
+  "drillDecks": {
+    "territory": {
+      "title": "Territory",
+      "sub": "ECG → culprit artery",
+      "cats": {
+        "_expression": "TERR"
+      },
+      "view": "ecg",
+      "target": 6
+    },
+    "signs": {
+      "title": "Signs",
+      "sub": "ECG → named OMI sign",
+      "cats": {
+        "_expression": "SIGNS"
+      },
+      "view": "ecg",
+      "target": 6
+    },
+    "echo": {
+      "title": "Echo",
+      "sub": "Wall motion → culprit artery",
+      "cats": {
+        "_expression": "TERR"
+      },
+      "view": "echo",
+      "target": 7
+    },
+    "mimics": {
+      "title": "Mimics",
+      "sub": "OMI or mimic? Name it",
+      "cats": {
+        "_expression": "MIMIC_CATS"
+      },
+      "view": "ecg",
+      "target": 6
+    }
+  },
+  "drillCategories": {
+    "territory": [
+      {
+        "id": "proxLAD",
+        "label": "Proximal LAD",
+        "short": "pLAD",
+        "gen": {
+          "_expression": "() => base({ occlusion: occ('LAD', 0.01, 0.12) })"
+        }
+      },
+      {
+        "id": "distLAD",
+        "label": "Mid–distal LAD",
+        "short": "dLAD",
+        "gen": {
+          "_expression": "() => base({ occlusion: occ('LAD', 0.16, 0.8) })"
+        }
+      },
+      {
+        "id": "highLat",
+        "label": "High lateral (D1 / ramus)",
+        "short": "HiLat",
+        "gen": {
+          "_expression": "() => rnd() < 0.7 ? base({ occlusion: occ('D1', 0.02, 0.35) }) : base({ anatomy: anat(domR(), { ramus: true }), occlusion: occ('RI', 0.02, 0.35) })"
+        },
+        "check": {
+          "_expression": "(r) => r.stmm.aVL >= 0.5 || r.stmm.I >= 0.5"
+        }
+      },
+      {
+        "id": "proxRCA",
+        "label": "Proximal RCA + RV",
+        "short": "pRCA",
+        "gen": {
+          "_expression": "() => base({ occlusion: occ('RCA', 0.02, 0.27) })"
+        }
+      },
+      {
+        "id": "infRCA",
+        "label": "Distal RCA / PDA",
+        "short": "dRCA",
+        "gen": {
+          "_expression": "() => rnd() < 0.65 ? base({ occlusion: occ('RCA', 0.36, 0.95) }) : base({ occlusion: occ('PDA_R', 0.05, 0.6) })"
+        }
+      },
+      {
+        "id": "LCx",
+        "label": "Circumflex (posterolateral)",
+        "short": "LCx",
+        "gen": {
+          "_expression": "() => base({ anatomy: anat('right'), occlusion: occ('LCx', 0.02, 0.5) })"
+        },
+        "check": {
+          "_expression": "(r) => Math.min(r.stmm.V1, r.stmm.V2, r.stmm.V3) <= -0.8 || maxAbs(r.stmm, ['I', 'aVL', 'V5', 'V6']) >= 1"
+        }
+      },
+      {
+        "id": "domLCx",
+        "label": "Dominant circumflex",
+        "short": "dLCx",
+        "gen": {
+          "_expression": "() => base({ anatomy: anat('left'), occlusion: occ('LCx', 0.02, 0.75) })"
+        },
+        "check": {
+          "_expression": "(r) => !hasPat(r, 'rcaPattern')"
+        }
+      },
+      {
+        "id": "LM",
+        "label": "Left main",
+        "short": "LM",
+        "gen": {
+          "_expression": "() => base({ occlusion: occ('LM', 0.1, 0.9), tau: R(0.8, 1.4) })"
+        }
+      },
+      {
+        "id": "none",
+        "label": "No occlusion",
+        "short": "None",
+        "gen": {
+          "_expression": "() => base({ subendo: rnd() < 0.5 ? 0 : R(0.8, 1.8) })"
+        }
+      }
+    ],
+    "signs": [
+      {
+        "id": "hyper",
+        "label": "Hyperacute T waves",
+        "short": "HypT",
+        "pat": "hyperacute",
+        "gen": {
+          "_expression": "() => base(rnd() < 0.6 ? { occlusion: occ('LAD', 0.01, 0.4), tau: R(0, 0.2) } : { occlusion: occ('RCA', 0.1, 0.8), tau: R(0, 0.2) })"
+        }
+      },
+      {
+        "id": "dewinter",
+        "label": "de Winter T waves",
+        "short": "dW",
+        "pat": "dewinter",
+        "gen": {
+          "_expression": "() => base({ occlusion: occ('LAD', 0.01, 0.12), tau: R(0.5, 0.9), deWinter: true })"
+        }
+      },
+      {
+        "id": "saflag",
+        "label": "South African flag",
+        "short": "SAF",
+        "pat": "saflag",
+        "gen": {
+          "_expression": "() => base({ occlusion: occ('D1', 0.02, 0.3) })"
+        }
+      },
+      {
+        "id": "aslanger",
+        "label": "Aslanger pattern",
+        "short": "Asl",
+        "pat": "aslanger",
+        "gen": {
+          "_expression": "() => base({ anatomy: anat('right'), occlusion: occ('PDA_R', 0.4, 0.65), subendo: R(1.1, 1.6) })"
+        }
+      },
+      {
+        "id": "wellens",
+        "label": "Wellens (LAD reperfusion)",
+        "short": "Wel",
+        "pat": [
+          "wellensA",
+          "wellensB"
+        ],
+        "gen": {
+          "_expression": "() => base({ anatomy: anat('right', { wrap: false }), occlusion: occ('LAD', 0.15, 0.4), reperfusion: rnd() < 0.5 ? 'early' : 'late' })"
+        }
+      },
+      {
+        "id": "postOMI",
+        "label": "Posterior OMI",
+        "short": "Post",
+        "pat": "posterior",
+        "gen": {
+          "_expression": "() => base({ anatomy: anat('right'), occlusion: occ('LCx', 0.02, 0.45) })"
+        }
+      },
+      {
+        "id": "postRep",
+        "label": "Posterior reperfusion",
+        "short": "PRep",
+        "pat": "postRep",
+        "gen": {
+          "_expression": "() => base({ anatomy: anat('right'), occlusion: occ('LCx', 0.02, 0.45), reperfusion: 'late' })"
+        }
+      },
+      {
+        "id": "sgarb",
+        "label": "LBBB + OMI (Sgarbossa +)",
+        "short": "Sgb",
+        "pat": "sgarbossa",
+        "gen": {
+          "_expression": "() => base({ occlusion: rnd() < 0.7 ? occ('LAD', 0.01, 0.3) : occ('RCA', 0.05, 0.6), conduction: 'lbbb' })"
+        }
+      },
+      {
+        "id": "lbbb",
+        "label": "LBBB, no OMI",
+        "short": "LBBB",
+        "gen": {
+          "_expression": "() => base({ conduction: 'lbbb' })"
+        },
+        "check": {
+          "_expression": "(r) => !hasPat(r, 'sgarbossa')"
+        }
+      },
+      {
+        "id": "subendo",
+        "label": "Subendocardial (STE aVR)",
+        "short": "SubE",
+        "pat": "subendo",
+        "gen": {
+          "_expression": "() => base({ subendo: R(1.1, 2) })"
+        }
+      },
+      {
+        "id": "normal",
+        "label": "Normal",
+        "short": "Nml",
+        "gen": {
+          "_expression": "() => base({})"
+        }
+      }
+    ],
+    "mimics": [
+      {
+        "id": "antOMI",
+        "label": "Anterior OMI (LAD)",
+        "short": "Ant",
+        "omi": true,
+        "gen": {
+          "_expression": "() => base({ occlusion: occ('LAD', 0.01, 0.45), tau: R(0.1, 1.5) })"
+        }
+      },
+      {
+        "id": "infOMI",
+        "label": "Inferior OMI",
+        "short": "Inf",
+        "omi": true,
+        "gen": {
+          "_expression": "() => rnd() < 0.75 ? base({ occlusion: occ('RCA', 0.05, 0.9), tau: R(0.2, 1.5) }) : base({ anatomy: anat('left'), occlusion: occ('LCx', 0.05, 0.7), tau: R(0.3, 1.5) })"
+        }
+      },
+      {
+        "id": "peri",
+        "label": "Pericarditis",
+        "short": "Peri",
+        "gen": {
+          "_expression": "mim('pericarditis')"
+        }
+      },
+      {
+        "id": "ber",
+        "label": "Early repolarisation",
+        "short": "BER",
+        "gen": {
+          "_expression": "mim('ber')"
+        }
+      },
+      {
+        "id": "lvh",
+        "label": "LVH with strain",
+        "short": "LVH",
+        "gen": {
+          "_expression": "mim('lvh')"
+        }
+      },
+      {
+        "id": "hyperk",
+        "label": "Hyperkalaemia",
+        "short": "K⁺",
+        "gen": {
+          "_expression": "mim('hyperk')"
+        }
+      },
+      {
+        "id": "aneurysm",
+        "label": "LV aneurysm (old MI)",
+        "short": "Anr",
+        "gen": {
+          "_expression": "mim('aneurysm')"
+        }
+      },
+      {
+        "id": "tako",
+        "label": "Takotsubo",
+        "short": "Tako",
+        "gen": {
+          "_expression": "mim('takotsubo')"
+        }
+      },
+      {
+        "id": "normal",
+        "label": "Normal",
+        "short": "Nml",
+        "gen": {
+          "_expression": "() => base({})"
+        }
+      }
+    ]
+  },
+  "explanations": {
+    "proxLAD": {
+      "why": "Anterior STE in V1–V4, plus V1 (septum, supplied by S1) and I and aVL (high lateral wall, supplied by D1), with reciprocal STD in III and aVF.",
+      "keys": [
+        "V1",
+        "V2",
+        "V3",
+        "I",
+        "aVL",
+        "III"
+      ],
+      "whyEcho": "The whole LAD territory: anterior wall, anterior septum and apex akinetic from base to apex, usually with the anterolateral wall."
+    },
+    "distLAD": {
+      "why": "Anterior STE in V2–V5 but not V1 or aVL (S1 and D1 are spared). If the LAD wraps the apex, II, III and aVF rise too, and aVL is not depressed.",
+      "keys": [
+        "V2",
+        "V3",
+        "V4",
+        "V5",
+        "aVL",
+        "II"
+      ],
+      "whyEcho": "Mid and apical anterior wall, apical septum and apex abnormal, with the basal segments spared."
+    },
+    "highLat": {
+      "why": "STE in I and aVL (often V2) with reciprocal STD in III, while V3–V5 stay relatively flat: the high lateral wall.",
+      "keys": [
+        "I",
+        "aVL",
+        "V2",
+        "III"
+      ],
+      "whyEcho": "Basal and mid anterolateral wall (and the basal anterior wall) hypokinetic; septum, apex and inferior wall normal."
+    },
+    "proxRCA": {
+      "why": "Inferior STE with III > II, reciprocal STD in aVL and I, and STE in V1 (and V4R) from the right ventricle.",
+      "keys": [
+        "III",
+        "II",
+        "aVL",
+        "I",
+        "V1"
+      ],
+      "whyEcho": "Inferior wall and inferior septum akinetic plus an abnormal RV free wall with reduced TAPSE."
+    },
+    "infRCA": {
+      "why": "Inferior STE with III > II and STD in aVL, often with posterior STD in V1–V3, but V1 is not elevated: the RV branch is spared.",
+      "keys": [
+        "II",
+        "III",
+        "aVF",
+        "aVL",
+        "V1",
+        "V2"
+      ],
+      "whyEcho": "Inferior and inferoseptal walls abnormal, with a normal RV."
+    },
+    "LCx": {
+      "why": "STD maximal in V1–V3 (posterior wall seen from the front) with mild STE in I, aVL and V5–V6; the inferior leads change little.",
+      "keys": [
+        "V1",
+        "V2",
+        "V3",
+        "I",
+        "V6"
+      ],
+      "whyEcho": "Lateral and inferolateral walls abnormal; the inferior wall and septum are spared."
+    },
+    "domLCx": {
+      "why": "Inferior STE with II ≥ III and no STD in lead I (the vector points left), plus posterior STD in V1–V3 and lateral STE in V5–V6.",
+      "keys": [
+        "II",
+        "III",
+        "I",
+        "V2",
+        "V6"
+      ],
+      "whyEcho": "Inferior and inferolateral walls abnormal, extending to the lateral wall; RV normal."
+    },
+    "LM": {
+      "why": "Extensive STE in I, aVL and V2–V6 with reciprocal inferior STD: the LAD and circumflex territories together.",
+      "keys": [
+        "I",
+        "aVL",
+        "V2",
+        "V4",
+        "V6",
+        "III"
+      ],
+      "whyEcho": "Most of the LV abnormal (anterior, septal, lateral and inferolateral), with only the inferior wall spared."
+    },
+    "none": {
+      "why": "No STE in a coronary territory: either a normal ECG, or diffuse STD (maximal in V4–V6) with STE in aVR from subendocardial ischaemia.",
+      "keys": [
+        "aVR",
+        "V5",
+        "V6"
+      ],
+      "whyEcho": "No regional abnormality: normal, or mild global hypokinesis that follows no coronary distribution."
+    },
+    "hyper": {
+      "why": "Broad-based, bulky, symmetric T waves that are large relative to the QRS, in one territory, with little STE yet and reciprocal T flattening or inversion."
+    },
+    "dewinter": {
+      "why": "Upsloping J-point depression running into tall, symmetric T waves across V2–V6, with slight STE in aVR: proximal LAD occlusion without STE.",
+      "keys": [
+        "V2",
+        "V3",
+        "V4",
+        "aVR"
+      ]
+    },
+    "saflag": {
+      "why": "STE in I, aVL and V2 with STD in III, while V3–V5 stay near baseline (the flag’s pattern on the 3×4 layout).",
+      "keys": [
+        "I",
+        "aVL",
+        "V2",
+        "III",
+        "V3",
+        "V4"
+      ]
+    },
+    "aslanger": {
+      "why": "STE confined to lead III (II is not elevated), STD in V4–V6 but not in V2, and the ST segment in V1 higher than in V2.",
+      "keys": [
+        "III",
+        "II",
+        "V1",
+        "V2",
+        "V5"
+      ]
+    },
+    "wellens": {
+      "why": "ST segments near baseline with biphasic T waves (A) or deep symmetric T inversion (B) in V2–V3 or across V1–V4: a reperfused LAD.",
+      "keys": [
+        "V1",
+        "V2",
+        "V3",
+        "V4"
+      ]
+    },
+    "postOMI": {
+      "why": "STD maximal in V1–V3 (not V5–V6) with upright T waves: posterior STE seen from the front.",
+      "keys": [
+        "V1",
+        "V2",
+        "V3",
+        "V4"
+      ]
+    },
+    "postRep": {
+      "why": "ST segments near baseline but tall, broad, upright T waves in V1–V3: posterior T-wave inversion after reperfusion, seen from the front.",
+      "keys": [
+        "V1",
+        "V2",
+        "V3"
+      ]
+    },
+    "sgarb": {
+      "why": "LBBB with concordant STE (or STD in V1–V3), or discordant STE of 25% or more of the preceding S wave.",
+      "keys": [
+        "V1",
+        "V2",
+        "V3",
+        "V5",
+        "I"
+      ]
+    },
+    "lbbb": {
+      "why": "LBBB whose ST changes run opposite the QRS and stay proportionate (well under 25% of the S wave), with nothing concordant.",
+      "keys": [
+        "V1",
+        "V2",
+        "V5",
+        "V6"
+      ]
+    },
+    "subendo": {
+      "why": "Diffuse STD maximal in V4–V6 (and I and II) with STE in aVR, often V1: no STE in any coronary territory.",
+      "keys": [
+        "aVR",
+        "V4",
+        "V5",
+        "V6",
+        "II"
+      ]
+    },
+    "normal": {
+      "why": "No ST deviation and T waves in proportion to the QRS in every lead.",
+      "keys": []
+    },
+    "antOMI": {
+      "why": "STE or hyperacute T waves in a coronary distribution (V2–V4) with reciprocal inferior change; T waves bulky relative to the QRS, and S waves lost in V2–V3 as it advances.",
+      "keys": [
+        "V2",
+        "V3",
+        "V4",
+        "III"
+      ]
+    },
+    "infOMI": {
+      "why": "Inferior STE or hyperacute T waves with reciprocal STD or T inversion in aVL, the mirror image of III.",
+      "keys": [
+        "II",
+        "III",
+        "aVF",
+        "aVL"
+      ]
+    },
+    "peri": {
+      "why": "Diffuse concave STE in inferior and lateral leads at once (II > III), PR depression, STD only in aVR and V1, and no STD in aVL.",
+      "keys": [
+        "II",
+        "aVF",
+        "V5",
+        "aVR",
+        "aVL"
+      ]
+    },
+    "ber": {
+      "why": "STE in V2–V4 with a notched or slurred J point, tall but proportionate T waves and preserved S waves; no reciprocal STD.",
+      "keys": [
+        "V2",
+        "V3",
+        "V4"
+      ]
+    },
+    "lvh": {
+      "why": "Very large voltages; STE in V1–V3 in proportion to deep S waves, with lateral strain (downsloping STD and asymmetric T inversion).",
+      "keys": [
+        "V1",
+        "V2",
+        "V5",
+        "V6"
+      ]
+    },
+    "hyperk": {
+      "why": "Tall, narrow-based, peaked T waves with flat P waves, a long PR and a wide QRS.",
+      "keys": [
+        "V2",
+        "V3",
+        "V4",
+        "II"
+      ]
+    },
+    "aneurysm": {
+      "why": "QS waves in V1–V4 with persistent STE but small T waves (T/QRS below 0.36): an old infarct, not a new occlusion.",
+      "keys": [
+        "V1",
+        "V2",
+        "V3",
+        "V4"
+      ]
+    },
+    "tako": {
+      "why": "STE across anterior and inferior leads with STD in aVR and no STE in V1; on echo, apical ballooning that crosses every coronary territory.",
+      "keys": [
+        "V1",
+        "aVR",
+        "V3",
+        "V4",
+        "II"
+      ]
+    }
+  },
+  "presenterDecks": {
+    "territories": {
+      "title": "Classic territories",
+      "sub": "Name the culprit artery",
+      "items": {
+        "_expression": "['proxLAD', 'midLAD', 'wrapLAD', 'saflag', 'proxRCA', 'distRCA', 'proxLCx', 'leftDomLCx', 'LM'].map((id) => ({ kind: 'ecg', sc: id, q: 'culprit' }))"
+      }
+    },
+    "subtle": {
+      "title": "Subtle OMI",
+      "sub": "Name the sign",
+      "items": {
+        "_expression": "['hyperLAD', 'proxLCx', 'saflag', 'aslanger', 'dewinter', 'lbbb', 'om', 'hyperRCA'].map((id) => ({ kind: 'ecg', sc: id, q: 'pattern' }))"
+      }
+    },
+    "mimics": {
+      "title": "OMI or mimic?",
+      "sub": "Occlusion, or one of six mimics",
+      "items": {
+        "_expression": "['pericarditis', 'hyperLAD', 'ber', 'lvh', 'proxLAD', 'hyperk', 'aneurysm', 'takotsubo', 'distRCA'].map((id) => ({ kind: 'ecg', sc: id, q: 'mimic' }))"
+      }
+    },
+    "serial": {
+      "title": "Serial ECG cases",
+      "sub": "Decide at each ECG: activate, repeat or not OMI",
+      "items": [
+        {
+          "kind": "serial",
+          "caseId": "c-evolving",
+          "times": [
+            0,
+            15,
+            30
+          ]
+        },
+        {
+          "kind": "serial",
+          "caseId": "c-wellens",
+          "times": [
+            0,
+            30,
+            60
+          ]
+        },
+        {
+          "kind": "serial",
+          "caseId": "c-hyperacute",
+          "times": [
+            0,
+            15
+          ]
+        },
+        {
+          "kind": "serial",
+          "caseId": "c-peri",
+          "times": [
+            0,
+            15
+          ]
+        },
+        {
+          "kind": "serial",
+          "caseId": "c-om",
+          "times": [
+            0,
+            15
+          ]
+        }
+      ]
+    }
+  },
+  "challengeTypes": {
+    "culprit": [
+      "Where is the occlusion?",
+      "Read the ECG and name the culprit artery."
+    ],
+    "ecg": [
+      "Which ECG does this occlusion produce?",
+      "The thrombus is shown on the heart. Pick the matching 12-lead."
+    ],
+    "pattern": [
+      "Name this pattern",
+      "Identify the electrocardiographic sign."
+    ],
+    "predict": [
+      "Predict the 12-lead",
+      "The thrombus is shown on the heart. Mark every lead ▲ ST elevation, ▼ ST depression or — no change, then check."
+    ],
+    "place": [
+      "Place the clot",
+      "Read the ECG, then click the artery where you think the occlusion is. Click again to move it."
+    ]
+  },
+  "challengeTypeIds": [
+    [
+      "culprit",
+      "Name the culprit"
+    ],
+    [
+      "ecg",
+      "Pick the ECG"
+    ],
+    [
+      "predict",
+      "Predict the 12-lead"
+    ],
+    [
+      "place",
+      "Place the clot"
+    ],
+    [
+      "pattern",
+      "Name the sign"
+    ]
+  ],
+  "challengePatterns": [
+    "Hyperacute T waves",
+    "de Winter T waves",
+    "South African flag sign",
+    "Aslanger pattern",
+    "Wellens pattern A (biphasic T)",
+    "Wellens pattern B (deep T inversion)",
+    "Posterior reperfusion T waves",
+    "Posterior OMI",
+    "Smith-modified Sgarbossa positive",
+    "Diffuse subendocardial ischaemia (STE aVR)",
+    "Anterior + inferior STE (wraparound LAD)",
+    "Right ventricular infarction",
+    "Reciprocal change in aVL",
+    "Completed infarction (Q waves, T inversion)",
+    "Electrically subtle (\"silent\") OMI",
+    "Acute pericarditis",
+    "Benign early repolarisation",
+    "LVH with strain",
+    "Hyperkalaemia",
+    "LV aneurysm morphology",
+    "Takotsubo syndrome"
+  ],
+  "leadTour": [
+    "I",
+    "II",
+    "III",
+    "aVR",
+    "aVL",
+    "aVF",
+    "V1",
+    "V2",
+    "V3",
+    "V4",
+    "V5",
+    "V6"
+  ],
+  "mimicNotes": {
+    "pericarditis": "Normal wall motion with a small pericardial effusion. The ECG changes do not follow a coronary territory, and nothing on the echo does either.",
+    "ber": "Normal wall motion. A normal echo during symptoms makes a large OMI unlikely, though it cannot exclude a small one.",
+    "lvh": "Concentric LV hypertrophy: thick walls, a small cavity and normal (vigorous) wall motion. The STE in V1–V3 is secondary to the voltage, not to ischaemia.",
+    "hyperk": "Normal wall motion. The ECG changes are electrolyte-driven; there is no regional abnormality.",
+    "aneurysm": "Old anterior infarct: the apex is thinned, dyskinetic and bulges in systole. Look for LV thrombus. Compare with the persistent STE on the ECG.",
+    "takotsubo": "Apical ballooning: the mid and apical walls are akinetic all the way round while the base is hyperkinetic. The abnormality crosses LAD, RCA and circumflex territories, which no single occlusion can do."
+  },
+  "ventricularSegments": {
+    "1": {
+      "name": "Basal anterior",
+      "wall": "anterior",
+      "ring": 0,
+      "phi": 0,
+      "fr": [
+        0.1,
+        0.9
+      ],
+      "pw": [
+        0.5,
+        1.6,
+        0.3,
+        0,
+        -0.2,
+        -0.3,
+        0,
+        -0.4,
+        -0.5,
+        -0.5
+      ]
+    },
+    "2": {
+      "name": "Basal anteroseptal",
+      "wall": "septal",
+      "ring": 0,
+      "phi": 300,
+      "fr": [
+        -0.6,
+        0.6
+      ],
+      "pw": [
+        1.6,
+        1.4,
+        0.4,
+        0,
+        -0.3,
+        -0.5,
+        0.8,
+        -0.4,
+        -0.5,
+        -0.4
+      ]
+    },
+    "3": {
+      "name": "Basal inferoseptal",
+      "wall": "septal",
+      "ring": 0,
+      "phi": 240,
+      "fr": [
+        -0.5,
+        -0.6
+      ],
+      "pw": [
+        0.4,
+        0,
+        -0.2,
+        -0.2,
+        -0.2,
+        -0.3,
+        0.6,
+        0.1,
+        0.1,
+        0.1
+      ]
+    },
+    "4": {
+      "name": "Basal inferior",
+      "wall": "inferior",
+      "ring": 0,
+      "phi": 180,
+      "fr": [
+        0,
+        -1
+      ],
+      "pw": [
+        -0.4,
+        -0.6,
+        -0.4,
+        -0.2,
+        0,
+        0.1,
+        0,
+        0.5,
+        0.5,
+        0.4
+      ]
+    },
+    "5": {
+      "name": "Basal inferolateral",
+      "wall": "inferolateral",
+      "ring": 0,
+      "phi": 120,
+      "fr": [
+        0.5,
+        -0.5
+      ],
+      "pw": [
+        -1.5,
+        -2.4,
+        -2.1,
+        -0.9,
+        0,
+        0.4,
+        -0.5,
+        1.6,
+        1.8,
+        1.7
+      ]
+    },
+    "6": {
+      "name": "Basal anterolateral",
+      "wall": "lateral",
+      "ring": 0,
+      "phi": 60,
+      "fr": [
+        0.8,
+        0.7
+      ],
+      "pw": [
+        -0.3,
+        0.9,
+        0.1,
+        -0.1,
+        0.1,
+        0.3,
+        -0.3,
+        0.2,
+        0,
+        -0.1
+      ]
+    },
+    "7": {
+      "name": "Mid anterior",
+      "wall": "anterior",
+      "ring": 1,
+      "phi": 0,
+      "fr": [
+        0.2,
+        0.5
+      ],
+      "pw": [
+        0.6,
+        1.8,
+        2,
+        1.4,
+        0.6,
+        0,
+        0,
+        -0.6,
+        -0.6,
+        -0.5
+      ]
+    },
+    "8": {
+      "name": "Mid anteroseptal",
+      "wall": "septal",
+      "ring": 1,
+      "phi": 300,
+      "fr": [
+        -0.5,
+        0.3
+      ],
+      "pw": [
+        1.2,
+        1.6,
+        1.1,
+        0.3,
+        -0.2,
+        -0.4,
+        0.6,
+        -0.5,
+        -0.5,
+        -0.4
+      ]
+    },
+    "9": {
+      "name": "Mid inferoseptal",
+      "wall": "septal",
+      "ring": 1,
+      "phi": 240,
+      "fr": [
+        -0.4,
+        -0.8
+      ],
+      "pw": [
+        0.3,
+        0,
+        -0.1,
+        -0.1,
+        -0.1,
+        -0.2,
+        0.5,
+        0.1,
+        0.1,
+        0.1
+      ]
+    },
+    "10": {
+      "name": "Mid inferior",
+      "wall": "inferior",
+      "ring": 1,
+      "phi": 180,
+      "fr": [
+        0.05,
+        -1
+      ],
+      "pw": [
+        -0.3,
+        -0.5,
+        -0.4,
+        -0.1,
+        0.1,
+        0.2,
+        0,
+        0.4,
+        0.4,
+        0.3
+      ]
+    },
+    "11": {
+      "name": "Mid inferolateral",
+      "wall": "inferolateral",
+      "ring": 1,
+      "phi": 120,
+      "fr": [
+        0.6,
+        -0.5
+      ],
+      "pw": [
+        -1.1,
+        -1.9,
+        -1.8,
+        -0.6,
+        0.3,
+        0.7,
+        -0.3,
+        1.4,
+        1.3,
+        1.1
+      ]
+    },
+    "12": {
+      "name": "Mid anterolateral",
+      "wall": "lateral",
+      "ring": 1,
+      "phi": 60,
+      "fr": [
+        0.9,
+        0.3
+      ],
+      "pw": [
+        -0.3,
+        0.3,
+        0.2,
+        0.4,
+        0.6,
+        0.6,
+        -0.3,
+        0.3,
+        0.1,
+        0
+      ]
+    },
+    "13": {
+      "name": "Apical anterior",
+      "wall": "apical",
+      "ring": 2,
+      "phi": 0,
+      "fr": [
+        0.2,
+        -0.05
+      ],
+      "pw": [
+        0,
+        0.8,
+        1.6,
+        1.8,
+        1.2,
+        0.6,
+        0,
+        -0.4,
+        -0.4,
+        -0.3
+      ]
+    },
+    "14": {
+      "name": "Apical septal",
+      "wall": "apical",
+      "ring": 2,
+      "phi": 270,
+      "fr": [
+        -0.1,
+        -0.2
+      ],
+      "pw": [
+        0.2,
+        0.8,
+        1.2,
+        1,
+        0.5,
+        0.1,
+        0.2,
+        -0.3,
+        -0.3,
+        -0.3
+      ]
+    },
+    "15": {
+      "name": "Apical inferior",
+      "wall": "apical",
+      "ring": 2,
+      "phi": 180,
+      "fr": [
+        0.2,
+        -0.8
+      ],
+      "pw": [
+        -0.1,
+        0,
+        0.3,
+        0.6,
+        0.7,
+        0.6,
+        0,
+        0.2,
+        0.1,
+        0
+      ]
+    },
+    "16": {
+      "name": "Apical lateral",
+      "wall": "apical",
+      "ring": 2,
+      "phi": 90,
+      "fr": [
+        0.5,
+        -0.35
+      ],
+      "pw": [
+        -0.3,
+        0,
+        0.4,
+        0.9,
+        1.2,
+        1.1,
+        -0.2,
+        0.4,
+        0.2,
+        0
+      ]
+    },
+    "17": {
+      "name": "Apex",
+      "wall": "apical",
+      "ring": 3,
+      "phi": 0,
+      "fr": [
+        0.25,
+        -0.45
+      ],
+      "pw": [
+        -0.1,
+        0.3,
+        0.9,
+        1.3,
+        1.2,
+        0.8,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "RVa": {
+      "name": "RV free wall (anterior)",
+      "wall": "RV",
+      "ring": 4,
+      "phi": 300,
+      "fr": [
+        -0.6,
+        0
+      ],
+      "pw": [
+        1.9,
+        0.6,
+        0.2,
+        0,
+        -0.1,
+        -0.1,
+        1.8,
+        0,
+        0,
+        0
+      ]
+    },
+    "RVi": {
+      "name": "RV inferior wall",
+      "wall": "RV",
+      "ring": 4,
+      "phi": 230,
+      "fr": [
+        -0.5,
+        -0.6
+      ],
+      "pw": [
+        0.6,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1.1,
+        0,
+        0,
+        0
+      ]
+    }
+  }
+}

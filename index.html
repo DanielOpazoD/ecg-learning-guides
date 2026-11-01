@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="text-scale" content="scale">
+  <meta name="description" content="Dos guías interactivas para estudiar electrocardiografía: The Heart in Twelve Leads y Coronary Culprit.">
+  <title>Guías interactivas de ECG</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f5f3ee; color: #202b35; font-family: system-ui, sans-serif; line-height: 1.6; overflow-wrap: anywhere; }
+    main { width: min(64rem, 100%); margin-inline: auto; padding: 4rem 1.5rem; }
+    .eyebrow { color: #6c465e; font-size: .8rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+    h1 { margin: .5rem 0 1rem; font-size: clamp(2rem, 1.4rem + 2vw, 3.5rem); line-height: 1.15; letter-spacing: -.04em; }
+    .intro { max-width: 43rem; color: #4b5863; font-size: 1.125rem; }
+    .guides { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr)); gap: 1.5rem; margin-block: 2.5rem; }
+    article { display: flex; flex-direction: column; min-width: 0; padding: 1.5rem; background: #fff; border: 1px solid #deddd8; border-top: .25rem solid #91637b; border-radius: .5rem; }
+    article:nth-child(2) { border-top-color: #287776; }
+    .number { color: #697480; font-size: .8rem; font-weight: 700; }
+    h2 { margin: .75rem 0; font-size: 1.65rem; line-height: 1.25; letter-spacing: -.03em; }
+    article p { margin: .5rem 0; }
+    .detail { color: #4b5863; }
+    .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; margin-top: auto; padding-top: 1.5rem; }
+    a { color: #315e69; text-underline-offset: .2em; overflow-wrap: anywhere; }
+    a:hover { text-decoration-thickness: .15em; }
+    a:focus-visible { outline: .2rem solid #ae6d2c; outline-offset: .25rem; }
+    .open { display: inline-block; padding: .65rem 1.1rem; background: #263c48; color: #fff; text-decoration: none; border-radius: .25rem; font-weight: 650; }
+    .credit { margin-top: 1.5rem; color: #5c6670; font-size: .875rem; }
+    footer { border-top: 1px solid #d6d8d7; padding-top: 1.5rem; color: #56636b; font-size: .9rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">Biblioteca de electrocardiografía</p>
+      <h1>Del corazón al trazado.</h1>
+      <p class="intro">Dos herramientas interactivas para recorrer la actividad eléctrica del corazón, explorar sus derivaciones y estudiar los patrones de oclusión coronaria. Contenido original en inglés.</p>
+    </header>
+    <section class="guides" aria-label="Guías disponibles">
+      <article>
+        <span class="number" aria-hidden="true">01 / FUNDAMENTOS Y ECG</span>
+        <h2>The Heart in Twelve Leads</h2>
+        <p>Un recorrido desde el potencial de acción de una célula hasta la interpretación del ECG, con simulaciones de un corazón tridimensional.</p>
+        <p class="detail">27 capítulos · 137 puntos clave · 164 referencias</p>
+        <div class="actions">
+          <a class="open" href="heart-in-twelve-leads/index.html">Abrir The Heart in Twelve Leads →</a>
+          <a href="https://github.com/DanielOpazoD/ecg-learning-guides/tree/main/heart-in-twelve-leads">Textos y archivos</a>
+        </div>
+        <p class="credit">Proyecto original de <a href="https://therealryc.github.io/heart-in-twelve-leads/">therealRYC</a>.</p>
+      </article>
+      <article>
+        <span class="number" aria-hidden="true">02 / OCLUSIÓN CORONARIA</span>
+        <h2>Coronary Culprit</h2>
+        <p>Explora la relación entre la arteria ocluida, el ECG de doce derivaciones y la ecocardiografía. Incluye curso, casos, ejercicios y desafíos.</p>
+        <p class="detail">7 módulos · 39 pasos · 28 escenarios · 14 casos</p>
+        <div class="actions">
+          <a class="open" href="coronary-culprit/sitio/index.html#course">Abrir Coronary Culprit →</a>
+          <a href="https://github.com/DanielOpazoD/ecg-learning-guides/tree/main/coronary-culprit">Textos y archivos</a>
+        </div>
+        <p class="credit">Diseñado por <a href="https://www.cliffreid.com/culprit/">Dr Cliff Reid</a>.</p>
+      </article>
+    </section>
+    <footer>
+      <p>Archivo de consulta de Daniel Opazo. Las aplicaciones conservan sus créditos originales. Las sesiones en vivo y los servicios externos de Coronary Culprit requieren conexión.</p>
+      <a href="https://github.com/DanielOpazoD/ecg-learning-guides">Repositorio y descarga de los archivos</a>
+    </footer>
+  </main>
+</body>
+</html>

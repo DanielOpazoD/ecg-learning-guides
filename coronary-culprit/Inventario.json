@@ -1,0 +1,330 @@
+{
+  "Drill.md": {
+    "bytes": 6490,
+    "sha256": "85a924946c9a9fb2340cf727acbc87e12a85180c491d7b6d27033d611eda002c"
+  },
+  "LEEME.md": {
+    "bytes": 3796,
+    "sha256": "e6b488270accbaa3f06b96bcd99ff3916b66c2b6b3572db0bb5ba4461835e8d5"
+  },
+  "Course-Firecrawl.md": {
+    "bytes": 3943,
+    "sha256": "dd8959381b34493f42937872d4589f696d9e6207e0136d4ec97fd066f6798316"
+  },
+  "Curso-completo.md": {
+    "bytes": 19478,
+    "sha256": "45594b9562a67ff1b09638661636c5c2d62f0278a261a57797c314a0e927158c"
+  },
+  "Challenge.md": {
+    "bytes": 1450,
+    "sha256": "e8670b69aa14d3bb1ff117125da2ced6dc246e73105ac25669ab3e80ee6f9183"
+  },
+  "Contenido-estructurado.json": {
+    "bytes": 89586,
+    "sha256": "ff33c980f9e4d32563396c405d9911a472008dbb9859b78c6867ed3f1915489b"
+  },
+  "Presentacion.md": {
+    "bytes": 344,
+    "sha256": "b37a307e1a77192d67f763b51496473240843abf7ad1846f59dab91e5c8eb218"
+  },
+  "sitio/index.html": {
+    "bytes": 418265,
+    "sha256": "41ab8c950b9d3162f66910fce018414581447f9282fe6e73eaa55dcd7bf27b48"
+  },
+  "sitio/three.min.js": {
+    "bytes": 603445,
+    "sha256": "9274bbcec8d96168626c732b5d31c775aa8cfb7eaa0599bec0c175908a2c1ce2"
+  },
+  "sitio/manifest.webmanifest": {
+    "bytes": 779,
+    "sha256": "2fed3182295425c8b95726d21d2c39e52a1c39ca66467396a13f23f4c05303ed"
+  },
+  "sitio/sw.js": {
+    "bytes": 2275,
+    "sha256": "9f324546f290c1a63bf8de38bebd2f5c98a6283971337947db15e14d6e2cdb00"
+  },
+  "sitio/privacy.html": {
+    "bytes": 4302,
+    "sha256": "6a69950375cc225fa111cad36cbf2de8b7e4854030db34ae8b411d7b1d21f62f"
+  },
+  "casos/09-c-dewinter.md": {
+    "bytes": 540,
+    "sha256": "f51cc998289c965cc7582ca1b23ecd6f30d8a15561464d4ee8775d21913be11c"
+  },
+  "casos/05-c-wellens.md": {
+    "bytes": 787,
+    "sha256": "bb3e081a54321f796b9794162c74d3494bb05987e2fca2ff99939b85d6b6897b"
+  },
+  "casos/14-c-hyperk.md": {
+    "bytes": 589,
+    "sha256": "565b816d8aee1375bf10c5773a163e8bcca16c76ff2b1b371ed6d4b6a2a2d4ea"
+  },
+  "casos/01-c-classic.md": {
+    "bytes": 638,
+    "sha256": "a1f20c774aeaab9d6e09bcc017df644f4f119081dc9f0bdcb177e980ee14c7b9"
+  },
+  "casos/12-c-ber.md": {
+    "bytes": 704,
+    "sha256": "babfcf18e53295ab10f0b55f0b0699abeb0180bf3c900fcfb02413e78494be92"
+  },
+  "casos/13-c-lvh.md": {
+    "bytes": 615,
+    "sha256": "f5a0f30001d54388de1a991134ce6a3852527296c5927dcc70b224630486e4ab"
+  },
+  "casos/11-c-peri.md": {
+    "bytes": 679,
+    "sha256": "1bb834ad990dd2d90b98d00cb28ae3af0e9d05cde8e7d5328349cc2ade49b3ef"
+  },
+  "casos/06-c-om.md": {
+    "bytes": 688,
+    "sha256": "9bf21bd4f6d40d6e63357e049f7105257e82be30ff430f732c989848f4567ae5"
+  },
+  "casos/03-c-posterior.md": {
+    "bytes": 622,
+    "sha256": "2abfdb475f4888b5dd7959a4ade67db9a847c2552dcfebe3f46f61c669af2253"
+  },
+  "casos/08-c-lbbb.md": {
+    "bytes": 599,
+    "sha256": "2b439a070979f46d5867f2370703b58af266d457da963030202935d823db3838"
+  },
+  "casos/02-c-hyperacute.md": {
+    "bytes": 675,
+    "sha256": "4192d71022c483abd386cb2fbf982d89935cceab1a2619ac17100daa8f62afcd"
+  },
+  "casos/07-c-aslanger.md": {
+    "bytes": 582,
+    "sha256": "1ddd94c2efdf404116e6c3a757db0032549f69465267984b79696f373faa97ef"
+  },
+  "casos/04-c-evolving.md": {
+    "bytes": 821,
+    "sha256": "82425b3401a4cfb525202cc1a8cf20e8b8ec36bbfdc326d438d9e0c385155c0d"
+  },
+  "casos/10-c-tako.md": {
+    "bytes": 643,
+    "sha256": "38851d872d7a3d07792aa85b6d83dd567b1d7785f4296ae0e6ac17198e8f9206"
+  },
+  "curso/05-m5.md": {
+    "bytes": 2825,
+    "sha256": "789b0a4ea20c8b5bc8e7a80faf4b0142f32d48863b2efe34a5584a2fccf26fbd"
+  },
+  "curso/01-m1.md": {
+    "bytes": 3596,
+    "sha256": "225115f2a791997203beec9e14c7b4e1e6dc1774ad5bab24619254a9e1cd1af6"
+  },
+  "curso/04-m4.md": {
+    "bytes": 3273,
+    "sha256": "e8aedccc042d43cb69386c705f1f0c87123e600d78551dddfcad04848238e982"
+  },
+  "curso/02-m2.md": {
+    "bytes": 3187,
+    "sha256": "7114e8c441f8bf35f86c3c917ba54006ea39c8e919c33a9fe8c709e0bae20971"
+  },
+  "curso/06-m6.md": {
+    "bytes": 3368,
+    "sha256": "92f1bc01a90f178db123f84e908a081b9c7ae7913ea458602469928010a0cc3e"
+  },
+  "curso/07-m7.md": {
+    "bytes": 466,
+    "sha256": "654ce681c7cf3c7862e652c4c06a80be56129ba1ecd277e754278931af70e380"
+  },
+  "curso/03-m3.md": {
+    "bytes": 2721,
+    "sha256": "d7e4490a1303a2fb7c2037a92728aa62126cb988111fc29400dd4dc243e7eae8"
+  },
+  "escenarios/14-dewinter.md": {
+    "bytes": 680,
+    "sha256": "7b3f825614563cd55798f86f7e8f6374bfcdd47f0f5a190cd33e8f8abeb40eee"
+  },
+  "escenarios/27-aneurysm.md": {
+    "bytes": 474,
+    "sha256": "ecb547d913e510621a19b632383ce3db05cbe19c707042de7eb47fea064aa36c"
+  },
+  "escenarios/22-subendo.md": {
+    "bytes": 758,
+    "sha256": "59cec7114d9d77eb9e26319ad96b654278a7994d09b26bb1e61f434587f13069"
+  },
+  "escenarios/16-lbbb.md": {
+    "bytes": 816,
+    "sha256": "db02dc6ea6a286d8eb962c19b8590d8c5300c1f8b16963c4594a27780ba2e622"
+  },
+  "escenarios/01-proxLAD.md": {
+    "bytes": 703,
+    "sha256": "323ac78a975054284f9b15cc69ae8d57ae8fb9f953cb06a28932e558e8f70105"
+  },
+  "escenarios/20-postRep.md": {
+    "bytes": 639,
+    "sha256": "94c40e0e957e2297feaea8724eb21ba9a1f7bd58316a1b571a565102f96daa2c"
+  },
+  "escenarios/13-aslanger.md": {
+    "bytes": 740,
+    "sha256": "aa249e072338d877041d03d1e43ebc5db1151d841b84e261a46b6a1c7eb2a129"
+  },
+  "escenarios/19-wellensB.md": {
+    "bytes": 701,
+    "sha256": "257374e2a13c3d38312d758dae73e4fa3bb5f129e99d6822019259e30b9c7725"
+  },
+  "escenarios/26-hyperk.md": {
+    "bytes": 395,
+    "sha256": "3e586a88cdfc1bfecb949c0ed9b8b0e7517e612cfd69ccc2885a22dd37ab61fd"
+  },
+  "escenarios/04-proxRCA.md": {
+    "bytes": 660,
+    "sha256": "8d6bce5f0193e042d319a297b9f5151f1567a5a0363186609756355fd8577879"
+  },
+  "escenarios/06-proxLCx.md": {
+    "bytes": 663,
+    "sha256": "8c8e5d6ef9452c3695039759e604792831e2b031aa525098bca4ea1b779e6521"
+  },
+  "escenarios/25-lvh.md": {
+    "bytes": 415,
+    "sha256": "92be53290950d27904e1817fed52dc67cb9c7e55ce651bdce945664913bbe320"
+  },
+  "escenarios/23-pericarditis.md": {
+    "bytes": 498,
+    "sha256": "7f1822d4551f05c5eb42359715a3ae43947b8ca78ed3d8cb338615898a82c404"
+  },
+  "escenarios/02-midLAD.md": {
+    "bytes": 572,
+    "sha256": "dbbf6637e130af3f763409ce9cccbb6d68728feb1272116f9762da3b560c9a7a"
+  },
+  "escenarios/18-wellensA.md": {
+    "bytes": 730,
+    "sha256": "b2c0d258a9626011fc66a488a026e85a848abce944763af640753d90d3572ec2"
+  },
+  "escenarios/21-completed.md": {
+    "bytes": 755,
+    "sha256": "e0cb98e85686396262935320a859ca244e3bac3f9a222280b082e470e576dcf4"
+  },
+  "escenarios/28-takotsubo.md": {
+    "bytes": 426,
+    "sha256": "c79b33c419d75bbc9a0e7d3f429009af981a5874f706a38277038ad289feac2a"
+  },
+  "escenarios/07-leftDomLCx.md": {
+    "bytes": 589,
+    "sha256": "a5bff18ff4a41be6ca97d9a73d8409a96cba0d0b1b095a5dff4f34067d533769"
+  },
+  "escenarios/10-hyperRCA.md": {
+    "bytes": 622,
+    "sha256": "a29a81a8a67fa90d8663ce2be9ac0b815e0d15c179cd7facec9e24c7029f19fc"
+  },
+  "escenarios/09-hyperLAD.md": {
+    "bytes": 733,
+    "sha256": "28993930d9eff9296bbf96cee9edd7967397edfdac63cc81be4d20dea082c54b"
+  },
+  "escenarios/05-distRCA.md": {
+    "bytes": 507,
+    "sha256": "cd03c0b70e33ef104e5f6af0af7bae8903b622ba75849127d0eaf38abf606bcc"
+  },
+  "escenarios/08-LM.md": {
+    "bytes": 648,
+    "sha256": "e4a3c7a6b99de7f8a3b413174fd6c12532621af186b9f07da19253ca68aefd53"
+  },
+  "escenarios/17-rbbbLAD.md": {
+    "bytes": 677,
+    "sha256": "f6245263919cc61c1be8130018ccecd269d4d91c0737e5e88cc97d5f0b225c12"
+  },
+  "escenarios/12-ramus.md": {
+    "bytes": 649,
+    "sha256": "4ef4340664cd3dc06fe81da213a3cb99432d4af3a31475230c2a7d85f5be9d87"
+  },
+  "escenarios/11-saflag.md": {
+    "bytes": 679,
+    "sha256": "d223a0bf6cc8678d8dcb707cb887743903eb7b7312d4d28262f9d2468dda0558"
+  },
+  "escenarios/15-om.md": {
+    "bytes": 683,
+    "sha256": "0580d27d1b849e3b16b22e9d0c1124f46e91d025e37eb34a10eeeb7e6e2d5215"
+  },
+  "escenarios/24-ber.md": {
+    "bytes": 518,
+    "sha256": "0932217cff4bf1ec5c977103252ad1192b037a501b035e079bd64a339915e57d"
+  },
+  "escenarios/03-wrapLAD.md": {
+    "bytes": 680,
+    "sha256": "4f4bf7c3df608b1dd69bb94fe4eab1f684aed8b4a188a108aaa13e530f227002"
+  },
+  "sitio/icons/apple-touch-icon.png": {
+    "bytes": 23494,
+    "sha256": "f59e685ec70f03d41c0bb63433a57347f615198c07274639bda5e7209608702a"
+  },
+  "sitio/icons/icon-192.png": {
+    "bytes": 26427,
+    "sha256": "b095c88e479c6e583ffe7eecddb58f6271f49541c7e3c989df3509e39152829f"
+  },
+  "sitio/icons/icon-maskable-512.png": {
+    "bytes": 102952,
+    "sha256": "0a048b62ef0a089b701e7b3598be5de5a67bdc8ede70ed1f9bd569c54a4b7f85"
+  },
+  "sitio/icons/icon-512.png": {
+    "bytes": 109905,
+    "sha256": "099318ab2613676ac13b477dcc4b886c684c7c4b430d9593c511983c8ecb23f7"
+  },
+  "sitio/fonts/IBMPlexMono-500-latin.woff2": {
+    "bytes": 10060,
+    "sha256": "a76f53ca6612e7b3828eec2311098675b7f9849ae4169a8bcef6302aec02a6c0"
+  },
+  "sitio/fonts/BarlowCondensed-700-latin.woff2": {
+    "bytes": 14888,
+    "sha256": "e3e520cb7468f2efd60bc2ce96694567c3312f4ef414fffbe605e3ad146b24e6"
+  },
+  "sitio/fonts/Barlow-500-latin.woff2": {
+    "bytes": 15640,
+    "sha256": "80e7dc5605dd451bb9b092d7f46704f08bf39d2866cb981aa8caddc016716aed"
+  },
+  "sitio/fonts/Barlow-600-latin.woff2": {
+    "bytes": 15832,
+    "sha256": "488b58098126c00b8fa77f4d58b0a4bc982e81e4c83323c1a73d9f1a67c15971"
+  },
+  "sitio/fonts/BarlowCondensed-500-latin.woff2": {
+    "bytes": 14680,
+    "sha256": "31ff5e6e96a096fde4d78bc838719e69b093db2d0b062b96e423c065a6d1b2b1"
+  },
+  "sitio/fonts/BarlowCondensed-500-latin-ext.woff2": {
+    "bytes": 9188,
+    "sha256": "f8ec026d88a29e8d6a920c82348d90d08200a771e7763c5888376e407ac83a8f"
+  },
+  "sitio/fonts/Barlow-400-latin.woff2": {
+    "bytes": 15656,
+    "sha256": "7a686e76312866b7d506c103e51a829d4c96a0b4576835128d3b7b53801c095a"
+  },
+  "sitio/fonts/BarlowCondensed-600-latin.woff2": {
+    "bytes": 14844,
+    "sha256": "5bc49d41f32810a114765314392332ce2acae2276635eee265a50319a12c1b49"
+  },
+  "sitio/fonts/Barlow-600-latin-ext.woff2": {
+    "bytes": 9888,
+    "sha256": "67dfa555a72fdd7506b4e9a97e2b0307b6b15e3d689ef4c372ef47a0597d94db"
+  },
+  "sitio/fonts/fonts.css": {
+    "bytes": 6130,
+    "sha256": "357211a37e25a30b71a8e3d9a4934bd299a820a539deb7ce7fdd882d4e137169"
+  },
+  "sitio/fonts/BarlowCondensed-700-latin-ext.woff2": {
+    "bytes": 9328,
+    "sha256": "0c1655655b5a1fa18382367f471b943c8e009c5cf36a3898433babd92fc606e2"
+  },
+  "sitio/fonts/Barlow-500-latin-ext.woff2": {
+    "bytes": 9712,
+    "sha256": "7985f1abf1d07b81181090dffaa1f7c3dde03eaa524d41e5bebd39ea5d3090de"
+  },
+  "sitio/fonts/IBMPlexMono-500-latin-ext.woff2": {
+    "bytes": 8848,
+    "sha256": "77f03e26f981c582bdba3a7abed4baa2d3149211c01366bb3ab3ba7622ec4ae5"
+  },
+  "sitio/fonts/IBMPlexMono-400-latin.woff2": {
+    "bytes": 10052,
+    "sha256": "c36f509c0a8f9f85f29cb44bc8701d8a9e0b14c499e77a884f789ead7093a7ac"
+  },
+  "sitio/fonts/BarlowCondensed-600-latin-ext.woff2": {
+    "bytes": 9236,
+    "sha256": "a2f92ada1d0eaf10dd83b11392ea389c039aa78f6e17418fc062c23f0ba78438"
+  },
+  "sitio/fonts/IBMPlexMono-400-latin-ext.woff2": {
+    "bytes": 8860,
+    "sha256": "f1050dc5317b43434c0aeda599d4624c774ffc162e87a8cf204b949b6a85816d"
+  },
+  "sitio/fonts/Barlow-400-latin-ext.woff2": {
+    "bytes": 9632,
+    "sha256": "bac411df68fa3d93ee4b12309c4df075c791d0390b536ca8d803890f889b76b4"
+  }
+}
