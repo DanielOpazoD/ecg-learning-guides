@@ -1,0 +1,247 @@
+[
+  {
+    "url": "https://intro2echo.com/assets/tavr/deploy.webp",
+    "file": "assets/tavr/deploy.webp",
+    "bytes": 29746
+  },
+  {
+    "url": "https://intro2echo.com/assets/tavr/before.webp",
+    "file": "assets/tavr/before.webp",
+    "bytes": 25024
+  },
+  {
+    "url": "https://intro2echo.com/assets/tavr/cross.webp",
+    "file": "assets/tavr/cross.webp",
+    "bytes": 33244
+  },
+  {
+    "url": "https://intro2echo.com/assets/tavr/measure.webp",
+    "file": "assets/tavr/measure.webp",
+    "bytes": 21204
+  },
+  {
+    "url": "https://intro2echo.com/assets/mteer/before.webp",
+    "file": "assets/mteer/before.webp",
+    "bytes": 31338
+  },
+  {
+    "url": "https://intro2echo.com/assets/tavr/after.webp",
+    "file": "assets/tavr/after.webp",
+    "bytes": 31186
+  },
+  {
+    "url": "https://intro2echo.com/assets/mteer/septum.webp",
+    "file": "assets/mteer/septum.webp",
+    "bytes": 31876
+  },
+  {
+    "url": "https://intro2echo.com/assets/tavr/check.webp",
+    "file": "assets/tavr/check.webp",
+    "bytes": 30234
+  },
+  {
+    "url": "https://intro2echo.com/assets/mteer/grasp.webp",
+    "file": "assets/mteer/grasp.webp",
+    "bytes": 24252
+  },
+  {
+    "url": "https://intro2echo.com/assets/mteer/align.webp",
+    "file": "assets/mteer/align.webp",
+    "bytes": 27226
+  },
+  {
+    "url": "https://intro2echo.com/assets/mteer/assess.webp",
+    "file": "assets/mteer/assess.webp",
+    "bytes": 21746
+  },
+  {
+    "url": "https://intro2echo.com/assets/mteer/steer.webp",
+    "file": "assets/mteer/steer.webp",
+    "bytes": 33742
+  },
+  {
+    "url": "https://intro2echo.com/assets/mteer/release.webp",
+    "file": "assets/mteer/release.webp",
+    "bytes": 23220
+  },
+  {
+    "url": "https://intro2echo.com/assets/mteer/after.webp",
+    "file": "assets/mteer/after.webp",
+    "bytes": 23426
+  },
+  {
+    "url": "https://intro2echo.com/assets/tteer/guide.webp",
+    "file": "assets/tteer/guide.webp",
+    "bytes": 35942
+  },
+  {
+    "url": "https://intro2echo.com/assets/tteer/before.webp",
+    "file": "assets/tteer/before.webp",
+    "bytes": 31806
+  },
+  {
+    "url": "https://intro2echo.com/assets/tteer/steer.webp",
+    "file": "assets/tteer/steer.webp",
+    "bytes": 35752
+  },
+  {
+    "url": "https://intro2echo.com/assets/tteer/align.webp",
+    "file": "assets/tteer/align.webp",
+    "bytes": 30054
+  },
+  {
+    "url": "https://intro2echo.com/assets/tteer/grasp.webp",
+    "file": "assets/tteer/grasp.webp",
+    "bytes": 27368
+  },
+  {
+    "url": "https://intro2echo.com/assets/tteer/assess.webp",
+    "file": "assets/tteer/assess.webp",
+    "bytes": 24108
+  },
+  {
+    "url": "https://intro2echo.com/assets/tteer/release.webp",
+    "file": "assets/tteer/release.webp",
+    "bytes": 29520
+  },
+  {
+    "url": "https://intro2echo.com/assets/tteer/after.webp",
+    "file": "assets/tteer/after.webp",
+    "bytes": 34528
+  },
+  {
+    "url": "https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..600&display=swap",
+    "file": "assets/fonts/original-fonts.css",
+    "bytes": 15550
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/caveat/v23/Wnz6HAc5bAfYB2Q7ZjYYiAzcPA.woff2",
+    "file": "assets/fonts/font-fa1d179d1e07ceed.woff2",
+    "bytes": 74572
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/caveat/v23/Wnz6HAc5bAfYB2Q7azYYiAzcPDKo.woff2",
+    "file": "assets/fonts/font-098dcb26caf31aee.woff2",
+    "bytes": 42888
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F63fjptAgt5VM-kVkqdyU8n1i8q131nj-o.woff2",
+    "file": "assets/fonts/font-01c04f4d69ca47be.woff2",
+    "bytes": 10052
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F63fjptAgt5VM-kVkqdyU8n1iAq131nj-otFQ.woff2",
+    "file": "assets/fonts/font-bde7db92496666b1.woff2",
+    "bytes": 4000
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/caveat/v23/Wnz6HAc5bAfYB2Q7aDYYiAzcPDKo.woff2",
+    "file": "assets/fonts/font-bce0d72d5a8e3aa2.woff2",
+    "bytes": 29528
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F63fjptAgt5VM-kVkqdyU8n1iEq131nj-otFQ.woff2",
+    "file": "assets/fonts/font-2532acb5e3041baf.woff2",
+    "bytes": 8860
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F63fjptAgt5VM-kVkqdyU8n1iIq131nj-otFQ.woff2",
+    "file": "assets/fonts/font-c3a25aa85495bee4.woff2",
+    "bytes": 4348
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/caveat/v23/Wnz6HAc5bAfYB2Q7YjYYiAzcPDKo.woff2",
+    "file": "assets/fonts/font-624db5e7c2592b82.woff2",
+    "bytes": 77224
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F63fjptAgt5VM-kVkqdyU8n1isq131nj-otFQ.woff2",
+    "file": "assets/fonts/font-757e9d7228a62b17.woff2",
+    "bytes": 5476
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3twJwl1FgsAXHNlYzg.woff2",
+    "file": "assets/fonts/font-cb1a242b907c798c.woff2",
+    "bytes": 4336
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3twJwl5FgsAXHNlYzg.woff2",
+    "file": "assets/fonts/font-7300d08cc3cf7909.woff2",
+    "bytes": 8848
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3twJwl9FgsAXHNlYzg.woff2",
+    "file": "assets/fonts/font-0e213dc59c137688.woff2",
+    "bytes": 4036
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3twJwlBFgsAXHNk.woff2",
+    "file": "assets/fonts/font-5778b1a208141d42.woff2",
+    "bytes": 10060
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3twJwlRFgsAXHNlYzg.woff2",
+    "file": "assets/fonts/font-0b5c2db191621518.woff2",
+    "bytes": 5500
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxQKYbSB4ZhRNU.woff2",
+    "file": "assets/fonts/font-efbd4e0b7034b5e3.woff2",
+    "bytes": 25868
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxRKYbSB4ZhRNU.woff2",
+    "file": "assets/fonts/font-466e6a68c4ee3f94.woff2",
+    "bytes": 9612
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxTKYbSB4ZhRNU.woff2",
+    "file": "assets/fonts/font-cf65f680c0c97e6e.woff2",
+    "bytes": 19684
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxaKYbSB4ZhRNU.woff2",
+    "file": "assets/fonts/font-4e183d488cda203f.woff2",
+    "bytes": 25408
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxdKYbSB4ZhRNU.woff2",
+    "file": "assets/fonts/font-33ff57e97518ac70.woff2",
+    "bytes": 16296
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxeKYbSB4Zh.woff2",
+    "file": "assets/fonts/font-9d44a92983acf712.woff2",
+    "bytes": 40240
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/newsreader/v26/cY9AfjOCX1hbuyalUrK4397yjIJFJpc.woff2",
+    "file": "assets/fonts/font-c2789104223d80ae.woff2",
+    "bytes": 131848
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/newsreader/v26/cY9CfjOCX1hbuyalUrK439vCgYhCBJWxZCPp.woff2",
+    "file": "assets/fonts/font-6de62c022f06f17c.woff2",
+    "bytes": 28036
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/newsreader/v26/cY9CfjOCX1hbuyalUrK439vCjohCBJWxZA.woff2",
+    "file": "assets/fonts/font-3cea4047dd955e64.woff2",
+    "bytes": 147060
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/newsreader/v26/cY9AfjOCX1hbuyalUrK439HyjIJFJpeBZQ.woff2",
+    "file": "assets/fonts/font-35749bec1f53639f.woff2",
+    "bytes": 27204
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/newsreader/v26/cY9AfjOCX1hbuyalUrK439DyjIJFJpeBZQ.woff2",
+    "file": "assets/fonts/font-33c71188b08f5f87.woff2",
+    "bytes": 86628
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/newsreader/v26/cY9CfjOCX1hbuyalUrK439vCgIhCBJWxZCPp.woff2",
+    "file": "assets/fonts/font-f44285dd7b4f96f8.woff2",
+    "bytes": 95412
+  }
+]

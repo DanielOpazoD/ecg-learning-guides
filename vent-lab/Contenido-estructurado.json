@@ -1,0 +1,1921 @@
+{
+  "source": "https://www.boardsidereviews.com/vent-lab.html",
+  "MODES": {
+    "vc-cmv": {
+      "tag": "VC-CMVs",
+      "name": "AC/VC",
+      "long": "Assist-control volume control",
+      "examples": "A/C Volume Control, Volume Control (CMV)",
+      "ctrl": "VC",
+      "seq": "CMV",
+      "tgt": "s",
+      "set": [
+        "VT",
+        "flow",
+        "pattern",
+        "pause",
+        "RR",
+        "PEEP",
+        "FiO2",
+        "trig"
+      ],
+      "blurb": "Every breath is mandatory. You set tidal volume and inspiratory flow; the ventilator controls flow, so airway pressure is what varies. Look at the pressure scalar for the load and for patient effort."
+    },
+    "vc-cmvd": {
+      "tag": "VC-CMVd",
+      "name": "AC/VC + flow adaptation",
+      "long": "Volume control with dual targeting",
+      "examples": "Dual-targeted volume control (names vary by ventilator)",
+      "ctrl": "VC",
+      "seq": "CMV",
+      "tgt": "d",
+      "set": [
+        "VT",
+        "flow",
+        "RR",
+        "PEEP",
+        "FiO2",
+        "trig"
+      ],
+      "blurb": "Dual targeting: the breath starts as volume control, but if the patient pulls harder than the set flow can satisfy, the ventilator switches to pressure control within the breath and lets flow (and volume) rise to meet demand. If the ventilator also lets that breath flow-cycle, the 2022 taxonomy calls it VC-IMV(4)d,d."
+    },
+    "pc-cmv": {
+      "tag": "PC-CMVs",
+      "name": "AC/PC",
+      "long": "Assist-control pressure control",
+      "examples": "A/C Pressure Control, Pressure Control (CMV)",
+      "ctrl": "PC",
+      "seq": "CMV",
+      "tgt": "s",
+      "set": [
+        "Pinsp",
+        "Ti",
+        "rise",
+        "RR",
+        "PEEP",
+        "FiO2",
+        "trig"
+      ],
+      "blurb": "Every breath is mandatory and time-cycled. You set the inspiratory pressure and inspiratory time; tidal volume depends on resistance, compliance and patient effort. Look at the flow scalar."
+    },
+    "pc-cmva": {
+      "tag": "PC-CMVa",
+      "name": "PRVC",
+      "long": "Pressure control with adaptive targeting",
+      "examples": "PRVC, VC+, AutoFlow, Volume Guarantee",
+      "ctrl": "PC",
+      "seq": "CMV",
+      "tgt": "a",
+      "set": [
+        "VT",
+        "Ti",
+        "rise",
+        "RR",
+        "PEEP",
+        "FiO2",
+        "trig"
+      ],
+      "blurb": "Looks like volume control on the settings screen, but every breath is pressure control. Between breaths the ventilator adjusts the inspiratory pressure (up to 3 cmH₂O per breath) to hit the target tidal volume. When the patient pulls harder, the ventilator gives less pressure."
+    },
+    "vc-imv": {
+      "tag": "VC-IMV(1)s,s",
+      "name": "SIMV-VC + PS",
+      "long": "Synchronized IMV, volume control, with pressure support",
+      "examples": "SIMV Volume Control + Pressure Support",
+      "ctrl": "VC",
+      "seq": "IMV",
+      "tgt": "s,s",
+      "set": [
+        "VT",
+        "flow",
+        "pattern",
+        "RR",
+        "PS",
+        "PEEP",
+        "FiO2",
+        "trig"
+      ],
+      "blurb": "A set number of volume-control breaths per minute are always delivered (synchronized to effort when possible). Extra patient efforts between them get pressure-supported spontaneous breaths."
+    },
+    "pc-imv": {
+      "tag": "PC-IMV(1)s,s",
+      "name": "SIMV-PC + PS",
+      "long": "Synchronized IMV, pressure control, with pressure support",
+      "examples": "SIMV Pressure Control + Pressure Support",
+      "ctrl": "PC",
+      "seq": "IMV",
+      "tgt": "s,s",
+      "set": [
+        "Pinsp",
+        "Ti",
+        "RR",
+        "PS",
+        "PEEP",
+        "FiO2",
+        "trig"
+      ],
+      "blurb": "A set rate of time-cycled pressure-control breaths, with pressure-supported spontaneous breaths in between."
+    },
+    "aprv": {
+      "tag": "PC-IMV(1)s,s",
+      "name": "APRV / BiLevel",
+      "long": "Airway pressure release ventilation",
+      "examples": "APRV, BiLevel, Bi-Vent",
+      "ctrl": "PC",
+      "seq": "IMV",
+      "tgt": "s,s",
+      "set": [
+        "Phigh",
+        "Thigh",
+        "Plow",
+        "Tlow",
+        "FiO2"
+      ],
+      "blurb": "Two pressure levels, switched on a timer. Releases from P-high to P-low are the mandatory breaths; the patient can breathe spontaneously at either level because the valves stay open."
+    },
+    "asv": {
+      "tag": "PC-IMVoi,oi",
+      "name": "ASV",
+      "long": "Adaptive support ventilation (simplified)",
+      "examples": "ASV, IntelliVent-ASV",
+      "ctrl": "PC",
+      "seq": "IMV",
+      "tgt": "oi,oi",
+      "set": [
+        "minvol",
+        "PEEP",
+        "FiO2",
+        "trig"
+      ],
+      "blurb": "Optimal targeting: you set a % of predicted minute ventilation. The ventilator measures the expiratory time constant and uses the Otis equation to choose the rate and tidal volume with the least work, then adjusts pressure to deliver them. Spontaneous breaths reduce the mandatory rate. (Simplified teaching model.)"
+    },
+    "psv": {
+      "tag": "PC-CSVs",
+      "name": "PSV",
+      "long": "Pressure support ventilation",
+      "examples": "Pressure Support, Spontaneous/CPAP + PS",
+      "ctrl": "PC",
+      "seq": "CSV",
+      "tgt": "s",
+      "set": [
+        "PS",
+        "ETS",
+        "rise",
+        "PEEP",
+        "FiO2",
+        "trig",
+        "apnea"
+      ],
+      "blurb": "Every breath is patient-triggered and flow-cycled. You set the support pressure and the expiratory trigger (cycle) as a % of peak flow. No set rate: if the patient stops breathing, only the apnea backup saves them."
+    },
+    "cpap": {
+      "tag": "PC-CSVs",
+      "name": "CPAP",
+      "long": "Continuous positive airway pressure",
+      "examples": "CPAP, Spontaneous (PS 0)",
+      "ctrl": "PC",
+      "seq": "CSV",
+      "tgt": "s",
+      "set": [
+        "PEEP",
+        "FiO2",
+        "trig",
+        "apnea"
+      ],
+      "blurb": "Pressure support of zero. The ventilator just holds PEEP; the patient does all of the inspiratory work."
+    },
+    "vs": {
+      "tag": "PC-CSVa",
+      "name": "Volume Support",
+      "long": "Pressure support with adaptive targeting",
+      "examples": "Volume Support, Spontaneous Volume Support",
+      "ctrl": "PC",
+      "seq": "CSV",
+      "tgt": "a",
+      "set": [
+        "VT",
+        "ETS",
+        "rise",
+        "PEEP",
+        "FiO2",
+        "trig",
+        "apnea"
+      ],
+      "blurb": "Pressure support whose level is adjusted breath to breath to reach a target tidal volume. The harder the patient pulls, the less support it gives."
+    },
+    "varps": {
+      "tag": "PC-CSVb",
+      "name": "Variable PS",
+      "long": "Pressure support with bio-variable targeting",
+      "examples": "Variable Pressure Support (noisy PSV)",
+      "ctrl": "PC",
+      "seq": "CSV",
+      "tgt": "b",
+      "set": [
+        "PS",
+        "var",
+        "ETS",
+        "PEEP",
+        "FiO2",
+        "trig",
+        "apnea"
+      ],
+      "blurb": "Bio-variable targeting: the support pressure changes randomly from breath to breath around the set level, mimicking natural breath-to-breath variability."
+    },
+    "pav": {
+      "tag": "PC-CSVr",
+      "name": "PAV+",
+      "long": "Proportional assist ventilation",
+      "examples": "PAV+, Proportional Assist",
+      "ctrl": "PC",
+      "seq": "CSV",
+      "tgt": "r",
+      "set": [
+        "PAV",
+        "ETS",
+        "PEEP",
+        "FiO2",
+        "trig",
+        "apnea"
+      ],
+      "blurb": "Servo targeting: the ventilator measures R and E and, moment to moment, supplies a set percentage of the pressure needed to overcome them. Pull harder and it pushes harder. With no effort, it gives nothing."
+    },
+    "nava": {
+      "tag": "PC-CSVr",
+      "name": "NAVA",
+      "long": "Neurally adjusted ventilatory assist",
+      "examples": "NAVA (diaphragm EMG, Edi)",
+      "ctrl": "PC",
+      "seq": "CSV",
+      "tgt": "r",
+      "set": [
+        "NAVA",
+        "PEEP",
+        "FiO2",
+        "trig",
+        "apnea"
+      ],
+      "blurb": "Servo targeting from the diaphragm electrical signal (Edi). Pressure is proportional to Edi, the breath is neurally triggered and cycles when Edi falls to 70% of its peak, so timing follows the patient’s own brain. Because of its pressure-control backup, some mode tables list NAVA as PC-IMV(2)s,rs."
+    },
+    "off": {
+      "tag": "—",
+      "name": "Spontaneous",
+      "long": "Off the ventilator: negative-pressure breathing",
+      "examples": "Your own breathing",
+      "ctrl": "—",
+      "seq": "—",
+      "tgt": "",
+      "set": [],
+      "blurb": "No ventilator. Respiratory muscles lower pleural pressure, alveolar pressure dips just below atmospheric, and air flows in. Hold the BREATHE button to make a breath."
+    }
+  },
+  "MODE_ORDER": [
+    "vc-cmv",
+    "pc-cmv",
+    "pc-cmva",
+    "vc-cmvd",
+    "vc-imv",
+    "pc-imv",
+    "aprv",
+    "asv",
+    "psv",
+    "cpap",
+    "vs",
+    "varps",
+    "pav",
+    "nava",
+    "off"
+  ],
+  "PATIENTS": {
+    "normal": {
+      "label": "Normal lungs",
+      "R": 10,
+      "Rexp": 10,
+      "CL": 0.1,
+      "Ccw": 0.1,
+      "Ppl0": 0,
+      "frc": 2.2,
+      "shunt": 0.05,
+      "recruit": 0.5,
+      "vdAlv": 0.05,
+      "vco2": 3,
+      "hco3": 24,
+      "map": 82,
+      "hr": 82,
+      "od": 0,
+      "note": "R ≈ 10, Crs ≈ 0.05 L/cmH₂O, τ ≈ 0.5 s (intubated, normal lungs)."
+    },
+    "ards": {
+      "label": "ARDS",
+      "R": 12,
+      "Rexp": 13,
+      "CL": 0.03,
+      "Ccw": 0.1,
+      "Ppl0": 0,
+      "frc": 1.2,
+      "shunt": 0.55,
+      "recruit": 0.5,
+      "vdAlv": 0.4,
+      "vco2": 3.6,
+      "hco3": 24,
+      "map": 74,
+      "hr": 104,
+      "od": 0.8,
+      "note": "Stiff, small lungs: increased elastic load, short time constant."
+    },
+    "copd": {
+      "label": "COPD",
+      "R": 20,
+      "Rexp": 30,
+      "CL": 0.14,
+      "Ccw": 0.1,
+      "Ppl0": 0,
+      "frc": 3.6,
+      "shunt": 0.1,
+      "recruit": 0.2,
+      "vdAlv": 0.35,
+      "vco2": 3,
+      "hco3": 28,
+      "map": 80,
+      "hr": 96,
+      "od": 0,
+      "note": "Increased resistive load with a long expiratory time constant: watch expiratory flow."
+    },
+    "asthma": {
+      "label": "Status asthmaticus",
+      "R": 32,
+      "Rexp": 40,
+      "CL": 0.09,
+      "Ccw": 0.1,
+      "Ppl0": 0,
+      "frc": 3,
+      "shunt": 0.12,
+      "recruit": 0.2,
+      "vdAlv": 0.25,
+      "vco2": 3.2,
+      "hco3": 24,
+      "map": 84,
+      "hr": 118,
+      "od": 0,
+      "note": "Severe bronchospasm: very high resistive load in both directions."
+    },
+    "fibrosis": {
+      "label": "Pulmonary fibrosis",
+      "R": 10,
+      "Rexp": 10,
+      "CL": 0.025,
+      "Ccw": 0.1,
+      "Ppl0": 0,
+      "frc": 1.4,
+      "shunt": 0.2,
+      "recruit": 0.15,
+      "vdAlv": 0.2,
+      "vco2": 3,
+      "hco3": 24,
+      "map": 80,
+      "hr": 92,
+      "od": 0.3,
+      "note": "Elastic load from the lung itself; Pplat is high and expiratory flow returns to zero quickly."
+    },
+    "obesity": {
+      "label": "Obesity",
+      "R": 12,
+      "Rexp": 12,
+      "CL": 0.09,
+      "Ccw": 0.04,
+      "Ppl0": 9,
+      "frc": 1.5,
+      "shunt": 0.22,
+      "recruit": 0.8,
+      "vdAlv": 0.1,
+      "vco2": 3.2,
+      "hco3": 25,
+      "map": 86,
+      "hr": 90,
+      "od": 0,
+      "note": "Heavy chest wall raises pleural pressure: Pplat overestimates the stress on the lung. Turn on the esophageal balloon."
+    },
+    "plug": {
+      "label": "Kinked tube / mucus plug",
+      "R": 40,
+      "Rexp": 40,
+      "CL": 0.1,
+      "Ccw": 0.1,
+      "Ppl0": 0,
+      "frc": 2.2,
+      "shunt": 0.1,
+      "recruit": 0.4,
+      "vdAlv": 0.05,
+      "vco2": 3,
+      "hco3": 24,
+      "map": 82,
+      "hr": 98,
+      "od": 0,
+      "note": "Partial blockage in the straw: peak pressure jumps, plateau stays normal."
+    }
+  },
+  "lessons": [
+    {
+      "id": "why",
+      "session": "Session 1 · Indications, basic modes and scalars",
+      "objective": "Understand the purpose and indications of MV",
+      "short": "Why ventilate?",
+      "q": "Why do some patients require mechanical ventilation, and what are the indications?",
+      "a": "<p>MV is used when a patient <b>cannot maintain adequate oxygenation, ventilation, or work of breathing</b> despite noninvasive support, or when <b>airway protection</b> is needed. It supports gas exchange and reduces respiratory muscle load while the underlying process is treated.</p><p>Common indications: <b>refractory hypoxemia, hypercapnic respiratory failure, excessive work of breathing/fatigue, or airway protection.</b></p><p>The ventilator is not only a supportive therapy, it is also <b>a tool that gives you information</b>. Everything in this lab is read from three scalars over time: pressure, flow and volume.</p>",
+      "config": {
+        "mode": "vc-cmv",
+        "vent": {
+          "VT": 0.45,
+          "flow": 60,
+          "RR": 16,
+          "PEEP": 5,
+          "FiO2": 0.4
+        }
+      },
+      "tasks": [
+        {
+          "text": "Find the three scalars on the screen: <b>pressure</b> (yellow), <b>flow</b> (teal) and <b>volume</b> (green). Freeze the screen with <b>Freeze</b> (or F) to look closely.",
+          "test": {
+            "_expression": "function (e) { return e.type === 'freeze' && e.frozen; }"
+          }
+        },
+        {
+          "text": "Hover over (or tap, when frozen) a point on the scalars to read its exact values.",
+          "test": {
+            "_expression": "function (e) { return e.type === 'tick' && !document.getElementById('readout').hidden; }"
+          }
+        }
+      ]
+    },
+    {
+      "id": "acpc-acvc",
+      "session": "Session 1 · Indications, basic modes and scalars",
+      "objective": "Outline AC/PC, AC/VC and modifiable parameters",
+      "short": "AC/PC vs AC/VC",
+      "q": "What is the difference between AC/PC and AC/VC?",
+      "a": "<p>Both are <b>assist-control</b> modes in which you set the RR, FiO₂ and PEEP. In assist-control the ventilator delivers a <b>full preset breath</b> whether it is triggered by the patient or by the backup rate.</p><p>In <b>AC/VC</b>, tidal volume is set and <b>pressure varies</b>. In <b>AC/PC</b>, inspiratory pressure is set and <b>tidal volume varies</b>.</p><p>You can often name the mode from the scalars alone: AC/VC has a <b>square (or decelerating ramp) flow</b> with a rising pressure; AC/PC has a <b>square pressure</b> with an exponentially decaying flow. In this curriculum we stick to square and decelerating-ramp flow in AC/VC.</p>",
+      "config": {
+        "mode": "vc-cmv",
+        "vent": {
+          "VT": 0.45,
+          "flow": 60,
+          "RR": 16,
+          "PEEP": 5,
+          "FiO2": 0.4
+        }
+      },
+      "tasks": [
+        {
+          "text": "Open <b>MODE</b> and start <b>AC/PC</b>. Notice which scalar becomes square.",
+          "test": {
+            "_expression": "function (e, sim) { return e.type === 'mode' && sim.v.mode === 'pc-cmv'; }"
+          }
+        },
+        {
+          "text": "Go back to <b>AC/VC</b> and switch the <b>Flow pattern</b> tile to <b>Decel ramp</b>.",
+          "test": {
+            "_expression": "function (e, sim) { return sim.v.mode === 'vc-cmv' && sim.v.pattern === 'ramp'; }"
+          }
+        }
+      ]
+    },
+    {
+      "id": "negative",
+      "session": "Session 1 · Indications, basic modes and scalars",
+      "objective": "Outline AC/PC, AC/VC and modifiable parameters",
+      "short": "What “mode” do we breathe in?",
+      "q": "What “mode” do we breathe in when we breathe spontaneously?",
+      "a": "<p>We breathe with <b>negative pressure</b> generated by our respiratory muscles. The ventilator provides breaths with <b>positive pressure</b>.</p><p>If we had to match a ventilator mode to spontaneous breathing, <b>pressure-targeted modes are more similar</b> than volume-targeted modes.</p>",
+      "config": {
+        "mode": "off",
+        "ui": {
+          "balloon": true,
+          "showPmus": true
+        }
+      },
+      "tasks": [
+        {
+          "text": "Hold <b>Breathe IN</b> (or the space bar). Watch pleural pressure (Pes) go negative while airway pressure stays at zero.",
+          "test": {
+            "_expression": "function (e, sim) { return e.type === 'tick' && sim.lastSample && sim.lastSample.Pmus > 4; }"
+          }
+        },
+        {
+          "text": "Keep holding for more than 3 seconds. Your muscles can’t contract forever: the breath ends on its own.",
+          "test": {
+            "_expression": "function (e, sim) { return e.type === 'tick' && sim.manual.cool > 0; }"
+          }
+        }
+      ]
+    },
+    {
+      "id": "comfort",
+      "session": "Session 1 · Indications, basic modes and scalars",
+      "objective": "Outline AC/PC, AC/VC and modifiable parameters",
+      "short": "Which mode is more comfortable?",
+      "q": "Which mode is more comfortable for the patient?",
+      "a": "<p>Comfort depends on many factors. In general, <b>AC/PC often “feels” smoother</b> because its exponentially decaying flow closely mirrors the flow of our own negative-pressure breaths.</p><p>A <b>well-set AC/VC can be equally comfortable</b>. Here the patient is pulling hard and the set flow is low: watch the pressure scalar scoop down during inspiration.</p>",
+      "config": {
+        "mode": "vc-cmv",
+        "vent": {
+          "VT": 0.45,
+          "flow": 35,
+          "RR": 12,
+          "PEEP": 5
+        },
+        "drive": {
+          "on": true,
+          "rate": 20,
+          "amp": 10,
+          "ti": 0.9,
+          "tr": 0.4
+        },
+        "ui": {
+          "showPmus": true
+        }
+      },
+      "tasks": [
+        {
+          "text": "Raise <b>Peak flow</b> to 60 L/min or more and watch the scooped pressure fill back in.",
+          "test": {
+            "_expression": "function (e, sim) { return sim.v.mode === 'vc-cmv' && sim.v.flow >= 60; }"
+          }
+        },
+        {
+          "text": "Now switch to <b>AC/PC</b> and compare how flow follows the patient’s pull.",
+          "test": {
+            "_expression": "function (e, sim) { return e.type === 'mode' && sim.v.mode === 'pc-cmv'; }"
+          }
+        }
+      ]
+    },
+    {
+      "id": "params",
+      "session": "Session 1 · Indications, basic modes and scalars",
+      "objective": "Outline AC/PC, AC/VC and modifiable parameters",
+      "short": "Changeable parameters",
+      "q": "What are the changeable parameters in each mode?",
+      "a": "<p><b>Both AC/VC and AC/PC:</b> RR, PEEP and FiO₂.</p><p><b>AC/VC:</b> VT, flow rate and flow pattern.</p><p><b>AC/PC:</b> inspiratory pressure and inspiratory time.</p><p>Look at the tiles under the screen: they change with the mode.</p>",
+      "config": {
+        "mode": "vc-cmv",
+        "vent": {
+          "VT": 0.45,
+          "flow": 60,
+          "RR": 16,
+          "PEEP": 5,
+          "FiO2": 0.4
+        }
+      },
+      "tasks": [
+        {
+          "text": "In AC/VC, change the <b>VT</b>.",
+          "test": {
+            "_expression": "function (e, sim) { return e.type === 'set' && e.key === 'VT' && sim.v.mode === 'vc-cmv'; }"
+          }
+        },
+        {
+          "text": "Switch to AC/PC and change <b>Pinsp</b> or <b>Ti</b>. Watch VT follow.",
+          "test": {
+            "_expression": "function (e, sim) { return e.type === 'set' && (e.key === 'Pinsp' || e.key === 'Ti') && sim.v.mode === 'pc-cmv'; }"
+          }
+        }
+      ]
+    },
+    {
+      "id": "oxvent",
+      "session": "Session 1 · Indications, basic modes and scalars",
+      "objective": "Outline AC/PC, AC/VC and modifiable parameters",
+      "short": "Oxygenation vs ventilation",
+      "q": "Which parameters affect oxygenation and which affect ventilation?",
+      "a": "<p><b>PEEP and FiO₂ affect oxygenation.</b> PEEP works by raising <b>mean airway pressure</b>, the average airway pressure across the breath cycle.</p><p><b>RR and VT (or inspiratory pressure) affect ventilation</b>, because CO₂ clearance follows minute ventilation (VT × RR).</p><p>The ABG panel in the monitor estimates the steady-state gas you would get with the current settings.</p>",
+      "config": {
+        "preset": "ards",
+        "mode": "vc-cmv",
+        "vent": {
+          "VT": 0.42,
+          "flow": 60,
+          "RR": 14,
+          "PEEP": 5,
+          "FiO2": 0.6
+        }
+      },
+      "tasks": [
+        {
+          "text": "Increase the <b>RR</b> and watch the estimated <b>PaCO₂</b> fall.",
+          "test": {
+            "_expression": "function (e, sim) { return e.type === 'set' && e.key === 'RR' && sim.v.RR >= 20; }"
+          }
+        },
+        {
+          "text": "Increase <b>PEEP</b> to 12 or more and watch <b>Pmean</b> and <b>PaO₂</b> rise.",
+          "test": {
+            "_expression": "function (e, sim) { return sim.v.PEEP >= 12; }"
+          }
+        }
+      ]
+    },
+    {
+      "id": "lpv",
+      "session": "Session 1 · Indications, basic modes and scalars",
+      "objective": "Outline AC/PC, AC/VC and modifiable parameters",
+      "short": "Lung-protective ventilation",
+      "q": "What is lung-protective ventilation, and what are the goal modifiable parameters?",
+      "a": "<p>A collective set of strategies to reduce injury to the lung. The key takeaway at this point: <b>VT should be ≤ 6 mL/kg predicted body weight (PBW)</b>, not actual weight. There are also goal pressures to maintain, covered in Session 2.</p><p>The VT tile shows mL/kg PBW under the value. PBW comes from sex and height (side panel).</p>",
+      "config": {
+        "preset": "ards",
+        "mode": "vc-cmv",
+        "sex": "M",
+        "height": 175,
+        "vent": {
+          "VT": 0.65,
+          "flow": 60,
+          "RR": 18,
+          "PEEP": 10,
+          "FiO2": 0.6
+        }
+      },
+      "tasks": [
+        {
+          "text": "Set <b>VT</b> to 6 mL/kg PBW or less.",
+          "test": {
+            "_expression": "function (e, sim) { return pbwVT(sim) <= 6.05; }"
+          }
+        },
+        {
+          "text": "Press the button to make the patient a 5′2″ woman and see how the same VT becomes too big.",
+          "test": {
+            "_expression": "function (e) { return e.type === 'patient' && e.id === 'ht'; }"
+          }
+        }
+      ],
+      "buttons": [
+        {
+          "label": "Make the patient 5′2″ female",
+          "run": {
+            "_expression": "function (VL, sim) { sim.p.sex = 'F'; sim.p.height = 157; VL.setVal('VT', sim.v.VT * 1000, true); VL.toast('Female, 157 cm: PBW ' + sim.pbw().toFixed(1) + ' kg. 6 mL/kg = ' + Math.round(sim.pbw() * 6) + ' mL.'); VL.fire('patient', { id: 'ht' }); }"
+          }
+        }
+      ]
+    },
+    {
+      "id": "phases",
+      "session": "Session 1 · Indications, basic modes and scalars",
+      "objective": "Outline AC/PC, AC/VC and modifiable parameters",
+      "short": "Trigger, inspiration, cycle, expiration",
+      "q": "Which portions of the breath are trigger, inspiration, cycle and expiration?",
+      "a": "<p><b>Trigger:</b> initiates inspiration (the patient, or time based on the RR).</p><p><b>Inspiration:</b> flow into the lungs.</p><p><b>Cycle:</b> initiates expiration.</p><p><b>Expiration:</b> flow out of the lungs. Like a pulled spring that is let go, the lungs recoil inward <b>passively</b>.</p><p>The phase bands shade inspiration teal. Grey triangles mark time-triggered breaths.</p>",
+      "config": {
+        "mode": "pc-cmv",
+        "vent": {
+          "Pinsp": 15,
+          "Ti": 1,
+          "RR": 14,
+          "PEEP": 5
+        },
+        "ui": {
+          "bands": true
+        }
+      },
+      "tasks": [
+        {
+          "text": "Freeze the screen and hover over a breath. Find the moment the flow crosses zero going down: that is the <b>cycle</b>.",
+          "test": {
+            "_expression": "function (e) { return e.type === 'freeze' && e.frozen; }"
+          }
+        },
+        {
+          "text": "Make inspiration longer (raise <b>Ti</b>) and watch expiration get shorter.",
+          "test": {
+            "_expression": "function (e, sim) { return e.type === 'set' && e.key === 'Ti' && sim.v.Ti >= 1.3; }"
+          }
+        }
+      ]
+    },
+    {
+      "id": "trigger",
+      "session": "Session 1 · Indications, basic modes and scalars",
+      "objective": "Detect patient efforts",
+      "short": "Patient vs time trigger",
+      "q": "How can you distinguish patient-triggered from time-triggered breaths?",
+      "a": "<p>The ventilator <b>marks patient efforts that result in a breath</b>. The mark varies from ventilator to ventilator. Here, patient-triggered breaths get an <b style=\"color:#ff9d3c\">orange</b> triangle and time-triggered breaths a <b style=\"color:#aabbcc\">grey</b> one.</p><p>Look also for the small dip in pressure (or rise in flow) just before the breath: that is the patient’s effort reaching the trigger threshold.</p>",
+      "config": {
+        "mode": "vc-cmv",
+        "vent": {
+          "VT": 0.45,
+          "flow": 60,
+          "RR": 8,
+          "PEEP": 5
+        }
+      },
+      "tasks": [
+        {
+          "text": "Hold <b>Breathe IN</b> during expiration to trigger a breath yourself. Look for the orange mark.",
+          "test": {
+            "_expression": "function (e) { return e.type === 'breath' && e.trig === 'patient' && e.manual; }"
+          }
+        },
+        {
+          "text": "Switch the trigger tile to <b>Pressure</b> and set it to 5 cmH₂O, then trigger again. It takes a much bigger pull.",
+          "test": {
+            "_expression": "function (e, sim) { return e.type === 'breath' && e.trig === 'patient' && e.manual && sim.v.trig === 'pressure' && sim.v.trigP >= 5; }"
+          }
+        }
+      ]
+    },
+    {
+      "id": "psv",
+      "session": "Session 1 · Indications, basic modes and scalars",
+      "objective": "Review PSV and SBT",
+      "short": "Pressure support",
+      "q": "What is pressure support mode, and how does it differ from assist-control?",
+      "a": "<p>PSV is a <b>patient-triggered, pressure-supported</b> mode in which you set the inspiratory pressure, PEEP and FiO₂. The <b>RR is solely the patient’s</b>.</p><p>Each breath ends when inspiratory flow falls to a set fraction of its peak (the cycle threshold), so the patient also controls inspiratory time.</p>",
+      "config": {
+        "mode": "psv",
+        "vent": {
+          "PS": 10,
+          "PEEP": 5,
+          "ETS": 25
+        },
+        "drive": {
+          "on": true,
+          "rate": 18,
+          "amp": 6,
+          "ti": 0.9,
+          "tr": 0.4
+        }
+      },
+      "tasks": [
+        {
+          "text": "Lower <b>PS</b> and watch VT fall while the rate stays the patient’s.",
+          "test": {
+            "_expression": "function (e, sim) { return e.type === 'set' && e.key === 'PS' && sim.v.PS <= 6; }"
+          }
+        },
+        {
+          "text": "Raise <b>PS</b> to 15 or more and watch VT climb.",
+          "test": {
+            "_expression": "function (e, sim) { return e.type === 'set' && e.key === 'PS' && sim.v.PS >= 15; }"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sbt",
+      "session": "Session 1 · Indications, basic modes and scalars",
+      "objective": "Review PSV and SBT",
+      "short": "When PSV? What is an SBT?",
+      "q": "In which scenarios is pressure support appropriate, and what is an SBT?",
+      "a": "<p>PSV fits <b>SBTs, weaning, stable patients with a reliable respiratory drive</b>, or patients intubated solely to protect the upper airway.</p><p>An <b>SBT (spontaneous breathing trial)</b> is a time-limited test of extubation readiness: support is reduced to minimal levels (typically <b>PS 5, PEEP 5, FiO₂ 30%</b>) to see whether the patient can sustain ventilation and oxygenation without excessive work of breathing or hemodynamic instability.</p>",
+      "config": {
+        "mode": "psv",
+        "vent": {
+          "PS": 12,
+          "PEEP": 8,
+          "FiO2": 0.5
+        },
+        "drive": {
+          "on": true,
+          "rate": 16,
+          "amp": 6,
+          "ti": 0.9,
+          "tr": 0.4
+        }
+      },
+      "tasks": [
+        {
+          "text": "Set up an SBT: <b>PS 5, PEEP 5, FiO₂ 30%</b>.",
+          "test": {
+            "_expression": "function (e, sim) { return sim.v.mode === 'psv' && sim.v.PS === 5 && sim.v.PEEP === 5 && Math.abs(sim.v.FiO2 - 0.3) < 0.005; }"
+          }
+        }
+      ]
+    },
+    {
+      "id": "rsbi",
+      "session": "Session 1 · Indications, basic modes and scalars",
+      "objective": "Review PSV and SBT",
+      "short": "RSBI",
+      "q": "Can you describe the utility of the RSBI?",
+      "a": "<p>The <b>Rapid Shallow Breathing Index</b> = RR ÷ VT (in liters). It is a bedside screening tool during weaning/SBTs. A lower RSBI reflects more efficient breathing. <b>RSBI &lt; 105</b> generally suggests a higher likelihood of successful extubation, but interpret it alongside the clinical status and trajectory.</p><p>RSBI appears in the Timing panel in spontaneous modes.</p>",
+      "config": {
+        "mode": "psv",
+        "vent": {
+          "PS": 5,
+          "PEEP": 5,
+          "FiO2": 0.3
+        },
+        "drive": {
+          "on": true,
+          "rate": 18,
+          "amp": 5,
+          "ti": 0.8,
+          "tr": 0.4
+        }
+      },
+      "tasks": [
+        {
+          "text": "Press <b>Tire the patient</b> and watch RSBI climb past 105 as the breathing gets rapid and shallow.",
+          "test": {
+            "_expression": "function (e, sim) { return e.type === 'tick' && sim.meas.RSBI > 105; }"
+          }
+        }
+      ],
+      "buttons": [
+        {
+          "label": "Tire the patient (RR 34, weak efforts)",
+          "run": {
+            "_expression": "function (VL, sim) { sim.p.drive.rate = 34; sim.p.drive.amp = 3.2; sim.p.drive.ti = 0.6; VL.toast('Rapid, shallow breathing. Give the rate a few breaths to update.'); }"
+          }
+        },
+        {
+          "label": "Recover",
+          "run": {
+            "_expression": "function (VL, sim) { sim.p.drive.rate = 18; sim.p.drive.amp = 5; sim.p.drive.ti = 0.8; }"
+          }
+        }
+      ]
+    },
+    {
+      "id": "apnea",
+      "session": "Session 1 · Indications, basic modes and scalars",
+      "objective": "Review PSV and SBT",
+      "short": "Apnea on PSV",
+      "q": "What would happen if a patient on PSV became apneic?",
+      "a": "<p>If there is no backup mode, <b>ventilation stops</b>. Most ventilators activate <b>apnea/backup ventilation</b> and switch to an assist-control mode after a set apnea time.</p><p>Here the apnea time is on the settings tiles. Backup ventilation hands control back once the patient triggers again.</p>",
+      "config": {
+        "mode": "psv",
+        "vent": {
+          "PS": 10,
+          "PEEP": 5,
+          "apnea": 15
+        },
+        "drive": {
+          "on": true,
+          "rate": 16,
+          "amp": 6,
+          "ti": 0.9,
+          "tr": 0.4
+        }
+      },
+      "tasks": [
+        {
+          "text": "Sedate the patient: press the button (or switch off spontaneous breathing) and wait for the <b>APNEA</b> alarm and backup ventilation.",
+          "test": {
+            "_expression": "function (e) { return e.type === 'alarm' && e.key === 'apnea'; }"
+          }
+        }
+      ],
+      "buttons": [
+        {
+          "label": "Give a big dose of sedation",
+          "run": {
+            "_expression": "function (VL, sim) { sim.p.drive.on = false; VL.toast('Spontaneous effort stopped. Count the seconds…'); }"
+          }
+        },
+        {
+          "label": "Wake up",
+          "run": {
+            "_expression": "function (VL, sim) { sim.p.drive.on = true; }"
+          }
+        }
+      ]
+    },
+    {
+      "id": "spont-drive",
+      "session": "Session 2 · Single-compartment model, loads and safety",
+      "objective": "Describe the single-compartment model of the lung",
+      "short": "How does spontaneous effort move air?",
+      "q": "How does spontaneous inspiratory effort drive air into the alveoli?",
+      "a": "<p>The patient generates <b>negative pleural pressure</b>, which lowers alveolar pressure “below” airway pressure, and air flows into the lungs. Because the alveolar space is connected to atmosphere, flow occurs so rapidly that <b>alveolar pressure stays near atmospheric</b>.</p><p>Watch the digital lung: Ppl (pleural, measured by the balloon as Pes) swings well negative while Palv barely dips.</p>",
+      "config": {
+        "mode": "off",
+        "ui": {
+          "balloon": true,
+          "showPmus": true
+        }
+      },
+      "tasks": [
+        {
+          "text": "Take a breath with <b>Breathe IN</b>. Compare how far <b>Ppl</b> and <b>Palv</b> fall on the digital lung.",
+          "test": {
+            "_expression": "function (e, sim) { return e.type === 'tick' && sim.lastSample && sim.lastSample.Ppl < -4; }"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ppv",
+      "session": "Session 2 · Single-compartment model, loads and safety",
+      "objective": "Describe the single-compartment model of the lung",
+      "short": "Positive-pressure breath",
+      "q": "How does a ventilator-supported positive-pressure breath drive air into the alveoli?",
+      "a": "<p>The ventilator <b>raises airway pressure above alveolar pressure</b>, so air flows into the lungs. Under normal conditions <b>pleural pressure rises</b> during inspiration: the opposite of a spontaneous breath.</p>",
+      "config": {
+        "mode": "vc-cmv",
+        "vent": {
+          "VT": 0.5,
+          "flow": 60,
+          "RR": 14,
+          "PEEP": 5
+        },
+        "ui": {
+          "balloon": true
+        }
+      },
+      "tasks": [
+        {
+          "text": "Watch <b>Pes</b> rise with each ventilator breath, then take a breath yourself between them and watch it fall instead.",
+          "test": {
+            "_expression": "function (e) { return e.type === 'effort'; }"
+          }
+        }
+      ]
+    },
+    {
+      "id": "peep",
+      "session": "Session 2 · Single-compartment model, loads and safety",
+      "objective": "Describe the single-compartment model of the lung",
+      "short": "PEEP",
+      "q": "Can you describe PEEP?",
+      "a": "<p>PEEP is the <b>baseline positive pressure maintained at end-expiration</b> to prevent alveolar collapse and improve oxygenation. It may increase mean airway pressure and <b>can reduce venous return</b> if it is too high.</p>",
+      "config": {
+        "preset": "ards",
+        "mode": "vc-cmv",
+        "vent": {
+          "VT": 0.4,
+          "flow": 60,
+          "RR": 20,
+          "PEEP": 5,
+          "FiO2": 0.8
+        }
+      },
+      "tasks": [
+        {
+          "text": "Raise <b>PEEP</b> to 14. Watch the balloon stay bigger at end-expiration and the estimated PaO₂ climb.",
+          "test": {
+            "_expression": "function (e, sim) { return sim.v.PEEP >= 14; }"
+          }
+        },
+        {
+          "text": "Push PEEP to 22 and watch <b>MAP</b> fall: less venous return.",
+          "test": {
+            "_expression": "function (e, sim) { return sim.v.PEEP >= 22; }"
+          }
+        }
+      ]
+    },
+    {
+      "id": "peak-plat",
+      "session": "Session 2 · Single-compartment model, loads and safety",
+      "objective": "Classify airway, alveolar and pleural pressure",
+      "short": "Peak and plateau",
+      "q": "What are peak and plateau pressures? How are they measured and what do they represent?",
+      "a": "<p>Think of a <b>straw (airway) and a balloon (alveoli)</b>. Resistance to flow in a straw rises with its length and gas viscosity, and falls with the <b>fourth power of its radius</b> (Poiseuille).</p><p><b>Peak pressure</b> combines the elastic load of the balloon and the resistive load of the straw. To measure only the balloon, remove resistance by stopping flow: an <b>end-inspiratory pause</b>. The pressure during that pause is the <b>plateau pressure</b>, reflecting alveolar/balloon pressure. In ARDS we aim for <b>Pplat &lt; 30 cmH₂O</b>.</p>",
+      "config": {
+        "mode": "vc-cmv",
+        "vent": {
+          "VT": 0.5,
+          "flow": 60,
+          "RR": 14,
+          "PEEP": 5
+        },
+        "ui": {
+          "loads": true,
+          "bands": true
+        }
+      },
+      "tasks": [
+        {
+          "text": "Press <b>Insp hold</b>. Read <b>Ppeak</b> and <b>Pplat</b>; the drop between them is the straw.",
+          "test": {
+            "_expression": "ev('holdInsp')"
+          }
+        },
+        {
+          "text": "Raise <b>Peak flow</b> to 90 and hold again: the peak rises, the plateau doesn’t.",
+          "test": {
+            "_expression": "function (e, sim) { return e.type === 'holdInsp' && sim.v.flow >= 90; }"
+          }
+        }
+      ]
+    },
+    {
+      "id": "pressures",
+      "session": "Session 2 · Single-compartment model, loads and safety",
+      "objective": "Classify airway, alveolar and pleural pressure",
+      "short": "Airway, alveolar, pleural",
+      "q": "How do airway, alveolar and pleural pressures differ in the single-compartment model?",
+      "a": "<p><b>Airway pressure</b> is measured at the airway opening. <b>Alveolar pressure</b> is the pressure within the alveoli (approximated by Pplat). <b>Pleural pressure</b> surrounds the lung and can be estimated with <b>esophageal manometry</b>.</p><p><b>Transpulmonary pressure (PL)</b> = alveolar − pleural: the distending pressure across the lung itself.</p>",
+      "config": {
+        "mode": "vc-cmv",
+        "vent": {
+          "VT": 0.5,
+          "flow": 60,
+          "RR": 14,
+          "PEEP": 5
+        },
+        "ui": {
+          "balloon": true
+        }
+      },
+      "tasks": [
+        {
+          "text": "Do an <b>Insp hold</b> and read <b>PL end-insp</b> in the balloon panel (Pplat − Pes).",
+          "test": {
+            "_expression": "ev('holdInsp')"
+          }
+        },
+        {
+          "text": "Do an <b>Exp hold</b> and read <b>PL end-exp</b>.",
+          "test": {
+            "_expression": "ev('holdExp')"
+          }
+        }
+      ]
+    },
+    {
+      "id": "plat-unreliable",
+      "session": "Session 2 · Single-compartment model, loads and safety",
+      "objective": "Classify airway, alveolar and pleural pressure",
+      "short": "When Pplat misleads",
+      "q": "When is plateau pressure an unreliable surrogate for transpulmonary pressure?",
+      "a": "<p>Pplat reflects the <b>whole respiratory system</b>: lung plus pleural cavity, chest wall and abdomen. It is unreliable whenever <b>pleural pressure is abnormal</b>: active expiration, obesity, or a large pleural effusion. Elevated pleural pressure raises the measured Pplat without raising the distending pressure across the lung.</p><p>Two patients with the same Pplat but different pleural pressures can have very different alveolar stress. <b>Esophageal manometry</b> estimates pleural pressure and gives a better transpulmonary pressure.</p>",
+      "config": {
+        "preset": "obesity",
+        "mode": "vc-cmv",
+        "vent": {
+          "VT": 0.45,
+          "flow": 60,
+          "RR": 16,
+          "PEEP": 5,
+          "FiO2": 0.6
+        },
+        "ui": {
+          "balloon": true
+        }
+      },
+      "tasks": [
+        {
+          "text": "Do an <b>Insp hold</b>. Pplat looks worrying, but check <b>PL end-insp</b>.",
+          "test": {
+            "_expression": "ev('holdInsp')"
+          }
+        },
+        {
+          "text": "Do an <b>Exp hold</b>: PL end-exp is negative (the lung is being squeezed shut). Raise PEEP until PL end-exp is about 0 or higher, then hold again.",
+          "test": {
+            "_expression": "function (e, sim) { return e.type === 'holdExp' && e.PL >= -0.5; }"
+          }
+        }
+      ]
+    },
+    {
+      "id": "elastic",
+      "session": "Session 2 · Single-compartment model, loads and safety",
+      "objective": "Distinguish the two components of ventilator load",
+      "short": "Stiff balloon: elastic load",
+      "q": "What if the balloon at the end of the straw is very stiff and difficult to inflate?",
+      "a": "<p>An <b>increased elastic load</b> (decreased compliance; “elastic load” and “compliance” describe the same concept from opposite sides). Both <b>peak and plateau rise</b>, and the <b>difference between them stays normal</b> (assuming no added resistive load).</p><p>Causes: ARDS, pneumonia, pulmonary edema, atelectasis, fibrosis, auto-PEEP, right mainstem intubation, effusion, pneumothorax, obesity, ascites or abdominal compartment syndrome.</p>",
+      "config": {
+        "preset": "fibrosis",
+        "mode": "vc-cmv",
+        "vent": {
+          "VT": 0.45,
+          "flow": 60,
+          "RR": 16,
+          "PEEP": 5
+        },
+        "ui": {
+          "loads": true
+        }
+      },
+      "tasks": [
+        {
+          "text": "Press <b>Insp hold</b>. Is Ppeak − Pplat &lt; 10?",
+          "test": {
+            "_expression": "ev('holdInsp')"
+          }
+        }
+      ]
+    },
+    {
+      "id": "resistive",
+      "session": "Session 2 · Single-compartment model, loads and safety",
+      "objective": "Distinguish the two components of ventilator load",
+      "short": "Blocked straw: resistive load",
+      "q": "What happens in the event of a partial blockage in the straw?",
+      "a": "<p>An <b>increased resistive load</b>: <b>higher peak pressure</b>, but the plateau may stay similar if compliance is unchanged, so the <b>difference between peak and plateau increases</b> (≥ 10 cmH₂O).</p><p>Causes: obstructive airway disease/bronchospasm, kinked or bitten endotracheal tube, high flow rate or tidal volume, mucus plug or blood clot.</p>",
+      "config": {
+        "preset": "plug",
+        "mode": "vc-cmv",
+        "vent": {
+          "VT": 0.45,
+          "flow": 60,
+          "RR": 16,
+          "PEEP": 5
+        },
+        "ui": {
+          "loads": true
+        }
+      },
+      "tasks": [
+        {
+          "text": "Press <b>Insp hold</b> and compare the peak-plateau gap with the stiff balloon.",
+          "test": {
+            "_expression": "ev('holdInsp')"
+          }
+        }
+      ]
+    },
+    {
+      "id": "interpret",
+      "session": "Session 2 · Single-compartment model, loads and safety",
+      "objective": "Interpret peak and plateau pressures",
+      "short": "Fibrosis vs asthma on AC/VC",
+      "q": "What would the scalars look like in pulmonary fibrosis versus asthma on AC/VC?",
+      "a": "<p><b>Fibrosis (decreased lung compliance):</b> high plateau with a correspondingly high peak; normal peak-plateau difference. <b>Expiratory flow is fast</b> and returns to baseline quickly.</p><p><b>Asthma (increased airway resistance):</b> high peak with a relatively lower plateau. <b>Expiratory flow is slow</b> and needs more time to return to baseline.</p>",
+      "config": {
+        "preset": "fibrosis",
+        "mode": "vc-cmv",
+        "vent": {
+          "VT": 0.45,
+          "flow": 60,
+          "RR": 14,
+          "PEEP": 5
+        },
+        "ui": {
+          "loads": true
+        }
+      },
+      "buttons": [
+        {
+          "label": "Load fibrosis",
+          "config": {
+            "preset": "fibrosis",
+            "mode": "vc-cmv",
+            "vent": {
+              "VT": 0.45,
+              "flow": 60,
+              "RR": 14,
+              "PEEP": 5
+            },
+            "ui": {
+              "loads": true
+            }
+          }
+        },
+        {
+          "label": "Load asthma",
+          "config": {
+            "preset": "asthma",
+            "mode": "vc-cmv",
+            "vent": {
+              "VT": 0.45,
+              "flow": 60,
+              "RR": 14,
+              "PEEP": 5
+            },
+            "ui": {
+              "loads": true
+            }
+          }
+        }
+      ],
+      "tasks": [
+        {
+          "text": "Do an <b>Insp hold</b> on the fibrosis patient.",
+          "test": {
+            "_expression": "function (e, sim) { return e.type === 'holdInsp' && sim.p.preset === 'fibrosis'; }"
+          }
+        },
+        {
+          "text": "Load asthma, do an <b>Insp hold</b>, and compare the expiratory flow.",
+          "test": {
+            "_expression": "function (e, sim) { return e.type === 'holdInsp' && sim.p.preset === 'asthma'; }"
+          }
+        }
+      ]
+    },
+    {
+      "id": "autopeep",
+      "session": "Session 2 · Single-compartment model, loads and safety",
+      "objective": "Understand auto-PEEP",
+      "short": "Auto-PEEP",
+      "q": "What is auto-PEEP, how do you identify it, and how do you quantify it?",
+      "a": "<p>Auto-PEEP comes from <b>incomplete exhalation</b>: progressive air trapping and higher intrathoracic pressure, above the set PEEP. It can <b>impair venous return, reduce cardiac output</b> and raise the risk of barotrauma. As it worsens, peak and plateau both rise.</p><p><b>Identify:</b> expiratory flow <b>does not return to baseline</b> before the next breath.</p><p><b>Quantify:</b> an <b>expiratory hold</b> measures total PEEP; auto-PEEP = total PEEP − set PEEP.</p>",
+      "config": {
+        "preset": "copd",
+        "mode": "vc-cmv",
+        "vent": {
+          "VT": 0.55,
+          "flow": 50,
+          "RR": 24,
+          "PEEP": 5,
+          "FiO2": 0.4
+        }
+      },
+      "tasks": [
+        {
+          "text": "Press <b>Exp hold</b> and read total PEEP and auto-PEEP.",
+          "test": {
+            "_expression": "ev('holdExp')"
+          }
+        },
+        {
+          "text": "Fix it: change settings until an <b>Exp hold</b> shows auto-PEEP ≤ 2.",
+          "test": {
+            "_expression": "function (e) { return e.type === 'holdExp' && e.autoPEEP <= 2; }"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ie",
+      "session": "Session 2 · Single-compartment model, loads and safety",
+      "objective": "Setting inspiratory and expiratory ratios",
+      "short": "Choosing the I:E ratio",
+      "q": "How do we choose an I:E ratio, and what should it be with a high resistive load (status asthmaticus)?",
+      "a": "<p>It depends. A <b>longer inspiratory time raises mean airway pressure</b> (may help oxygenation) <b>at the cost of expiratory time</b> (risk of dynamic hyperinflation).</p><p>With an excessive resistive load, prolong expiration: an <b>I:E of 1:3 or more</b> (1:4, 1:5) is a reasonable start, then adjust until expiratory flow returns to baseline.</p><p>Remember: expiration is passive; you lengthen it indirectly by shortening inspiration or lowering the rate.</p>",
+      "config": {
+        "preset": "asthma",
+        "mode": "vc-cmv",
+        "vent": {
+          "VT": 0.5,
+          "flow": 50,
+          "RR": 20,
+          "PEEP": 5,
+          "FiO2": 0.5
+        }
+      },
+      "tasks": [
+        {
+          "text": "Reach an <b>I:E of 1:3 or more</b> (watch the I:E value).",
+          "test": {
+            "_expression": "function (e, sim) { return e.type === 'tick' && sim.meas.Ti > 0 && sim.meas.Te / sim.meas.Ti >= 2.95; }"
+          }
+        },
+        {
+          "text": "Get expiratory flow back to baseline: confirm with an <b>Exp hold</b> showing auto-PEEP ≤ 2.",
+          "test": {
+            "_expression": "function (e) { return e.type === 'holdExp' && e.autoPEEP <= 2; }"
+          }
+        }
+      ]
+    },
+    {
+      "id": "alarms",
+      "session": "Session 2 · Single-compartment model, loads and safety",
+      "objective": "Describe and adjust safety features, including alarms",
+      "short": "Safety features and alarms",
+      "q": "What safety features are built into the ventilator, and how should alarms be set?",
+      "a": "<p>Pressure limits, disconnect/low-pressure detection, apnea/backup ventilation, low minute-ventilation alarms, FiO₂ alarms and high-RR limits: they <b>prevent barotrauma</b> and <b>flag hypoventilation or disconnection</b>.</p><p>Set alarms relative to expected values: <b>high pressure</b> above the typical peak (catches obstruction/coughing), <b>low pressure/disconnect</b> near baseline, a <b>minute ventilation/VT floor</b> for hypoventilation, and an appropriate <b>apnea time</b>. Reassess after changes in mode, sedation or mechanics.</p>",
+      "config": {
+        "mode": "vc-cmv",
+        "vent": {
+          "VT": 0.45,
+          "flow": 60,
+          "RR": 16,
+          "PEEP": 5,
+          "FiO2": 0.4
+        }
+      },
+      "tasks": [
+        {
+          "text": "Set <b>Pmax</b> below the current peak pressure and watch the high-pressure alarm cut breaths short.",
+          "test": {
+            "_expression": "function (e) { return e.type === 'alarm' && e.key === 'pmax'; }"
+          }
+        },
+        {
+          "text": "Disconnect the circuit (button below) and watch the alarm.",
+          "test": {
+            "_expression": "function (e) { return e.type === 'alarm' && e.key === 'disc'; }"
+          }
+        }
+      ],
+      "buttons": [
+        {
+          "label": "Disconnect circuit",
+          "run": {
+            "_expression": "function (VL, sim) { sim.disconnected = true; }"
+          }
+        },
+        {
+          "label": "Reconnect",
+          "run": {
+            "_expression": "function (VL, sim) { sim.disconnected = false; sim.clear('disc'); }"
+          }
+        }
+      ]
+    },
+    {
+      "id": "case1a",
+      "session": "Session 3 · Case-based simulation",
+      "objective": "Case 1 · COPD exacerbation",
+      "short": "Case 1 · hypercapnia",
+      "caseText": "<b>A 65-year-old man with a COPD exacerbation</b> is intubated for worsening hypercapnia and altered mental status. AC/VC: <b>VT 450 mL (~6 mL/kg PBW), RR 14, FiO₂ 60%, PEEP 8</b>.<br>ABG at 30 minutes: <b>pH 7.25, PaCO₂ 65, PaO₂ 65</b> on FiO₂ 60%.",
+      "q": "What is the primary problem, and which setting(s) should you adjust?",
+      "a": "<p><b>Hypercapnia</b> (low pH, high PaCO₂). Ventilation follows minute ventilation (VT × RR), so increase one of them. VT is already lung-protective, so a safe change is to <b>increase the RR</b>.</p><p>Alternatively, with no acute lung injury requiring strict limits, <b>VT can go to 8 mL/kg PBW provided Pplat stays &lt; 30</b>. Beware: a higher RR can cause <b>dynamic hyperinflation</b> in obstructive disease.</p>",
+      "config": {
+        "preset": "copd",
+        "mode": "vc-cmv",
+        "sex": "M",
+        "height": 168,
+        "vent": {
+          "VT": 0.45,
+          "flow": 50,
+          "RR": 14,
+          "PEEP": 8,
+          "FiO2": 0.6
+        }
+      },
+      "tasks": [
+        {
+          "text": "Increase minute ventilation (RR or VT) and watch the estimated PaCO₂ improve.",
+          "test": {
+            "_expression": "function (e, sim) { return e.type === 'set' && (sim.v.RR > 14 || sim.v.VT > 0.455); }"
+          }
+        }
+      ]
+    },
+    {
+      "id": "case1b",
+      "session": "Session 3 · Case-based simulation",
+      "objective": "Case 1 · COPD exacerbation",
+      "short": "Case 1 · falling blood pressure",
+      "caseText": "A few minutes later the nurse notices the patient needs <b>escalating norepinephrine</b>. Look at the scalars.",
+      "q": "Describe what is happening based on the scalars, and how you would fix it.",
+      "a": "<p><b>Dynamic hyperinflation (auto-PEEP)</b> from insufficient expiratory time with obstructive physiology. Trapped gas raises end-expiratory alveolar and intrathoracic pressure, <b>impairs venous return</b> and causes hypotension. Make sure expiratory flow returns to baseline before each breath.</p><p>To lengthen expiratory time:</p><ul><li><b>AC/VC and AC/PC:</b> lower the RR (consider sedation, even neuromuscular blockade, for patient-triggered tachypnea); treat the obstruction (bronchodilators).</li><li><b>AC/VC:</b> decrease VT (if &gt; 6 mL/kg) and <b>increase inspiratory flow</b>; both shorten inspiration.</li><li><b>AC/PC:</b> decrease the set inspiratory time.</li><li>An <b>I:E of 1:3 or more</b> is a reasonable start; adjust until expiratory flow reaches baseline.</li></ul><p>This may worsen the acidosis, but with circulatory collapse looming, it is the least-harm trade.</p>",
+      "config": {
+        "preset": "copd",
+        "mode": "vc-cmv",
+        "sex": "M",
+        "height": 168,
+        "vent": {
+          "VT": 0.5,
+          "flow": 45,
+          "RR": 26,
+          "PEEP": 8,
+          "FiO2": 0.6
+        }
+      },
+      "tasks": [
+        {
+          "text": "Confirm it with an <b>Exp hold</b>.",
+          "test": {
+            "_expression": "ev('holdExp')"
+          }
+        },
+        {
+          "text": "Fix it, then prove it: <b>Exp hold</b> with auto-PEEP ≤ 2 and MAP ≥ 65.",
+          "test": {
+            "_expression": "function (e, sim) { return e.type === 'holdExp' && e.autoPEEP <= 2 && sim.gas().MAP >= 65; }"
+          }
+        }
+      ]
+    },
+    {
+      "id": "case2a",
+      "session": "Session 3 · Case-based simulation",
+      "objective": "Case 2 · ARDS",
+      "short": "Case 2 · mode and initial settings",
+      "caseText": "<b>A 50-year-old woman</b> with multifocal pneumonia, severe hypoxemia and hypercapnia is intubated; imaging and ABG are consistent with <b>ARDS</b>. Height <b>5′10″ (70 in)</b>.",
+      "q": "Which mode would you use, and what initial settings?",
+      "a": "<p>No mode is inherently superior, but the landmark lung-protective ARDS trials used <b>AC/VC</b>, which guarantees low VT and reliable plateau monitoring. AC/PC can work but holding a stable 6 mL/kg needs close monitoring. The true therapy is <b>lung-protective ventilation</b>.</p><ul><li><b>PBW</b> for a 70-inch female ≈ <b>68.5 kg</b>.</li><li><b>VT 6 mL/kg ≈ 410 mL</b>.</li><li><b>RR ~18–24</b>, titrated to a safe I:E (typically 1:2).</li><li><b>PEEP/FiO₂ from the ARDSNet table</b>, e.g. FiO₂ 80% with PEEP 14. Wean FiO₂ to ≤ 60% as soon as feasible.</li></ul>",
+      "config": {
+        "preset": "ards",
+        "mode": "pc-cmv",
+        "sex": "F",
+        "height": 178,
+        "vent": {
+          "Pinsp": 22,
+          "Ti": 1,
+          "RR": 14,
+          "PEEP": 5,
+          "FiO2": 1
+        }
+      },
+      "tasks": [
+        {
+          "text": "Choose <b>AC/VC</b>.",
+          "test": {
+            "_expression": "function (e, sim) { return sim.v.mode === 'vc-cmv'; }"
+          }
+        },
+        {
+          "text": "Set <b>VT ≈ 6 mL/kg PBW</b> (400–420 mL), <b>RR 18–24</b>, <b>PEEP 14</b>, <b>FiO₂ 80%</b>.",
+          "test": {
+            "_expression": "function (e, sim) { var k = pbwVT(sim); return sim.v.mode === 'vc-cmv' && k >= 5.8 && k <= 6.2 && sim.v.RR >= 18 && sim.v.RR <= 24 && sim.v.PEEP === 14 && Math.abs(sim.v.FiO2 - 0.8) < 0.005; }"
+          }
+        }
+      ]
+    },
+    {
+      "id": "case2b",
+      "session": "Session 3 · Case-based simulation",
+      "objective": "Case 2 · ARDS",
+      "short": "Case 2 · plateau of 34",
+      "caseText": "An end-inspiratory pause measures a <b>plateau pressure of 34 cmH₂O</b>.",
+      "q": "What adjustments would you make?",
+      "a": "<p>34 exceeds the recommended <b>&lt; 30 cmH₂O</b> and increases the risk of ventilator-induced lung injury. <b>Reduce VT</b> (e.g. from 6 to 4–5 mL/kg PBW) to lower the plateau, then <b>reassess Pplat promptly</b>. A VT change will also change PaCO₂, so repeat the ABG.</p>",
+      "config": {
+        "preset": "ards",
+        "mode": "vc-cmv",
+        "sex": "F",
+        "height": 178,
+        "vent": {
+          "VT": 0.41,
+          "flow": 60,
+          "RR": 22,
+          "PEEP": 14,
+          "FiO2": 0.8
+        }
+      },
+      "tasks": [
+        {
+          "text": "Confirm the plateau with an <b>Insp hold</b>.",
+          "test": {
+            "_expression": "ev('holdInsp')"
+          }
+        },
+        {
+          "text": "Lower VT (not below 4 mL/kg) and hold again until <b>Pplat &lt; 30</b>.",
+          "test": {
+            "_expression": "function (e, sim) { return e.type === 'holdInsp' && e.Pplat < 30 && pbwVT(sim) >= 3.95; }"
+          }
+        }
+      ]
+    },
+    {
+      "id": "case2c",
+      "session": "Session 3 · Case-based simulation",
+      "objective": "Case 2 · ARDS",
+      "short": "Case 2 · permissive hypercapnia",
+      "caseText": "After VT is finalized, the repeat ABG at 30 minutes shows <b>pH 7.21, PaCO₂ 63, PaO₂ 84</b> on FiO₂ 80%.",
+      "q": "Should you make any changes?",
+      "a": "<p>In ARDS we prioritize low lung volumes and tolerate <b>permissive hypercapnia</b> to keep Pplat &lt; 30. With severe hypercapnic acidemia (<b>pH &lt; 7.20</b>), <b>raise the RR first</b>, reserving VT increases for refractory cases while staying lung-protective.</p><p>An excessively high RR can itself be injurious and can cause auto-PEEP. <b>A normal ABG is not always the goal in ARDS.</b></p>",
+      "config": {
+        "preset": "ards",
+        "mode": "vc-cmv",
+        "sex": "F",
+        "height": 178,
+        "vent": {
+          "VT": 0.32,
+          "flow": 60,
+          "RR": 22,
+          "PEEP": 14,
+          "FiO2": 0.8
+        }
+      },
+      "tasks": [
+        {
+          "text": "Raise the <b>RR</b> (not VT) and watch the estimated pH.",
+          "test": {
+            "_expression": "function (e, sim) { return e.type === 'set' && e.key === 'RR' && sim.v.RR > 22 && sim.v.VT <= 0.33; }"
+          }
+        },
+        {
+          "text": "Check that flow still returns to baseline: <b>Exp hold</b> with auto-PEEP ≤ 2.",
+          "test": {
+            "_expression": "function (e, sim) { return e.type === 'holdExp' && e.autoPEEP <= 2 && sim.v.RR > 22; }"
+          }
+        }
+      ],
+      "doneMsg": "That’s the whole curriculum. Try the Asynchrony Challenge next."
+    }
+  ],
+  "challengeTemplates": [
+    {
+      "id": "mode",
+      "diff": "easy",
+      "build": {
+        "_expression": "function (r) {\n  var v = pick(r, ['vc', 'pc', 'psv']);\n  var sc = v === 'vc' ? { vent: { mode: 'vc-cmv', VT: rng(r, .4, .5, .01), flow: pick(r, [50, 60]), RR: rng(r, 14, 18, 1), PEEP: 5 } }\n        : v === 'pc' ? { vent: { mode: 'pc-cmv', Pinsp: rng(r, 12, 18, 1), Ti: rng(r, .8, 1.1, .05), RR: rng(r, 14, 18, 1), PEEP: 5 } }\n        : { vent: { mode: 'psv', PS: rng(r, 8, 12, 1), PEEP: 5, ETS: 25 }, drive: { on: true, rate: rng(r, 16, 22, 1), amp: 6, ti: 0.9, tr: 0.4, jitter: 0.2 } };\n  sc.hideMode = true;\n  var opts = ['AC/VC (VC-CMVs)', 'AC/PC (PC-CMVs)', 'PSV (PC-CSVs)', 'APRV (PC-IMV(1)s,s)'];\n  var ans = { vc: 0, pc: 1, psv: 2 }[v];\n  var why = { vc: 'Flow is <b>square and identical</b> every breath while pressure rises and varies: the ventilator controls flow (volume control), and every breath is mandatory.',\n              pc: 'Pressure is <b>square</b> while flow <b>decays exponentially</b>: the ventilator controls pressure. Breaths are time-triggered and time-cycled at a fixed Ti, so this is assist-control pressure control.',\n              psv: 'Pressure is square (pressure control), but <b>every breath is patient-triggered</b> (orange marks), the rate and Ti vary breath to breath and each breath ends when flow decays: continuous spontaneous ventilation.' }[v];\n  return { sc: sc, vig: 'You walk into the room and the settings screen is hidden. Read the scalars.', q: 'Which mode most likely produced these waveforms?', opts: opts, ans: ans, why: why, look: 'Step 1 of reading waveforms: define the mode. Which variable is controlled (square), and are breaths triggered by time or by the patient?' };\n}"
+      }
+    },
+    {
+      "id": "load",
+      "diff": "easy",
+      "build": {
+        "_expression": "function (r) {\n  var el = r() < 0.5, preset = el ? pick(r, ['fibrosis', 'ards']) : pick(r, ['plug', 'asthma']);\n  var sc = { preset: preset, vent: { mode: 'vc-cmv', VT: rng(r, .4, .45, .01), flow: 60, RR: 14, PEEP: 5, pause: 0.5 } };\n  return { sc: sc, chipsFrom: function (R) { var b = R.breaths.filter(function (x) { return x.t0 > R.t0; })[0] || R.breaths[R.breaths.length - 1]; var pl = R.S.filter(function (s) { return s.phase === 'pause'; }); var pp = pl.length ? pl[pl.length - 1].P : null; return ['Ppeak ' + Math.round(b.Ppeak), pp ? 'Pplat ' + Math.round(pp) : '']; },\n    vig: 'AC/VC with a 0.5-second end-inspiratory pause on every breath.', q: 'What is the dominant load?',\n    opts: ['Increased elastic load (low compliance)', 'Increased resistive load', 'Normal loads', 'Patient inspiratory effort'], ans: el ? 0 : 1,\n    why: el ? 'Peak and plateau are <b>both high</b> and close together (Ppeak − Pplat &lt; 10): the balloon is stiff. Think ARDS, pneumonia, edema, fibrosis, effusion, obesity.' : 'There is a <b>big drop from peak to plateau</b> (≥ 10 cmH₂O) with a near-normal plateau: the straw is narrow. Think bronchospasm, a kinked or bitten tube, secretions.',\n    look: 'During the pause flow is zero, so resistance drops out and only the elastic (alveolar) pressure remains.',\n    hl: function (R) { return R.S.filter(function (s, i, a) { return s.phase === 'pause' && (i === 0 || a[i - 1].phase !== 'pause'); }).map(function (s) { return hl(s.t - 0.35, s.t + 0.5, 'Ppeak → Pplat', HL_TEAL); }); } };\n}"
+      }
+    },
+    {
+      "id": "auto",
+      "diff": "easy",
+      "build": {
+        "_expression": "function (r) {\n  var sc = { preset: pick(r, ['copd', 'asthma']), vent: { mode: 'vc-cmv', VT: rng(r, .5, .6, .01), flow: pick(r, [40, 45, 50]), RR: rng(r, 24, 28, 1), PEEP: 5 } };\n  return { sc: sc, vig: 'Intubated for an exacerbation of obstructive lung disease. The nurse says the blood pressure keeps drifting down.', q: 'What does the flow scalar show?',\n    opts: ['Expiratory flow never returns to zero: dynamic hyperinflation (auto-PEEP)', 'Failed triggers', 'Early cycle', 'Circuit leak with false triggers'], ans: 0,\n    why: 'Each new breath starts while gas is still flowing out: <b>expiratory flow does not return to baseline</b>. That is air trapping (auto-PEEP), which raises intrathoracic pressure and impairs venous return.',\n    look: 'Check that expiratory flow reaches zero before every breath. Quantify with an expiratory hold.',\n    check: function (R) { return R.sim.trueAutoPEEP >= 3; },\n    hl: function (R) { return R.breaths.filter(function (b) { return inWin(R, b.t0); }).map(function (b) { return hl(b.t0 - 0.45, b.t0, 'flow ≠ 0', HL_RED); }); } };\n}"
+      }
+    },
+    {
+      "id": "failed",
+      "diff": "easy",
+      "build": {
+        "_expression": "function (r) {\n  var sc = { preset: 'copd', vent: { mode: 'vc-cmv', VT: rng(r, .5, .6, .01), flow: 50, RR: rng(r, 16, 20, 1), PEEP: 5 }, drive: { on: true, rate: rng(r, 26, 32, 1), amp: rng(r, 4, 6, .5), ti: 0.7, tr: 0.4, jitter: 0.1 } };\n  return { sc: sc, vig: 'COPD patient on AC/VC who looks like he is breathing faster than the ventilator rate.', q: IDQ,\n    opts: [NAMES.failed, NAMES.early, NAMES.lcyc, NAMES.falseT], ans: 0,\n    why: 'During expiration the flow scalar shows <b>bumps toward baseline that never trigger a breath</b>: the patient’s effort fails to reach the trigger. Here the cause is auto-PEEP: the effort must first overcome trapped pressure before flow can even cross zero.',\n    look: 'Expiratory flow deflects toward zero (and airway pressure dips) without a breath following.',\n    check: function (R) { return failedEfforts(R).length >= 1; },\n    hl: function (R) { return failedEfforts(R).map(function (e) { return hl(e.t0, e.t0 + e.tc + 0.2, 'missed', HL_RED); }); } };\n}"
+      }
+    },
+    {
+      "id": "starve",
+      "diff": "easy",
+      "build": {
+        "_expression": "function (r) {\n  var sc = { vent: { mode: 'vc-cmv', VT: rng(r, .42, .5, .01), flow: pick(r, [25, 30, 35]), RR: 12, PEEP: 5 }, drive: { on: true, rate: rng(r, 20, 24, 1), amp: rng(r, 13, 16, 1), ti: 0.95, tr: 0.4, jitter: 0.08 } };\n  return { sc: sc, vig: 'Septic, acidemic and air-hungry. AC/VC with a low set flow.', q: IDQ,\n    opts: [NAMES.sws, NAMES.late, NAMES.ecyc, 'Increased elastic load'], ans: 0,\n    why: 'The pressure scalar is <b>scooped down during inspiration, below PEEP</b>. The patient is pulling harder than the fixed flow can supply, so the patient is doing work <b>on</b> the ventilator. Severe work shifting is never acceptable.',\n    look: 'In volume control, patient effort shows up in the pressure scalar. Above baseline = work shifting; below baseline = severe.',\n    check: function (R) { return minInspP(R) < (R.sim.v.PEEP - 0.5); },\n    hl: function (R) { return R.breaths.filter(function (b) { return inWin(R, b.t0) && b.tExp; }).map(function (b) { return hl(b.t0, b.tExp, 'P < PEEP', HL_RED); }); } };\n}"
+      }
+    },
+    {
+      "id": "double",
+      "diff": "easy",
+      "build": {
+        "_expression": "function (r) {\n  var sc = { vent: { mode: 'vc-cmv', VT: rng(r, .36, .42, .01), flow: pick(r, [60, 70]), RR: 14, PEEP: 5 }, drive: { on: true, rate: rng(r, 16, 20, 1), amp: rng(r, 9, 12, 1), ti: rng(r, 1.3, 1.5, .05), tr: 0.4, jitter: 0.06 } };\n  return { sc: sc, vig: 'ARDS on low tidal volumes. The displayed rate is double what you expected.', q: 'Which waveform pattern is this?',\n    opts: [NAMES.multi, NAMES.failed, NAMES.lcyc, NAMES.auto], ans: 0,\n    why: '<b>Two breaths in close succession without complete exhalation</b> between them: multiple (double) trigger. In volume control the volumes stack, so the lung receives far more than the set VT.',\n    look: 'A second breath fires right after the first, before volume returns to zero.',\n    check: function (R) { return doubles(R).length >= 1; },\n    hl: function (R) { return doubles(R).map(function (p) { return hl(p[0].t0, p[1].tExp || p[1].t0 + 0.5, 'stacked', HL_RED); }); } };\n}"
+      }
+    },
+    {
+      "id": "tau",
+      "diff": "easy",
+      "build": {
+        "_expression": "function (r) {\n  var stiff = r() < 0.5;\n  var sc = { preset: stiff ? 'fibrosis' : 'copd', vent: { mode: 'pc-cmv', Pinsp: stiff ? 18 : 14, Ti: 1.0, RR: 12, PEEP: 5 } };\n  return { sc: sc, vig: 'Passive patient on AC/PC. Look at how quickly flow decays.', q: 'What does the flow scalar tell you?',\n    opts: ['Flow reaches zero fast: short time constant, low compliance', 'Flow decays slowly: long time constant, high resistance', 'Flow is square: volume control', 'Flow shows patient effort'], ans: stiff ? 0 : 1,\n    why: stiff ? 'In pressure control the flow decays with the time constant (τ = R × C). Here inspiratory and expiratory flow return to zero <b>quickly</b> (well under 1.5 s): a short τ, which usually means <b>low compliance</b>.' : 'Flow takes a <b>long time</b> to decay in both directions and may not reach zero: a long time constant (τ = R × C), which in practice usually means <b>high resistance</b>.',\n    look: 'One τ empties 63%; about 5τ empties the lung. Normal intubated τ ≈ 0.5 s.' };\n}"
+      }
+    },
+    {
+      "id": "late",
+      "diff": "medium",
+      "build": {
+        "_expression": "function (r) {\n  var sc = { vent: { mode: pick(r, ['pc-cmv', 'vc-cmv']), Pinsp: 14, Ti: 0.9, VT: .45, flow: 60, RR: 8, PEEP: 5, trig: 'pressure', trigP: rng(r, 5, 7, .5) }, drive: { on: true, rate: rng(r, 16, 20, 1), amp: rng(r, 8, 10, .5), ti: 0.9, tr: 0.4, jitter: 0.08 } };\n  return { sc: sc, vig: 'Awake, interactive, and complaining the ventilator is “hard to start a breath on.”', q: IDQ,\n    opts: [NAMES.late, NAMES.early, NAMES.failed, NAMES.falseT], ans: 0,\n    why: 'Before each breath, airway pressure <b>drops well below PEEP for a long time</b> before the ventilator responds: the trigger is too insensitive, so there is a clinically important delay (&gt; 100 ms) between effort and inflation.',\n    look: 'A prolonged pressure dip below baseline (or flow crossing zero) well before the breath starts.',\n    check: function (R) { return lateTriggers(R, 0.18).length >= 1; },\n    hl: function (R) { return lateTriggers(R, 0.18).map(function (e) { return hl(e.t0, e.trigT, 'delay', HL_AMB); }); } };\n}"
+      }
+    },
+    {
+      "id": "ecyc",
+      "diff": "medium",
+      "build": {
+        "_expression": "function (r) {\n  var sc = { preset: pick(r, ['fibrosis', 'ards']), vent: { mode: 'psv', PS: rng(r, 8, 11, 1), PEEP: 5, ETS: pick(r, [45, 50, 55]), trigFlow: 4 }, drive: { on: true, rate: rng(r, 18, 22, 1), amp: rng(r, 5, 6.5, .5), ti: rng(r, 1.2, 1.4, .05), tr: 0.45, jitter: 0.06 } };\n  return { sc: sc, vig: 'Restrictive lungs on PSV with a high cycle threshold.', q: IDQ,\n    opts: [NAMES.ecyc, NAMES.lcyc, NAMES.failed, NAMES.expw], ans: 0,\n    why: 'Each breath ends while the patient is still inhaling: early in expiration the flow <b>bends back toward baseline</b>, breaking the smooth exponential decay. The ventilator cycled before the patient’s effort finished.',\n    look: 'Expiratory flow deviated toward baseline just after cycling. Early cycle is a common cause of double triggering.',\n    check: function (R) { return earlyCycles(R).length >= 1 && doubles(R).length === 0; },\n    hl: function (R) { return earlyCycles(R).map(function (b) { return hl(b.tExp - 0.05, effortEnd(b.effort) + 0.1, 'still pulling', HL_AMB); }); } };\n}"
+      }
+    },
+    {
+      "id": "lcyc",
+      "diff": "medium",
+      "build": {
+        "_expression": "function (r) {\n  var sc = { preset: 'copd', vent: { mode: 'psv', PS: rng(r, 14, 18, 1), PEEP: 5, ETS: 5, rise: 0.1 }, drive: { on: true, rate: rng(r, 18, 22, 1), amp: rng(r, 6, 7, .5), ti: 0.6, tr: 0.3, jitter: 0.06, expAmp: rng(r, 11, 14, 1), expStart: 0.0, expDur: 0.9 } };\n  return { sc: sc, vig: 'COPD on PSV with the cycle threshold at 5%. The patient is contracting the abdomen at the end of each breath.', q: IDQ,\n    opts: [NAMES.lcyc, NAMES.ecyc, NAMES.late, NAMES.multi], ans: 0,\n    why: 'The breath keeps going after the patient has stopped inhaling and starts to push: there is a <b>pressure spike at end-inspiration</b> and flow drops abruptly before the ventilator finally cycles. The patient’s neural inspiration is shorter than the ventilator’s.',\n    look: 'End-inspiratory pressure overshoot and a steep fall in flow before cycling.',\n    check: function (R) { return lateCycles(R).length >= 1; },\n    hl: function (R) { return lateCycles(R).map(function (b) { return hl(effortEnd(b.effort) + b.effort.tr * 0.5, b.tExp + 0.05, 'pushing', HL_AMB); }); } };\n}"
+      }
+    },
+    {
+      "id": "false-leak",
+      "diff": "medium",
+      "build": {
+        "_expression": "function (r) {\n  var sc = { vent: { mode: pick(r, ['psv', 'pc-cmv']), PS: 10, Pinsp: 12, Ti: 0.9, RR: 8, PEEP: 5, trigFlow: rng(r, 1.5, 2, .5) }, patient: { leak: rng(r, 1.3, 1.7, .1) } };\n  return { sc: sc, vig: 'Just received a propofol bolus and is not moving. Yet the ventilator rate is high.', q: IDQ,\n    opts: [NAMES.falseT, NAMES.failed, NAMES.early, NAMES.normal], ans: 0,\n    why: 'Breaths are flagged as patient-triggered, but there is <b>no sign of patient effort</b>. Volume never returns to zero before the next breath and resets abruptly (the “square-root sign”): gas is leaking, the bias flow that replaces it looks like an inspiratory effort, and it trips the flow trigger.',\n    look: 'Patient-triggered breaths with no evidence of Pmus, plus an inspired-expired volume mismatch.',\n    check: function (R) { return falseTriggers(R).length >= 1; },\n    hl: function (R) { return falseTriggers(R).map(function (b) { return hl(b.t0 - 0.5, b.t0 + 0.1, 'no effort', HL_RED); }); } };\n}"
+      }
+    },
+    {
+      "id": "false-card",
+      "diff": "medium",
+      "build": {
+        "_expression": "function (r) {\n  var sc = { vent: { mode: 'pc-cmv', Pinsp: 12, Ti: 0.9, RR: 8, PEEP: 5, trigFlow: 0.5 }, patient: { cardiac: 1.2, hr: rng(r, 105, 125, 1) } };\n  return { sc: sc, vig: 'Deeply sedated after cardiac surgery, heart rate in the 110s. The flow trigger is set very sensitive.', q: IDQ,\n    opts: [NAMES.falseT, NAMES.early, NAMES.late, NAMES.failed], ans: 0,\n    why: 'Small <b>rhythmic oscillations in the flow scalar at the heart rate</b> cross the very sensitive flow trigger and fire breaths with no patient effort: false trigger from cardiac oscillations.',\n    look: 'Oscillations in expiratory flow that match the heart rate, with triggered breaths but no Pmus.',\n    check: function (R) { return falseTriggers(R).length >= 1; },\n    hl: function (R) { return falseTriggers(R).map(function (b) { return hl(b.t0 - 0.5, b.t0 + 0.1, 'heartbeat', HL_RED); }); } };\n}"
+      }
+    },
+    {
+      "id": "early",
+      "diff": "medium",
+      "build": {
+        "_expression": "function (r) {\n  var sc = { preset: 'ards', pes: true, vent: { mode: 'vc-cmv', VT: rng(r, .36, .40, .01), flow: 60, RR: rng(r, 18, 22, 1), PEEP: 12 }, drive: { on: true, entrain: 1, entrainDelay: rng(r, .25, .4, .05), amp: rng(r, 5, 7, .5), ti: 0.7, tr: 0.35, jitter: 0.08 } };\n  return { sc: sc, vig: 'Deeply sedated ARDS patient on AC/VC; every breath is time-triggered.', q: IDQ,\n    opts: [NAMES.early, NAMES.late, NAMES.falseT, NAMES.lcyc], ans: 0,\n    why: 'A <b>machine-triggered breath comes first, then the patient’s effort follows</b> during inspiration or early expiration (see the Pes dip and the pressure/flow deformation). The inflation is entraining the effort: early trigger, also called reverse triggering.',\n    look: 'Time-triggered breath, then evidence of Pmus. If the effort lasts into expiration it can trigger a second, stacked breath.',\n    check: function (R) { return earlyTriggers(R).length >= 1; },\n    hl: function (R) { return earlyTriggers(R).map(function (e) { return hl(e.t0, e.t0 + e.tc + 0.1, 'effort after inflation', HL_AMB); }); } };\n}"
+      }
+    },
+    {
+      "id": "expw",
+      "diff": "medium",
+      "build": {
+        "_expression": "function (r) {\n  var sc = { pes: true, vent: { mode: 'pc-cmv', Pinsp: 14, Ti: 0.9, RR: 14, PEEP: 5 }, drive: { on: true, rate: 14, amp: 2.5, ti: 0.6, tr: 0.3, jitter: 0.05, expAmp: rng(r, 7, 10, 1), expStart: 0.25, expDur: 1.0 } };\n  return { sc: sc, vig: 'Anxious, with visible abdominal muscle contraction during exhalation.', q: IDQ,\n    opts: [NAMES.expw, NAMES.failed, NAMES.ecyc, NAMES.late], ans: 0,\n    why: 'Mid-expiration the flow <b>moves away from baseline</b> (a second, deeper expiratory hump) and Pes <b>rises</b>: the patient is actively pushing gas out. That is expiratory work; it also makes Pplat unreliable, because pleural pressure is raised.',\n    look: 'Expiratory flow deflecting away from baseline instead of decaying smoothly.',\n    hl: function (R) { return R.efforts.length ? R.breaths.filter(function (b) { return inWin(R, b.t0) && b.tExp; }).map(function (b) { return hl(b.tExp + 0.3, b.tExp + 1.4, 'pushing out', HL_AMB); }) : []; } };\n}"
+      }
+    },
+    {
+      "id": "fix-auto",
+      "diff": "medium",
+      "build": {
+        "_expression": "function (r) {\n  var sc = { preset: 'copd', vent: { mode: 'vc-cmv', VT: rng(r, .5, .55, .01), flow: 45, RR: rng(r, 24, 28, 1), PEEP: 5 } };\n  return { sc: sc, vig: 'COPD on AC/VC, now on rising norepinephrine.', q: 'What is the best ventilator change?',\n    opts: ['Lower the RR and raise inspiratory flow to lengthen expiration', 'Raise the RR to clear more CO₂', 'Add an inspiratory pause to measure plateau', 'Increase VT to 8 mL/kg'], ans: 0,\n    why: 'Expiratory flow is not returning to zero: auto-PEEP is compromising venous return. Give the lung more time to empty: <b>lower the rate</b> (sedation if the patient is driving it), and in AC/VC <b>raise inspiratory flow</b> and/or lower VT to shorten inspiration. Bronchodilate. Accept more hypercapnia if needed.',\n    look: 'An I:E of 1:3 or more is a reasonable start; adjust until expiratory flow returns to baseline.',\n    check: function (R) { return R.sim.trueAutoPEEP >= 3; },\n    hl: function (R) { return R.breaths.filter(function (b) { return inWin(R, b.t0); }).map(function (b) { return hl(b.t0 - 0.45, b.t0, 'trapped', HL_RED); }); } };\n}"
+      }
+    },
+    {
+      "id": "fix-starve",
+      "diff": "medium",
+      "build": {
+        "_expression": "function (r) {\n  var sc = { vent: { mode: 'vc-cmv', VT: .45, flow: 30, RR: 12, PEEP: 5 }, drive: { on: true, rate: 22, amp: rng(r, 13, 15, 1), ti: 0.95, tr: 0.4, jitter: 0.08 } };\n  return { sc: sc, vig: 'Metabolic acidosis, strong drive, AC/VC at 30 L/min.', q: 'What is the best next step?',\n    opts: ['Increase inspiratory flow (or use a pressure-targeted mode) and treat the high drive', 'Decrease the peak flow', 'Make the trigger less sensitive', 'Add an end-inspiratory pause'], ans: 0,\n    why: 'Pressure dips below PEEP during inspiration: severe work shifting. The set flow is far below the patient’s demand. <b>Give more flow</b> (or a pressure-targeted mode, which lets flow follow effort) and address <b>why</b> the drive is so high: pain, anxiety, acidosis, hypoxemia. When drive is extreme no setting fixes it; sedation may be needed.',\n    look: 'Scooped inspiratory pressure in volume control.',\n    check: function (R) { return minInspP(R) < R.sim.v.PEEP - 0.5; },\n    hl: function (R) { return R.breaths.filter(function (b) { return inWin(R, b.t0) && b.tExp; }).map(function (b) { return hl(b.t0, b.tExp, 'starving', HL_RED); }); } };\n}"
+      }
+    },
+    {
+      "id": "fix-late",
+      "diff": "medium",
+      "build": {
+        "_expression": "function (r) {\n  var sc = { vent: { mode: 'pc-cmv', Pinsp: 14, Ti: 0.9, RR: 8, PEEP: 5, trig: 'pressure', trigP: rng(r, 5.5, 7, .5) }, drive: { on: true, rate: 18, amp: 9, ti: 0.9, tr: 0.4, jitter: 0.08 } };\n  return { sc: sc, vig: 'The patient works hard to start each breath.', q: 'What is the best fix?',\n    opts: ['Make the trigger more sensitive (lower the pressure threshold or switch to flow triggering)', 'Raise PEEP', 'Increase the set RR', 'Lengthen Ti'], ans: 0,\n    why: 'This is late trigger: a long pressure dip before each breath. With an appropriately sensitive trigger, modern ventilators respond in &lt; 100 ms; <b>flow triggering generally takes less effort</b> than pressure triggering.',\n    look: 'Long negative pressure dip before inflation.',\n    check: function (R) { return lateTriggers(R, 0.18).length >= 1; },\n    hl: function (R) { return lateTriggers(R, 0.18).map(function (e) { return hl(e.t0, e.trigT, 'delay', HL_AMB); }); } };\n}"
+      }
+    },
+    {
+      "id": "fix-leak",
+      "diff": "medium",
+      "build": {
+        "_expression": "function (r) {\n  var sc = { vent: { mode: 'psv', PS: 10, PEEP: 5, trigFlow: 1.5 }, patient: { leak: rng(r, 1.3, 1.7, .1) } };\n  return { sc: sc, vig: 'Sedated patient on PSV with an unexpectedly high rate. You hear a gurgle at the mouth.', q: 'What is the best next step?',\n    opts: ['Find and fix the leak (cuff, circuit); make the flow trigger less sensitive meanwhile', 'Make the trigger more sensitive', 'Deepen sedation', 'Increase pressure support'], ans: 0,\n    why: 'False triggers from a leak (volume never returns to zero; no patient effort). <b>Fix the leak</b>: check cuff pressure and the circuit. A less sensitive trigger (or leak compensation) stops the auto-triggering. Sedation won’t help: the patient isn’t making these breaths.',\n    look: 'Square-root sign on the volume scalar.',\n    check: function (R) { return falseTriggers(R).length >= 1; },\n    hl: function (R) { return falseTriggers(R).map(function (b) { return hl(b.t0 - 0.5, b.t0 + 0.1, 'leak', HL_RED); }); } };\n}"
+      }
+    },
+    {
+      "id": "fix-ecyc",
+      "diff": "medium",
+      "build": {
+        "_expression": "function (r) {\n  var sc = { preset: 'fibrosis', vent: { mode: 'psv', PS: 9, PEEP: 5, ETS: pick(r, [50, 55, 60]), trigFlow: 4 }, drive: { on: true, rate: 20, amp: 6, ti: 1.3, tr: 0.45, jitter: 0.05 } };\n  return { sc: sc, vig: 'Fibrotic lungs on PSV. Breaths look short and choppy.', q: 'What is the best adjustment?',\n    opts: ['Lower the cycle threshold (ETS %) so each breath lasts longer', 'Raise the cycle threshold (ETS %)', 'Lower PS', 'Make the trigger more sensitive'], ans: 0,\n    why: 'Early cycle: with a short time constant, flow decays fast and hits a high ETS too soon, while the patient is still inhaling. <b>Lowering ETS</b> (e.g., from 50% to 25%) lets the breath run longer, matching neural Ti. Raising it would make things worse.',\n    look: 'Flow bends back toward baseline right after cycling.',\n    check: function (R) { return earlyCycles(R).length >= 1; },\n    hl: function (R) { return earlyCycles(R).map(function (b) { return hl(b.tExp - 0.05, effortEnd(b.effort) + 0.1, 'still pulling', HL_AMB); }); } };\n}"
+      }
+    },
+    {
+      "id": "failed-why",
+      "diff": "hard",
+      "build": {
+        "_expression": "function (r) {\n  var auto = r() < 0.5;\n  var sc = auto\n    ? { preset: 'copd', vent: { mode: 'vc-cmv', VT: .55, flow: 50, RR: 18, PEEP: 5, trigFlow: 2 }, drive: { on: true, rate: 30, amp: 5, ti: 0.7, tr: 0.4, jitter: 0.1 } }\n    : { vent: { mode: 'pc-cmv', Pinsp: 14, Ti: 0.9, RR: 8, PEEP: 5, trigFlow: rng(r, 9, 12, 1) }, drive: { on: true, rate: 17, amp: rng(r, 4, 4.5, .5), ti: 0.8, tr: 0.4, jitter: 0.1 } };\n  return { sc: sc, vig: 'Some of this patient’s efforts are not being answered by the ventilator.', q: 'What is the most likely cause of the failed triggers?',\n    opts: ['Auto-PEEP: the effort can’t even bring flow to zero', 'Trigger threshold set too high: flow crosses zero but not the threshold', 'Circuit leak', 'Cardiac oscillations'], ans: auto ? 0 : 1,\n    why: auto ? 'The missed efforts deflect expiratory flow toward baseline <b>but never reach zero</b>, and expiration hasn’t finished before each breath. The patient must first overcome auto-PEEP before any inspiratory flow can occur.' : 'The missed efforts pull <b>flow across zero into positive (inspiratory) flow</b>, yet no breath follows. Expiration is complete, so auto-PEEP isn’t the problem: the trigger threshold is too insensitive.',\n    look: 'Auto-PEEP: bump toward zero. High threshold: flow crosses zero but stays below the trigger level.',\n    check: function (R) { return failedEfforts(R).length >= 1 && (auto ? R.sim.trueAutoPEEP > 1.5 : R.sim.trueAutoPEEP < 0.8); },\n    hl: function (R) { return failedEfforts(R).map(function (e) { return hl(e.t0, e.t0 + e.tc + 0.2, 'missed', HL_RED); }); } };\n}"
+      }
+    },
+    {
+      "id": "fix-failed",
+      "diff": "hard",
+      "build": {
+        "_expression": "function (r) {\n  var sc = { preset: 'copd', pes: r() < 0.5, vent: { mode: 'vc-cmv', VT: rng(r, .55, .6, .01), flow: 45, RR: 18, PEEP: 5 }, drive: { on: true, rate: rng(r, 26, 30, 1), amp: 5, ti: 0.7, tr: 0.4, jitter: 0.1 } };\n  return { sc: sc, vig: 'COPD on AC/VC with many unanswered efforts.', q: 'Which change best addresses the root cause?',\n    opts: ['Reduce dynamic hyperinflation: lower VT or RR, shorten inspiration, bronchodilate', 'Make the flow trigger more sensitive', 'Increase VT so each breath satisfies the patient', 'Increase the set RR to match the patient'], ans: 0,\n    why: 'The efforts fail because of <b>auto-PEEP</b>: no trigger setting can detect an effort that never brings flow to zero. Shrink the trapped volume: lower VT/RR, shorten inspiratory time, treat bronchospasm. (In advanced practice, external PEEP up to ~80% of auto-PEEP can also unload triggering.) Bigger or more breaths make trapping worse.',\n    look: 'Over-assistance (too much volume) is itself a cause of failed triggers.',\n    check: function (R) { return failedEfforts(R).length >= 1 && R.sim.trueAutoPEEP > 1.5; },\n    hl: function (R) { return failedEfforts(R).map(function (e) { return hl(e.t0, e.t0 + e.tc + 0.2, 'missed', HL_RED); }); } };\n}"
+      }
+    },
+    {
+      "id": "multi-why",
+      "diff": "hard",
+      "build": {
+        "_expression": "function (r) {\n  var v = pick(r, ['ecyc', 'early']);\n  var sc = v === 'ecyc'\n    ? { pes: true, vent: { mode: 'vc-cmv', VT: .38, flow: 65, RR: 14, PEEP: 5 }, drive: { on: true, rate: 18, amp: 11, ti: rng(r, 1.35, 1.5, .05), tr: 0.4, jitter: 0.06 } }\n    : { preset: 'ards', pes: true, vent: { mode: 'vc-cmv', VT: .38, flow: 50, RR: 20, PEEP: 12 }, drive: { on: true, entrain: 1, entrainDelay: 0.5, amp: 7, ti: 0.8, tr: 0.4, jitter: 0.06 } };\n  return { sc: sc, vig: 'Double triggering on AC/VC. The esophageal balloon is in place.', q: 'What is causing the multiple triggers?',\n    opts: ['Early cycle: one long effort spans both breaths', 'Early trigger (reverse triggering): the machine breath comes first, then the effort', 'False trigger', 'Late cycle'], ans: v === 'ecyc' ? 0 : 1,\n    why: v === 'ecyc' ? 'Pes starts falling <b>before or with the first breath</b> and keeps falling after it cycles: the patient’s neural inspiration is longer than the ventilator’s Ti, so the same effort triggers a second breath.' : 'The first breath is <b>time-triggered</b> (grey) with a flat Pes; the patient’s effort (Pes dip) begins <b>after inflation starts</b> and carries into expiration, triggering the stacked breath. That is early trigger.',\n    look: 'Multiple trigger is a pattern with at least three causes: early cycle, early trigger and false trigger. Timing of Pmus tells them apart.',\n    check: function (R) { return doubles(R).length >= 1 && (v === 'ecyc' ? earlyCycles(R).length >= 1 : earlyTriggers(R).length >= 1); },\n    hl: function (R) { return doubles(R).map(function (p) { return hl(p[0].t0, p[1].tExp || p[1].t0 + 0.4, 'double', HL_RED); }); } };\n}"
+      }
+    },
+    {
+      "id": "fix-lcyc",
+      "diff": "hard",
+      "build": {
+        "_expression": "function (r) {\n  var sc = { preset: 'copd', vent: { mode: 'psv', PS: 16, PEEP: 5, ETS: 5 }, drive: { on: true, rate: 20, amp: 6.5, ti: 0.6, tr: 0.3, jitter: 0.06, expAmp: rng(r, 11, 13, 1), expStart: 0.0, expDur: 0.9 } };\n  return { sc: sc, vig: 'COPD on PSV 16 with ETS 5%. He is fighting the end of every breath.', q: 'What is the best adjustment?',\n    opts: ['Raise the cycle threshold (ETS) so breaths end sooner', 'Lower the cycle threshold further', 'Increase pressure support', 'Lengthen the rise time'], ans: 0,\n    why: 'Late cycle: with a long time constant, flow decays slowly and a 5% threshold keeps the breath going long after the patient stops inhaling, so he pushes against it. <b>Raising ETS</b> (often 40–50% in COPD) ends the breath closer to neural Ti. Lowering PS can also help; more PS makes it worse.',\n    look: 'End-inspiratory pressure spike, abrupt flow drop.',\n    check: function (R) { return lateCycles(R).length >= 1; },\n    hl: function (R) { return lateCycles(R).map(function (b) { return hl(effortEnd(b.effort) + b.effort.tr * 0.5, b.tExp + 0.05, 'pushing', HL_AMB); }); } };\n}"
+      }
+    },
+    {
+      "id": "obese",
+      "diff": "hard",
+      "build": {
+        "_expression": "function (r) {\n  var sc = { preset: 'obesity', pes: true, patient: { Ppl0: rng(r, 13, 15, 1) }, vent: { mode: 'vc-cmv', VT: rng(r, .48, .52, .01), flow: 60, RR: 16, PEEP: pick(r, [8, 10]), FiO2: 0.7 }, events: [{ at: 0.3, act: 'holdI' }, { at: 4.5, act: 'holdE' }] };\n  return { sc: sc, chipsFrom: function (R) { var m = R.sim.meas; return ['Pplat ' + Math.round(m.Pplat || 0), 'Total PEEP ' + Math.round(m.PEEPtot || 0), 'Pes end-exp ' + Math.round(m.PesEE || 0)]; },\n    vig: 'BMI 52, hypoxemic, AC/VC with an inspiratory and an expiratory hold. Esophageal balloon in place.', q: 'What is the best interpretation?',\n    opts: ['Pleural pressure is high: end-expiratory PL is negative, so titrate PEEP up using Pes', 'Pplat is near 30: drop VT to 4 mL/kg', 'High airway resistance', 'Auto-PEEP is raising Pplat'], ans: 0,\n    why: 'Pplat reflects lung <b>plus chest wall</b>. Pes (≈ pleural pressure) is very high, so end-expiratory transpulmonary pressure (total PEEP − Pes) is <b>negative</b>: the lung is being squeezed shut at end-expiration while the true distending pressure at end-inspiration (Pplat − Pes) is modest. Raising PEEP to keep PL,ee ≥ 0 targets the real problem; slashing VT based on Pplat alone would not.',\n    look: 'Two patients with the same Pplat can have very different lung stress. Esophageal manometry tells them apart.',\n    check: function (R) { return R.sim.meas.Pplat != null && R.sim.meas.PEEPtot != null && R.sim.meas.PLee < -0.5 && R.sim.meas.Pplat >= 26; },\n    hl: function (R) { var out = [], m = R.sim.meas; R.S.forEach(function (x, i, a) { if (i && x.phase !== a[i - 1].phase && (x.phase === 'pause' || x.phase === 'ehold')) out.push(hl(x.t, x.t + 1.2, x.phase === 'pause' ? 'insp hold' : 'exp hold', HL_TEAL)); }); return out; } };\n}"
+      }
+    },
+    {
+      "id": "prvc",
+      "diff": "hard",
+      "build": {
+        "_expression": "function (r) {\n  var sc = { pre: 7, vent: { mode: 'pc-cmva', VT: .45, Ti: 0.9, RR: 16, PEEP: 5 }, drive: { on: true, rate: rng(r, 22, 26, 1), amp: rng(r, 9, 12, 1), ti: 0.9, tr: 0.4, jitter: 0.08 } };\n  return { sc: sc, vig: 'PRVC (PC-CMVa), target VT 450. The patient is getting more agitated; the delivered pressure keeps falling breath after breath.', q: 'Why is the inspiratory pressure falling?',\n    opts: ['Adaptive targeting: as the patient pulls harder, the ventilator gives less pressure to hold VT at target', 'A circuit leak', 'Compliance is improving', 'Auto-PEEP'], ans: 0,\n    why: 'PRVC adjusts pressure between breaths to hit the target VT. When the patient’s effort adds volume, the ventilator <b>lowers its pressure</b>, so the work shifts to the patient. In severe cases support falls to near PEEP while VT stays above target, all generated by the patient.',\n    look: 'Adaptive modes: total work is not constant, and support falls as effort rises.',\n    check: function (R) { var bs = R.breaths.filter(function (b) { return b.t0 > R.t0; }); return bs.length >= 3 && bs[bs.length - 1].Ppeak < bs[0].Ppeak - 1; } };\n}"
+      }
+    },
+    {
+      "id": "tag",
+      "diff": "hard",
+      "build": {
+        "_expression": "function (r) {\n  var v = pick(r, ['simv', 'prvc', 'aprv']);\n  var sc = v === 'simv' ? { win: 14, hideMode: true, vent: { mode: 'vc-imv', VT: .45, flow: 60, RR: 8, PS: 8, PEEP: 5 }, drive: { on: true, rate: 20, amp: 5, ti: 0.9, tr: 0.4, jitter: 0.1 } }\n        : v === 'prvc' ? { pre: 3, win: 12, hideMode: true, vent: { mode: 'pc-cmva', VT: .45, Ti: 0.9, RR: 16, PEEP: 5 } }\n        : { win: 14, hideMode: true, vent: { mode: 'aprv', Phigh: 26, Plow: 0, Thigh: 4.5, Tlow: 0.5 }, drive: { on: true, rate: 16, amp: 5, ti: 0.9, tr: 0.4 } };\n  var opts = ['VC-IMV(1)s,s (SIMV-VC + PS)', 'PC-CMVa (PRVC)', 'PC-IMV(1)s,s (APRV)', 'VC-CMVs (AC/VC)'];\n  var why = { simv: 'Two kinds of breath: <b>square-flow volume breaths</b> at a set rate, and <b>pressure-supported breaths</b> with decaying flow in between. Mandatory plus spontaneous = IMV, mandatory breaths volume-controlled.',\n              prvc: 'Every breath has <b>square pressure and decaying flow</b> (pressure control), all mandatory, but <b>the pressure changes from breath to breath</b> as the ventilator adapts to reach a volume target: adaptive targeting, PC-CMVa.',\n              aprv: 'Pressure sits at a high level for seconds with <b>brief releases</b> to a low level, and the patient breathes spontaneously on top of P-high: pressure control, intermittent mandatory releases, spontaneous breathing throughout.' }[v];\n  return { sc: sc, vig: 'The mode display is hidden. Classify the mode from the scalars.', q: 'Which TAG fits?', opts: opts, ans: { simv: 0, prvc: 1, aprv: 2 }[v], why: why, look: 'Define the TAG: control variable, breath sequence, targeting scheme.' };\n}"
+      }
+    },
+    {
+      "id": "fix-early",
+      "diff": "hard",
+      "build": {
+        "_expression": "function (r) {\n  var sc = { preset: 'ards', pes: true, vent: { mode: 'vc-cmv', VT: .38, flow: 50, RR: 20, PEEP: 12 }, drive: { on: true, entrain: 1, entrainDelay: rng(r, .45, .55, .05), amp: 7, ti: 0.8, tr: 0.4, jitter: 0.06 } };\n  return { sc: sc, vig: 'Deeply sedated ARDS patient (RASS −5). Breath stacking is pushing Pplat over 30.', q: 'What is the most appropriate response?',\n    opts: ['Recognize reverse triggering; adjust sedation or the set rate/Ti, and consider deeper sedation or paralysis if stacking persists', 'Make the trigger more sensitive', 'Switch to PSV', 'Increase VT so the patient is satisfied'], ans: 0,\n    why: 'These are <b>early triggers</b>: time-triggered breaths entrain an effort that carries into expiration and stacks a second breath, delivering injurious volumes. Options include changing the rate or Ti to break the entrainment and adjusting sedation; when stacking threatens lung protection, deeper sedation or neuromuscular blockade may be needed. Trigger sensitivity is irrelevant: the first breath isn’t patient-triggered.',\n    look: 'Machine breath first, effort second.',\n    check: function (R) { return earlyTriggers(R).length >= 1 && doubles(R).length >= 1; },\n    hl: function (R) { return doubles(R).map(function (p) { return hl(p[0].t0, p[1].tExp || p[1].t0 + 0.4, 'stacked', HL_RED); }); } };\n}"
+      }
+    }
+  ],
+  "NAMES": {
+    "normal": "Normal synchrony",
+    "early": "Early trigger",
+    "late": "Late trigger",
+    "falseT": "False trigger",
+    "failed": "Failed trigger",
+    "ws": "Work shifting",
+    "sws": "Severe work shifting (flow starvation)",
+    "ecyc": "Early cycle",
+    "lcyc": "Late cycle",
+    "expw": "Expiratory work",
+    "multi": "Multiple (double) trigger",
+    "auto": "Dynamic hyperinflation (auto-PEEP)"
+  },
+  "IDQ": "Which patient-ventilator interaction is this?",
+  "GAME_MS": {
+    "_expression": "5 * 60 * 1000"
+  },
+  "PTS": {
+    "easy": 100,
+    "medium": 200,
+    "hard": 300
+  },
+  "SET": {
+    "VT": {
+      "l": "VT",
+      "u": "mL",
+      "min": 150,
+      "max": 1000,
+      "st": 10,
+      "g": {
+        "_expression": "function (v) { return v.VT * 1000; }"
+      },
+      "s": {
+        "_expression": "function (x) { return { VT: x / 1000 }; }"
+      },
+      "sub": {
+        "_expression": "function () { return fmt(sim.v.VT * 1000 / sim.pbw(), 1) + ' mL/kg PBW'; }"
+      },
+      "warn": {
+        "_expression": "function () { return sim.v.VT * 1000 / sim.pbw() > 8.05; }"
+      }
+    },
+    "flow": {
+      "l": "Peak flow",
+      "u": "L/min",
+      "min": 15,
+      "max": 120,
+      "st": 5,
+      "sub": {
+        "_expression": "function () { var b = sim.v.pattern === 'ramp' && sim.v.mode !== 'vc-cmvd' ? 2 : 1; return 'Ti ' + fmt(b * sim.v.VT / (sim.v.flow / 60), 2) + ' s'; }"
+      }
+    },
+    "pattern": {
+      "l": "Flow pattern",
+      "opts": [
+        "square",
+        "ramp"
+      ],
+      "names": {
+        "square": "Square",
+        "ramp": "Decel ramp"
+      }
+    },
+    "pause": {
+      "l": "Insp pause",
+      "u": "s",
+      "min": 0,
+      "max": 2,
+      "st": 0.1,
+      "d": 1
+    },
+    "RR": {
+      "l": "RR",
+      "u": "/min",
+      "min": 4,
+      "max": 40,
+      "st": 1,
+      "sub": {
+        "_expression": "function () { return 'Ttot ' + fmt(60 / sim.v.RR, 1) + ' s'; }"
+      }
+    },
+    "PEEP": {
+      "l": "PEEP",
+      "u": "cmH₂O",
+      "min": 0,
+      "max": 25,
+      "st": 1
+    },
+    "FiO2": {
+      "l": "FiO₂",
+      "u": "%",
+      "min": 21,
+      "max": 100,
+      "st": 1,
+      "g": {
+        "_expression": "function (v) { return v.FiO2 * 100; }"
+      },
+      "s": {
+        "_expression": "function (x) { return { FiO2: x / 100 }; }"
+      }
+    },
+    "Pinsp": {
+      "l": "Pinsp",
+      "u": "cmH₂O",
+      "min": 3,
+      "max": 45,
+      "st": 1,
+      "sub": {
+        "_expression": "function () { return 'above PEEP'; }"
+      }
+    },
+    "Ti": {
+      "l": "Ti",
+      "u": "s",
+      "min": 0.3,
+      "max": 3,
+      "st": 0.05,
+      "d": 2,
+      "sub": {
+        "_expression": "function () { var te = 60 / sim.v.RR - sim.v.Ti; return te > 0 ? 'I:E 1:' + fmt(te / sim.v.Ti, 1) : 'inverse!'; }"
+      }
+    },
+    "rise": {
+      "l": "Rise time",
+      "u": "s",
+      "min": 0,
+      "max": 0.4,
+      "st": 0.05,
+      "d": 2
+    },
+    "PS": {
+      "l": "PS",
+      "u": "cmH₂O",
+      "min": 0,
+      "max": 30,
+      "st": 1,
+      "sub": {
+        "_expression": "function () { return 'above PEEP'; }"
+      }
+    },
+    "ETS": {
+      "l": "Cycle (ETS)",
+      "u": "%",
+      "min": 5,
+      "max": 80,
+      "st": 5,
+      "sub": {
+        "_expression": "function () { return '% of peak flow'; }"
+      }
+    },
+    "var": {
+      "k": "varPct",
+      "l": "Variability",
+      "u": "%",
+      "min": 0,
+      "max": 50,
+      "st": 5
+    },
+    "Phigh": {
+      "l": "P high",
+      "u": "cmH₂O",
+      "min": 5,
+      "max": 40,
+      "st": 1
+    },
+    "Plow": {
+      "l": "P low",
+      "u": "cmH₂O",
+      "min": 0,
+      "max": 20,
+      "st": 1
+    },
+    "Thigh": {
+      "l": "T high",
+      "u": "s",
+      "min": 0.8,
+      "max": 10,
+      "st": 0.1,
+      "d": 1
+    },
+    "Tlow": {
+      "l": "T low",
+      "u": "s",
+      "min": 0.2,
+      "max": 3,
+      "st": 0.05,
+      "d": 2
+    },
+    "PAV": {
+      "l": "% Support",
+      "u": "%",
+      "min": 5,
+      "max": 95,
+      "st": 5
+    },
+    "NAVA": {
+      "l": "NAVA level",
+      "u": "cmH₂O/µV",
+      "min": 0.1,
+      "max": 5,
+      "st": 0.1,
+      "d": 1
+    },
+    "minvol": {
+      "l": "% MinVol",
+      "u": "%",
+      "min": 25,
+      "max": 350,
+      "st": 5,
+      "sub": {
+        "_expression": "function () { var a = sim.asvTarget(); return 'f ' + fmt(a.f, 0) + ' · VT ' + fmt(a.VT * 1000, 0); }"
+      }
+    },
+    "trig": {
+      "l": "Trigger",
+      "special": true
+    },
+    "apnea": {
+      "l": "Apnea time",
+      "u": "s",
+      "min": 10,
+      "max": 60,
+      "st": 5
+    },
+    "Pmax": {
+      "l": "Pmax alarm",
+      "u": "cmH₂O",
+      "min": 15,
+      "max": 80,
+      "st": 1,
+      "sub": {
+        "_expression": "function () { return 'cycles breath'; }"
+      }
+    }
+  },
+  "ALV": {
+    "disc": "hi",
+    "pmax": "hi",
+    "apnea": "hi",
+    "lowmv": "med",
+    "highrr": "med"
+  }
+}

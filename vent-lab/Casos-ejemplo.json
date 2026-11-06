@@ -1,0 +1,1434 @@
+[
+  {
+    "id": "mode",
+    "diff": "easy",
+    "generated": true,
+    "story": "You walk into the room and the settings screen is hidden. Read the scalars.",
+    "question": "Which mode most likely produced these waveforms?",
+    "options": [
+      "AC/PC (PC-CMVs)",
+      "PSV (PC-CSVs)",
+      "AC/VC (VC-CMVs)",
+      "APRV (PC-IMV(1)s,s)"
+    ],
+    "answerIndex": 1,
+    "answer": "PSV (PC-CSVs)",
+    "explanation": "Pressure is square (pressure control), but <b>every breath is patient-triggered</b> (orange marks), the rate and Ti vary breath to breath and each breath ends when flow decays: continuous spontaneous ventilation.",
+    "look": "Step 1 of reading waveforms: define the mode. Which variable is controlled (square), and are breaths triggered by time or by the patient?",
+    "settings": {
+      "vent": {
+        "mode": "psv",
+        "PS": 9,
+        "PEEP": 5,
+        "ETS": 25
+      },
+      "drive": {
+        "on": true,
+        "rate": 20,
+        "amp": 6,
+        "ti": 0.9,
+        "tr": 0.4,
+        "jitter": 0.2
+      },
+      "hideMode": true
+    },
+    "chips": [
+      {
+        "t": "Mode display hidden",
+        "tag": true
+      },
+      {
+        "t": "PEEP 5"
+      }
+    ],
+    "allWaveformsFinite": true,
+    "samples": 1000
+  },
+  {
+    "id": "load",
+    "diff": "easy",
+    "generated": true,
+    "story": "AC/VC with a 0.5-second end-inspiratory pause on every breath.",
+    "question": "What is the dominant load?",
+    "options": [
+      "Normal loads",
+      "Increased resistive load",
+      "Patient inspiratory effort",
+      "Increased elastic load (low compliance)"
+    ],
+    "answerIndex": 1,
+    "answer": "Increased resistive load",
+    "explanation": "There is a <b>big drop from peak to plateau</b> (≥ 10 cmH₂O) with a near-normal plateau: the straw is narrow. Think bronchospasm, a kinked or bitten tube, secretions.",
+    "look": "During the pause flow is zero, so resistance drops out and only the elastic (alveolar) pressure remains.",
+    "settings": {
+      "preset": "plug",
+      "vent": {
+        "mode": "vc-cmv",
+        "VT": 0.43,
+        "flow": 60,
+        "RR": 14,
+        "PEEP": 5,
+        "pause": 0.5
+      }
+    },
+    "chips": [
+      {
+        "t": "AC/VC · VC-CMVs",
+        "tag": true
+      },
+      {
+        "t": "VT 430 · flow 60"
+      },
+      {
+        "t": "RR 14"
+      },
+      {
+        "t": "PEEP 5"
+      },
+      {
+        "t": "Flow trig 2 L/min"
+      },
+      {
+        "t": "Ppeak 5"
+      }
+    ],
+    "allWaveformsFinite": true,
+    "samples": 1000
+  },
+  {
+    "id": "auto",
+    "diff": "easy",
+    "generated": true,
+    "story": "Intubated for an exacerbation of obstructive lung disease. The nurse says the blood pressure keeps drifting down.",
+    "question": "What does the flow scalar show?",
+    "options": [
+      "Circuit leak with false triggers",
+      "Early cycle",
+      "Failed triggers",
+      "Expiratory flow never returns to zero: dynamic hyperinflation (auto-PEEP)"
+    ],
+    "answerIndex": 3,
+    "answer": "Expiratory flow never returns to zero: dynamic hyperinflation (auto-PEEP)",
+    "explanation": "Each new breath starts while gas is still flowing out: <b>expiratory flow does not return to baseline</b>. That is air trapping (auto-PEEP), which raises intrathoracic pressure and impairs venous return.",
+    "look": "Check that expiratory flow reaches zero before every breath. Quantify with an expiratory hold.",
+    "settings": {
+      "preset": "asthma",
+      "vent": {
+        "mode": "vc-cmv",
+        "VT": 0.52,
+        "flow": 40,
+        "RR": 26,
+        "PEEP": 5
+      }
+    },
+    "chips": [
+      {
+        "t": "AC/VC · VC-CMVs",
+        "tag": true
+      },
+      {
+        "t": "VT 520 · flow 40"
+      },
+      {
+        "t": "RR 26"
+      },
+      {
+        "t": "PEEP 5"
+      },
+      {
+        "t": "Flow trig 2 L/min"
+      }
+    ],
+    "allWaveformsFinite": true,
+    "samples": 1000
+  },
+  {
+    "id": "failed",
+    "diff": "easy",
+    "generated": true,
+    "story": "COPD patient on AC/VC who looks like he is breathing faster than the ventilator rate.",
+    "question": "Which patient-ventilator interaction is this?",
+    "options": [
+      "Failed trigger",
+      "Early trigger",
+      "False trigger",
+      "Late cycle"
+    ],
+    "answerIndex": 0,
+    "answer": "Failed trigger",
+    "explanation": "During expiration the flow scalar shows <b>bumps toward baseline that never trigger a breath</b>: the patient’s effort fails to reach the trigger. Here the cause is auto-PEEP: the effort must first overcome trapped pressure before flow can even cross zero.",
+    "look": "Expiratory flow deflects toward zero (and airway pressure dips) without a breath following.",
+    "settings": {
+      "preset": "copd",
+      "vent": {
+        "mode": "vc-cmv",
+        "VT": 0.51,
+        "flow": 50,
+        "RR": 17,
+        "PEEP": 5
+      },
+      "drive": {
+        "on": true,
+        "rate": 32,
+        "amp": 4,
+        "ti": 0.7,
+        "tr": 0.4,
+        "jitter": 0.1
+      }
+    },
+    "chips": [
+      {
+        "t": "AC/VC · VC-CMVs",
+        "tag": true
+      },
+      {
+        "t": "VT 510 · flow 50"
+      },
+      {
+        "t": "RR 17"
+      },
+      {
+        "t": "PEEP 5"
+      },
+      {
+        "t": "Flow trig 2 L/min"
+      }
+    ],
+    "allWaveformsFinite": true,
+    "samples": 1000
+  },
+  {
+    "id": "starve",
+    "diff": "easy",
+    "generated": true,
+    "story": "Septic, acidemic and air-hungry. AC/VC with a low set flow.",
+    "question": "Which patient-ventilator interaction is this?",
+    "options": [
+      "Early cycle",
+      "Increased elastic load",
+      "Late trigger",
+      "Severe work shifting (flow starvation)"
+    ],
+    "answerIndex": 3,
+    "answer": "Severe work shifting (flow starvation)",
+    "explanation": "The pressure scalar is <b>scooped down during inspiration, below PEEP</b>. The patient is pulling harder than the fixed flow can supply, so the patient is doing work <b>on</b> the ventilator. Severe work shifting is never acceptable.",
+    "look": "In volume control, patient effort shows up in the pressure scalar. Above baseline = work shifting; below baseline = severe.",
+    "settings": {
+      "vent": {
+        "mode": "vc-cmv",
+        "VT": 0.43,
+        "flow": 25,
+        "RR": 12,
+        "PEEP": 5
+      },
+      "drive": {
+        "on": true,
+        "rate": 20,
+        "amp": 13,
+        "ti": 0.95,
+        "tr": 0.4,
+        "jitter": 0.08
+      }
+    },
+    "chips": [
+      {
+        "t": "AC/VC · VC-CMVs",
+        "tag": true
+      },
+      {
+        "t": "VT 430 · flow 25"
+      },
+      {
+        "t": "RR 12"
+      },
+      {
+        "t": "PEEP 5"
+      },
+      {
+        "t": "Flow trig 2 L/min"
+      }
+    ],
+    "allWaveformsFinite": true,
+    "samples": 1000
+  },
+  {
+    "id": "double",
+    "diff": "easy",
+    "generated": true,
+    "story": "ARDS on low tidal volumes. The displayed rate is double what you expected.",
+    "question": "Which waveform pattern is this?",
+    "options": [
+      "Failed trigger",
+      "Multiple (double) trigger",
+      "Late cycle",
+      "Dynamic hyperinflation (auto-PEEP)"
+    ],
+    "answerIndex": 1,
+    "answer": "Multiple (double) trigger",
+    "explanation": "<b>Two breaths in close succession without complete exhalation</b> between them: multiple (double) trigger. In volume control the volumes stack, so the lung receives far more than the set VT.",
+    "look": "A second breath fires right after the first, before volume returns to zero.",
+    "settings": {
+      "vent": {
+        "mode": "vc-cmv",
+        "VT": 0.42,
+        "flow": 70,
+        "RR": 14,
+        "PEEP": 5
+      },
+      "drive": {
+        "on": true,
+        "rate": 16,
+        "amp": 11,
+        "ti": 1.4500000000000002,
+        "tr": 0.4,
+        "jitter": 0.06
+      }
+    },
+    "chips": [
+      {
+        "t": "AC/VC · VC-CMVs",
+        "tag": true
+      },
+      {
+        "t": "VT 420 · flow 70"
+      },
+      {
+        "t": "RR 14"
+      },
+      {
+        "t": "PEEP 5"
+      },
+      {
+        "t": "Flow trig 2 L/min"
+      }
+    ],
+    "allWaveformsFinite": true,
+    "samples": 1000
+  },
+  {
+    "id": "tau",
+    "diff": "easy",
+    "generated": true,
+    "story": "Passive patient on AC/PC. Look at how quickly flow decays.",
+    "question": "What does the flow scalar tell you?",
+    "options": [
+      "Flow is square: volume control",
+      "Flow reaches zero fast: short time constant, low compliance",
+      "Flow decays slowly: long time constant, high resistance",
+      "Flow shows patient effort"
+    ],
+    "answerIndex": 2,
+    "answer": "Flow decays slowly: long time constant, high resistance",
+    "explanation": "Flow takes a <b>long time</b> to decay in both directions and may not reach zero: a long time constant (τ = R × C), which in practice usually means <b>high resistance</b>.",
+    "look": "One τ empties 63%; about 5τ empties the lung. Normal intubated τ ≈ 0.5 s.",
+    "settings": {
+      "preset": "copd",
+      "vent": {
+        "mode": "pc-cmv",
+        "Pinsp": 14,
+        "Ti": 1,
+        "RR": 12,
+        "PEEP": 5
+      }
+    },
+    "chips": [
+      {
+        "t": "AC/PC · PC-CMVs",
+        "tag": true
+      },
+      {
+        "t": "Pinsp 14 · Ti 1"
+      },
+      {
+        "t": "RR 12"
+      },
+      {
+        "t": "PEEP 5"
+      },
+      {
+        "t": "Flow trig 2 L/min"
+      }
+    ],
+    "allWaveformsFinite": true,
+    "samples": 1000
+  },
+  {
+    "id": "late",
+    "diff": "medium",
+    "generated": true,
+    "story": "Awake, interactive, and complaining the ventilator is “hard to start a breath on.”",
+    "question": "Which patient-ventilator interaction is this?",
+    "options": [
+      "Early trigger",
+      "Failed trigger",
+      "Late trigger",
+      "False trigger"
+    ],
+    "answerIndex": 2,
+    "answer": "Late trigger",
+    "explanation": "Before each breath, airway pressure <b>drops well below PEEP for a long time</b> before the ventilator responds: the trigger is too insensitive, so there is a clinically important delay (&gt; 100 ms) between effort and inflation.",
+    "look": "A prolonged pressure dip below baseline (or flow crossing zero) well before the breath starts.",
+    "settings": {
+      "vent": {
+        "mode": "pc-cmv",
+        "Pinsp": 14,
+        "Ti": 0.9,
+        "VT": 0.45,
+        "flow": 60,
+        "RR": 8,
+        "PEEP": 5,
+        "trig": "pressure",
+        "trigP": 6.5
+      },
+      "drive": {
+        "on": true,
+        "rate": 20,
+        "amp": 9.5,
+        "ti": 0.9,
+        "tr": 0.4,
+        "jitter": 0.08
+      }
+    },
+    "chips": [
+      {
+        "t": "AC/PC · PC-CMVs",
+        "tag": true
+      },
+      {
+        "t": "Pinsp 14 · Ti 0.9"
+      },
+      {
+        "t": "RR 8"
+      },
+      {
+        "t": "PEEP 5"
+      },
+      {
+        "t": "Pres trig −6.5"
+      }
+    ],
+    "allWaveformsFinite": true,
+    "samples": 1000
+  },
+  {
+    "id": "ecyc",
+    "diff": "medium",
+    "generated": true,
+    "story": "Restrictive lungs on PSV with a high cycle threshold.",
+    "question": "Which patient-ventilator interaction is this?",
+    "options": [
+      "Late cycle",
+      "Failed trigger",
+      "Early cycle",
+      "Expiratory work"
+    ],
+    "answerIndex": 2,
+    "answer": "Early cycle",
+    "explanation": "Each breath ends while the patient is still inhaling: early in expiration the flow <b>bends back toward baseline</b>, breaking the smooth exponential decay. The ventilator cycled before the patient’s effort finished.",
+    "look": "Expiratory flow deviated toward baseline just after cycling. Early cycle is a common cause of double triggering.",
+    "settings": {
+      "preset": "fibrosis",
+      "vent": {
+        "mode": "psv",
+        "PS": 10,
+        "PEEP": 5,
+        "ETS": 55,
+        "trigFlow": 4
+      },
+      "drive": {
+        "on": true,
+        "rate": 20,
+        "amp": 5.5,
+        "ti": 1.3,
+        "tr": 0.45,
+        "jitter": 0.06
+      }
+    },
+    "chips": [
+      {
+        "t": "PSV · PC-CSVs",
+        "tag": true
+      },
+      {
+        "t": "PS 10 · ETS 55%"
+      },
+      {
+        "t": "PEEP 5"
+      },
+      {
+        "t": "Flow trig 4 L/min"
+      }
+    ],
+    "allWaveformsFinite": true,
+    "samples": 1000
+  },
+  {
+    "id": "lcyc",
+    "diff": "medium",
+    "generated": true,
+    "story": "COPD on PSV with the cycle threshold at 5%. The patient is contracting the abdomen at the end of each breath.",
+    "question": "Which patient-ventilator interaction is this?",
+    "options": [
+      "Multiple (double) trigger",
+      "Late trigger",
+      "Early cycle",
+      "Late cycle"
+    ],
+    "answerIndex": 3,
+    "answer": "Late cycle",
+    "explanation": "The breath keeps going after the patient has stopped inhaling and starts to push: there is a <b>pressure spike at end-inspiration</b> and flow drops abruptly before the ventilator finally cycles. The patient’s neural inspiration is shorter than the ventilator’s.",
+    "look": "End-inspiratory pressure overshoot and a steep fall in flow before cycling.",
+    "settings": {
+      "preset": "copd",
+      "vent": {
+        "mode": "psv",
+        "PS": 14,
+        "PEEP": 5,
+        "ETS": 5,
+        "rise": 0.1
+      },
+      "drive": {
+        "on": true,
+        "rate": 18,
+        "amp": 6,
+        "ti": 0.6,
+        "tr": 0.3,
+        "jitter": 0.06,
+        "expAmp": 13,
+        "expStart": 0,
+        "expDur": 0.9
+      }
+    },
+    "chips": [
+      {
+        "t": "PSV · PC-CSVs",
+        "tag": true
+      },
+      {
+        "t": "PS 14 · ETS 5%"
+      },
+      {
+        "t": "PEEP 5"
+      },
+      {
+        "t": "Flow trig 2 L/min"
+      }
+    ],
+    "allWaveformsFinite": true,
+    "samples": 1000
+  },
+  {
+    "id": "false-leak",
+    "diff": "medium",
+    "generated": true,
+    "story": "Just received a propofol bolus and is not moving. Yet the ventilator rate is high.",
+    "question": "Which patient-ventilator interaction is this?",
+    "options": [
+      "False trigger",
+      "Early trigger",
+      "Normal synchrony",
+      "Failed trigger"
+    ],
+    "answerIndex": 0,
+    "answer": "False trigger",
+    "explanation": "Breaths are flagged as patient-triggered, but there is <b>no sign of patient effort</b>. Volume never returns to zero before the next breath and resets abruptly (the “square-root sign”): gas is leaking, the bias flow that replaces it looks like an inspiratory effort, and it trips the flow trigger.",
+    "look": "Patient-triggered breaths with no evidence of Pmus, plus an inspired-expired volume mismatch.",
+    "settings": {
+      "vent": {
+        "mode": "psv",
+        "PS": 10,
+        "Pinsp": 12,
+        "Ti": 0.9,
+        "RR": 8,
+        "PEEP": 5,
+        "trigFlow": 2
+      },
+      "patient": {
+        "leak": 1.6
+      }
+    },
+    "chips": [
+      {
+        "t": "PSV · PC-CSVs",
+        "tag": true
+      },
+      {
+        "t": "PS 10 · ETS 25%"
+      },
+      {
+        "t": "PEEP 5"
+      },
+      {
+        "t": "Flow trig 2 L/min"
+      }
+    ],
+    "allWaveformsFinite": true,
+    "samples": 1000
+  },
+  {
+    "id": "false-card",
+    "diff": "medium",
+    "generated": true,
+    "story": "Deeply sedated after cardiac surgery, heart rate in the 110s. The flow trigger is set very sensitive.",
+    "question": "Which patient-ventilator interaction is this?",
+    "options": [
+      "Early trigger",
+      "Failed trigger",
+      "False trigger",
+      "Late trigger"
+    ],
+    "answerIndex": 2,
+    "answer": "False trigger",
+    "explanation": "Small <b>rhythmic oscillations in the flow scalar at the heart rate</b> cross the very sensitive flow trigger and fire breaths with no patient effort: false trigger from cardiac oscillations.",
+    "look": "Oscillations in expiratory flow that match the heart rate, with triggered breaths but no Pmus.",
+    "settings": {
+      "vent": {
+        "mode": "pc-cmv",
+        "Pinsp": 12,
+        "Ti": 0.9,
+        "RR": 8,
+        "PEEP": 5,
+        "trigFlow": 0.5
+      },
+      "patient": {
+        "cardiac": 1.2,
+        "hr": 111
+      }
+    },
+    "chips": [
+      {
+        "t": "AC/PC · PC-CMVs",
+        "tag": true
+      },
+      {
+        "t": "Pinsp 12 · Ti 0.9"
+      },
+      {
+        "t": "RR 8"
+      },
+      {
+        "t": "PEEP 5"
+      },
+      {
+        "t": "Flow trig 0.5 L/min"
+      }
+    ],
+    "allWaveformsFinite": true,
+    "samples": 1000
+  },
+  {
+    "id": "early",
+    "diff": "medium",
+    "generated": true,
+    "story": "Deeply sedated ARDS patient on AC/VC; every breath is time-triggered.",
+    "question": "Which patient-ventilator interaction is this?",
+    "options": [
+      "Early trigger",
+      "False trigger",
+      "Late cycle",
+      "Late trigger"
+    ],
+    "answerIndex": 0,
+    "answer": "Early trigger",
+    "explanation": "A <b>machine-triggered breath comes first, then the patient’s effort follows</b> during inspiration or early expiration (see the Pes dip and the pressure/flow deformation). The inflation is entraining the effort: early trigger, also called reverse triggering.",
+    "look": "Time-triggered breath, then evidence of Pmus. If the effort lasts into expiration it can trigger a second, stacked breath.",
+    "settings": {
+      "preset": "ards",
+      "pes": true,
+      "vent": {
+        "mode": "vc-cmv",
+        "VT": 0.36,
+        "flow": 60,
+        "RR": 20,
+        "PEEP": 12
+      },
+      "drive": {
+        "on": true,
+        "entrain": 1,
+        "entrainDelay": 0.35000000000000003,
+        "amp": 5,
+        "ti": 0.7,
+        "tr": 0.35,
+        "jitter": 0.08
+      }
+    },
+    "chips": [
+      {
+        "t": "AC/VC · VC-CMVs",
+        "tag": true
+      },
+      {
+        "t": "VT 360 · flow 60"
+      },
+      {
+        "t": "RR 20"
+      },
+      {
+        "t": "PEEP 12"
+      },
+      {
+        "t": "Flow trig 2 L/min"
+      }
+    ],
+    "allWaveformsFinite": true,
+    "samples": 1000
+  },
+  {
+    "id": "expw",
+    "diff": "medium",
+    "generated": true,
+    "story": "Anxious, with visible abdominal muscle contraction during exhalation.",
+    "question": "Which patient-ventilator interaction is this?",
+    "options": [
+      "Late trigger",
+      "Expiratory work",
+      "Early cycle",
+      "Failed trigger"
+    ],
+    "answerIndex": 1,
+    "answer": "Expiratory work",
+    "explanation": "Mid-expiration the flow <b>moves away from baseline</b> (a second, deeper expiratory hump) and Pes <b>rises</b>: the patient is actively pushing gas out. That is expiratory work; it also makes Pplat unreliable, because pleural pressure is raised.",
+    "look": "Expiratory flow deflecting away from baseline instead of decaying smoothly.",
+    "settings": {
+      "pes": true,
+      "vent": {
+        "mode": "pc-cmv",
+        "Pinsp": 14,
+        "Ti": 0.9,
+        "RR": 14,
+        "PEEP": 5
+      },
+      "drive": {
+        "on": true,
+        "rate": 14,
+        "amp": 2.5,
+        "ti": 0.6,
+        "tr": 0.3,
+        "jitter": 0.05,
+        "expAmp": 10,
+        "expStart": 0.25,
+        "expDur": 1
+      }
+    },
+    "chips": [
+      {
+        "t": "AC/PC · PC-CMVs",
+        "tag": true
+      },
+      {
+        "t": "Pinsp 14 · Ti 0.9"
+      },
+      {
+        "t": "RR 14"
+      },
+      {
+        "t": "PEEP 5"
+      },
+      {
+        "t": "Flow trig 2 L/min"
+      }
+    ],
+    "allWaveformsFinite": true,
+    "samples": 1000
+  },
+  {
+    "id": "fix-auto",
+    "diff": "medium",
+    "generated": true,
+    "story": "COPD on AC/VC, now on rising norepinephrine.",
+    "question": "What is the best ventilator change?",
+    "options": [
+      "Add an inspiratory pause to measure plateau",
+      "Lower the RR and raise inspiratory flow to lengthen expiration",
+      "Raise the RR to clear more CO₂",
+      "Increase VT to 8 mL/kg"
+    ],
+    "answerIndex": 1,
+    "answer": "Lower the RR and raise inspiratory flow to lengthen expiration",
+    "explanation": "Expiratory flow is not returning to zero: auto-PEEP is compromising venous return. Give the lung more time to empty: <b>lower the rate</b> (sedation if the patient is driving it), and in AC/VC <b>raise inspiratory flow</b> and/or lower VT to shorten inspiration. Bronchodilate. Accept more hypercapnia if needed.",
+    "look": "An I:E of 1:3 or more is a reasonable start; adjust until expiratory flow returns to baseline.",
+    "settings": {
+      "preset": "copd",
+      "vent": {
+        "mode": "vc-cmv",
+        "VT": 0.54,
+        "flow": 45,
+        "RR": 25,
+        "PEEP": 5
+      }
+    },
+    "chips": [
+      {
+        "t": "AC/VC · VC-CMVs",
+        "tag": true
+      },
+      {
+        "t": "VT 540 · flow 45"
+      },
+      {
+        "t": "RR 25"
+      },
+      {
+        "t": "PEEP 5"
+      },
+      {
+        "t": "Flow trig 2 L/min"
+      }
+    ],
+    "allWaveformsFinite": true,
+    "samples": 1000
+  },
+  {
+    "id": "fix-starve",
+    "diff": "medium",
+    "generated": true,
+    "story": "Metabolic acidosis, strong drive, AC/VC at 30 L/min.",
+    "question": "What is the best next step?",
+    "options": [
+      "Decrease the peak flow",
+      "Add an end-inspiratory pause",
+      "Increase inspiratory flow (or use a pressure-targeted mode) and treat the high drive",
+      "Make the trigger less sensitive"
+    ],
+    "answerIndex": 2,
+    "answer": "Increase inspiratory flow (or use a pressure-targeted mode) and treat the high drive",
+    "explanation": "Pressure dips below PEEP during inspiration: severe work shifting. The set flow is far below the patient’s demand. <b>Give more flow</b> (or a pressure-targeted mode, which lets flow follow effort) and address <b>why</b> the drive is so high: pain, anxiety, acidosis, hypoxemia. When drive is extreme no setting fixes it; sedation may be needed.",
+    "look": "Scooped inspiratory pressure in volume control.",
+    "settings": {
+      "vent": {
+        "mode": "vc-cmv",
+        "VT": 0.45,
+        "flow": 30,
+        "RR": 12,
+        "PEEP": 5
+      },
+      "drive": {
+        "on": true,
+        "rate": 22,
+        "amp": 15,
+        "ti": 0.95,
+        "tr": 0.4,
+        "jitter": 0.08
+      }
+    },
+    "chips": [
+      {
+        "t": "AC/VC · VC-CMVs",
+        "tag": true
+      },
+      {
+        "t": "VT 450 · flow 30"
+      },
+      {
+        "t": "RR 12"
+      },
+      {
+        "t": "PEEP 5"
+      },
+      {
+        "t": "Flow trig 2 L/min"
+      }
+    ],
+    "allWaveformsFinite": true,
+    "samples": 1000
+  },
+  {
+    "id": "fix-late",
+    "diff": "medium",
+    "generated": true,
+    "story": "The patient works hard to start each breath.",
+    "question": "What is the best fix?",
+    "options": [
+      "Lengthen Ti",
+      "Raise PEEP",
+      "Increase the set RR",
+      "Make the trigger more sensitive (lower the pressure threshold or switch to flow triggering)"
+    ],
+    "answerIndex": 3,
+    "answer": "Make the trigger more sensitive (lower the pressure threshold or switch to flow triggering)",
+    "explanation": "This is late trigger: a long pressure dip before each breath. With an appropriately sensitive trigger, modern ventilators respond in &lt; 100 ms; <b>flow triggering generally takes less effort</b> than pressure triggering.",
+    "look": "Long negative pressure dip before inflation.",
+    "settings": {
+      "vent": {
+        "mode": "pc-cmv",
+        "Pinsp": 14,
+        "Ti": 0.9,
+        "RR": 8,
+        "PEEP": 5,
+        "trig": "pressure",
+        "trigP": 6
+      },
+      "drive": {
+        "on": true,
+        "rate": 18,
+        "amp": 9,
+        "ti": 0.9,
+        "tr": 0.4,
+        "jitter": 0.08
+      }
+    },
+    "chips": [
+      {
+        "t": "AC/PC · PC-CMVs",
+        "tag": true
+      },
+      {
+        "t": "Pinsp 14 · Ti 0.9"
+      },
+      {
+        "t": "RR 8"
+      },
+      {
+        "t": "PEEP 5"
+      },
+      {
+        "t": "Pres trig −6"
+      }
+    ],
+    "allWaveformsFinite": true,
+    "samples": 1000
+  },
+  {
+    "id": "fix-leak",
+    "diff": "medium",
+    "generated": true,
+    "story": "Sedated patient on PSV with an unexpectedly high rate. You hear a gurgle at the mouth.",
+    "question": "What is the best next step?",
+    "options": [
+      "Find and fix the leak (cuff, circuit); make the flow trigger less sensitive meanwhile",
+      "Make the trigger more sensitive",
+      "Increase pressure support",
+      "Deepen sedation"
+    ],
+    "answerIndex": 0,
+    "answer": "Find and fix the leak (cuff, circuit); make the flow trigger less sensitive meanwhile",
+    "explanation": "False triggers from a leak (volume never returns to zero; no patient effort). <b>Fix the leak</b>: check cuff pressure and the circuit. A less sensitive trigger (or leak compensation) stops the auto-triggering. Sedation won’t help: the patient isn’t making these breaths.",
+    "look": "Square-root sign on the volume scalar.",
+    "settings": {
+      "vent": {
+        "mode": "psv",
+        "PS": 10,
+        "PEEP": 5,
+        "trigFlow": 1.5
+      },
+      "patient": {
+        "leak": 1.7000000000000002
+      }
+    },
+    "chips": [
+      {
+        "t": "PSV · PC-CSVs",
+        "tag": true
+      },
+      {
+        "t": "PS 10 · ETS 25%"
+      },
+      {
+        "t": "PEEP 5"
+      },
+      {
+        "t": "Flow trig 1.5 L/min"
+      }
+    ],
+    "allWaveformsFinite": true,
+    "samples": 1000
+  },
+  {
+    "id": "fix-ecyc",
+    "diff": "medium",
+    "generated": true,
+    "story": "Fibrotic lungs on PSV. Breaths look short and choppy.",
+    "question": "What is the best adjustment?",
+    "options": [
+      "Lower the cycle threshold (ETS %) so each breath lasts longer",
+      "Raise the cycle threshold (ETS %)",
+      "Lower PS",
+      "Make the trigger more sensitive"
+    ],
+    "answerIndex": 0,
+    "answer": "Lower the cycle threshold (ETS %) so each breath lasts longer",
+    "explanation": "Early cycle: with a short time constant, flow decays fast and hits a high ETS too soon, while the patient is still inhaling. <b>Lowering ETS</b> (e.g., from 50% to 25%) lets the breath run longer, matching neural Ti. Raising it would make things worse.",
+    "look": "Flow bends back toward baseline right after cycling.",
+    "settings": {
+      "preset": "fibrosis",
+      "vent": {
+        "mode": "psv",
+        "PS": 9,
+        "PEEP": 5,
+        "ETS": 55,
+        "trigFlow": 4
+      },
+      "drive": {
+        "on": true,
+        "rate": 20,
+        "amp": 6,
+        "ti": 1.3,
+        "tr": 0.45,
+        "jitter": 0.05
+      }
+    },
+    "chips": [
+      {
+        "t": "PSV · PC-CSVs",
+        "tag": true
+      },
+      {
+        "t": "PS 9 · ETS 55%"
+      },
+      {
+        "t": "PEEP 5"
+      },
+      {
+        "t": "Flow trig 4 L/min"
+      }
+    ],
+    "allWaveformsFinite": true,
+    "samples": 1000
+  },
+  {
+    "id": "failed-why",
+    "diff": "hard",
+    "generated": true,
+    "story": "Some of this patient’s efforts are not being answered by the ventilator.",
+    "question": "What is the most likely cause of the failed triggers?",
+    "options": [
+      "Cardiac oscillations",
+      "Trigger threshold set too high: flow crosses zero but not the threshold",
+      "Circuit leak",
+      "Auto-PEEP: the effort can’t even bring flow to zero"
+    ],
+    "answerIndex": 3,
+    "answer": "Auto-PEEP: the effort can’t even bring flow to zero",
+    "explanation": "The missed efforts deflect expiratory flow toward baseline <b>but never reach zero</b>, and expiration hasn’t finished before each breath. The patient must first overcome auto-PEEP before any inspiratory flow can occur.",
+    "look": "Auto-PEEP: bump toward zero. High threshold: flow crosses zero but stays below the trigger level.",
+    "settings": {
+      "preset": "copd",
+      "vent": {
+        "mode": "vc-cmv",
+        "VT": 0.55,
+        "flow": 50,
+        "RR": 18,
+        "PEEP": 5,
+        "trigFlow": 2
+      },
+      "drive": {
+        "on": true,
+        "rate": 30,
+        "amp": 5,
+        "ti": 0.7,
+        "tr": 0.4,
+        "jitter": 0.1
+      }
+    },
+    "chips": [
+      {
+        "t": "AC/VC · VC-CMVs",
+        "tag": true
+      },
+      {
+        "t": "VT 550 · flow 50"
+      },
+      {
+        "t": "RR 18"
+      },
+      {
+        "t": "PEEP 5"
+      },
+      {
+        "t": "Flow trig 2 L/min"
+      }
+    ],
+    "allWaveformsFinite": true,
+    "samples": 1000
+  },
+  {
+    "id": "fix-failed",
+    "diff": "hard",
+    "generated": true,
+    "story": "COPD on AC/VC with many unanswered efforts.",
+    "question": "Which change best addresses the root cause?",
+    "options": [
+      "Increase VT so each breath satisfies the patient",
+      "Reduce dynamic hyperinflation: lower VT or RR, shorten inspiration, bronchodilate",
+      "Make the flow trigger more sensitive",
+      "Increase the set RR to match the patient"
+    ],
+    "answerIndex": 1,
+    "answer": "Reduce dynamic hyperinflation: lower VT or RR, shorten inspiration, bronchodilate",
+    "explanation": "The efforts fail because of <b>auto-PEEP</b>: no trigger setting can detect an effort that never brings flow to zero. Shrink the trapped volume: lower VT/RR, shorten inspiratory time, treat bronchospasm. (In advanced practice, external PEEP up to ~80% of auto-PEEP can also unload triggering.) Bigger or more breaths make trapping worse.",
+    "look": "Over-assistance (too much volume) is itself a cause of failed triggers.",
+    "settings": {
+      "preset": "copd",
+      "pes": true,
+      "vent": {
+        "mode": "vc-cmv",
+        "VT": 0.6,
+        "flow": 45,
+        "RR": 18,
+        "PEEP": 5
+      },
+      "drive": {
+        "on": true,
+        "rate": 26,
+        "amp": 5,
+        "ti": 0.7,
+        "tr": 0.4,
+        "jitter": 0.1
+      }
+    },
+    "chips": [
+      {
+        "t": "AC/VC · VC-CMVs",
+        "tag": true
+      },
+      {
+        "t": "VT 600 · flow 45"
+      },
+      {
+        "t": "RR 18"
+      },
+      {
+        "t": "PEEP 5"
+      },
+      {
+        "t": "Flow trig 2 L/min"
+      }
+    ],
+    "allWaveformsFinite": true,
+    "samples": 1000
+  },
+  {
+    "id": "multi-why",
+    "diff": "hard",
+    "generated": true,
+    "story": "Double triggering on AC/VC. The esophageal balloon is in place.",
+    "question": "What is causing the multiple triggers?",
+    "options": [
+      "Early trigger (reverse triggering): the machine breath comes first, then the effort",
+      "False trigger",
+      "Late cycle",
+      "Early cycle: one long effort spans both breaths"
+    ],
+    "answerIndex": 0,
+    "answer": "Early trigger (reverse triggering): the machine breath comes first, then the effort",
+    "explanation": "The first breath is <b>time-triggered</b> (grey) with a flat Pes; the patient’s effort (Pes dip) begins <b>after inflation starts</b> and carries into expiration, triggering the stacked breath. That is early trigger.",
+    "look": "Multiple trigger is a pattern with at least three causes: early cycle, early trigger and false trigger. Timing of Pmus tells them apart.",
+    "settings": {
+      "preset": "ards",
+      "pes": true,
+      "vent": {
+        "mode": "vc-cmv",
+        "VT": 0.38,
+        "flow": 50,
+        "RR": 20,
+        "PEEP": 12
+      },
+      "drive": {
+        "on": true,
+        "entrain": 1,
+        "entrainDelay": 0.5,
+        "amp": 7,
+        "ti": 0.8,
+        "tr": 0.4,
+        "jitter": 0.06
+      }
+    },
+    "chips": [
+      {
+        "t": "AC/VC · VC-CMVs",
+        "tag": true
+      },
+      {
+        "t": "VT 380 · flow 50"
+      },
+      {
+        "t": "RR 20"
+      },
+      {
+        "t": "PEEP 12"
+      },
+      {
+        "t": "Flow trig 2 L/min"
+      }
+    ],
+    "allWaveformsFinite": true,
+    "samples": 1000
+  },
+  {
+    "id": "fix-lcyc",
+    "diff": "hard",
+    "generated": true,
+    "story": "COPD on PSV 16 with ETS 5%. He is fighting the end of every breath.",
+    "question": "What is the best adjustment?",
+    "options": [
+      "Increase pressure support",
+      "Lengthen the rise time",
+      "Raise the cycle threshold (ETS) so breaths end sooner",
+      "Lower the cycle threshold further"
+    ],
+    "answerIndex": 2,
+    "answer": "Raise the cycle threshold (ETS) so breaths end sooner",
+    "explanation": "Late cycle: with a long time constant, flow decays slowly and a 5% threshold keeps the breath going long after the patient stops inhaling, so he pushes against it. <b>Raising ETS</b> (often 40–50% in COPD) ends the breath closer to neural Ti. Lowering PS can also help; more PS makes it worse.",
+    "look": "End-inspiratory pressure spike, abrupt flow drop.",
+    "settings": {
+      "preset": "copd",
+      "vent": {
+        "mode": "psv",
+        "PS": 16,
+        "PEEP": 5,
+        "ETS": 5
+      },
+      "drive": {
+        "on": true,
+        "rate": 20,
+        "amp": 6.5,
+        "ti": 0.6,
+        "tr": 0.3,
+        "jitter": 0.06,
+        "expAmp": 12,
+        "expStart": 0,
+        "expDur": 0.9
+      }
+    },
+    "chips": [
+      {
+        "t": "PSV · PC-CSVs",
+        "tag": true
+      },
+      {
+        "t": "PS 16 · ETS 5%"
+      },
+      {
+        "t": "PEEP 5"
+      },
+      {
+        "t": "Flow trig 2 L/min"
+      }
+    ],
+    "allWaveformsFinite": true,
+    "samples": 1000
+  },
+  {
+    "id": "obese",
+    "diff": "hard",
+    "generated": true,
+    "story": "BMI 52, hypoxemic, AC/VC with an inspiratory and an expiratory hold. Esophageal balloon in place.",
+    "question": "What is the best interpretation?",
+    "options": [
+      "High airway resistance",
+      "Pleural pressure is high: end-expiratory PL is negative, so titrate PEEP up using Pes",
+      "Pplat is near 30: drop VT to 4 mL/kg",
+      "Auto-PEEP is raising Pplat"
+    ],
+    "answerIndex": 1,
+    "answer": "Pleural pressure is high: end-expiratory PL is negative, so titrate PEEP up using Pes",
+    "explanation": "Pplat reflects lung <b>plus chest wall</b>. Pes (≈ pleural pressure) is very high, so end-expiratory transpulmonary pressure (total PEEP − Pes) is <b>negative</b>: the lung is being squeezed shut at end-expiration while the true distending pressure at end-inspiration (Pplat − Pes) is modest. Raising PEEP to keep PL,ee ≥ 0 targets the real problem; slashing VT based on Pplat alone would not.",
+    "look": "Two patients with the same Pplat can have very different lung stress. Esophageal manometry tells them apart.",
+    "settings": {
+      "preset": "obesity",
+      "pes": true,
+      "patient": {
+        "Ppl0": 13
+      },
+      "vent": {
+        "mode": "vc-cmv",
+        "VT": 0.5,
+        "flow": 60,
+        "RR": 16,
+        "PEEP": 10,
+        "FiO2": 0.7
+      },
+      "events": [
+        {
+          "at": 0.3,
+          "act": "holdI"
+        },
+        {
+          "at": 4.5,
+          "act": "holdE"
+        }
+      ]
+    },
+    "chips": [
+      {
+        "t": "AC/VC · VC-CMVs",
+        "tag": true
+      },
+      {
+        "t": "VT 500 · flow 60"
+      },
+      {
+        "t": "RR 16"
+      },
+      {
+        "t": "PEEP 10"
+      },
+      {
+        "t": "Flow trig 2 L/min"
+      },
+      {
+        "t": "Pplat 28"
+      },
+      {
+        "t": "Total PEEP 10"
+      },
+      {
+        "t": "Pes end-exp 11"
+      }
+    ],
+    "allWaveformsFinite": true,
+    "samples": 1000
+  },
+  {
+    "id": "prvc",
+    "diff": "hard",
+    "generated": true,
+    "story": "PRVC (PC-CMVa), target VT 450. The patient is getting more agitated; the delivered pressure keeps falling breath after breath.",
+    "question": "Why is the inspiratory pressure falling?",
+    "options": [
+      "Adaptive targeting: as the patient pulls harder, the ventilator gives less pressure to hold VT at target",
+      "A circuit leak",
+      "Compliance is improving",
+      "Auto-PEEP"
+    ],
+    "answerIndex": 0,
+    "answer": "Adaptive targeting: as the patient pulls harder, the ventilator gives less pressure to hold VT at target",
+    "explanation": "PRVC adjusts pressure between breaths to hit the target VT. When the patient’s effort adds volume, the ventilator <b>lowers its pressure</b>, so the work shifts to the patient. In severe cases support falls to near PEEP while VT stays above target, all generated by the patient.",
+    "look": "Adaptive modes: total work is not constant, and support falls as effort rises.",
+    "settings": {
+      "pre": 7,
+      "vent": {
+        "mode": "pc-cmva",
+        "VT": 0.45,
+        "Ti": 0.9,
+        "RR": 16,
+        "PEEP": 5
+      },
+      "drive": {
+        "on": true,
+        "rate": 22,
+        "amp": 9,
+        "ti": 0.9,
+        "tr": 0.4,
+        "jitter": 0.08
+      }
+    },
+    "chips": [
+      {
+        "t": "PRVC · PC-CMVa",
+        "tag": true
+      },
+      {
+        "t": "VT target 450 · Ti 0.9"
+      },
+      {
+        "t": "RR 16"
+      },
+      {
+        "t": "PEEP 5"
+      },
+      {
+        "t": "Flow trig 2 L/min"
+      }
+    ],
+    "allWaveformsFinite": true,
+    "samples": 1000
+  },
+  {
+    "id": "tag",
+    "diff": "hard",
+    "generated": true,
+    "story": "The mode display is hidden. Classify the mode from the scalars.",
+    "question": "Which TAG fits?",
+    "options": [
+      "VC-CMVs (AC/VC)",
+      "PC-IMV(1)s,s (APRV)",
+      "VC-IMV(1)s,s (SIMV-VC + PS)",
+      "PC-CMVa (PRVC)"
+    ],
+    "answerIndex": 3,
+    "answer": "PC-CMVa (PRVC)",
+    "explanation": "Every breath has <b>square pressure and decaying flow</b> (pressure control), all mandatory, but <b>the pressure changes from breath to breath</b> as the ventilator adapts to reach a volume target: adaptive targeting, PC-CMVa.",
+    "look": "Define the TAG: control variable, breath sequence, targeting scheme.",
+    "settings": {
+      "pre": 3,
+      "win": 12,
+      "hideMode": true,
+      "vent": {
+        "mode": "pc-cmva",
+        "VT": 0.45,
+        "Ti": 0.9,
+        "RR": 16,
+        "PEEP": 5
+      }
+    },
+    "chips": [
+      {
+        "t": "Mode display hidden",
+        "tag": true
+      },
+      {
+        "t": "PEEP 5"
+      }
+    ],
+    "allWaveformsFinite": true,
+    "samples": 1200
+  },
+  {
+    "id": "fix-early",
+    "diff": "hard",
+    "generated": true,
+    "story": "Deeply sedated ARDS patient (RASS −5). Breath stacking is pushing Pplat over 30.",
+    "question": "What is the most appropriate response?",
+    "options": [
+      "Make the trigger more sensitive",
+      "Increase VT so the patient is satisfied",
+      "Switch to PSV",
+      "Recognize reverse triggering; adjust sedation or the set rate/Ti, and consider deeper sedation or paralysis if stacking persists"
+    ],
+    "answerIndex": 3,
+    "answer": "Recognize reverse triggering; adjust sedation or the set rate/Ti, and consider deeper sedation or paralysis if stacking persists",
+    "explanation": "These are <b>early triggers</b>: time-triggered breaths entrain an effort that carries into expiration and stacks a second breath, delivering injurious volumes. Options include changing the rate or Ti to break the entrainment and adjusting sedation; when stacking threatens lung protection, deeper sedation or neuromuscular blockade may be needed. Trigger sensitivity is irrelevant: the first breath isn’t patient-triggered.",
+    "look": "Machine breath first, effort second.",
+    "settings": {
+      "preset": "ards",
+      "pes": true,
+      "vent": {
+        "mode": "vc-cmv",
+        "VT": 0.38,
+        "flow": 50,
+        "RR": 20,
+        "PEEP": 12
+      },
+      "drive": {
+        "on": true,
+        "entrain": 1,
+        "entrainDelay": 0.5,
+        "amp": 7,
+        "ti": 0.8,
+        "tr": 0.4,
+        "jitter": 0.06
+      }
+    },
+    "chips": [
+      {
+        "t": "AC/VC · VC-CMVs",
+        "tag": true
+      },
+      {
+        "t": "VT 380 · flow 50"
+      },
+      {
+        "t": "RR 20"
+      },
+      {
+        "t": "PEEP 12"
+      },
+      {
+        "t": "Flow trig 2 L/min"
+      }
+    ],
+    "allWaveformsFinite": true,
+    "samples": 1000
+  }
+]

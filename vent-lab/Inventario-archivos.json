@@ -1,0 +1,434 @@
+{
+  "Casos-ejemplo.json": {
+    "bytes": 39903,
+    "sha256": "48cfb207649af0a4518130cfcda235891f6a8f7f23040afefafae4a5f882271f"
+  },
+  "Controles-y-ajustes.md": {
+    "bytes": 1225,
+    "sha256": "4384c0ae72f36b2cb656367ca4478d7faa11e6c8bd5e23973a7527a7a735256b"
+  },
+  "Casos-ejemplo.md": {
+    "bytes": 1640,
+    "sha256": "5333a9e5f276414e4e7f60d1da081765c70ca66a488b1fcc8c5b137c7e254a10"
+  },
+  "LEEME.md": {
+    "bytes": 3201,
+    "sha256": "c2fe93dc1ba37cb68f71fb9fa71c950c2e59e378ee728fef20c8c3d1414b74a2"
+  },
+  "Curso-completo.md": {
+    "bytes": 27032,
+    "sha256": "3aa6ed9dcbb3c39051890ea81ba341cc97740ebfb26092b28017cf70b3220139"
+  },
+  "Contenido-estructurado.json": {
+    "bytes": 98180,
+    "sha256": "53a7edc4022cc34f448819c72f70ebd9ca6988c7cc300ccc3a3bc931f3608816"
+  },
+  "Desafio-asincronias.md": {
+    "bytes": 1067,
+    "sha256": "6777a8ec165641c9a98034cca8a29d633d31e0fccea04fef2b243e40b210aecd"
+  },
+  "Perfiles-pacientes.md": {
+    "bytes": 3181,
+    "sha256": "70073f18bf87c6547f114be1800a3fd0d741c15c7370eb9f1f7914da22390d1b"
+  },
+  "Estructura-original.md": {
+    "bytes": 958,
+    "sha256": "8438c91403a345d0de5d826d5f47f743501fb0141f3c0d1773fb2ec465b80740"
+  },
+  "VERIFICACION.md": {
+    "bytes": 1114,
+    "sha256": "e0b82e172f3ae2262186d7d21cf3d69b56e5292bb6f6795b47c9f8661cd1fd5a"
+  },
+  "Modos-ventilatorios.md": {
+    "bytes": 5469,
+    "sha256": "a7fad8c7aa510825e604de0933f70086c40c6b921dd007472c56b031cc5d0301"
+  },
+  "Ayuda-original.md": {
+    "bytes": 1416,
+    "sha256": "f36479644de6caaa4f9c707ac52f683c3d59aa72684159144b8018dfbafdd12e"
+  },
+  "Extraccion-Firecrawl.md": {
+    "bytes": 4074,
+    "sha256": "0e09e726457c6a87d7143ac375f8498e6a731d5d0912dbbde4dae705ff2dffda"
+  },
+  "Inventario-lecciones.json": {
+    "bytes": 6137,
+    "sha256": "7bde98408d23fe99ba93f9b6049b09496ce2ab8966b83bb613060208fdcbee58"
+  },
+  "sitio/lb.js": {
+    "bytes": 12131,
+    "sha256": "c20485c1012c4c1b51e628da8368f0d42e106dc4681eebae7f65b191b1842255"
+  },
+  "sitio/vent-lab.html": {
+    "bytes": 240607,
+    "sha256": "85ac1f97cc3749f2ee6b831c7919bf22b8e6446cc2de6daf91ea70fed7163a70"
+  },
+  "sitio/lb-config.js": {
+    "bytes": 300,
+    "sha256": "5c30408a78e2ea1f9acb001ae6f260c33288315f00b11d9678df8cbe54f65ba1"
+  },
+  "casos-ejemplo/12-false-card.md": {
+    "bytes": 747,
+    "sha256": "e96c71a8996cd2c7fb7230efab7423f45e2688c519eaa62607615bb1ce9b1bea"
+  },
+  "casos-ejemplo/20-failed-why.md": {
+    "bytes": 903,
+    "sha256": "fa003c23b942f51c14819775587a5674a63ba56b8acd79a57318c5d1216fdecf"
+  },
+  "casos-ejemplo/07-tau.md": {
+    "bytes": 803,
+    "sha256": "0f28555e78e4fff60384ed41c1099a4408b76f09fc37f133fd9827c2f1799cda"
+  },
+  "casos-ejemplo/03-auto.md": {
+    "bytes": 888,
+    "sha256": "fdf5ad8c8e19393c45a864adaf637e4568ca815a0d6140e3724c5ac6c128a2e7"
+  },
+  "casos-ejemplo/01-mode.md": {
+    "bytes": 790,
+    "sha256": "2fb20785daeb36eb9b9759863c7e1c1f3320b952d8bb94efbb349e690d5ff6dd"
+  },
+  "casos-ejemplo/02-load.md": {
+    "bytes": 730,
+    "sha256": "8260f750067767cab68e6fdcee0ae5707f0d0e738629c4031a00cbecdf603f0a"
+  },
+  "casos-ejemplo/24-obese.md": {
+    "bytes": 1129,
+    "sha256": "6060f048aa44f9a330ce94d26a5232ee33a24bb59b37ff28604338cee8fb4f8f"
+  },
+  "casos-ejemplo/25-prvc.md": {
+    "bytes": 1021,
+    "sha256": "eb61441856cab95620966d517b136008746b05468eb0ebb03c964e2a71eea9db"
+  },
+  "casos-ejemplo/22-multi-why.md": {
+    "bytes": 932,
+    "sha256": "c48aeed216ea7499e3d16a1a8fa3c2a650270a599e8ea4282a4e0467f71d5e87"
+  },
+  "casos-ejemplo/11-false-leak.md": {
+    "bytes": 842,
+    "sha256": "dc50dce45c6bad77636e4949ba0a318d1b7dfb53a1aea2d333148b68b3281d46"
+  },
+  "casos-ejemplo/17-fix-late.md": {
+    "bytes": 799,
+    "sha256": "8c8a775ed95e096c44331e2a8334b3efc5b2f32671f32799927f9e302ea07597"
+  },
+  "casos-ejemplo/06-double.md": {
+    "bytes": 724,
+    "sha256": "95c074fbff2b9d9a412b334422600a3c85e3820575fbb51d1a758493b512bf16"
+  },
+  "casos-ejemplo/15-fix-auto.md": {
+    "bytes": 948,
+    "sha256": "fcafee74f83465d73d69cfde7204eba0d1e031bbaa5d16ffea7c46c2a6ae6837"
+  },
+  "casos-ejemplo/10-lcyc.md": {
+    "bytes": 808,
+    "sha256": "69a66e57e559383c9823ebbaf8a52aaa3433f76681f4862136c962bd6a85c409"
+  },
+  "casos-ejemplo/13-early.md": {
+    "bytes": 804,
+    "sha256": "45d481fd2399918f94927b075a8a318fcc2d486286b254436520d807ff584399"
+  },
+  "casos-ejemplo/08-late.md": {
+    "bytes": 760,
+    "sha256": "c8cf83529c3281c8239dd426cd5b172c4205a95a85b6be3f2db19b6f874e1ccb"
+  },
+  "casos-ejemplo/05-starve.md": {
+    "bytes": 819,
+    "sha256": "c50d6def2377b75f8972b5c440090170f45f7d933f6b7ba6b1eec28ab5d11d8c"
+  },
+  "casos-ejemplo/14-expw.md": {
+    "bytes": 740,
+    "sha256": "2f407b4197f198093c3026a847de078dcf5d33e75c876bb978c698061cb8107a"
+  },
+  "casos-ejemplo/16-fix-starve.md": {
+    "bytes": 966,
+    "sha256": "13d8585effe45723ef47bbb9c4a706c14fd7772b8576f746c49f72332cc2012e"
+  },
+  "casos-ejemplo/26-tag.md": {
+    "bytes": 696,
+    "sha256": "e3509321681a2d3f0fccc0f357020ffbadf1a3e2c0e67139f3688e4aa62ee1f8"
+  },
+  "casos-ejemplo/27-fix-early.md": {
+    "bytes": 1169,
+    "sha256": "ee20375a2bc7ba45283f12ad02e1cd0f6c1e1b6a5a22d5343297041075740d09"
+  },
+  "casos-ejemplo/04-failed.md": {
+    "bytes": 788,
+    "sha256": "60981ade9070e94632878926a748eed33fd47d7c76566596f16e678c7a212fd7"
+  },
+  "casos-ejemplo/19-fix-ecyc.md": {
+    "bytes": 828,
+    "sha256": "7f765575885df306c1bfcfb15455ca57c0a799c93fffd2eeeb69d7eba0576e5a"
+  },
+  "casos-ejemplo/18-fix-leak.md": {
+    "bytes": 916,
+    "sha256": "b3bea4b36ac2e4312bf96646aeefc0f3fe9b0e3f1669740de549bc144adf96b5"
+  },
+  "casos-ejemplo/21-fix-failed.md": {
+    "bytes": 1029,
+    "sha256": "27d6ef05f4978baf710c60b5fe7eea41ff2ec75568568ba93478cada85cb0a1a"
+  },
+  "casos-ejemplo/23-fix-lcyc.md": {
+    "bytes": 872,
+    "sha256": "360aa69ad9209be7e6b222bc5d6d5f5add4ee471b09255ded7f01c8d1de7ea5f"
+  },
+  "casos-ejemplo/09-ecyc.md": {
+    "bytes": 734,
+    "sha256": "99c0428301d3de7df79bd131b829eeae64659bce9541f48b3644edcca532ad7b"
+  },
+  "curso/06-oxvent.md": {
+    "bytes": 842,
+    "sha256": "f86fb5d6c99ca0900cd40a0142a44476e6749ed93334bc13a712c85f9f2cc69a"
+  },
+  "curso/23-autopeep.md": {
+    "bytes": 874,
+    "sha256": "8d2f43ea450eeb9c7c1f927ea55ce66af071315d54e9bfd39ffc8dd900646249"
+  },
+  "curso/21-resistive.md": {
+    "bytes": 760,
+    "sha256": "88973be4e41d8dbdcf51e82106b2101c004de402c4f55d284dce395d0daa932a"
+  },
+  "curso/26-case1a.md": {
+    "bytes": 1031,
+    "sha256": "a8a1ba9aad6e1092d3dd0f5a2fb060029e8f47a2a902f7b9dcf7bcaf5b209d25"
+  },
+  "curso/11-sbt.md": {
+    "bytes": 794,
+    "sha256": "05d063d899919db6da3ac694e59dd0d0127720da5ed0adb90ff1c47651749340"
+  },
+  "curso/19-plat-unreliable.md": {
+    "bytes": 1094,
+    "sha256": "c0ace123321df35f09977167ad3975797504809d719538838467ba9bf29cf126"
+  },
+  "curso/14-spont-drive.md": {
+    "bytes": 844,
+    "sha256": "912031b43ea4ce45e19ef060509f9f4dacedb94133968d67e908413767296c02"
+  },
+  "curso/17-peak-plat.md": {
+    "bytes": 1048,
+    "sha256": "ed0230651fbcbb1ea73ba74dc4f90155902540b1736c27bd43ba721fb685d1d3"
+  },
+  "curso/29-case2b.md": {
+    "bytes": 710,
+    "sha256": "c745e6bebed8ee72a754424552ff35a6b96e6cebb9f53333b9a51dfb9bc1217c"
+  },
+  "curso/15-ppv.md": {
+    "bytes": 683,
+    "sha256": "4bace001e37b94c552b7b63b0834c53cec202cb3a23c6192876fbf52c2e662af"
+  },
+  "curso/05-params.md": {
+    "bytes": 622,
+    "sha256": "1cb5d3edf520f610b740588630c6cb5b459bf278f153533deb8bf95537b60870"
+  },
+  "curso/16-peep.md": {
+    "bytes": 661,
+    "sha256": "f85cf2800fcc2e5550232330f1957e3292c908e0543772339cfd26e56b921714"
+  },
+  "curso/13-apnea.md": {
+    "bytes": 764,
+    "sha256": "fb54dd3789113e0ab678d66561bc5a0850725c71e4fffad3b65148b2a1836261"
+  },
+  "curso/12-rsbi.md": {
+    "bytes": 798,
+    "sha256": "0cbb91f4bdabc44817d72826f6272891e3208c77c5a08eccca79cbf0ce8f25ed"
+  },
+  "curso/30-case2c.md": {
+    "bytes": 882,
+    "sha256": "b2a3a2d39931ce331ee211b113639188446e015a4147a11ccaf2c898bdd69761"
+  },
+  "curso/04-comfort.md": {
+    "bytes": 837,
+    "sha256": "fae137fc63061f188c666e8bf93b99719a5631c60ba6ae6e8eef2cf769b5cf4e"
+  },
+  "curso/27-case1b.md": {
+    "bytes": 1370,
+    "sha256": "1483795e7d2e86b7d48ae6715143de72cbbbe2adcc196c838eed5ca25f68912c"
+  },
+  "curso/18-pressures.md": {
+    "bytes": 827,
+    "sha256": "9af5efc3dbe3c5d17a1345fb7cc40d749c7fc595b5d3f59fe60929a2fa9c9c52"
+  },
+  "curso/24-ie.md": {
+    "bytes": 961,
+    "sha256": "bafbdaa13fdb71b4b1340b9eb660d788ed4608755ff8df47982c9b26a2111335"
+  },
+  "curso/09-trigger.md": {
+    "bytes": 887,
+    "sha256": "e3f8eedb230b42d68ae190a20f43e14f1166d28de1c183ea178873763b7e9aef"
+  },
+  "curso/03-negative.md": {
+    "bytes": 841,
+    "sha256": "83c50bd3b87cbb7878099a76173bf9c661ece2299079586be2f2e91b2d959546"
+  },
+  "curso/02-acpc-acvc.md": {
+    "bytes": 1066,
+    "sha256": "d7038dcdb86f9ee2619db7c4c105495c2c2e8816d8d070976d0bd67b5de89d12"
+  },
+  "curso/20-elastic.md": {
+    "bytes": 848,
+    "sha256": "57211f1d6eaefa2edbe738b2bc1ace8003d58ae80b76faf9a9d95bdf364b2863"
+  },
+  "curso/10-psv.md": {
+    "bytes": 727,
+    "sha256": "bf1742321e3aad0f4329837cbeba85fba61149a53aff0210f2555d42be632711"
+  },
+  "curso/22-interpret.md": {
+    "bytes": 857,
+    "sha256": "8f01af47bdf751f534c9afe70b693766ff313ef11edec85ee47bc6c0b7318bdd"
+  },
+  "curso/08-phases.md": {
+    "bytes": 902,
+    "sha256": "34924693da4e73925f039831ef38fbe18135013a26efcc7757f0b6c97829c7d1"
+  },
+  "curso/25-alarms.md": {
+    "bytes": 1105,
+    "sha256": "29be8e48b5e7c666e69074f98e7b9661c96d46f58724486907c3021ad2ac6977"
+  },
+  "curso/01-why.md": {
+    "bytes": 1185,
+    "sha256": "2160fb45f4a3c28690d06a1cb847d5c2cac1ccb47a83c5ea29c6d57dabc3b856"
+  },
+  "curso/07-lpv.md": {
+    "bytes": 873,
+    "sha256": "a382e8bfb70b9d2ad64432d3accac6f27d934606e23a15955886110606026b37"
+  },
+  "curso/28-case2a.md": {
+    "bytes": 1103,
+    "sha256": "188222801f036b99bd8a82a940879af2cd1df655f94298230f39abf18bd4891b"
+  },
+  "fuentes-originales/Recursos-localizados.json": {
+    "bytes": 5645,
+    "sha256": "7d830b8e61ca09cc2950398c4b94ca8d6b2003a3aa5ed98507758eda5b48e6ec"
+  },
+  "fuentes-originales/Firecrawl.json": {
+    "bytes": 1628,
+    "sha256": "79038d74eba71a33b83e0c770ddabe1e4e0023fb594dc8f92bc681b82cc6b70d"
+  },
+  "fuentes-originales/vent-lab.html": {
+    "bytes": 240937,
+    "sha256": "1d85279fdf5229430d67dff7c1f32abbec36cd2856236175cad29cf439ef8ca5"
+  },
+  "sitio/fonts/font-41ac41bf449db100.woff2": {
+    "bytes": 12360,
+    "sha256": "56b59010b495697f00c899585294059654f92d548f214252f41576515af4fdaa"
+  },
+  "sitio/fonts/font-cf65f680c0c97e6e.woff2": {
+    "bytes": 19684,
+    "sha256": "c01b3de8c8058462caadd044a6b874a9f4d7098d7d71d6c70e6a278096b8640e"
+  },
+  "sitio/fonts/font-df82cebcf4a69cfb.woff2": {
+    "bytes": 4432,
+    "sha256": "4a71f287156a3f284e973e27ee861207a335ec83929b0463c8d3ec5dc5ba0175"
+  },
+  "sitio/fonts/font-e23505d0397be9b7.woff2": {
+    "bytes": 12552,
+    "sha256": "b718f7de81b381c90d2dfd4755232a1b6fc8d0d53292b425fbc62d6a881f6bf5"
+  },
+  "sitio/fonts/font-3ef6c67ca4a71e7e.woff2": {
+    "bytes": 4388,
+    "sha256": "3f0ae4954e49742d3394756967c6ddf568fb3237c3e56217f3a9c4088f45d731"
+  },
+  "sitio/fonts/font-db1fc2ab3ad09ff5.woff2": {
+    "bytes": 10384,
+    "sha256": "d3dec468c992ea2d831508cff57d7b7af4168c909f30a5c503c7a8d9a1a56bf7"
+  },
+  "sitio/fonts/font-0b5c2db191621518.woff2": {
+    "bytes": 5500,
+    "sha256": "d524dc8ff6dbf7ed69772f3b2ff4affaf5a89b5762b270e36c3f21da0d4e39f5"
+  },
+  "sitio/fonts/font-784e5ede32c4cdea.woff2": {
+    "bytes": 4116,
+    "sha256": "69744cabbccc9faf77516ce9b744361e1e6be7f8081400006035a153797d2965"
+  },
+  "sitio/fonts/font-4e183d488cda203f.woff2": {
+    "bytes": 25408,
+    "sha256": "5bac72520e0a9a5669e08b15fa1e15be6f4da74aa0b2d4315a97c11e1465120a"
+  },
+  "sitio/fonts/font-33ff57e97518ac70.woff2": {
+    "bytes": 16296,
+    "sha256": "a29d4e6345cdb7e2b6daabf4961a6dcafcbc7ed1eac26186ca4a004cd32d64d8"
+  },
+  "sitio/fonts/font-2d8cfbcbf9ec7629.woff2": {
+    "bytes": 8960,
+    "sha256": "1b6b18fd0fd240bc6d5850f4df621484722d4b5d3650ebdd1e3a8bbd81c75854"
+  },
+  "sitio/fonts/font-5778b1a208141d42.woff2": {
+    "bytes": 10060,
+    "sha256": "a76f53ca6612e7b3828eec2311098675b7f9849ae4169a8bcef6302aec02a6c0"
+  },
+  "sitio/fonts/font-efbd4e0b7034b5e3.woff2": {
+    "bytes": 25868,
+    "sha256": "ae1d854fefa1167a79071f1afe01d4d51b60c5840c1be36dd74bd5fe7375b405"
+  },
+  "sitio/fonts/font-69e7fcdf1ad58a05.woff2": {
+    "bytes": 4432,
+    "sha256": "a23f93636471fbcf71b5259f1a7546a5e8f5b4deaf0a922c9dc1a3f63e0d4a84"
+  },
+  "sitio/fonts/font-651b5ac800ea86eb.woff2": {
+    "bytes": 10364,
+    "sha256": "45e29de2b3fc26bd0262e1e42303799888d2e895e386e7624ad473582e8581fc"
+  },
+  "sitio/fonts/font-cb1a242b907c798c.woff2": {
+    "bytes": 4336,
+    "sha256": "311098be73eac339128f0b5a6e33d72645b6f87488541fdf467c402152d297fd"
+  },
+  "sitio/fonts/font-e02c23899b10028c.woff2": {
+    "bytes": 12252,
+    "sha256": "4d6ffb9f9d52765c480ebe2016063c46af6df02feda55f398befcf55a1b27ba3"
+  },
+  "sitio/fonts/font-9d44a92983acf712.woff2": {
+    "bytes": 40240,
+    "sha256": "056e4e2459f57a0033c8c9c844ff19d6e42ac8602027803d4345823bcc939818"
+  },
+  "sitio/fonts/font-2eab9668f909a1cb.woff2": {
+    "bytes": 4320,
+    "sha256": "f746246b6b0b641f99d9e26e0bf4e42197bde692126857857f0195a94362d52a"
+  },
+  "sitio/fonts/font-69a46ab1488a38c1.woff2": {
+    "bytes": 10296,
+    "sha256": "0adb5e69c90d13bdc817531c89bf353c02e8babc5f9cf23658c451b7cd7ee48e"
+  },
+  "sitio/fonts/font-466e6a68c4ee3f94.woff2": {
+    "bytes": 9612,
+    "sha256": "526a4dd36c3af41f73a623e852302d8947d7fd4c00ee3026d82ef1f24a412fcd"
+  },
+  "sitio/fonts/fonts.css": {
+    "bytes": 16104,
+    "sha256": "d571da176cd80002184a378ba94d8b5da620cecdf21a815b73697013585c3c5a"
+  },
+  "sitio/fonts/font-4065b246a6a3a332.woff2": {
+    "bytes": 5548,
+    "sha256": "b814a03d7e57b0626a906f76911b9361d173a1aabc5544c40f72d6a35a1e4940"
+  },
+  "sitio/fonts/font-e3a2f4467449e184.woff2": {
+    "bytes": 12172,
+    "sha256": "553d6ad0a02273d95e6637c463e67772eefdbf7a013e2279485196c4ed0fcf39"
+  },
+  "sitio/fonts/font-0e213dc59c137688.woff2": {
+    "bytes": 4036,
+    "sha256": "b2529fba93fd07a50ffb8fc3d103eb04b0c298d4f6564d2833c44fde286de7e4"
+  },
+  "sitio/fonts/font-11ced52deb54070d.woff2": {
+    "bytes": 10120,
+    "sha256": "ad4580d8cb4b5f627c2d18457656732f7f7b070f7837fbc380e08054157e6f6c"
+  },
+  "sitio/fonts/font-8051534376b9297b.woff2": {
+    "bytes": 4404,
+    "sha256": "24dbf04164b51105db82303317357c5548418b1b0a51f57be85c0556d694f8af"
+  },
+  "sitio/fonts/font-7300d08cc3cf7909.woff2": {
+    "bytes": 8848,
+    "sha256": "77f03e26f981c582bdba3a7abed4baa2d3149211c01366bb3ab3ba7622ec4ae5"
+  },
+  "sitio/fonts/google-original.css": {
+    "bytes": 19568,
+    "sha256": "325fbced26a0f677cc552228954e24e3598252ed0ce2cafa72643c6f9a151063"
+  },
+  "sitio/fonts/font-31c68f3b2c45cff3.woff2": {
+    "bytes": 10520,
+    "sha256": "6b108e42f7c7568f5d7ef9f901c25bdd1a4cb51846204db19cb2924f7f20a3a8"
+  },
+  "sitio/vendor/supabase.js": {
+    "bytes": 217907,
+    "sha256": "d6a5c4414a5d4ce646d9c1de223aa7067d3ff664c15394ffeb7fcffc763354a3"
+  }
+}

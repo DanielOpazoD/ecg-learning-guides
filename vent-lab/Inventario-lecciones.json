@@ -1,0 +1,242 @@
+[
+  {
+    "number": 1,
+    "id": "why",
+    "title": "Why ventilate?",
+    "session": "Session 1 · Indications, basic modes and scalars",
+    "file": "curso/01-why.md",
+    "tasks": 2
+  },
+  {
+    "number": 2,
+    "id": "acpc-acvc",
+    "title": "AC/PC vs AC/VC",
+    "session": "Session 1 · Indications, basic modes and scalars",
+    "file": "curso/02-acpc-acvc.md",
+    "tasks": 2
+  },
+  {
+    "number": 3,
+    "id": "negative",
+    "title": "What “mode” do we breathe in?",
+    "session": "Session 1 · Indications, basic modes and scalars",
+    "file": "curso/03-negative.md",
+    "tasks": 2
+  },
+  {
+    "number": 4,
+    "id": "comfort",
+    "title": "Which mode is more comfortable?",
+    "session": "Session 1 · Indications, basic modes and scalars",
+    "file": "curso/04-comfort.md",
+    "tasks": 2
+  },
+  {
+    "number": 5,
+    "id": "params",
+    "title": "Changeable parameters",
+    "session": "Session 1 · Indications, basic modes and scalars",
+    "file": "curso/05-params.md",
+    "tasks": 2
+  },
+  {
+    "number": 6,
+    "id": "oxvent",
+    "title": "Oxygenation vs ventilation",
+    "session": "Session 1 · Indications, basic modes and scalars",
+    "file": "curso/06-oxvent.md",
+    "tasks": 2
+  },
+  {
+    "number": 7,
+    "id": "lpv",
+    "title": "Lung-protective ventilation",
+    "session": "Session 1 · Indications, basic modes and scalars",
+    "file": "curso/07-lpv.md",
+    "tasks": 2
+  },
+  {
+    "number": 8,
+    "id": "phases",
+    "title": "Trigger, inspiration, cycle, expiration",
+    "session": "Session 1 · Indications, basic modes and scalars",
+    "file": "curso/08-phases.md",
+    "tasks": 2
+  },
+  {
+    "number": 9,
+    "id": "trigger",
+    "title": "Patient vs time trigger",
+    "session": "Session 1 · Indications, basic modes and scalars",
+    "file": "curso/09-trigger.md",
+    "tasks": 2
+  },
+  {
+    "number": 10,
+    "id": "psv",
+    "title": "Pressure support",
+    "session": "Session 1 · Indications, basic modes and scalars",
+    "file": "curso/10-psv.md",
+    "tasks": 2
+  },
+  {
+    "number": 11,
+    "id": "sbt",
+    "title": "When PSV? What is an SBT?",
+    "session": "Session 1 · Indications, basic modes and scalars",
+    "file": "curso/11-sbt.md",
+    "tasks": 1
+  },
+  {
+    "number": 12,
+    "id": "rsbi",
+    "title": "RSBI",
+    "session": "Session 1 · Indications, basic modes and scalars",
+    "file": "curso/12-rsbi.md",
+    "tasks": 1
+  },
+  {
+    "number": 13,
+    "id": "apnea",
+    "title": "Apnea on PSV",
+    "session": "Session 1 · Indications, basic modes and scalars",
+    "file": "curso/13-apnea.md",
+    "tasks": 1
+  },
+  {
+    "number": 14,
+    "id": "spont-drive",
+    "title": "How does spontaneous effort move air?",
+    "session": "Session 2 · Single-compartment model, loads and safety",
+    "file": "curso/14-spont-drive.md",
+    "tasks": 1
+  },
+  {
+    "number": 15,
+    "id": "ppv",
+    "title": "Positive-pressure breath",
+    "session": "Session 2 · Single-compartment model, loads and safety",
+    "file": "curso/15-ppv.md",
+    "tasks": 1
+  },
+  {
+    "number": 16,
+    "id": "peep",
+    "title": "PEEP",
+    "session": "Session 2 · Single-compartment model, loads and safety",
+    "file": "curso/16-peep.md",
+    "tasks": 2
+  },
+  {
+    "number": 17,
+    "id": "peak-plat",
+    "title": "Peak and plateau",
+    "session": "Session 2 · Single-compartment model, loads and safety",
+    "file": "curso/17-peak-plat.md",
+    "tasks": 2
+  },
+  {
+    "number": 18,
+    "id": "pressures",
+    "title": "Airway, alveolar, pleural",
+    "session": "Session 2 · Single-compartment model, loads and safety",
+    "file": "curso/18-pressures.md",
+    "tasks": 2
+  },
+  {
+    "number": 19,
+    "id": "plat-unreliable",
+    "title": "When Pplat misleads",
+    "session": "Session 2 · Single-compartment model, loads and safety",
+    "file": "curso/19-plat-unreliable.md",
+    "tasks": 2
+  },
+  {
+    "number": 20,
+    "id": "elastic",
+    "title": "Stiff balloon: elastic load",
+    "session": "Session 2 · Single-compartment model, loads and safety",
+    "file": "curso/20-elastic.md",
+    "tasks": 1
+  },
+  {
+    "number": 21,
+    "id": "resistive",
+    "title": "Blocked straw: resistive load",
+    "session": "Session 2 · Single-compartment model, loads and safety",
+    "file": "curso/21-resistive.md",
+    "tasks": 1
+  },
+  {
+    "number": 22,
+    "id": "interpret",
+    "title": "Fibrosis vs asthma on AC/VC",
+    "session": "Session 2 · Single-compartment model, loads and safety",
+    "file": "curso/22-interpret.md",
+    "tasks": 2
+  },
+  {
+    "number": 23,
+    "id": "autopeep",
+    "title": "Auto-PEEP",
+    "session": "Session 2 · Single-compartment model, loads and safety",
+    "file": "curso/23-autopeep.md",
+    "tasks": 2
+  },
+  {
+    "number": 24,
+    "id": "ie",
+    "title": "Choosing the I:E ratio",
+    "session": "Session 2 · Single-compartment model, loads and safety",
+    "file": "curso/24-ie.md",
+    "tasks": 2
+  },
+  {
+    "number": 25,
+    "id": "alarms",
+    "title": "Safety features and alarms",
+    "session": "Session 2 · Single-compartment model, loads and safety",
+    "file": "curso/25-alarms.md",
+    "tasks": 2
+  },
+  {
+    "number": 26,
+    "id": "case1a",
+    "title": "Case 1 · hypercapnia",
+    "session": "Session 3 · Case-based simulation",
+    "file": "curso/26-case1a.md",
+    "tasks": 1
+  },
+  {
+    "number": 27,
+    "id": "case1b",
+    "title": "Case 1 · falling blood pressure",
+    "session": "Session 3 · Case-based simulation",
+    "file": "curso/27-case1b.md",
+    "tasks": 2
+  },
+  {
+    "number": 28,
+    "id": "case2a",
+    "title": "Case 2 · mode and initial settings",
+    "session": "Session 3 · Case-based simulation",
+    "file": "curso/28-case2a.md",
+    "tasks": 2
+  },
+  {
+    "number": 29,
+    "id": "case2b",
+    "title": "Case 2 · plateau of 34",
+    "session": "Session 3 · Case-based simulation",
+    "file": "curso/29-case2b.md",
+    "tasks": 2
+  },
+  {
+    "number": 30,
+    "id": "case2c",
+    "title": "Case 2 · permissive hypercapnia",
+    "session": "Session 3 · Case-based simulation",
+    "file": "curso/30-case2c.md",
+    "tasks": 2
+  }
+]

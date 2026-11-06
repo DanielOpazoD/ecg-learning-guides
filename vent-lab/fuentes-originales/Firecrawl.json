@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "viewport": "width=device-width, initial-scale=1, viewport-fit=cover",
+    "description": "A free mechanical ventilator simulator: live pressure, flow and volume scalars, a digital lung that shows elastic and resistive load, every major mode in the Chatburn taxonomy, an esophageal balloon, a step-by-step basics course, and a 5-minute asynchrony challenge.",
+    "language": "en",
+    "title": "Vent Lab | Boardside Reviews",
+    "favicon": "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20100%20100%22%20role%3D%22img%22%20aria-label%3D%22Boardside%20Reviews%20mark%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2242%22%20fill%3D%22%23fff%22%20stroke%3D%22%230B2545%22%20stroke-width%3D%227%22/%3E%3Cpath%20fill%3D%22%230B2545%22%20d%3D%22M35.326%2C27.0%20H51.38%20A11.5%2C11.5%200%200%201%2051.38%2C50%20H43.008%20V73.0%20H35.326%20Q34.59%2C73.0%2034.59%2C72.264%20V27.736%20Q34.59%2C27.0%2035.326%2C27.0%20Z%22/%3E%3Cpath%20fill%3D%22%230D7070%22%20d%3D%22M43.008%2C50%20H53.91%20A11.5%2C11.5%200%200%201%2053.91%2C73.0%20H43.008%20Z%22/%3E%3C/svg%3E",
+    "scrapeId": "01a1ae76-b92d-77c8-8839-c7f5a13cbe24",
+    "sourceURL": "https://www.boardsidereviews.com/vent-lab.html",
+    "url": "https://www.boardsidereviews.com/vent-lab.html",
+    "statusCode": 200,
+    "contentType": "text/html; charset=utf-8",
+    "timezone": "America/New_York",
+    "proxyUsed": "basic",
+    "indexId": "491f62d5-f7b9-43d5-af3d-3cce62a21d05",
+    "creditsUsed": 1,
+    "concurrencyLimited": false
+  },
+  "links": [
+    "https://www.boardsidereviews.com/#games"
+  ]
+}

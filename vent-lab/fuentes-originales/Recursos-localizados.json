@@ -1,0 +1,147 @@
+[
+  {
+    "url": "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Saira+Semi+Condensed:wght@500;600;700;800&display=swap",
+    "file": "fonts/google-original.css",
+    "bytes": 19568
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3twJwl9FgsAXHNlYzg.woff2",
+    "file": "fonts/font-0e213dc59c137688.woff2",
+    "bytes": 4036
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3twJwl5FgsAXHNlYzg.woff2",
+    "file": "fonts/font-7300d08cc3cf7909.woff2",
+    "bytes": 8848
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3twJwlBFgsAXHNk.woff2",
+    "file": "fonts/font-5778b1a208141d42.woff2",
+    "bytes": 10060
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3twJwl1FgsAXHNlYzg.woff2",
+    "file": "fonts/font-cb1a242b907c798c.woff2",
+    "bytes": 4336
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3vAOwl9FgsAXHNlYzg.woff2",
+    "file": "fonts/font-784e5ede32c4cdea.woff2",
+    "bytes": 4116
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3twJwlRFgsAXHNlYzg.woff2",
+    "file": "fonts/font-0b5c2db191621518.woff2",
+    "bytes": 5500
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3vAOwl1FgsAXHNlYzg.woff2",
+    "file": "fonts/font-2eab9668f909a1cb.woff2",
+    "bytes": 4320
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3vAOwlRFgsAXHNlYzg.woff2",
+    "file": "fonts/font-4065b246a6a3a332.woff2",
+    "bytes": 5548
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxQKYbSB4ZhRNU.woff2",
+    "file": "fonts/font-efbd4e0b7034b5e3.woff2",
+    "bytes": 25868
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3vAOwlBFgsAXHNk.woff2",
+    "file": "fonts/font-11ced52deb54070d.woff2",
+    "bytes": 10120
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxRKYbSB4ZhRNU.woff2",
+    "file": "fonts/font-466e6a68c4ee3f94.woff2",
+    "bytes": 9612
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/ibmplexmono/v20/-F6qfjptAgt5VM-kVkqdyU8n3vAOwl5FgsAXHNlYzg.woff2",
+    "file": "fonts/font-2d8cfbcbf9ec7629.woff2",
+    "bytes": 8960
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxTKYbSB4ZhRNU.woff2",
+    "file": "fonts/font-cf65f680c0c97e6e.woff2",
+    "bytes": 19684
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxaKYbSB4ZhRNU.woff2",
+    "file": "fonts/font-4e183d488cda203f.woff2",
+    "bytes": 25408
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/sairasemicondensed/v15/U9MM6c-2-nnJkHxyCjRcnMHcWVWV1cWRRXe3TfMRiXnV61by.woff2",
+    "file": "fonts/font-e02c23899b10028c.woff2",
+    "bytes": 12252
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxdKYbSB4ZhRNU.woff2",
+    "file": "fonts/font-33ff57e97518ac70.woff2",
+    "bytes": 16296
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/ibmplexsans/v23/zYXzKVElMYYaJe8bpLHnCwDKr932-G7dytD-Dmu1syxeKYbSB4Zh.woff2",
+    "file": "fonts/font-9d44a92983acf712.woff2",
+    "bytes": 40240
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/sairasemicondensed/v15/U9MM6c-2-nnJkHxyCjRcnMHcWVWV1cWRRXerTvMRiXnV61by.woff2",
+    "file": "fonts/font-e3a2f4467449e184.woff2",
+    "bytes": 12172
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/sairasemicondensed/v15/U9MM6c-2-nnJkHxyCjRcnMHcWVWV1cWRRXe3TfMeiXnV61by63Q.woff2",
+    "file": "fonts/font-8051534376b9297b.woff2",
+    "bytes": 4404
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/sairasemicondensed/v15/U9MM6c-2-nnJkHxyCjRcnMHcWVWV1cWRRXfTTPMRiXnV61by.woff2",
+    "file": "fonts/font-41ac41bf449db100.woff2",
+    "bytes": 12360
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/sairasemicondensed/v15/U9MM6c-2-nnJkHxyCjRcnMHcWVWV1cWRRXe3TfMfiXnV61by63Q.woff2",
+    "file": "fonts/font-db1fc2ab3ad09ff5.woff2",
+    "bytes": 10384
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/sairasemicondensed/v15/U9MM6c-2-nnJkHxyCjRcnMHcWVWV1cWRRXerTvMfiXnV61by63Q.woff2",
+    "file": "fonts/font-69a46ab1488a38c1.woff2",
+    "bytes": 10296
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/sairasemicondensed/v15/U9MM6c-2-nnJkHxyCjRcnMHcWVWV1cWRRXerTvMeiXnV61by63Q.woff2",
+    "file": "fonts/font-df82cebcf4a69cfb.woff2",
+    "bytes": 4432
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/sairasemicondensed/v15/U9MM6c-2-nnJkHxyCjRcnMHcWVWV1cWRRXf_S_MRiXnV61by.woff2",
+    "file": "fonts/font-e23505d0397be9b7.woff2",
+    "bytes": 12552
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/sairasemicondensed/v15/U9MM6c-2-nnJkHxyCjRcnMHcWVWV1cWRRXfTTPMeiXnV61by63Q.woff2",
+    "file": "fonts/font-3ef6c67ca4a71e7e.woff2",
+    "bytes": 4388
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/sairasemicondensed/v15/U9MM6c-2-nnJkHxyCjRcnMHcWVWV1cWRRXf_S_MfiXnV61by63Q.woff2",
+    "file": "fonts/font-31c68f3b2c45cff3.woff2",
+    "bytes": 10520
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/sairasemicondensed/v15/U9MM6c-2-nnJkHxyCjRcnMHcWVWV1cWRRXfTTPMfiXnV61by63Q.woff2",
+    "file": "fonts/font-651b5ac800ea86eb.woff2",
+    "bytes": 10364
+  },
+  {
+    "url": "https://fonts.gstatic.com/s/sairasemicondensed/v15/U9MM6c-2-nnJkHxyCjRcnMHcWVWV1cWRRXf_S_MeiXnV61by63Q.woff2",
+    "file": "fonts/font-69e7fcdf1ad58a05.woff2",
+    "bytes": 4432
+  }
+]

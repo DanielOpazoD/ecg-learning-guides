@@ -1,0 +1,372 @@
+[
+  {
+    "key": "pulse",
+    "number": "01",
+    "title": "Pulse",
+    "type": "principal",
+    "source": "https://intro2echo.com/",
+    "file": "capitulos/01-pulse.md",
+    "questions": 3,
+    "sha256": "521f97ca4cf9866b4c8faf794fd5cb4afb04e9af8b750f8387dc3aee18a59957"
+  },
+  {
+    "key": "image",
+    "number": "02",
+    "title": "Image",
+    "type": "principal",
+    "source": "https://intro2echo.com/image",
+    "file": "capitulos/02-image.md",
+    "questions": 3,
+    "sha256": "50f0781d70ee31924aefb91940fd304712fdf0490629ef402d1c6bbb471d66ac"
+  },
+  {
+    "key": "shift",
+    "number": "03",
+    "title": "Doppler",
+    "type": "principal",
+    "source": "https://intro2echo.com/shift",
+    "file": "capitulos/03-shift.md",
+    "questions": 3,
+    "sha256": "b6c86770d5c2bdc4db53ad6a526d5037ee2222eab7ff5691c47d9d108ed6573d"
+  },
+  {
+    "key": "windows",
+    "number": "04",
+    "title": "Views",
+    "type": "principal",
+    "source": "https://intro2echo.com/windows",
+    "file": "capitulos/04-windows.md",
+    "questions": 3,
+    "sha256": "32543c93804a94753c7691a4e4d1bff83c48876574b686a261fa353cc1eea426"
+  },
+  {
+    "key": "planes",
+    "number": "Archivo",
+    "title": "Planes",
+    "type": "conservado en HTML, oculto en navegación",
+    "source": "https://intro2echo.com/#planes",
+    "file": "secciones-adicionales/Archivo-planes.md",
+    "questions": 3,
+    "sha256": "d335e604b4f8678f5daa2030940a03ef3cf551f32eda1dfe16e55e68a3a7f72b"
+  },
+  {
+    "key": "cycle",
+    "number": "05",
+    "title": "Cycle",
+    "type": "principal",
+    "source": "https://intro2echo.com/cycle",
+    "file": "capitulos/05-cycle.md",
+    "questions": 3,
+    "sha256": "3049e5021dd8bff9f06a819250e4e17a459454125f6fd27ca790991f6cdbc366"
+  },
+  {
+    "key": "loop",
+    "number": "06",
+    "title": "Loop",
+    "type": "principal",
+    "source": "https://intro2echo.com/loop",
+    "file": "capitulos/06-loop.md",
+    "questions": 4,
+    "sha256": "ca60490285eaa7cd292d0727c8fc2f08ab5c825bf3f0362b1877bd53d4d9c426"
+  },
+  {
+    "key": "pressure",
+    "number": "07",
+    "title": "Doppler hemodynamics",
+    "type": "principal",
+    "source": "https://intro2echo.com/pressure",
+    "file": "capitulos/07-pressure.md",
+    "questions": 4,
+    "sha256": "7425dfa4665e489ab0ae04a11320bb324f28c764e20da49c54ea41274b6d849f"
+  },
+  {
+    "key": "eject",
+    "number": "08",
+    "title": "Systolic function",
+    "type": "principal",
+    "source": "https://intro2echo.com/eject",
+    "file": "capitulos/08-eject.md",
+    "questions": 3,
+    "sha256": "13f7b404356a096e8337d513bd6987a8e2c5d272f6a79531d20e3028461b4b70"
+  },
+  {
+    "key": "segments",
+    "number": "10",
+    "title": "Regional wall motion",
+    "type": "principal",
+    "source": "https://intro2echo.com/segments",
+    "file": "capitulos/10-segments.md",
+    "questions": 3,
+    "sha256": "cf21eac5cf862ba19753d0193065a3710213c20daca8e7b065873a2abcc4564a"
+  },
+  {
+    "key": "fill",
+    "number": "09",
+    "title": "Diastolic function",
+    "type": "principal",
+    "source": "https://intro2echo.com/fill",
+    "file": "capitulos/09-fill.md",
+    "questions": 3,
+    "sha256": "459f146ecfe3f88f399ac356e35ce9cf21782e1840b62a7cb328f10d1f4b497a"
+  },
+  {
+    "key": "masses",
+    "number": "B09",
+    "title": "Cardiac masses and thrombus",
+    "type": "complementario",
+    "source": "https://intro2echo.com/masses",
+    "file": "capitulos/B09-masses.md",
+    "questions": 0,
+    "sha256": "fa7ee817effa69352e01bd707c9ebb700ad0a8db6c97231e6d4f514830220b4b"
+  },
+  {
+    "key": "measure",
+    "number": "Archivo",
+    "title": "Automated measurements",
+    "type": "conservado en HTML, oculto en navegación",
+    "source": "https://intro2echo.com/#measure",
+    "file": "secciones-adicionales/Archivo-measure.md",
+    "questions": 3,
+    "sha256": "8675b2f17d5cd633880d53228391c5429fb72995239ff3b65dafa152d4aa89ee"
+  },
+  {
+    "key": "ai",
+    "number": "22",
+    "title": "AI interpretation and measurement",
+    "type": "principal",
+    "source": "https://intro2echo.com/ai",
+    "file": "capitulos/22-ai.md",
+    "questions": 4,
+    "sha256": "66693fc258c734be5a800b2208ddad2a7ec2d80eff746cd59383a787cda1b2b3"
+  },
+  {
+    "key": "bonus",
+    "number": "B",
+    "title": "Bonus chapters",
+    "type": "indice",
+    "source": "https://intro2echo.com/bonus",
+    "file": "capitulos/B-bonus.md",
+    "questions": 0,
+    "sha256": "961ba5b9f60e2b4e85948440c6bf788b2efb31df912125024ffee6bdd55af0ab"
+  },
+  {
+    "key": "lvad",
+    "number": "B11",
+    "title": "Left ventricular assist devices",
+    "type": "complementario",
+    "source": "https://intro2echo.com/lvad",
+    "file": "capitulos/B11-lvad.md",
+    "questions": 0,
+    "sha256": "f761ed3b49f30a88528c27c91dcd1e1e0bf5a5da1ba0d67731206c80fcd5660d"
+  },
+  {
+    "key": "as",
+    "number": "12",
+    "title": "Aortic stenosis",
+    "type": "principal",
+    "source": "https://intro2echo.com/as",
+    "file": "capitulos/12-as.md",
+    "questions": 3,
+    "sha256": "3fb3b2e62bb8185aaec999e8c76441a5ad249e71cc68dcd91dd401dc9af1ad0e"
+  },
+  {
+    "key": "ar",
+    "number": "13",
+    "title": "Aortic regurgitation",
+    "type": "principal",
+    "source": "https://intro2echo.com/ar",
+    "file": "capitulos/13-ar.md",
+    "questions": 3,
+    "sha256": "09a0f7ee10ef1ee199857b024e47733506bede9f6d216429f130461425e1ff3f"
+  },
+  {
+    "key": "ms",
+    "number": "14",
+    "title": "Mitral stenosis",
+    "type": "principal",
+    "source": "https://intro2echo.com/ms",
+    "file": "capitulos/14-ms.md",
+    "questions": 3,
+    "sha256": "b48f843b1e8c3986c441b59aa26bbe2776bcf808f4b0f91bdc7fb9cf4d3ce37b"
+  },
+  {
+    "key": "mr",
+    "number": "15",
+    "title": "Mitral regurgitation",
+    "type": "principal",
+    "source": "https://intro2echo.com/mr",
+    "file": "capitulos/15-mr.md",
+    "questions": 3,
+    "sha256": "155ede2c52b897f612653e35fe133b9da568904f3b735ad046f9f741348a9f94"
+  },
+  {
+    "key": "tr",
+    "number": "16",
+    "title": "Tricuspid regurgitation",
+    "type": "principal",
+    "source": "https://intro2echo.com/tr",
+    "file": "capitulos/16-tr.md",
+    "questions": 3,
+    "sha256": "e726ccf4340c7a83e74787323378ab01a99ce1432af926a8572224a89b9ca650"
+  },
+  {
+    "key": "prosthetic",
+    "number": "B06",
+    "title": "Prosthetic valves",
+    "type": "complementario",
+    "source": "https://intro2echo.com/prosthetic",
+    "file": "capitulos/B06-prosthetic.md",
+    "questions": 0,
+    "sha256": "b86f472fd7d8f9d9045be2bc70c9a63be1ceeaff8ae6d94033c2c834510f8688"
+  },
+  {
+    "key": "endocarditis",
+    "number": "B07",
+    "title": "Infective endocarditis",
+    "type": "complementario",
+    "source": "https://intro2echo.com/endocarditis",
+    "file": "capitulos/B07-endocarditis.md",
+    "questions": 0,
+    "sha256": "934cc4eb033048019263192f7c0932707c2329c55525243109727e24904bda8f"
+  },
+  {
+    "key": "tavr",
+    "number": "18",
+    "title": "Transcatheter aortic valve replacement",
+    "type": "principal",
+    "source": "https://intro2echo.com/tavr",
+    "file": "capitulos/18-tavr.md",
+    "questions": 4,
+    "sha256": "96a0a627a34cef5617e851b77507ff80c691cc5eee706e20a2b757fb67005669"
+  },
+  {
+    "key": "mteer",
+    "number": "19",
+    "title": "Mitral transcatheter edge-to-edge repair",
+    "type": "principal",
+    "source": "https://intro2echo.com/mteer",
+    "file": "capitulos/19-mteer.md",
+    "questions": 4,
+    "sha256": "786420930bad7943e3a8d1be903b23a03d2b23c1d3131d609780ca13e9bc1f85"
+  },
+  {
+    "key": "tteer",
+    "number": "20",
+    "title": "Tricuspid transcatheter edge-to-edge repair",
+    "type": "principal",
+    "source": "https://intro2echo.com/tteer",
+    "file": "capitulos/20-tteer.md",
+    "questions": 4,
+    "sha256": "7fbb2c5da991146b99e920592f60fdba9fa1be9017b9ce69db92ecc56f0853a7"
+  },
+  {
+    "key": "aorta",
+    "number": "21",
+    "title": "Diseases of the aorta",
+    "type": "principal",
+    "source": "https://intro2echo.com/aorta",
+    "file": "capitulos/21-aorta.md",
+    "questions": 0,
+    "sha256": "20ceb3667da8011f46dd2de380f1371e1aa626d7b671743df9f872381d32edfa"
+  },
+  {
+    "key": "peri",
+    "number": "B05",
+    "title": "Pericardial disease",
+    "type": "complementario",
+    "source": "https://intro2echo.com/peri",
+    "file": "capitulos/B05-peri.md",
+    "questions": 4,
+    "sha256": "afca9fdd09ae820d2dbb2b7a9810fe993fe84fd0608dda1dde10fc98508aee58"
+  },
+  {
+    "key": "amyloid",
+    "number": "B04",
+    "title": "Cardiac amyloidosis",
+    "type": "complementario",
+    "source": "https://intro2echo.com/amyloid",
+    "file": "capitulos/B04-amyloid.md",
+    "questions": 0,
+    "sha256": "d572a4afa4c12118b3add057b142a36cb6d8b81e4d3ae26adcc0a49a9db2ee26"
+  },
+  {
+    "key": "hcm",
+    "number": "B03",
+    "title": "Hypertrophic cardiomyopathy",
+    "type": "complementario",
+    "source": "https://intro2echo.com/hcm",
+    "file": "capitulos/B03-hcm.md",
+    "questions": 0,
+    "sha256": "27fea511952cea49b6effcb33bc70620f5beceba72e78ec731489d560c527293"
+  },
+  {
+    "key": "strain",
+    "number": "B02",
+    "title": "Strain",
+    "type": "complementario",
+    "source": "https://intro2echo.com/strain",
+    "file": "capitulos/B02-strain.md",
+    "questions": 0,
+    "sha256": "6b13000ba0db3f0bdcc8cebbaa697305a601543299560b9932c1c12e789f2ba0"
+  },
+  {
+    "key": "stress",
+    "number": "B01",
+    "title": "Stress echocardiography",
+    "type": "complementario",
+    "source": "https://intro2echo.com/stress",
+    "file": "capitulos/B01-stress.md",
+    "questions": 3,
+    "sha256": "b78419df8b4a503ef3120a0434bf48d3e4f91856f9ab162e3825dbc688d2d724"
+  },
+  {
+    "key": "mi",
+    "number": "B10",
+    "title": "Complications of myocardial infarction",
+    "type": "complementario",
+    "source": "https://intro2echo.com/mi",
+    "file": "capitulos/B10-mi.md",
+    "questions": 0,
+    "sha256": "290eb597bd372aaa9c41bd7269cb547ae053868d90035fd76a630b26e121a83e"
+  },
+  {
+    "key": "shunts",
+    "number": "B08",
+    "title": "Shunts: ASD, VSD and PFO",
+    "type": "complementario",
+    "source": "https://intro2echo.com/shunts",
+    "file": "capitulos/B08-shunts.md",
+    "questions": 2,
+    "sha256": "0928d920283c86f71b40a7b9578b8d7a311cea2d7f2a73699eebc9ff3a8f3981"
+  },
+  {
+    "key": "rv",
+    "number": "11",
+    "title": "Right ventricle",
+    "type": "principal",
+    "source": "https://intro2echo.com/rv",
+    "file": "capitulos/11-rv.md",
+    "questions": 4,
+    "sha256": "1c63a5303c8a023828467c5fd4a068b4e5a32c4df1d578147e5b0f44789f7762"
+  },
+  {
+    "key": "tee",
+    "number": "17",
+    "title": "Transesophageal echocardiography",
+    "type": "principal",
+    "source": "https://intro2echo.com/tee",
+    "file": "capitulos/17-tee.md",
+    "questions": 0,
+    "sha256": "8bd4fa1e7afb4059dd227f7eacfa3b43e986a41cbc7c580265150dd8741a8dc6"
+  },
+  {
+    "key": "report",
+    "number": "Archivo",
+    "title": "Report",
+    "type": "conservado en HTML, oculto en navegación",
+    "source": "https://intro2echo.com/#report",
+    "file": "secciones-adicionales/Archivo-report.md",
+    "questions": 3,
+    "sha256": "e2a0176e09ade9cf64fc932ff20d5d5680c6cc0bf2b1bfb12b869d7f64af7c29"
+  }
+]

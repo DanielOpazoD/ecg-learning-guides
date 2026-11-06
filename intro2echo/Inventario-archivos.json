@@ -1,0 +1,1074 @@
+{
+  "Texto-completo-Firecrawl.md": {
+    "bytes": 380814,
+    "sha256": "c29afdc04c429a580eac8ad6247b60e88b4d3deb7c25c50ad9c100bf887ce807"
+  },
+  "Todos-los-capitulos.md": {
+    "bytes": 324792,
+    "sha256": "76913073e6a507c91b3d63c5c92ab6211db0ae903fe2139cdd35696ad285dd12"
+  },
+  "Referencias-completas.md": {
+    "bytes": 78039,
+    "sha256": "68e0fc4edcee9293ff76f125719eedb29282da28250f67bb8f4b55f409f35ed4"
+  },
+  "Navegacion-original.md": {
+    "bytes": 891,
+    "sha256": "19a957e00ad485173fbbbcc1f7dc91a684bf0ac06832e088e765b1d64503fbd6"
+  },
+  "LEEME.md": {
+    "bytes": 4025,
+    "sha256": "f4e9b871fd400da285e9c8df22915ac639399e29491d71020e79482c86402a34"
+  },
+  "Figuras-y-descripciones.md": {
+    "bytes": 22191,
+    "sha256": "66d191a79de8d766fe535279b698a09befe7ad303fe7c658db15b7fcfb22ceb0"
+  },
+  "Contenido-estructurado.json": {
+    "bytes": 136433,
+    "sha256": "23820de1e00d8650108ffc62166c5035bbf70e18cd2890face91a9518d291067"
+  },
+  "Secciones-originales.json": {
+    "bytes": 415853,
+    "sha256": "af121eb7ac0ef96ccc21955d01a85129e70973ab5ac52a478c1812a0803b4c15"
+  },
+  "Referencias-completas.json": {
+    "bytes": 73761,
+    "sha256": "526751446843dfa0ebaecc93c418a0ce5d01db0831d859f063a86cc25fc6e119"
+  },
+  "Valores-normales.md": {
+    "bytes": 9193,
+    "sha256": "0dd6f88e79795b9ef9ec2dcfc647cfbdeba5e7768a451eefa1c1307cdb297f51"
+  },
+  "VERIFICACION.md": {
+    "bytes": 1440,
+    "sha256": "465a70e5c8fdc625bf4403848293f995ddb2bb10d677b97ffcf24d97eb980371"
+  },
+  "Fuentes.md": {
+    "bytes": 63391,
+    "sha256": "0499c4fd9689afc1a5734a4d0d5ee44a1aee21dfc65aeeb03b54bd70796db48d"
+  },
+  "Abrir Intro2Echo.command": {
+    "bytes": 53,
+    "sha256": "1f202bfdda1f1deee9d59d72aabecf3a409bc1078cf37eb0842783943a2f33ec"
+  },
+  "servidor.py": {
+    "bytes": 1075,
+    "sha256": "4607bbd663c5641c81b74e81d86529f185038ddc459a0240dad7c7dd6ea57923"
+  },
+  "Cuestionarios.md": {
+    "bytes": 38357,
+    "sha256": "05d575fbb655f7a88f72d38150f57f7c7b4249d11415138fbbe67710613baf61"
+  },
+  "Inventario-secciones.json": {
+    "bytes": 11122,
+    "sha256": "50434537115651a188f130156c8e05dc4d8967d2a25260b31635c9e95cfe995e"
+  },
+  "sitio/index.html": {
+    "bytes": 549840,
+    "sha256": "9ff82552194ccf0d5a54a2497075cb1c445f21a670af6fba012cd15fa551e095"
+  },
+  "secciones-adicionales/Archivo-planes.md": {
+    "bytes": 5846,
+    "sha256": "d335e604b4f8678f5daa2030940a03ef3cf551f32eda1dfe16e55e68a3a7f72b"
+  },
+  "secciones-adicionales/Archivo-measure.md": {
+    "bytes": 7134,
+    "sha256": "8675b2f17d5cd633880d53228391c5429fb72995239ff3b65dafa152d4aa89ee"
+  },
+  "secciones-adicionales/Archivo-report.md": {
+    "bytes": 5213,
+    "sha256": "e2a0176e09ade9cf64fc932ff20d5d5680c6cc0bf2b1bfb12b869d7f64af7c29"
+  },
+  "capitulos/B05-peri.md": {
+    "bytes": 12983,
+    "sha256": "afca9fdd09ae820d2dbb2b7a9810fe993fe84fd0608dda1dde10fc98508aee58"
+  },
+  "capitulos/B06-prosthetic.md": {
+    "bytes": 9559,
+    "sha256": "b86f472fd7d8f9d9045be2bc70c9a63be1ceeaff8ae6d94033c2c834510f8688"
+  },
+  "capitulos/15-mr.md": {
+    "bytes": 10524,
+    "sha256": "155ede2c52b897f612653e35fe133b9da568904f3b735ad046f9f741348a9f94"
+  },
+  "capitulos/B04-amyloid.md": {
+    "bytes": 9349,
+    "sha256": "d572a4afa4c12118b3add057b142a36cb6d8b81e4d3ae26adcc0a49a9db2ee26"
+  },
+  "capitulos/05-cycle.md": {
+    "bytes": 4522,
+    "sha256": "3049e5021dd8bff9f06a819250e4e17a459454125f6fd27ca790991f6cdbc366"
+  },
+  "capitulos/B10-mi.md": {
+    "bytes": 9193,
+    "sha256": "290eb597bd372aaa9c41bd7269cb547ae053868d90035fd76a630b26e121a83e"
+  },
+  "capitulos/07-pressure.md": {
+    "bytes": 14464,
+    "sha256": "7425dfa4665e489ab0ae04a11320bb324f28c764e20da49c54ea41274b6d849f"
+  },
+  "capitulos/B01-stress.md": {
+    "bytes": 9974,
+    "sha256": "b78419df8b4a503ef3120a0434bf48d3e4f91856f9ab162e3825dbc688d2d724"
+  },
+  "capitulos/B11-lvad.md": {
+    "bytes": 8649,
+    "sha256": "f761ed3b49f30a88528c27c91dcd1e1e0bf5a5da1ba0d67731206c80fcd5660d"
+  },
+  "capitulos/14-ms.md": {
+    "bytes": 8732,
+    "sha256": "b48f843b1e8c3986c441b59aa26bbe2776bcf808f4b0f91bdc7fb9cf4d3ce37b"
+  },
+  "capitulos/B07-endocarditis.md": {
+    "bytes": 9426,
+    "sha256": "934cc4eb033048019263192f7c0932707c2329c55525243109727e24904bda8f"
+  },
+  "capitulos/19-mteer.md": {
+    "bytes": 10943,
+    "sha256": "786420930bad7943e3a8d1be903b23a03d2b23c1d3131d609780ca13e9bc1f85"
+  },
+  "capitulos/09-fill.md": {
+    "bytes": 8755,
+    "sha256": "459f146ecfe3f88f399ac356e35ce9cf21782e1840b62a7cb328f10d1f4b497a"
+  },
+  "capitulos/21-aorta.md": {
+    "bytes": 9540,
+    "sha256": "20ceb3667da8011f46dd2de380f1371e1aa626d7b671743df9f872381d32edfa"
+  },
+  "capitulos/20-tteer.md": {
+    "bytes": 11269,
+    "sha256": "7fbb2c5da991146b99e920592f60fdba9fa1be9017b9ce69db92ecc56f0853a7"
+  },
+  "capitulos/04-windows.md": {
+    "bytes": 9234,
+    "sha256": "32543c93804a94753c7691a4e4d1bff83c48876574b686a261fa353cc1eea426"
+  },
+  "capitulos/18-tavr.md": {
+    "bytes": 12453,
+    "sha256": "96a0a627a34cef5617e851b77507ff80c691cc5eee706e20a2b757fb67005669"
+  },
+  "capitulos/17-tee.md": {
+    "bytes": 9175,
+    "sha256": "8bd4fa1e7afb4059dd227f7eacfa3b43e986a41cbc7c580265150dd8741a8dc6"
+  },
+  "capitulos/16-tr.md": {
+    "bytes": 11287,
+    "sha256": "e726ccf4340c7a83e74787323378ab01a99ce1432af926a8572224a89b9ca650"
+  },
+  "capitulos/B08-shunts.md": {
+    "bytes": 9912,
+    "sha256": "0928d920283c86f71b40a7b9578b8d7a311cea2d7f2a73699eebc9ff3a8f3981"
+  },
+  "capitulos/02-image.md": {
+    "bytes": 5262,
+    "sha256": "50f0781d70ee31924aefb91940fd304712fdf0490629ef402d1c6bbb471d66ac"
+  },
+  "capitulos/06-loop.md": {
+    "bytes": 5836,
+    "sha256": "ca60490285eaa7cd292d0727c8fc2f08ab5c825bf3f0362b1877bd53d4d9c426"
+  },
+  "capitulos/12-as.md": {
+    "bytes": 10324,
+    "sha256": "3fb3b2e62bb8185aaec999e8c76441a5ad249e71cc68dcd91dd401dc9af1ad0e"
+  },
+  "capitulos/03-shift.md": {
+    "bytes": 5713,
+    "sha256": "b6c86770d5c2bdc4db53ad6a526d5037ee2222eab7ff5691c47d9d108ed6573d"
+  },
+  "capitulos/22-ai.md": {
+    "bytes": 9373,
+    "sha256": "66693fc258c734be5a800b2208ddad2a7ec2d80eff746cd59383a787cda1b2b3"
+  },
+  "capitulos/08-eject.md": {
+    "bytes": 8288,
+    "sha256": "13f7b404356a096e8337d513bd6987a8e2c5d272f6a79531d20e3028461b4b70"
+  },
+  "capitulos/B-bonus.md": {
+    "bytes": 1357,
+    "sha256": "961ba5b9f60e2b4e85948440c6bf788b2efb31df912125024ffee6bdd55af0ab"
+  },
+  "capitulos/13-ar.md": {
+    "bytes": 9571,
+    "sha256": "09a0f7ee10ef1ee199857b024e47733506bede9f6d216429f130461425e1ff3f"
+  },
+  "capitulos/B02-strain.md": {
+    "bytes": 9607,
+    "sha256": "6b13000ba0db3f0bdcc8cebbaa697305a601543299560b9932c1c12e789f2ba0"
+  },
+  "capitulos/11-rv.md": {
+    "bytes": 12847,
+    "sha256": "1c63a5303c8a023828467c5fd4a068b4e5a32c4df1d578147e5b0f44789f7762"
+  },
+  "capitulos/B09-masses.md": {
+    "bytes": 8195,
+    "sha256": "fa7ee817effa69352e01bd707c9ebb700ad0a8db6c97231e6d4f514830220b4b"
+  },
+  "capitulos/01-pulse.md": {
+    "bytes": 4789,
+    "sha256": "521f97ca4cf9866b4c8faf794fd5cb4afb04e9af8b750f8387dc3aee18a59957"
+  },
+  "capitulos/10-segments.md": {
+    "bytes": 5065,
+    "sha256": "cf21eac5cf862ba19753d0193065a3710213c20daca8e7b065873a2abcc4564a"
+  },
+  "capitulos/B03-hcm.md": {
+    "bytes": 10122,
+    "sha256": "27fea511952cea49b6effcb33bc70620f5beceba72e78ec731489d560c527293"
+  },
+  "fuentes-originales/index-original.html": {
+    "bytes": 550158,
+    "sha256": "f3a26d7939ad9b878099c39e643a0b7190a6fcf6a57597efa64c4095509f63b2"
+  },
+  "fuentes-originales/Recursos-estaticos.json": {
+    "bytes": 40615,
+    "sha256": "39be1308348ad8dc6ac4034e12c2cb4d916779f2607699c91498d03d087da597"
+  },
+  "fuentes-originales/Firecrawl.json": {
+    "bytes": 28367,
+    "sha256": "fce3719339924ab48e9e9cda40770bdbc0966912f2301b7dae48578becb8955e"
+  },
+  "fuentes-originales/Recursos-adicionales.json": {
+    "bytes": 8012,
+    "sha256": "0e7ca3e3e27ea70f85e78494b804a84a66b34c149480e285797ca672ecb944da"
+  },
+  "sitio/assets/silence.mp3": {
+    "bytes": 4406,
+    "sha256": "6f0fe95e3df01db12d6f34f89bb2ff3fc6ebff7ec793c0bdd13545689c3d9456"
+  },
+  "sitio/assets/apple-touch-icon.png": {
+    "bytes": 6963,
+    "sha256": "9ab11043dc49b8a96c1a69dc0aebfc019012b0dfa3fc0bc98662f1ddacfe734f"
+  },
+  "sitio/assets/hinges.json": {
+    "bytes": 150462,
+    "sha256": "a60fb73b2a7dd315a3cfefe1e1c28fd23003bb9081f4312665a48fbaffb0b4b0"
+  },
+  "sitio/assets/valves.json": {
+    "bytes": 2163463,
+    "sha256": "78a4359be039e088e90d823b638da1ee63f07a78b47645033e2c65e64fd6af2e"
+  },
+  "sitio/assets/heart.json": {
+    "bytes": 1313395,
+    "sha256": "572f9b9041dca626a436e8e36110d41c8c454a8ef52d5d203949127d71458d2a"
+  },
+  "sitio/assets/favicon-32.png": {
+    "bytes": 1535,
+    "sha256": "365ed5009efb21b7f20986d1d0fdcb6ed3eac587633545cf1526a946d0b17608"
+  },
+  "sitio/assets/favicon.svg": {
+    "bytes": 713,
+    "sha256": "069834d06e94a26a44accc9324dc73f2ee39d3da37e46f9b2cb94ebb52c72d71"
+  },
+  "sitio/assets/anatomy.json": {
+    "bytes": 4446,
+    "sha256": "17ebc8a4a63270298be16503b75e1b4bce44a2485a856d8ca006bca982c27911"
+  },
+  "sitio/vendor/three.bundle.min.js": {
+    "bytes": 813843,
+    "sha256": "16bad244cc5c5b1b4011bb4e4206f05be8fb8b3b99803f0e38165b8c58f16195"
+  },
+  "sitio/vendor/rough.esm.js": {
+    "bytes": 27748,
+    "sha256": "e921535f216ebc93d422489d614da955b5286812220b3149fc70978f4cb5bd45"
+  },
+  "sitio/src/aortacal.js": {
+    "bytes": 34298,
+    "sha256": "38148e8198b9cb22bbd4c351b8855271eeeea16cf300c449957b02cf054a652c"
+  },
+  "sitio/src/order.js": {
+    "bytes": 6612,
+    "sha256": "c3b05cad68589e7ca38820b08075ee3002c276a4b3287b2d83c846a7009ca136"
+  },
+  "sitio/src/constriction.js": {
+    "bytes": 35229,
+    "sha256": "66940e2dcc48d4ac60319281c838836d15bec1885a229a43aa5e78fa11105f87"
+  },
+  "sitio/src/ivcfig.js": {
+    "bytes": 20638,
+    "sha256": "01f745143f179712286d8de9304115a104d98493f44faac4fd805498db3e7d0a"
+  },
+  "sitio/src/teeviews.js": {
+    "bytes": 43978,
+    "sha256": "2d905ae3ad89fd7d9ca0a37a04d2f5568c62816c489d1ffdc93e30dbfc61e6e0"
+  },
+  "sitio/src/meshpanel.js": {
+    "bytes": 11497,
+    "sha256": "071639d7f2ca105e615cc2681b455abd10b78e8ce4dc2eba5a80bc083f89c766"
+  },
+  "sitio/src/styles.css": {
+    "bytes": 70595,
+    "sha256": "ac27b2bf16ee19c62e00b328a1a440703fc605f52e6286fe06592a18d7f23e03"
+  },
+  "sitio/src/scanner.js": {
+    "bytes": 782,
+    "sha256": "40ddf4ddafdb450cb79d44277c74a5418aac36242c5f29ec3d1ec21318cbc3fb"
+  },
+  "sitio/src/cyclemodel.js": {
+    "bytes": 5663,
+    "sha256": "b854a991b2eb8bf5f8e20672b0003bb0eaed963871703dc06635f699cf9647f3"
+  },
+  "sitio/src/quiz.js": {
+    "bytes": 34447,
+    "sha256": "192eedf3ea3304f1ff52a764e8688ac37e4228db3f56e257f542cb52af0af199"
+  },
+  "sitio/src/freeprobe.js": {
+    "bytes": 8949,
+    "sha256": "91b6f2d6a9e8c729c6b96ba08783087f2ce6a0ddbbc850245777969792a7b422"
+  },
+  "sitio/src/teerviews.js": {
+    "bytes": 6696,
+    "sha256": "425a27d10ef7637391fb2b80074f364a9f0133bd4b8b55973de137b7afea0bac"
+  },
+  "sitio/src/sev.js": {
+    "bytes": 13886,
+    "sha256": "081a3bb8b303ffaec8f40b81e28f0f855a0ea442c71c85a9e3a5e5bc00daeb58"
+  },
+  "sitio/src/pheno.js": {
+    "bytes": 4551,
+    "sha256": "ab22592f3afa20b793490583b44ecafc93dc5b0366fdf08c77d4dfcd76c25a08"
+  },
+  "sitio/src/echo2d.js": {
+    "bytes": 129169,
+    "sha256": "6698dbec00ef5d104eeeae9ee009d5dafb2259c1b9941c26984bd37669f059ab"
+  },
+  "sitio/src/straintrack.js": {
+    "bytes": 15990,
+    "sha256": "3c48c6c9eadaeb3d949b2ffa81be5941308e1b516b422e725bd52784869e6271"
+  },
+  "sitio/src/hcmcal.js": {
+    "bytes": 31747,
+    "sha256": "07713603408e4367e84b1717fabc956cd8e4306496d23c451301c48b6e22d30b"
+  },
+  "sitio/src/chapters.js": {
+    "bytes": 5135,
+    "sha256": "872719f5bd48a708f7875683af1db5337d05531b6334613c30bd2a3c40221bd7"
+  },
+  "sitio/src/torso.js": {
+    "bytes": 5711,
+    "sha256": "ea2f785c1d4a22189c63dd283cc0a409b9a225bf7cddf59a89cd2d00cf1a43fe"
+  },
+  "sitio/src/shockcal.js": {
+    "bytes": 57761,
+    "sha256": "a79b4cf6a4b4adfdffca60716a3de46426c50572dc5ee88da6213be0c353be53"
+  },
+  "sitio/src/ivc2d.js": {
+    "bytes": 28986,
+    "sha256": "92f7235ba4c335d007bd1d18e59c95ee58a4061df5ddf2cee21cb9828ae7ad96"
+  },
+  "sitio/src/stresscal.js": {
+    "bytes": 8879,
+    "sha256": "50804fe8bb846b0bcf23d2a8fd5d6e76fe8ba9614b5c89bc9a8f3d8c377d0677"
+  },
+  "sitio/src/abdomen.js": {
+    "bytes": 7999,
+    "sha256": "a2d9556243840b9ef43fca7dac5adacf606a8e770def433ce6988093cdd1d307"
+  },
+  "sitio/src/lvadcal.js": {
+    "bytes": 15043,
+    "sha256": "c98951af091f82ec6e4d8b0c9fef8fc7542ad8f782ea631b6c21f122850f0cdc"
+  },
+  "sitio/src/model3d.js": {
+    "bytes": 8718,
+    "sha256": "f7b6b17f82bbd69f415c175cda2534ab8a8178416b00c999012bd317218c4c20"
+  },
+  "sitio/src/meshcal.js": {
+    "bytes": 57788,
+    "sha256": "ddf8676dfa16953bafe44f9325c949be332889dd7fbad6240e8c4a0300979ab7"
+  },
+  "sitio/src/main.js": {
+    "bytes": 47456,
+    "sha256": "f8c1c05be12bc092d51d8ec6c728e19eaa6dcf4e176404c768a337432620ca43"
+  },
+  "sitio/src/echoprime.js": {
+    "bytes": 4409,
+    "sha256": "d0d4f0c7b6dde600d7a22c2f1446ab64096be463f596d715c32cc1e28478d197"
+  },
+  "sitio/src/jets.js": {
+    "bytes": 589,
+    "sha256": "30c46023f5c9fcfaa959d009c48876fda269eaee0aac8401540f6a0333dacb7d"
+  },
+  "sitio/src/aha.js": {
+    "bytes": 1494,
+    "sha256": "421e9095d268bd8c27059f92f1b6fe9cc4d192a5dab83ee161d8e00a358b2492"
+  },
+  "sitio/src/state.js": {
+    "bytes": 2290,
+    "sha256": "0d3b63399fabd497a1034a846b142085ab319a173147329c34c24d6abd11d4b5"
+  },
+  "sitio/src/mical.js": {
+    "bytes": 1454,
+    "sha256": "c704f8a5d5348695b86f5f1d0479e887fbf34dc3d4af7730fe31ce20c32dd39e"
+  },
+  "sitio/src/views.js": {
+    "bytes": 20926,
+    "sha256": "88510b972ea9b3dfaf6fd398bf779fa39f6591adcb9dd3e643cbf743b263fecc"
+  },
+  "sitio/src/aifig.js": {
+    "bytes": 109469,
+    "sha256": "8bd8a3ecddf0bdf14ac3d03b57aef129b2b3ac85c5b04e5e3ebb32f8d302d3ca"
+  },
+  "sitio/src/straincal.js": {
+    "bytes": 62515,
+    "sha256": "0c8f8c731184a3ef10c42fa2b2b5c36b7a788eb1b3628c8c743b301afbdf54e8"
+  },
+  "sitio/src/scope.js": {
+    "bytes": 12386,
+    "sha256": "7a95c0a3887cb4202aacdb0e0a4864a2dff738eca347ee6a3846c7697c04ee39"
+  },
+  "sitio/src/norms.js": {
+    "bytes": 33433,
+    "sha256": "d459464ea6920c676f80a661602949b6f2de76239d580cefc4efd89705ea82ae"
+  },
+  "sitio/src/bmode.js": {
+    "bytes": 36775,
+    "sha256": "3a2e9938350a706a864bb39b7fff98cafeaa2ad9c1bc10b4df65bfb5887ba5a2"
+  },
+  "sitio/src/echo.js": {
+    "bytes": 95848,
+    "sha256": "3b3c60d95fd08a63aa7d65ea76a551a70a27030e3eec348293fbbe77f751278e"
+  },
+  "sitio/src/sketch.js": {
+    "bytes": 8277,
+    "sha256": "20ed2ee3b119d8d3056c459ee136ac7cd6ce034f63c1d1185f0aca1436cb992f"
+  },
+  "sitio/src/teemoves.js": {
+    "bytes": 4252,
+    "sha256": "0dbd360007ca5d4f78ee75143940198d912bdd76d1b75af5f13526018d75af99"
+  },
+  "sitio/src/cflow.js": {
+    "bytes": 23579,
+    "sha256": "d5b6f4f54513f3f603da1356df85122b4d99d731e9d000d0fa47adc79937cc1b"
+  },
+  "sitio/src/pages.js": {
+    "bytes": 15898,
+    "sha256": "61a2a7990058548b3ce2bd0e23a63ee518cc09f633d4fcf73ca4056336d5abd7"
+  },
+  "sitio/src/edits.js": {
+    "bytes": 3019,
+    "sha256": "a2669f6cf75cbe28981ab3425555bf14cfa0bfb3e68d994172e2c37711d1e428"
+  },
+  "sitio/src/physics.js": {
+    "bytes": 647,
+    "sha256": "82ca001a4c3b2394ca83545803848323aae7ece36b410e23b872ee3f3fca2985"
+  },
+  "sitio/src/music.js": {
+    "bytes": 18321,
+    "sha256": "5099d756e6040987481b0277773e4def19f43ed9a91fdde1839e01dc325aa205"
+  },
+  "sitio/src/idbcache.js": {
+    "bytes": 2642,
+    "sha256": "e12d9fece71ca2ad7169a6db6488239ae2dab4edda1edf2382010f2c4919256a"
+  },
+  "sitio/src/refs.js": {
+    "bytes": 69549,
+    "sha256": "62c59acb9ad31b2a19d945d580bddb5b4a6c6f7a4a8a7454f0fc5e7d61334937"
+  },
+  "sitio/src/enface3d.js": {
+    "bytes": 9154,
+    "sha256": "e2f828264b59df069f2ebb66685f1a5e9ad572e7fa1a48e9ac798ebd757a0c62"
+  },
+  "sitio/src/ttviews.js": {
+    "bytes": 4444,
+    "sha256": "a2ce0363332ab23e5157812da47139b9acb2a3c7be3006c077d936fd06a85815"
+  },
+  "sitio/src/meshjet.js": {
+    "bytes": 16711,
+    "sha256": "f753e46a4462dd8f6b5e9ee63cdd56b680ca73989973fef217be3e119895bea0"
+  },
+  "sitio/src/meshtrace.js": {
+    "bytes": 6950,
+    "sha256": "6c05d7450598bb57bb57e75a946e3ff3170a616cf41749d8cae0e85c74ff0257"
+  },
+  "sitio/src/ch/amyloid.js": {
+    "bytes": 48899,
+    "sha256": "b5be4469ef135ef683152398f8c437c1417ff1f9d424b4aee415796768fa91de"
+  },
+  "sitio/src/ch/ai.js": {
+    "bytes": 75529,
+    "sha256": "799febdb3f1f4828986d6ede7fd2486fb3fbc7eb05368c5fa7e7171fb2998d8a"
+  },
+  "sitio/src/ch/segments.js": {
+    "bytes": 35678,
+    "sha256": "9e854cdc8416a3fe7e63e54707c00435db2ed84e1ca3f7377cd80a0a6cc4e47f"
+  },
+  "sitio/src/ch/mr.js": {
+    "bytes": 49833,
+    "sha256": "1022061d6074338f8cd2a9160b43e9112609b02019ac76842ca9e24c714f3d38"
+  },
+  "sitio/src/ch/prosthetic.js": {
+    "bytes": 29293,
+    "sha256": "1c8389a0d213f66c8b151b73afd80c9d88e8ec10dcce160b0a38769cb442bac8"
+  },
+  "sitio/src/ch/ms.js": {
+    "bytes": 40755,
+    "sha256": "51b25dcff06121839bd8a7522bf8703808574abd9cce80f71a7b738bd1c3257a"
+  },
+  "sitio/src/ch/mteer.js": {
+    "bytes": 57686,
+    "sha256": "3ce57a620542ce8029f74c17b35dcb3fc6737c3e27a24f505b57614666d46a24"
+  },
+  "sitio/src/ch/peri.js": {
+    "bytes": 24137,
+    "sha256": "c631ad90ac7422dd287bb561faf8df2877d31a0ae998d60c57fb9df9abb1bcd7"
+  },
+  "sitio/src/ch/planes.js": {
+    "bytes": 42139,
+    "sha256": "5aa3cd3eae06dec76a76d52b4fef075cd8e45d9b6e41c5da437a47ea5814c6fd"
+  },
+  "sitio/src/ch/tavr.js": {
+    "bytes": 52709,
+    "sha256": "751428bfccc024e830d59ed989133559a42df8f7e2f33c9b2ef334b9eca43654"
+  },
+  "sitio/src/ch/tee.js": {
+    "bytes": 36660,
+    "sha256": "aab33e0618712a0f4f464d94e523ce99953d34f21f3c675d7d13dde7dde4fb6b"
+  },
+  "sitio/src/ch/measure.js": {
+    "bytes": 75302,
+    "sha256": "487c24f7b7ec13ed839192955d24648e62800ee8f9929614488f59b09b6f3003"
+  },
+  "sitio/src/ch/cycle.js": {
+    "bytes": 11443,
+    "sha256": "cc7f6816206edc0cc2ba708fc0e294620c00733390354f91438e55b1c577d117"
+  },
+  "sitio/src/ch/hcm.js": {
+    "bytes": 45729,
+    "sha256": "b9b218fdc597dd7f83a4661d063952596d24dc6f304f8c96603fdbf6200c6cb3"
+  },
+  "sitio/src/ch/pulse.js": {
+    "bytes": 18901,
+    "sha256": "68bc584dc260e1ce478c043d808cd30845dac9e06493f5b64ffac56c9e34ff15"
+  },
+  "sitio/src/ch/shock.js": {
+    "bytes": 39289,
+    "sha256": "1e3ef9d456de41f1cc96b7d5e168bfdaa5a27033352b01e1b46807c9a96f079c"
+  },
+  "sitio/src/ch/fill.js": {
+    "bytes": 41357,
+    "sha256": "c145d1af0169ac19910b529ca6e16b6da9e24e484dd6f68821e009517213eba1"
+  },
+  "sitio/src/ch/pressure.js": {
+    "bytes": 30414,
+    "sha256": "8ca7dae3a2377dbfdc86fb90446fdf4c6b5d298829e20371ff7bb9bf48dcbbbb"
+  },
+  "sitio/src/ch/lvad.js": {
+    "bytes": 45418,
+    "sha256": "004118340745d06a22047d3df86a173ac24edc009804aa67ec53e1885b5ed5b7"
+  },
+  "sitio/src/ch/strain.js": {
+    "bytes": 51756,
+    "sha256": "98f867c61fb54ee9eac1f69dc0020c1a5204ad7e9d8948dc651d7b1f343bb928"
+  },
+  "sitio/src/ch/shunts.js": {
+    "bytes": 59045,
+    "sha256": "6b94b8cbd4d1bab3cf0055e37640052fc325c54afc7be4cafbf364c781aabd7e"
+  },
+  "sitio/src/ch/masses.js": {
+    "bytes": 33960,
+    "sha256": "9385f75be27957dbf6bd3e4790c512ba11ef6330676c9db0500f4a65860a9ab2"
+  },
+  "sitio/src/ch/windows.js": {
+    "bytes": 48037,
+    "sha256": "42d089d1739c6ca48967b5b3c88afb7f9ce1102d14d063e18569bd7501f8e9cd"
+  },
+  "sitio/src/ch/image.js": {
+    "bytes": 17180,
+    "sha256": "1fd3d1fc5364a695891a17e82a0c5709210c13c120f1d358fc889d4d87431f3a"
+  },
+  "sitio/src/ch/aorta.js": {
+    "bytes": 82150,
+    "sha256": "3e2822afbb8aaa89cdda1bc8fc2ad2a1218909663a3dab7210d1df31b8952dad"
+  },
+  "sitio/src/ch/report.js": {
+    "bytes": 22865,
+    "sha256": "fc2f38fbb6f935f41561f1d28b872a9ef9f22dc639e6da2587ee88d87262ca7b"
+  },
+  "sitio/src/ch/tteer.js": {
+    "bytes": 46131,
+    "sha256": "36ad27785406aad74055977f41e707973da60af093f8e2e7e643f8e3b13b4af4"
+  },
+  "sitio/src/ch/shift.js": {
+    "bytes": 12891,
+    "sha256": "159536464c79113870ee5200baa5667dd20ce2d332a3e573c77d2355e65ee57e"
+  },
+  "sitio/src/ch/rv.js": {
+    "bytes": 69091,
+    "sha256": "d5a65c6fa19c4653665bd19bb63f0939fc19a391e3d602962e9e1857e81bc289"
+  },
+  "sitio/src/ch/eject.js": {
+    "bytes": 47496,
+    "sha256": "8999e9b9f282a20b534056bbefab7a3c1649645d093e2d188f2283d50b0ab254"
+  },
+  "sitio/src/ch/as.js": {
+    "bytes": 46531,
+    "sha256": "9ce47e1b42b7690d7b22f9eeedcad4dc7b05af39a791d2935b2f1a345ba55dde"
+  },
+  "sitio/src/ch/stress.js": {
+    "bytes": 40000,
+    "sha256": "35ff67e9c14683a6468dc2e216500958031652433f62eaed2beea3088f28bf33"
+  },
+  "sitio/src/ch/ar.js": {
+    "bytes": 47613,
+    "sha256": "7f38d8bb3f1edcc8c6eaa42789a268562e5def12b6b26d08adf18bf88fa35f5d"
+  },
+  "sitio/src/ch/bonus.js": {
+    "bytes": 442,
+    "sha256": "b13a99a8ca5cfa1d74b96a92cb6d87c9e378491b4f4742c998edefa39d7429e7"
+  },
+  "sitio/src/ch/loop.js": {
+    "bytes": 20071,
+    "sha256": "6fcbe6bcc661f4aee4b84143a239c908e546667cfe76d483a37e94776e806162"
+  },
+  "sitio/src/ch/endocarditis.js": {
+    "bytes": 21487,
+    "sha256": "627c9becba8029a3ab5c26d8ba04492bf1939b13a98159e2abf1616d4e4946bb"
+  },
+  "sitio/src/ch/mi.js": {
+    "bytes": 60879,
+    "sha256": "29d4d2d142074417c5b932e73d48c0287e73a05b886aeb637768aa74241dd5cc"
+  },
+  "sitio/src/ch/tr.js": {
+    "bytes": 55672,
+    "sha256": "24fe93e52625db704ecbc011637190206ef7fe5168ce4086576e1219e023960e"
+  },
+  "sitio/src/gl/fans.js": {
+    "bytes": 6219,
+    "sha256": "de69eaf9a918f684e8481f200793e3a69d0e9628656bc8dbcd24d6da4fdde3de"
+  },
+  "sitio/src/gl/tteermesh.js": {
+    "bytes": 27843,
+    "sha256": "a7ec3f4ba71616fd527ca1273bfba495c3be07a7bde3188f0d1929012c3ae78d"
+  },
+  "sitio/src/gl/lvadmesh.js": {
+    "bytes": 7247,
+    "sha256": "f6e28d6343f6ed9f47d24a84bbf1c8bd8a101ea27e9de6d76081a54b050fce13"
+  },
+  "sitio/src/gl/pabend.js": {
+    "bytes": 21287,
+    "sha256": "d6ee22fd6f24e8c5eea189f5f2721ad3b1603dc6e46b58566e5f89584448facd"
+  },
+  "sitio/src/gl/rvdetail.js": {
+    "bytes": 25101,
+    "sha256": "e05e51fd2e3f1f17b1a7132dd43c43e422d8788dd40da0e2503571e9ecd4b3d2"
+  },
+  "sitio/src/gl/endocarditismesh.js": {
+    "bytes": 21610,
+    "sha256": "6a3a762afdbe6d0d79c427d2ecb74d073160ee8c467d5107e40f0756c3a4d258"
+  },
+  "sitio/src/gl/hcmmesh.js": {
+    "bytes": 9773,
+    "sha256": "97092ee9dbcade8e85eff1f6e1f2be482af19609aa219cc2e9df5c910b83179c"
+  },
+  "sitio/src/gl/pencil.js": {
+    "bytes": 23261,
+    "sha256": "37cf35a05325d8c8f97d61c35aa260d2d4e526613dcfd6863f42a3b307593c06"
+  },
+  "sitio/src/gl/clipmesh.js": {
+    "bytes": 57496,
+    "sha256": "f937c0650e7d0f718ae71158b15e1df942295d586d334260def53a9b426d8441"
+  },
+  "sitio/src/gl/teeprobe3d.js": {
+    "bytes": 7203,
+    "sha256": "6fc8ac716f60035383441a3ce555decb382ede0cb5a02dc6fde17124c5e4ea33"
+  },
+  "sitio/src/gl/heart.js": {
+    "bytes": 21522,
+    "sha256": "a6f7c289e4c16597bc68b542e1a5d6651c990ecd1481507350990950c07088f6"
+  },
+  "sitio/src/gl/rvpemesh.js": {
+    "bytes": 10475,
+    "sha256": "b36a2da239be8fca2645aade357ddc3f2509a0e59af4d78d19972dc2adfd44d4"
+  },
+  "sitio/src/gl/mimesh.js": {
+    "bytes": 42307,
+    "sha256": "27016f9034afd64fd3bca813a33ca34f478c6381caaa52cc19e29b1061fa9145"
+  },
+  "sitio/src/gl/aortamesh.js": {
+    "bytes": 13898,
+    "sha256": "588f9762d3994573dcb3854ba10480c1e2eb39451a9b167717920df096020455"
+  },
+  "sitio/src/gl/bodykey.js": {
+    "bytes": 12964,
+    "sha256": "802fdec07bc75d4138d6cefce663fc6a523c89db1f974dad44b55b5f87b937b6"
+  },
+  "sitio/src/gl/mvopen.js": {
+    "bytes": 12035,
+    "sha256": "27dfa903ba592bd69bc7dbb6aba1c993b1d5ebcff0434fab72f19c897aef03aa"
+  },
+  "sitio/src/gl/stage3d.js": {
+    "bytes": 25943,
+    "sha256": "9381740391921447b9d78131e4575b86b275508aa52a6168820aafc55b432148"
+  },
+  "sitio/src/gl/shuntsmesh.js": {
+    "bytes": 13670,
+    "sha256": "8f0752013071c48c07a9655367b48582e8030b825e267592d6fc4d84c2739bc1"
+  },
+  "sitio/src/gl/strainmesh.js": {
+    "bytes": 13092,
+    "sha256": "e1c809e6592e8ad1e7fc6d1ec2119245b1742b2bfbd1242a5d66b5c7b0c928f0"
+  },
+  "sitio/src/gl/phenomesh.js": {
+    "bytes": 66763,
+    "sha256": "08ce735bfb6807b7dca43c35667fc6af48fca7c307d471b0876e21512fed6e5f"
+  },
+  "sitio/src/gl/prostheticmesh.js": {
+    "bytes": 15935,
+    "sha256": "b9313294d90079bd42765c7d75da0c56eb1668b39b877ae1332b2aae39bdfdab"
+  },
+  "sitio/src/gl/massesmesh.js": {
+    "bytes": 41108,
+    "sha256": "0e9be06048348d99c38baa218ec0560bc5eb608a4c49230a91c105d0a7e55626"
+  },
+  "sitio/src/gl/tavrmesh.js": {
+    "bytes": 18916,
+    "sha256": "7e5fb68f31728ecfbb349df5242a28164b9b7494ce68e39cf7b8102189eadfb2"
+  },
+  "sitio/src/gl/probe3d.js": {
+    "bytes": 7099,
+    "sha256": "ef2cf467df35534c28342e9c649a4978805e37ec22f45b48f7535f11c8e6872c"
+  },
+  "sitio/src/gl/shared.js": {
+    "bytes": 436,
+    "sha256": "e27eb191409e539a50211ff66e6b3c9ec15e12b77453672dde9d6854998418c9"
+  },
+  "sitio/src/gl/liver3d.js": {
+    "bytes": 8832,
+    "sha256": "b05055c4e7aed485031233c87a974ed55a18a2d1c080512edd9603726bdfac20"
+  },
+  "sitio/src/gl/skirts.js": {
+    "bytes": 43199,
+    "sha256": "568a67653b89bbdd591ba47065f3db3aedf300859dd1dac44a02a5ac0cca0032"
+  },
+  "sitio/assets/mteer/grasp.webp": {
+    "bytes": 24252,
+    "sha256": "28af685e2e60a022d196b54b12f4061f3148769a3216d8efcd6014a6147a5065"
+  },
+  "sitio/assets/mteer/septum.webp": {
+    "bytes": 31876,
+    "sha256": "83d2bd17d1417cc41960b3766eb45b41f3eaa83de1afb55b7e8a5453d71c5840"
+  },
+  "sitio/assets/mteer/assess.webp": {
+    "bytes": 21746,
+    "sha256": "24f47e91f68753320025a4a4ffda86d65a2a3b898fa47370d8e20f9a52621040"
+  },
+  "sitio/assets/mteer/release.webp": {
+    "bytes": 23220,
+    "sha256": "1c6e522d1875ca97d22420cd7bbbe2a13602bcb850f0fa7c71d140db97d7fe31"
+  },
+  "sitio/assets/mteer/align.webp": {
+    "bytes": 27226,
+    "sha256": "41ecf1f260bf988c3ea4f265a06adb32ed0acf55ae4fe1580474bdd52081faf5"
+  },
+  "sitio/assets/mteer/after.webp": {
+    "bytes": 23426,
+    "sha256": "6c1fcc66d6aed27f9593332b077d9049a901fa4b8b29cb2f692704f03cffb892"
+  },
+  "sitio/assets/mteer/steer.webp": {
+    "bytes": 33742,
+    "sha256": "a25eb878e2b52d821d993b2bd449ada540ab3f13fe5c3d6794e07edc0ea22f8d"
+  },
+  "sitio/assets/mteer/before.webp": {
+    "bytes": 31338,
+    "sha256": "4a649b3e9092b59b2c04ccf8e5f2d22aae9ea347cc0d451acc2681378a6dab3a"
+  },
+  "sitio/assets/tavr/cross.webp": {
+    "bytes": 33244,
+    "sha256": "470dec4f720637958a8a9d58cf93dee0f294aa24a7150817b8c5ad35e8c5addb"
+  },
+  "sitio/assets/tavr/check.webp": {
+    "bytes": 30234,
+    "sha256": "5beadfe4a7d98b71c6d9bc3f6541cf1c198f9d73d4d13d6cbbadf75c0b89e3da"
+  },
+  "sitio/assets/tavr/after.webp": {
+    "bytes": 31186,
+    "sha256": "8f3ea263cec862886d5e8baaa1aa476c2c608d9968ab3eb58589727f9c20af18"
+  },
+  "sitio/assets/tavr/deploy.webp": {
+    "bytes": 29746,
+    "sha256": "065a7acf0a8cc4e43704a1a9eacad195eef7305ee90d8adde5cce829f75ea400"
+  },
+  "sitio/assets/tavr/measure.webp": {
+    "bytes": 21204,
+    "sha256": "ae52cce950f2c07a5accb63d144a8eb8c96c73373397febd559abfd22b2bc3bb"
+  },
+  "sitio/assets/tavr/before.webp": {
+    "bytes": 25024,
+    "sha256": "11ab2cb73032ed01a8458bf9c26d8dd35e085d8d05e43345725a0b9042993b0f"
+  },
+  "sitio/assets/plates/anterior_normal.webp": {
+    "bytes": 141312,
+    "sha256": "20cd011c8071d9a82fe1b9994af9b1fa990ea31fe69cfa4f25c90c55d18cdb53"
+  },
+  "sitio/assets/og/mr.jpg": {
+    "bytes": 100306,
+    "sha256": "5fafe0fb98e05ada75440ba655a49814776c2fcb0c27cc7b3dea7e0edcbb8479"
+  },
+  "sitio/assets/og/peri.jpg": {
+    "bytes": 110313,
+    "sha256": "4173e4a4f124efd56781afbc95b3a282356666a99c267ea682d4dd042d748e97"
+  },
+  "sitio/assets/og/lvad.jpg": {
+    "bytes": 106284,
+    "sha256": "495c8f61e7e68f4d9f40672e085475787a9de4f5f58fe449d495a540ca87ccb3"
+  },
+  "sitio/assets/og/ms.jpg": {
+    "bytes": 100582,
+    "sha256": "6909ad8e288f601eef1aa7b1b8712100bffe83cec21868d99c79812e5a62dc33"
+  },
+  "sitio/assets/og/endocarditis.jpg": {
+    "bytes": 96022,
+    "sha256": "29d63fbc2c7922026df959d2a0bf0d4cc1e055203651c8315aaa4fdcb6e70951"
+  },
+  "sitio/assets/og/ar.jpg": {
+    "bytes": 101282,
+    "sha256": "247ad27024ad9253f8d4d6d69500e2919190629730b1693a90e97add3a086e51"
+  },
+  "sitio/assets/og/pressure.jpg": {
+    "bytes": 87540,
+    "sha256": "59f2c3fa16367e9161eb2304d6b223dda42467521db988eb3430cf7832929b27"
+  },
+  "sitio/assets/og/tr.jpg": {
+    "bytes": 107544,
+    "sha256": "d71879d32b2cb6b8a1d52413a426703532589ced8f6cbffcbaf24db4059774e4"
+  },
+  "sitio/assets/og/as.jpg": {
+    "bytes": 98303,
+    "sha256": "e069d058a436c6b2a7ee40b3541efbe39ee0186faf7e3b3a9e91d1dd1babd2d4"
+  },
+  "sitio/assets/og/masses.jpg": {
+    "bytes": 90379,
+    "sha256": "5ca3735223bc53e1c84b6cd6c8b31b32fda3edd032d22fedc4cee530590e2e55"
+  },
+  "sitio/assets/og/prosthetic.jpg": {
+    "bytes": 91724,
+    "sha256": "f3b08ecacb1cfeb13330eb01944845cc1275a11a2920ce8debc70bbf8a10b3eb"
+  },
+  "sitio/assets/og/tavr.jpg": {
+    "bytes": 101356,
+    "sha256": "b8c503b8c67551eb64e6404fa10847271ac2948cb4ef78b83cd3e36694b5ba63"
+  },
+  "sitio/assets/og/hcm.jpg": {
+    "bytes": 102202,
+    "sha256": "60f2e971e256587eb69a063f3b172a93d5a129a68e81b1798181fa7264c7fd75"
+  },
+  "sitio/assets/og/aorta.jpg": {
+    "bytes": 90399,
+    "sha256": "89bb4767ecaeec576146ce320c41cefdc9ed8dd1ee9910462327efc793f1506e"
+  },
+  "sitio/assets/og/eject.jpg": {
+    "bytes": 86826,
+    "sha256": "0463d1a4b40fc177530f514f6dbd3eaec51a715ee2d152f7928f587eccaf471d"
+  },
+  "sitio/assets/og/mteer.jpg": {
+    "bytes": 97071,
+    "sha256": "ba83d53e4a7a507b46cfc82a75fc53cfb4d4abe1d624b07fcc257519e75b6840"
+  },
+  "sitio/assets/og/home.jpg": {
+    "bytes": 100306,
+    "sha256": "5fafe0fb98e05ada75440ba655a49814776c2fcb0c27cc7b3dea7e0edcbb8479"
+  },
+  "sitio/assets/og/shift.jpg": {
+    "bytes": 66759,
+    "sha256": "4129f1bd4bc2abc251f5b96b47625f33e620dfd0db0af9158952b51da3b8baa0"
+  },
+  "sitio/assets/og/rv.jpg": {
+    "bytes": 96423,
+    "sha256": "47398106b813fe1d355663a2d19d9ab838f460aece50279a037e2754561af810"
+  },
+  "sitio/assets/og/fill.jpg": {
+    "bytes": 105920,
+    "sha256": "1e3ec4f22c830808ac788486df08d90c82b63ef4c00d2725e9fe82b6c8ca9f99"
+  },
+  "sitio/assets/og/amyloid.jpg": {
+    "bytes": 101446,
+    "sha256": "a992a1bac658a38825e40ec71344c0352808491a75e5d2cf40f03294dd0ffbec"
+  },
+  "sitio/assets/og/tteer.jpg": {
+    "bytes": 97296,
+    "sha256": "390406a59d0035faaea85284d42b4d713870bb4c4ba3aa60c70dcaa1c4dc3e50"
+  },
+  "sitio/assets/og/windows.jpg": {
+    "bytes": 86819,
+    "sha256": "7d987863d34b649fa14e07b9393aee3e6b7d077a27a3bc9f70fc30d82de7ac8e"
+  },
+  "sitio/assets/og/tee.jpg": {
+    "bytes": 75138,
+    "sha256": "0bb383df2749d5b6750c23d5b86090f8ce2df7468c49f2b9d0bba4c87de7776e"
+  },
+  "sitio/assets/og/segments.jpg": {
+    "bytes": 94293,
+    "sha256": "c26942a60aa17b988e4241b777fb8456933a75c5f4f7f0313a532f3254274a22"
+  },
+  "sitio/assets/og/stress.jpg": {
+    "bytes": 102377,
+    "sha256": "1b51f51ea42256bc555f107c444d5c0eda18b7296c42484fb7df9b916ad9039c"
+  },
+  "sitio/assets/og/loop.jpg": {
+    "bytes": 68516,
+    "sha256": "47a3c63bff06659043430e55ea786b7a23f0c071ee4171fca15e5b5178d1de5b"
+  },
+  "sitio/assets/og/strain.jpg": {
+    "bytes": 114483,
+    "sha256": "aa511c2ef843f872e707a8bc2cda28b14667e866892758ab3fa4c5359e3f474f"
+  },
+  "sitio/assets/og/cycle.jpg": {
+    "bytes": 79538,
+    "sha256": "9c4d6a61f19de65287e86f5eeec0205b43199b869df2e40b42b6aa1d32dc2dc3"
+  },
+  "sitio/assets/og/ai.jpg": {
+    "bytes": 148744,
+    "sha256": "42afe039984a6b189cb334170b7330b4f54a8f52c3070709cd73bb667e521c80"
+  },
+  "sitio/assets/og/shunts.jpg": {
+    "bytes": 97088,
+    "sha256": "fe18b35487caade11e3a878268255c6a98b70dc819f906d736ed0385b1487e04"
+  },
+  "sitio/assets/og/mi.jpg": {
+    "bytes": 95454,
+    "sha256": "ec1029ccaa64e0e678894f9f1460feb600344ded9228416d72b18872a00a5968"
+  },
+  "sitio/assets/fonts/font-bde7db92496666b1.woff2": {
+    "bytes": 4000,
+    "sha256": "0a8b854cc18641bd1b8222afa7ec82a75e59bc6501f777744ec87db1b6cd7a2c"
+  },
+  "sitio/assets/fonts/font-6de62c022f06f17c.woff2": {
+    "bytes": 28036,
+    "sha256": "d5a170a88bdb4e21bcc743e8cf1a64835c8351f8e1d32dadd9cac77f2e718fbb"
+  },
+  "sitio/assets/fonts/font-cf65f680c0c97e6e.woff2": {
+    "bytes": 19684,
+    "sha256": "c01b3de8c8058462caadd044a6b874a9f4d7098d7d71d6c70e6a278096b8640e"
+  },
+  "sitio/assets/fonts/font-33c71188b08f5f87.woff2": {
+    "bytes": 86628,
+    "sha256": "cbca001188852d514d8654be7ddc97868f039bdf986b926ec5c985c117853cfd"
+  },
+  "sitio/assets/fonts/font-0b5c2db191621518.woff2": {
+    "bytes": 5500,
+    "sha256": "d524dc8ff6dbf7ed69772f3b2ff4affaf5a89b5762b270e36c3f21da0d4e39f5"
+  },
+  "sitio/assets/fonts/font-098dcb26caf31aee.woff2": {
+    "bytes": 42888,
+    "sha256": "b959ec00d64ac7dcf5c3a17641f7d7704c1fedbfe2e8bb0a7e11bd3e9b67ca86"
+  },
+  "sitio/assets/fonts/font-01c04f4d69ca47be.woff2": {
+    "bytes": 10052,
+    "sha256": "c36f509c0a8f9f85f29cb44bc8701d8a9e0b14c499e77a884f789ead7093a7ac"
+  },
+  "sitio/assets/fonts/font-2532acb5e3041baf.woff2": {
+    "bytes": 8860,
+    "sha256": "f1050dc5317b43434c0aeda599d4624c774ffc162e87a8cf204b949b6a85816d"
+  },
+  "sitio/assets/fonts/font-c3a25aa85495bee4.woff2": {
+    "bytes": 4348,
+    "sha256": "c6f09ee0e0a24b7c85ecb2a601eb99332f65b1f6b37c31e0bbe73fb307625eca"
+  },
+  "sitio/assets/fonts/font-4e183d488cda203f.woff2": {
+    "bytes": 25408,
+    "sha256": "5bac72520e0a9a5669e08b15fa1e15be6f4da74aa0b2d4315a97c11e1465120a"
+  },
+  "sitio/assets/fonts/font-33ff57e97518ac70.woff2": {
+    "bytes": 16296,
+    "sha256": "a29d4e6345cdb7e2b6daabf4961a6dcafcbc7ed1eac26186ca4a004cd32d64d8"
+  },
+  "sitio/assets/fonts/font-5778b1a208141d42.woff2": {
+    "bytes": 10060,
+    "sha256": "a76f53ca6612e7b3828eec2311098675b7f9849ae4169a8bcef6302aec02a6c0"
+  },
+  "sitio/assets/fonts/font-f44285dd7b4f96f8.woff2": {
+    "bytes": 95412,
+    "sha256": "750e9629f56ae71980f1dde315f5bdb6c81b49b13a8fec3246a4392853aa7ccd"
+  },
+  "sitio/assets/fonts/font-efbd4e0b7034b5e3.woff2": {
+    "bytes": 25868,
+    "sha256": "ae1d854fefa1167a79071f1afe01d4d51b60c5840c1be36dd74bd5fe7375b405"
+  },
+  "sitio/assets/fonts/font-cb1a242b907c798c.woff2": {
+    "bytes": 4336,
+    "sha256": "311098be73eac339128f0b5a6e33d72645b6f87488541fdf467c402152d297fd"
+  },
+  "sitio/assets/fonts/font-9d44a92983acf712.woff2": {
+    "bytes": 40240,
+    "sha256": "056e4e2459f57a0033c8c9c844ff19d6e42ac8602027803d4345823bcc939818"
+  },
+  "sitio/assets/fonts/font-bce0d72d5a8e3aa2.woff2": {
+    "bytes": 29528,
+    "sha256": "93b3fdd6ded70837e67eb686a5ed3a896b03d0cd5f7e4be62f07a4efeaebfcfd"
+  },
+  "sitio/assets/fonts/font-c2789104223d80ae.woff2": {
+    "bytes": 131848,
+    "sha256": "01817351be3edfc1714fe6d60ddea6a22a169a5ebd033b50c7f9495e5d9c386a"
+  },
+  "sitio/assets/fonts/original-fonts.css": {
+    "bytes": 15550,
+    "sha256": "74c82f34fb4ede98a579dc8beea49b180e9b9591fb4c1869010a5c924b65f173"
+  },
+  "sitio/assets/fonts/font-35749bec1f53639f.woff2": {
+    "bytes": 27204,
+    "sha256": "68ef9a14f1462e2218ecd03c39d26236402ff6a9e78da39ba5591a430a229824"
+  },
+  "sitio/assets/fonts/font-fa1d179d1e07ceed.woff2": {
+    "bytes": 74572,
+    "sha256": "7a0049db01fdd8fc7af7ef36675862a72a5c76d0cb45ae63c9f5b6f1b769dac7"
+  },
+  "sitio/assets/fonts/font-466e6a68c4ee3f94.woff2": {
+    "bytes": 9612,
+    "sha256": "526a4dd36c3af41f73a623e852302d8947d7fd4c00ee3026d82ef1f24a412fcd"
+  },
+  "sitio/assets/fonts/fonts.css": {
+    "bytes": 13012,
+    "sha256": "e0d3c53205db1a84adafa5e06450821f85007aad38e2b2c0ae043f48ac64f9ce"
+  },
+  "sitio/assets/fonts/font-757e9d7228a62b17.woff2": {
+    "bytes": 5476,
+    "sha256": "7b59d6bf7f8b8408ac28f27d01dca9a890abeae77045d343b1d8ccb089a92e54"
+  },
+  "sitio/assets/fonts/font-624db5e7c2592b82.woff2": {
+    "bytes": 77224,
+    "sha256": "cb0aa78eef73dfb083068a56ba321a4a5cc9841721d261ea8ab5f549db8c7e18"
+  },
+  "sitio/assets/fonts/font-0e213dc59c137688.woff2": {
+    "bytes": 4036,
+    "sha256": "b2529fba93fd07a50ffb8fc3d103eb04b0c298d4f6564d2833c44fde286de7e4"
+  },
+  "sitio/assets/fonts/font-3cea4047dd955e64.woff2": {
+    "bytes": 147060,
+    "sha256": "a99fb127682b9af538780d21420037452197b0d37dfd273eb108f8a3665d5501"
+  },
+  "sitio/assets/fonts/font-7300d08cc3cf7909.woff2": {
+    "bytes": 8848,
+    "sha256": "77f03e26f981c582bdba3a7abed4baa2d3149211c01366bb3ab3ba7622ec4ae5"
+  },
+  "sitio/assets/tteer/guide.webp": {
+    "bytes": 35942,
+    "sha256": "83637b54e7616e6df149823a6de67597fdfb51201955ea964c1eea5d262a4856"
+  },
+  "sitio/assets/tteer/grasp.webp": {
+    "bytes": 27368,
+    "sha256": "d8c161c86320b3c7367b70f955300afd990e052e049b6023d714ef46fec9c0f7"
+  },
+  "sitio/assets/tteer/assess.webp": {
+    "bytes": 24108,
+    "sha256": "44e9d31ee351e1d6450267d3e5173bb19d08a45cb8f90a248fef3e51824cf1ea"
+  },
+  "sitio/assets/tteer/release.webp": {
+    "bytes": 29520,
+    "sha256": "781eda8ad9b2d7c26097c3cc300a9e7d4be9742fa98a4bbab706c235becfdd76"
+  },
+  "sitio/assets/tteer/align.webp": {
+    "bytes": 30054,
+    "sha256": "97220a4056a84ac614b670ad4096d4173a23376e28cd2c649ff3a241bf35d4a7"
+  },
+  "sitio/assets/tteer/after.webp": {
+    "bytes": 34528,
+    "sha256": "3d29c90ee1b5f563f68419cc70be6aeecb4b5d95902561cae505f2563dadcf34"
+  },
+  "sitio/assets/tteer/steer.webp": {
+    "bytes": 35752,
+    "sha256": "c9ceb094d00bb9cf3dcb650d8ebcfb347b9a5e9b8f2dbd16b261a8cf5af9731b"
+  },
+  "sitio/assets/tteer/before.webp": {
+    "bytes": 31806,
+    "sha256": "060eca4f936f431147854f3d7a96613df93aee73a11af36c178223dc1e108d61"
+  }
+}

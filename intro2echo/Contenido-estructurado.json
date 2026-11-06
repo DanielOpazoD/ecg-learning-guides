@@ -1,0 +1,2630 @@
+{
+  "NAME": "The Heart by Ultrasound",
+  "AUTHOR": {
+    "name": "David Ouyang",
+    "suffix": "MD"
+  },
+  "PAGES": {
+    "pulse": {
+      "path": "/",
+      "url": "https://intro2echo.com/",
+      "num": "01",
+      "name": "Pulse",
+      "kicker": "The pulse-echo principle",
+      "title": "The Heart by Ultrasound: an interactive guide to echocardiography",
+      "description": "An illustrated, interactive guide to echocardiography: physics, standard views, hemodynamics, ventricular function, valve disease and structural heart procedures.",
+      "image": "assets/og/home.jpg",
+      "modified": "2026-10-02",
+      "text": "2cef72e7821d"
+    },
+    "image": {
+      "path": "/image",
+      "url": "https://intro2echo.com/image",
+      "num": "02",
+      "name": "Image",
+      "kicker": "Image formation and artifacts",
+      "title": "Image · The Heart by Ultrasound",
+      "description": "A two-dimensional echocardiographic sector image is formed from many scan lines acquired in sequence.",
+      "image": "assets/og/home.jpg",
+      "modified": "2026-10-03",
+      "text": "a3e226745e22"
+    },
+    "shift": {
+      "path": "/shift",
+      "url": "https://intro2echo.com/shift",
+      "num": "03",
+      "name": "Doppler",
+      "kicker": "The Doppler effect",
+      "title": "Doppler · The Heart by Ultrasound",
+      "description": "Doppler echocardiography measures blood velocity from the frequency shift of the returning echoes.",
+      "image": "assets/og/shift.jpg",
+      "modified": "2026-10-03",
+      "text": "b3ed834e3e47"
+    },
+    "windows": {
+      "path": "/windows",
+      "url": "https://intro2echo.com/windows",
+      "num": "04",
+      "name": "Views",
+      "kicker": "Acoustic windows and imaging planes",
+      "title": "Views · The Heart by Ultrasound",
+      "description": "Each standard transthoracic view is a single imaging plane through the heart.",
+      "image": "assets/og/windows.jpg",
+      "modified": "2026-10-24",
+      "text": "63ac077014fb"
+    },
+    "cycle": {
+      "path": "/cycle",
+      "url": "https://intro2echo.com/cycle",
+      "num": "05",
+      "name": "Cycle",
+      "kicker": "The cardiac cycle",
+      "title": "Cycle · The Heart by Ultrasound",
+      "description": "Mitral and aortic valve opening and closure divide the cardiac cycle into isovolumic contraction, ejection, isovolumic relaxation and filling.",
+      "image": "assets/og/cycle.jpg",
+      "modified": "2026-10-03",
+      "text": "bd8561beb86a"
+    },
+    "loop": {
+      "path": "/loop",
+      "url": "https://intro2echo.com/loop",
+      "num": "06",
+      "name": "Loop",
+      "kicker": "LV pressure–volume analysis",
+      "title": "Loop · The Heart by Ultrasound",
+      "description": "The LV pressure–volume loop plots LV pressure against LV volume over one cardiac cycle.",
+      "image": "assets/og/loop.jpg",
+      "modified": "2026-10-03",
+      "text": "11e39680810c"
+    },
+    "pressure": {
+      "path": "/pressure",
+      "url": "https://intro2echo.com/pressure",
+      "num": "07",
+      "name": "Doppler hemodynamics",
+      "kicker": "Flow, pressure and the IVC",
+      "title": "Doppler hemodynamics · The Heart by Ultrasound",
+      "description": "Almost every echocardiographic report includes Doppler calculations of flow and pressure.",
+      "image": "assets/og/pressure.jpg",
+      "modified": "2026-10-08",
+      "text": "906d4037bd11"
+    },
+    "eject": {
+      "path": "/eject",
+      "url": "https://intro2echo.com/eject",
+      "num": "08",
+      "name": "Systolic function",
+      "kicker": "LV volumes, LVEF and strain",
+      "title": "Systolic function · The Heart by Ultrasound",
+      "description": "LVEF is the fraction of the end-diastolic volume that the LV ejects.",
+      "image": "assets/og/eject.jpg",
+      "modified": "2026-10-06",
+      "text": "43796c00ff82"
+    },
+    "fill": {
+      "path": "/fill",
+      "url": "https://intro2echo.com/fill",
+      "num": "09",
+      "name": "Diastolic function",
+      "kicker": "Filling and LA pressure",
+      "title": "Diastolic function · The Heart by Ultrasound",
+      "description": "LV diastolic function determines the LA pressure that is required to fill the LV.",
+      "image": "assets/og/fill.jpg",
+      "modified": "2026-10-07",
+      "text": "ede342840dad"
+    },
+    "segments": {
+      "path": "/segments",
+      "url": "https://intro2echo.com/segments",
+      "num": "10",
+      "name": "Regional wall motion",
+      "kicker": "The 17-segment model",
+      "title": "Regional wall motion · The Heart by Ultrasound",
+      "description": "In the standard model, the LV wall is divided into 17 segments.",
+      "image": "assets/og/segments.jpg",
+      "modified": "2026-10-03",
+      "text": "8d55838ce01d"
+    },
+    "rv": {
+      "path": "/rv",
+      "url": "https://intro2echo.com/rv",
+      "num": "11",
+      "name": "Right ventricle",
+      "kicker": "RV size and function, pressure and volume overload, acute pulmonary embolism",
+      "title": "Right ventricle · The Heart by Ultrasound",
+      "description": "The RV is assessed by its size, its systolic function and the pressure that it generates.",
+      "image": "assets/og/rv.jpg",
+      "modified": "2026-10-07",
+      "text": "cc3244365744"
+    },
+    "as": {
+      "path": "/as",
+      "url": "https://intro2echo.com/as",
+      "num": "12",
+      "name": "Aortic stenosis",
+      "kicker": "LV pressure load",
+      "title": "Aortic stenosis · The Heart by Ultrasound",
+      "description": "In calcific aortic stenosis, the valve orifice narrows, the transvalvular jet velocity increases and the LV wall thickens in response to the pressure load.",
+      "image": "assets/og/as.jpg",
+      "modified": "2026-10-03",
+      "text": "1bd41db3af6a"
+    },
+    "ar": {
+      "path": "/ar",
+      "url": "https://intro2echo.com/ar",
+      "num": "13",
+      "name": "Aortic regurgitation",
+      "kicker": "LV volume and pressure load",
+      "title": "Aortic regurgitation · The Heart by Ultrasound",
+      "description": "In aortic regurgitation, blood flows back from the aorta through the incompetent aortic valve into the LV during diastole.",
+      "image": "assets/og/ar.jpg",
+      "modified": "2026-10-04",
+      "text": "744dabf3c329"
+    },
+    "ms": {
+      "path": "/ms",
+      "url": "https://intro2echo.com/ms",
+      "num": "14",
+      "name": "Mitral stenosis",
+      "kicker": "LV inflow obstruction",
+      "title": "Mitral stenosis · The Heart by Ultrasound",
+      "description": "In rheumatic mitral stenosis, the commissures fuse and the leaflets dome in diastole.",
+      "image": "assets/og/ms.jpg",
+      "modified": "2026-10-12",
+      "text": "ce594b6f4f0b"
+    },
+    "mr": {
+      "path": "/mr",
+      "url": "https://intro2echo.com/mr",
+      "num": "15",
+      "name": "Mitral regurgitation",
+      "kicker": "Left heart volume overload",
+      "title": "Mitral regurgitation · The Heart by Ultrasound",
+      "description": "In mitral regurgitation, part of the LV stroke volume flows back into the LA through the incompetent mitral valve during systole.",
+      "image": "assets/og/mr.jpg",
+      "modified": "2026-10-04",
+      "text": "26da2a5a66a0"
+    },
+    "tr": {
+      "path": "/tr",
+      "url": "https://intro2echo.com/tr",
+      "num": "16",
+      "name": "Tricuspid regurgitation",
+      "kicker": "Right heart volume overload",
+      "title": "Tricuspid regurgitation · The Heart by Ultrasound",
+      "description": "Tricuspid regurgitation imposes a volume overload on the right heart.",
+      "image": "assets/og/tr.jpg",
+      "modified": "2026-10-04",
+      "text": "5f36b7db33e4"
+    },
+    "tee": {
+      "path": "/tee",
+      "url": "https://intro2echo.com/tee",
+      "num": "17",
+      "name": "Transesophageal echocardiography",
+      "kicker": "The probe, its movements and the standard views",
+      "title": "Transesophageal echocardiography · The Heart by Ultrasound",
+      "description": "Transesophageal echocardiography (TEE) images the heart from the esophagus and the stomach, directly behind the left atrium.",
+      "image": "assets/og/tee.jpg",
+      "modified": "2026-10-12",
+      "text": "29a1d2e323f3"
+    },
+    "tavr": {
+      "path": "/tavr",
+      "url": "https://intro2echo.com/tavr",
+      "num": "18",
+      "name": "Transcatheter aortic valve replacement",
+      "kicker": "TAVR, step by step: what TEE shows at each step",
+      "title": "Transcatheter aortic valve replacement · The Heart by Ultrasound",
+      "description": "Transcatheter aortic valve replacement (TAVR) places a valve on a metal frame inside the stenotic aortic valve, brought on a catheter from the femoral artery.",
+      "image": "assets/og/tavr.jpg",
+      "modified": "2026-10-25",
+      "text": "46b511716b75"
+    },
+    "mteer": {
+      "path": "/mteer",
+      "url": "https://intro2echo.com/mteer",
+      "num": "19",
+      "name": "Mitral transcatheter edge-to-edge repair",
+      "kicker": "M-TEER, step by step: what TEE shows at each step",
+      "title": "Mitral transcatheter edge-to-edge repair · The Heart by Ultrasound",
+      "description": "Mitral transcatheter edge-to-edge repair (M-TEER) joins the anterior and posterior mitral leaflets with a clip, brought from the femoral vein across the atrial septum.",
+      "image": "assets/og/mteer.jpg",
+      "modified": "2026-10-24",
+      "text": "dcb80b9b7cb0"
+    },
+    "tteer": {
+      "path": "/tteer",
+      "url": "https://intro2echo.com/tteer",
+      "num": "20",
+      "name": "Tricuspid transcatheter edge-to-edge repair",
+      "kicker": "T-TEER, step by step: what TEE shows at each step",
+      "title": "Tricuspid transcatheter edge-to-edge repair · The Heart by Ultrasound",
+      "description": "Tricuspid transcatheter edge-to-edge repair (T-TEER) joins the septal leaflet to the anterior or the posterior leaflet with a clip, brought from the femoral…",
+      "image": "assets/og/tteer.jpg",
+      "modified": "2026-10-24",
+      "text": "14b8a2205ecd"
+    },
+    "aorta": {
+      "path": "/aorta",
+      "url": "https://intro2echo.com/aorta",
+      "num": "21",
+      "name": "Diseases of the aorta",
+      "kicker": "Root size, aneurysm, dissection and coarctation",
+      "title": "Diseases of the aorta · The Heart by Ultrasound",
+      "description": "Echocardiography measures the aortic root and the ascending aorta against normal values and surgical thresholds.",
+      "image": "assets/og/aorta.jpg",
+      "modified": "2026-10-07",
+      "text": "9b138578b0fe"
+    },
+    "ai": {
+      "path": "/ai",
+      "url": "https://intro2echo.com/ai",
+      "num": "22",
+      "name": "AI interpretation and measurement",
+      "kicker": "EchoPrime and EchoNet-Measurements: views, weights, task heads and calipers",
+      "title": "AI interpretation and measurement · The Heart by Ultrasound",
+      "description": "A comprehensive study holds many videos from many views, and dozens of measurements.",
+      "image": "assets/og/ai.jpg",
+      "modified": "2026-10-11",
+      "text": "116096bd4b6b"
+    },
+    "bonus": {
+      "path": "/bonus",
+      "url": "https://intro2echo.com/bonus",
+      "num": "B",
+      "name": "Bonus chapters",
+      "kicker": "",
+      "title": "Bonus chapters · The Heart by Ultrasound",
+      "description": "Bonus chapters: Stress echocardiography, Strain, Hypertrophic cardiomyopathy, Cardiac amyloidosis, Pericardial disease, Prosthetic valves, Infective…",
+      "image": "assets/og/home.jpg",
+      "modified": "2026-10-07",
+      "text": "cf5844f418c7"
+    },
+    "stress": {
+      "path": "/stress",
+      "url": "https://intro2echo.com/stress",
+      "num": "B1",
+      "name": "Stress echocardiography",
+      "kicker": "Dobutamine stress, ischemia and viability",
+      "title": "Stress echocardiography · The Heart by Ultrasound",
+      "description": "Stress echocardiography compares the wall motion at rest with the wall motion during stress.",
+      "image": "assets/og/stress.jpg",
+      "modified": "2026-10-04",
+      "text": "09fde1b3b394"
+    },
+    "strain": {
+      "path": "/strain",
+      "url": "https://intro2echo.com/strain",
+      "num": "B2",
+      "name": "Strain",
+      "kicker": "Global longitudinal strain by speckle tracking, its patterns, and cardio-oncology",
+      "title": "Strain · The Heart by Ultrasound",
+      "description": "Longitudinal strain is the shortening of the myocardium from end-diastole to end-systole, as a percentage of its length at end-diastole.",
+      "image": "assets/og/strain.jpg",
+      "modified": "2026-10-07",
+      "text": "f283d5de02b0"
+    },
+    "hcm": {
+      "path": "/hcm",
+      "url": "https://intro2echo.com/hcm",
+      "num": "B3",
+      "name": "Hypertrophic cardiomyopathy",
+      "kicker": "Septal hypertrophy, SAM and outflow obstruction",
+      "title": "Hypertrophic cardiomyopathy · The Heart by Ultrasound",
+      "description": "In hypertrophic cardiomyopathy (HCM), the LV wall is thick without another cause, most often at the basal anterior septum.",
+      "image": "assets/og/hcm.jpg",
+      "modified": "2026-10-07",
+      "text": "7c03be5dda2e"
+    },
+    "amyloid": {
+      "path": "/amyloid",
+      "url": "https://intro2echo.com/amyloid",
+      "num": "B4",
+      "name": "Cardiac amyloidosis",
+      "kicker": "Echocardiographic signs",
+      "title": "Cardiac amyloidosis · The Heart by Ultrasound",
+      "description": "In cardiac amyloidosis, amyloid fibrils accumulate between the myocardial cells.",
+      "image": "assets/og/amyloid.jpg",
+      "modified": "2026-10-04",
+      "text": "e9a825a77ce8"
+    },
+    "peri": {
+      "path": "/peri",
+      "url": "https://intro2echo.com/peri",
+      "num": "B5",
+      "name": "Pericardial disease",
+      "kicker": "Effusion, tamponade and constriction",
+      "title": "Pericardial disease · The Heart by Ultrasound",
+      "description": "A pericardial effusion compresses the heart once the pressure in the sac reaches the pressure in the right heart, a condition termed tamponade.",
+      "image": "assets/og/peri.jpg",
+      "modified": "2026-10-08",
+      "text": "aded960f66f4"
+    },
+    "prosthetic": {
+      "path": "/prosthetic",
+      "url": "https://intro2echo.com/prosthetic",
+      "num": "B6",
+      "name": "Prosthetic valves",
+      "kicker": "Aortic prostheses: stenosis and mismatch",
+      "title": "Prosthetic valves · The Heart by Ultrasound",
+      "description": "A prosthetic aortic valve is assessed by its Doppler velocities, its EOA and its DVI, against the reference values of its type and size.",
+      "image": "assets/og/prosthetic.jpg",
+      "modified": "2026-10-07",
+      "text": "4c1824b1b4eb"
+    },
+    "endocarditis": {
+      "path": "/endocarditis",
+      "url": "https://intro2echo.com/endocarditis",
+      "num": "B7",
+      "name": "Infective endocarditis",
+      "kicker": "Vegetations, leaflet perforation and the echocardiographic criteria",
+      "title": "Infective endocarditis · The Heart by Ultrasound",
+      "description": "Echocardiography shows the lesions of infective endocarditis: the vegetation, and the destruction that it causes, such as leaflet perforation and abscess.",
+      "image": "assets/og/endocarditis.jpg",
+      "modified": "2026-10-07",
+      "text": "f2498a4c5b0b"
+    },
+    "shunts": {
+      "path": "/shunts",
+      "url": "https://intro2echo.com/shunts",
+      "num": "B8",
+      "name": "Shunts: ASD, VSD and PFO",
+      "kicker": "Septal defects, Qp/Qs and the saline study",
+      "title": "Shunts: ASD, VSD and PFO · The Heart by Ultrasound",
+      "description": "A septal defect or a patent foramen ovale lets blood pass between the left and the right heart.",
+      "image": "assets/og/shunts.jpg",
+      "modified": "2026-10-07",
+      "text": "7efd95f16bae"
+    },
+    "masses": {
+      "path": "/masses",
+      "url": "https://intro2echo.com/masses",
+      "num": "B9",
+      "name": "Cardiac masses and thrombus",
+      "kicker": "Left atrial myxoma, LV thrombus and papillary fibroelastoma",
+      "title": "Cardiac masses and thrombus · The Heart by Ultrasound",
+      "description": "A cardiac mass is described by its location, attachment, size, shape and mobility.",
+      "image": "assets/og/masses.jpg",
+      "modified": "2026-10-07",
+      "text": "2f08ab2c34f3"
+    },
+    "mi": {
+      "path": "/mi",
+      "url": "https://intro2echo.com/mi",
+      "num": "B10",
+      "name": "Complications of myocardial infarction",
+      "kicker": "Septal rupture, papillary muscle rupture, free-wall rupture and LV aneurysm",
+      "title": "Complications of myocardial infarction · The Heart by Ultrasound",
+      "description": "An infarcted wall can tear, through the septum, a papillary muscle or the free wall, or it can stretch into an aneurysm.",
+      "image": "assets/og/mi.jpg",
+      "modified": "2026-10-07",
+      "text": "ad853e72e606"
+    },
+    "lvad": {
+      "path": "/lvad",
+      "url": "https://intro2echo.com/lvad",
+      "num": "B11",
+      "name": "Left ventricular assist devices",
+      "kicker": "The HeartMate 3: the surveillance study, the speed ramp and complications",
+      "title": "Left ventricular assist devices · The Heart by Ultrasound",
+      "description": "A continuous-flow LVAD takes blood from the LV apex through an inflow cannula and returns it to the ascending aorta through an outflow graft.",
+      "image": "assets/og/lvad.jpg",
+      "modified": "2026-10-07",
+      "text": "e3659a0cf2e2"
+    }
+  },
+  "ORDER": [
+    "pulse",
+    "image",
+    "shift",
+    "windows",
+    "cycle",
+    "loop",
+    "pressure",
+    "eject",
+    "fill",
+    "segments",
+    "rv",
+    "as",
+    "ar",
+    "ms",
+    "mr",
+    "tr",
+    "tee",
+    "tavr",
+    "mteer",
+    "tteer",
+    "aorta",
+    "ai"
+  ],
+  "BONUS_PAGE": "bonus",
+  "BONUS": [
+    "stress",
+    "strain",
+    "hcm",
+    "amyloid",
+    "peri",
+    "prosthetic",
+    "endocarditis",
+    "shunts",
+    "masses",
+    "mi",
+    "lvad"
+  ],
+  "QUIZ": {
+    "pulse": [
+      {
+        "q": "A reflector lies at a depth of 8 cm. When does its echo arrive after the pulse is transmitted?",
+        "opts": [
+          "After approximately 52 µs",
+          "After approximately 104 µs",
+          "After approximately 208 µs"
+        ],
+        "right": 1,
+        "why": "The round trip takes approximately 13 µs per centimeter of depth, so the echo arrives after 8 × 13 ≈ 104 µs."
+      },
+      {
+        "q": "The transmit frequency increases from 2.5 MHz to 5 MHz with 2 cycles per pulse. What happens to axial resolution?",
+        "opts": [
+          "It halves (finer detail)",
+          "It doubles (coarser detail)",
+          "It does not change"
+        ],
+        "right": 0,
+        "why": "The wavelength halves, so the spatial pulse length and the axial resolution halve. The depth of penetration decreases."
+      },
+      {
+        "q": "Why does the lung block the parasternal ultrasound beam?",
+        "opts": [
+          "Air absorbs the ultrasound",
+          "The tissue–air impedance difference causes almost total reflection",
+          "The pulse is too short"
+        ],
+        "right": 1,
+        "why": "The acoustic impedance of air is far lower than that of soft tissue, so nearly all of the incident intensity is reflected at the tissue–air boundary."
+      }
+    ],
+    "image": [
+      {
+        "q": "An image is acquired at a depth of 16 cm with 100 scan lines and one focal zone. What is the approximate frame rate?",
+        "opts": [
+          "Approximately 12 frames per second",
+          "Approximately 48 frames per second",
+          "Approximately 200 frames per second"
+        ],
+        "right": 1,
+        "why": "Each scan line takes 2 × 0.16 m ÷ 1540 m/s ≈ 208 µs. A frame of 100 lines therefore takes approximately 21 ms, which corresponds to approximately 48 frames per second."
+      },
+      {
+        "q": "Which change in the imaging settings increases the frame rate?",
+        "opts": [
+          "A greater imaging depth",
+          "A narrower sector",
+          "More focal zones"
+        ],
+        "right": 1,
+        "why": "A narrower sector requires fewer scan lines for each frame, so each frame takes less time to acquire."
+      },
+      {
+        "q": "A second image of the heart appears behind the bright pleural line. Which artifact is this?",
+        "opts": [
+          "Reverberation",
+          "Mirror image",
+          "Shadowing"
+        ],
+        "right": 1,
+        "why": "The pleura acts as an acoustic mirror and produces a copy of the structures in front of it at a position behind it."
+      }
+    ],
+    "windows": [
+      {
+        "q": "How is the parasternal short-axis view obtained from the parasternal long-axis view?",
+        "opts": [
+          "Rotation of the probe 90° clockwise",
+          "Rotation of the probe 90° counterclockwise",
+          "Sliding the probe toward the apex"
+        ],
+        "right": 0,
+        "why": "In the ASE guideline, the probe is rotated 90° clockwise, so that the marker points to the left shoulder."
+      },
+      {
+        "q": "In which position is the patient placed for parasternal and apical imaging?",
+        "opts": [
+          "Left lateral decubitus",
+          "Supine",
+          "Right lateral decubitus"
+        ],
+        "right": 0,
+        "why": "In the ASE guideline, parasternal and apical imaging is performed in the left lateral decubitus position, and subcostal and suprasternal imaging with the patient supine."
+      },
+      {
+        "q": "How is the apical five-chamber view obtained from the apical four-chamber view?",
+        "opts": [
+          "By tilting the beam anteriorly",
+          "By rotating the probe 90° clockwise",
+          "By moving the probe to the subcostal window"
+        ],
+        "right": 0,
+        "why": "In the ASE guideline, the five-chamber view is obtained by tilting the beam anteriorly from the four-chamber view."
+      }
+    ],
+    "planes": [
+      {
+        "q": "Which imaging planes intersect along the long axis of the LV?",
+        "opts": [
+          "The short-axis planes",
+          "The apical four-, two- and three-chamber views",
+          "The parasternal long axis and the subcostal IVC view"
+        ],
+        "right": 1,
+        "why": "The apical planes are related by rotation about the LV long axis, so they intersect along it."
+      },
+      {
+        "q": "Which apical view shows the LA, the mitral valve, the LVOT and the aortic valve?",
+        "opts": [
+          "Two-chamber",
+          "Three-chamber",
+          "Four-chamber"
+        ],
+        "right": 1,
+        "why": "The ASE guideline lists the LA, MV, LV, LVOT, AV and aorta for the apical long-axis (three-chamber) view."
+      },
+      {
+        "q": "The parasternal short-axis planes at the mitral valve and papillary muscle levels are…",
+        "opts": [
+          "nearly parallel",
+          "at right angles",
+          "the same plane"
+        ],
+        "right": 0,
+        "why": "The probe is tilted between the levels, so the planes form a stack of nearly parallel sections."
+      }
+    ],
+    "cycle": [
+      {
+        "q": "Which valve event of the left heart coincides with the first heart sound?",
+        "opts": [
+          "Mitral valve closure",
+          "Aortic valve opening",
+          "Aortic valve closure"
+        ],
+        "right": 0,
+        "why": "Mitral valve closure coincides with the first heart sound (S1), and aortic valve closure coincides with the second heart sound (S2)."
+      },
+      {
+        "q": "On Doppler recordings, the IVRT is measured from…",
+        "opts": [
+          "the end of LVOT flow to the onset of the E wave",
+          "the onset of the E wave to the onset of the A wave",
+          "the QRS complex to aortic valve opening"
+        ],
+        "right": 0,
+        "why": "The aortic and mitral valves are both closed from aortic valve closure, at the end of LVOT flow, to mitral valve opening, at the onset of the E wave."
+      },
+      {
+        "q": "Which frame defines end-diastole on echocardiography?",
+        "opts": [
+          "The first frame after mitral valve closure",
+          "The peak of the T wave",
+          "Aortic valve opening"
+        ],
+        "right": 0,
+        "why": "In Lang 2015, end-diastole is defined as the first frame after mitral valve closure or the frame with the largest LV dimension."
+      }
+    ],
+    "loop": [
+      {
+        "q": "Afterload (Ea) increases while contractility (Ees) is unchanged. How does the EF change?",
+        "opts": [
+          "It decreases",
+          "It increases",
+          "It does not change"
+        ],
+        "right": 0,
+        "why": "Because EF = Ees ÷ (Ees + Ea), a larger Ea at the same Ees gives a lower EF."
+      },
+      {
+        "q": "The slope of which relation is an index of contractility?",
+        "opts": [
+          "The EDPVR",
+          "The ESPVR",
+          "The Ea line"
+        ],
+        "right": 1,
+        "why": "The slope of the end-systolic pressure–volume relation, Ees, is a relatively load-independent index of contractility."
+      },
+      {
+        "q": "In a ventricle with increased chamber stiffness, which change appears first on the pressure–volume loop?",
+        "opts": [
+          "A steeper EDPVR, with a higher filling pressure at the same volume",
+          "A decrease in the ESPVR slope",
+          "A fall in Ea to zero"
+        ],
+        "right": 0,
+        "why": "Chamber stiffness is a passive property of the ventricle, so it changes the end-diastolic pressure–volume relation."
+      },
+      {
+        "q": "Which phase of the pressure–volume loop is absent in chronic severe mitral regurgitation?",
+        "opts": [
+          "Isovolumic contraction",
+          "Ejection",
+          "Filling"
+        ],
+        "right": 0,
+        "why": "The LV ejects into the LA from the onset of contraction, so LV volume decreases before the aortic valve opens."
+      }
+    ],
+    "shift": [
+      {
+        "q": "The angle between the Doppler beam and the flow is 60°. What fraction of the true velocity does the ultrasound system report?",
+        "opts": [
+          "87%",
+          "50%",
+          "100%"
+        ],
+        "right": 1,
+        "why": "The reported velocity equals the true velocity × cos θ, and cos 60° = 0.5."
+      },
+      {
+        "q": "A pulsed-wave Doppler signal aliases. Which change does NOT reduce the aliasing?",
+        "opts": [
+          "A deeper sample volume",
+          "A lower Doppler frequency",
+          "A change to continuous-wave Doppler"
+        ],
+        "right": 0,
+        "why": "A deeper sample volume lowers the PRF and therefore lowers the Nyquist limit."
+      },
+      {
+        "q": "Why does continuous-wave Doppler not identify the depth at which the peak velocity originates?",
+        "opts": [
+          "It samples every depth along the beam",
+          "It uses a wall filter",
+          "It does not correct for the beam angle"
+        ],
+        "right": 0,
+        "why": "Continuous-wave Doppler transmits and receives continuously, so every depth along the beam contributes to the signal."
+      }
+    ],
+    "pressure": [
+      {
+        "q": "The LVOT area is 3.1 cm², the peak LVOT velocity is 1.0 m/s and the peak aortic velocity is 4.0 m/s. What is the aortic valve area?",
+        "opts": [
+          "0.78 cm²",
+          "1.2 cm²",
+          "0.25 cm²"
+        ],
+        "right": 0,
+        "why": "The same flow passes both levels: 3.1 cm² × 1.0 m/s = AVA × 4.0 m/s, so the AVA is 3.1 ÷ 4 = 0.78 cm². The velocity ratio, 1.0 ÷ 4.0 = 0.25, also suggests severe stenosis."
+      },
+      {
+        "q": "Two patients have the same aortic valve and the same peak aortic velocity. In which one is the Doppler gradient most likely to exceed the catheter gradient from the LV to the aorta?",
+        "opts": [
+          "Ascending aorta 2.4 cm",
+          "Ascending aorta 4.0 cm",
+          "No difference"
+        ],
+        "right": 0,
+        "why": "Past the valve, part of the pressure returns as the jet slows (pressure recovery). The recovery is larger in a small aorta and should be taken into account when the ascending aorta is narrower than 30 mm."
+      },
+      {
+        "q": "The peak TR velocity is 3.0 m/s. The IVC measures 2.4 cm at end-expiration and collapses by 30% with a sniff. What is the estimated RVSP?",
+        "opts": [
+          "39 mmHg",
+          "51 mmHg",
+          "44 mmHg"
+        ],
+        "right": 1,
+        "why": "The RV–RA pressure gradient is 4 × 3.0² = 36 mmHg. An IVC wider than 2.1 cm that collapses by less than 50% with a sniff gives an RA pressure of 15 mmHg, so the RVSP is 36 + 15 = 51 mmHg."
+      },
+      {
+        "q": "When must the velocity proximal to a stenosis be included in the Bernoulli equation?",
+        "opts": [
+          "When it exceeds 1.5 m/s",
+          "Always",
+          "Never"
+        ],
+        "right": 0,
+        "why": "The simplified equation neglects the proximal velocity; above 1.5 m/s, the proximal velocity is too large to be neglected."
+      }
+    ],
+    "eject": [
+      {
+        "q": "The apical views are foreshortened by 15%. What is the effect on the measured EDV and ESV?",
+        "opts": [
+          "Both are underestimated",
+          "Both are overestimated",
+          "Only ESV changes"
+        ],
+        "right": 0,
+        "why": "A plane that misses the true apex shortens the traced LV length, so both volumes are underestimated."
+      },
+      {
+        "q": "An LVEF of 45% in a woman is classified as…",
+        "opts": [
+          "normal",
+          "mildly abnormal",
+          "moderately abnormal"
+        ],
+        "right": 1,
+        "why": "According to Lang 2015, an LVEF of 41–53% is mildly abnormal in women."
+      },
+      {
+        "q": "Global longitudinal strain is −15%. How is it classified?",
+        "opts": [
+          "Abnormal",
+          "Borderline",
+          "Normal"
+        ],
+        "right": 0,
+        "why": "GLS is normal when more negative than −18%, borderline from −16% to −18%, and abnormal when less negative than −16%."
+      }
+    ],
+    "segments": [
+      {
+        "q": "The anterior wall, the anteroseptal wall and the apex are akinetic. Which coronary artery is most likely occluded?",
+        "opts": [
+          "LAD",
+          "Right coronary",
+          "Circumflex"
+        ],
+        "right": 0,
+        "why": "In the standard map, the LAD supplies the anterior and anteroseptal segments and the apex."
+      },
+      {
+        "q": "Which apical view shows the inferior and anterior walls?",
+        "opts": [
+          "Four-chamber",
+          "Two-chamber",
+          "Three-chamber"
+        ],
+        "right": 1,
+        "why": "In Lang 2015 (Figure 4), the two-chamber view shows segments 4, 10 and 15 of the inferior wall and segments 1, 7 and 13 of the anterior wall."
+      },
+      {
+        "q": "Six of 16 segments are scored 3, and the other ten are normal. What is the wall motion score index?",
+        "opts": [
+          "1.38",
+          "1.75",
+          "2.00"
+        ],
+        "right": 1,
+        "why": "The index is the mean score, (6 × 3 + 10 × 1) ÷ 16 = 28 ÷ 16 = 1.75."
+      }
+    ],
+    "fill": [
+      {
+        "q": "A patient has a reduced e′, a normal E/e′, a normal peak TR velocity and an E/A of 0.7. What is the classification by the algorithm?",
+        "opts": [
+          "Grade 1 with normal LA pressure",
+          "Grade 2",
+          "Normal diastolic function"
+        ],
+        "right": 0,
+        "why": "Reduced e′ is the only abnormal first-step variable and E/A is ≤0.8, so the classification is grade 1 diastolic dysfunction with normal LA pressure."
+      },
+      {
+        "q": "All three first-step variables are abnormal, and E/A is 2.5. What is the grade of diastolic dysfunction?",
+        "opts": [
+          "Grade 2",
+          "Grade 3",
+          "Cannot be graded"
+        ],
+        "right": 1,
+        "why": "Three abnormal first-step variables indicate a raised LA pressure, and a raised LA pressure with E/A ≥2 is classified as grade 3 diastolic dysfunction."
+      },
+      {
+        "q": "In which of the following patients should this algorithm not be applied?",
+        "opts": [
+          "Atrial fibrillation",
+          "Hypertension",
+          "Age 70 years"
+        ],
+        "right": 0,
+        "why": "The main algorithm applies to sinus rhythm; the guideline provides a separate approach for atrial fibrillation."
+      }
+    ],
+    "report": [
+      {
+        "q": "Where in the echocardiography report is the summary statement placed?",
+        "opts": [
+          "At the top, after the demographics and indication",
+          "At the end",
+          "In a separate letter"
+        ],
+        "right": 0,
+        "why": "In the ASE 2025 reporting guideline, the summary statement is moved to the top of the report, after the demographic data and the indication."
+      },
+      {
+        "q": "Which term is recommended in place of “trivial” or “physiologic” for regurgitation that is less than mild?",
+        "opts": [
+          "trace",
+          "minimal",
+          "insignificant"
+        ],
+        "right": 0,
+        "why": "The ASE 2025 guideline uses a single term, “trace”, for regurgitation that is less than mild."
+      },
+      {
+        "q": "How many LVEF values should be given in one echocardiography report?",
+        "opts": [
+          "One, with its method",
+          "One for each method used",
+          "A range"
+        ],
+        "right": 0,
+        "why": "The ASE 2025 guideline recommends that one LVEF value be reported, together with the method by which it was measured."
+      }
+    ],
+    "as": [
+      {
+        "q": "A patient has a peak aortic velocity of 3.6 m/s, a mean gradient of 30 mmHg, an AVA of 0.8 cm², a stroke volume index of 28 mL/m² and an LVEF of 60%. What is the most likely diagnosis?",
+        "opts": [
+          "Moderate aortic stenosis",
+          "Paradoxical low-flow, low-gradient severe stenosis",
+          "Doppler measurement error"
+        ],
+        "right": 1,
+        "why": "A small valve area with a low gradient, low flow and a normal LVEF is consistent with paradoxical low-flow, low-gradient severe stenosis."
+      },
+      {
+        "q": "A patient has an LVEF of 35%, a peak aortic velocity of 3.4 m/s and an AVA of 0.8 cm². During low-dose dobutamine echocardiography, the area increases to 1.3 cm² and the velocity changes little. What is the most likely diagnosis?",
+        "opts": [
+          "Pseudo-severe stenosis",
+          "True severe stenosis",
+          "Very severe stenosis"
+        ],
+        "right": 0,
+        "why": "An increase in area to above 1.0 cm² with increased flow suggests pseudo-severe stenosis; in true severe stenosis, the area remains ≤1.0 cm² and the velocity reaches 4 m/s."
+      },
+      {
+        "q": "In severe aortic stenosis without symptoms, which finding defines ACC/AHA stage C2?",
+        "opts": [
+          "LVEF below 50%",
+          "Peak velocity 5 m/s",
+          "Septal thickness 1.3 cm"
+        ],
+        "right": 0,
+        "why": "Stage C2 is severe stenosis with LV systolic dysfunction, defined as an LVEF below 50%. A peak velocity of 5 m/s indicates very severe stenosis, which remains stage C1."
+      }
+    ],
+    "ms": [
+      {
+        "q": "The mitral pressure half-time is 200 ms. What is the mitral valve area by the pressure half-time method?",
+        "opts": [
+          "0.9 cm²",
+          "1.1 cm²",
+          "2.2 cm²"
+        ],
+        "right": 1,
+        "why": "By the pressure half-time method, the mitral valve area is 220 ÷ 200 = 1.1 cm²."
+      },
+      {
+        "q": "In mitral stenosis, the heart rate increases from 70 to 110 beats per minute. How does the mean transmitral gradient change?",
+        "opts": [
+          "It increases",
+          "It decreases",
+          "It does not change"
+        ],
+        "right": 0,
+        "why": "A faster heart rate shortens the diastolic filling period, so the transmitral flow rate and the mean gradient increase. The mean gradient should therefore be reported together with the heart rate."
+      },
+      {
+        "q": "Which finding does the ACC/AHA guideline list as a consequence of severe mitral stenosis?",
+        "opts": [
+          "PA systolic pressure above 50 mmHg",
+          "LV dilation",
+          "A dilated aortic root"
+        ],
+        "right": 0,
+        "why": "The ACC/AHA guideline lists severe LA enlargement and a PA systolic pressure above 50 mmHg as consequences of severe mitral stenosis. The LV is usually normal in size."
+      }
+    ],
+    "mr": [
+      {
+        "q": "At a constant regurgitant flow, the aliasing velocity is lowered from 40 to 30 cm/s. How do the PISA radius and the EROA change?",
+        "opts": [
+          "The radius increases; the EROA does not change",
+          "The radius decreases",
+          "The radius increases; the EROA increases"
+        ],
+        "right": 0,
+        "why": "The flow, 2πr² × Va, is constant, so r² increases as Va decreases; the EROA, flow ÷ peak velocity, does not change."
+      },
+      {
+        "q": "In mitral regurgitation, the EROA is 0.45 cm² and the regurgitant volume is 68 mL. What is the grade?",
+        "opts": [
+          "Moderate",
+          "Severe",
+          "Mild"
+        ],
+        "right": 1,
+        "why": "An EROA ≥0.40 cm² and a regurgitant volume ≥60 mL meet the criteria for severe regurgitation."
+      },
+      {
+        "q": "A patient with severe primary MR has no symptoms, an LVEF of 58% and an LV end-systolic diameter of 36 mm. What is the ACC/AHA stage?",
+        "opts": [
+          "C1",
+          "C2",
+          "D"
+        ],
+        "right": 1,
+        "why": "Stage C2 is defined by an LVEF ≤60% or an LV end-systolic diameter ≥40 mm. An LVEF of 58% alone is sufficient."
+      }
+    ],
+    "ar": [
+      {
+        "q": "The pressure half-time is 180 ms, holodiastolic flow reversal is present in the abdominal aorta, and the jet width is 70% of the LVOT diameter. What is the grade of aortic regurgitation?",
+        "opts": [
+          "Moderate",
+          "Severe",
+          "Mild"
+        ],
+        "right": 1,
+        "why": "A pressure half-time below 200 ms, a jet width ≥65% of the LVOT diameter and holodiastolic flow reversal in the abdominal aorta all indicate severe AR."
+      },
+      {
+        "q": "Why can the pressure half-time of the AR jet shorten without an increase in the severity of regurgitation?",
+        "opts": [
+          "The LV diastolic pressure rises",
+          "The heart rate falls",
+          "The Nyquist limit is lower"
+        ],
+        "right": 0,
+        "why": "The pressure half-time depends on the diastolic pressure difference between the aorta and the LV. A higher LV diastolic pressure shortens it."
+      },
+      {
+        "q": "A patient with chronic severe AR has no symptoms, an LVEF of 60% and an LV end-systolic diameter of 53 mm. What is the ACC/AHA stage?",
+        "opts": [
+          "C1",
+          "C2",
+          "B"
+        ],
+        "right": 1,
+        "why": "Stage C2 includes an LV end-systolic diameter above 50 mm (or above 25 mm/m²), even when the LVEF is normal."
+      }
+    ],
+    "peri": [
+      {
+        "q": "The end-diastolic echo-free space of a pericardial effusion measures 15 mm. How is the effusion graded?",
+        "opts": [
+          "Mild (small)",
+          "Moderate",
+          "Severe (large)"
+        ],
+        "right": 1,
+        "why": "The ESC guideline grades an end-diastolic echo-free space of <10 mm as mild, of 10–20 mm as moderate and of >20 mm as large."
+      },
+      {
+        "q": "Which echocardiographic finding is nearly 100% sensitive and specific for tamponade?",
+        "opts": [
+          "RA collapse for more than one third of the cycle",
+          "A brief RA inversion",
+          "An IVC wider than 2.1 cm"
+        ],
+        "right": 0,
+        "why": "A brief RA inversion also occurs in the absence of tamponade, and a dilated IVC is sensitive but not specific. In the ASE guideline, RA collapse for more than one third of the cardiac cycle is the finding with this sensitivity and specificity."
+      },
+      {
+        "q": "In the parasternal long-axis view, fluid lies between the descending aorta and the heart. Which fluid collection is it?",
+        "opts": [
+          "Pericardial effusion",
+          "Pleural effusion",
+          "Ascites"
+        ],
+        "right": 0,
+        "why": "According to the ASE guideline, pericardial fluid lies anterior to the descending aorta, whereas pleural fluid extends posterior to it."
+      },
+      {
+        "q": "The septum shifts with respiration, the medial e′ is 12 cm/s and the hepatic vein expiratory diastolic reversal ratio is 0.65. Do the Mayo Clinic criteria indicate constrictive pericarditis?",
+        "opts": [
+          "Yes: a septal shift with a medial e′ of 9 cm/s or more",
+          "No: the reversal ratio is below 0.79",
+          "No: all three findings are required"
+        ],
+        "right": 0,
+        "why": "The Mayo Clinic criteria require a respiratory septal shift together with a medial e′ of 9 cm/s or more or a reversal ratio of 0.79 or more. This combination had a sensitivity of 87% and a specificity of 91%. All three findings together raise the specificity to 97% but lower the sensitivity to 64%."
+      }
+    ],
+    "tr": [
+      {
+        "q": "Why is the regurgitant volume threshold for severe regurgitation lower for TR (45 mL) than for MR (60 mL) at the same EROA?",
+        "opts": [
+          "The TR velocity is lower",
+          "The RV is smaller",
+          "TR jets are always eccentric"
+        ],
+        "right": 0,
+        "why": "The regurgitant volume equals EROA × VTI, and the lower TR velocity produces a smaller VTI."
+      },
+      {
+        "q": "In torrential TR, the peak jet velocity is 1.8 m/s. What explains the low velocity?",
+        "opts": [
+          "The RV and RA pressures approach each other",
+          "The regurgitation is mild",
+          "The Doppler beam is not aligned with the jet"
+        ],
+        "right": 0,
+        "why": "With a very large regurgitant orifice, the RA pressure rises toward the RV pressure, so the systolic pressure difference and the jet velocity decrease."
+      },
+      {
+        "q": "Which hepatic vein flow pattern is specific for severe TR?",
+        "opts": [
+          "Systolic flow reversal",
+          "Systolic dominance",
+          "A large a-wave"
+        ],
+        "right": 0,
+        "why": "Systolic flow reversal in the hepatic veins is specific for severe TR once other causes have been excluded."
+      }
+    ],
+    "rv": [
+      {
+        "q": "Which measure of RV systolic function is derived from the whole RV area in one plane?",
+        "opts": [
+          "TAPSE",
+          "S′",
+          "Fractional area change"
+        ],
+        "right": 2,
+        "why": "TAPSE and S′ measure the motion of a single point of the tricuspid annulus; FAC compares the RV areas at end-diastole and end-systole."
+      },
+      {
+        "q": "In the short axis at the papillary muscles, the LV eccentricity index is 1.3 at end-diastole and 1.0 at end-systole. What does this pattern suggest?",
+        "opts": [
+          "RV volume overload",
+          "RV pressure overload",
+          "A normal septum"
+        ],
+        "right": 0,
+        "why": "A septum flat at end-diastole only suggests RV volume overload. A septum flat at end-systole suggests RV pressure overload."
+      },
+      {
+        "hidden": true,
+        "q": "The peak TR velocity is 3.1 m/s. The RVOT acceleration time is 90 ms and the RA area is 22 cm²; there are no other signs. What is the echocardiographic probability of PH (ESC/ERS 2022)?",
+        "opts": [
+          "High",
+          "Intermediate",
+          "Low"
+        ],
+        "right": 0,
+        "why": "A velocity of 2.9–3.4 m/s gives an intermediate probability without other signs. Here the signs come from two categories, the pulmonary artery (acceleration time below 105 ms) and the RA (area above 18 cm²), so the probability is high."
+      },
+      {
+        "q": "A patient with pulmonary hypertension has a TAPSE of 19 mm and an RV fractional area change of 30%. What explains the difference?",
+        "opts": [
+          "The base of a failing, pressure-overloaded RV can keep its motion",
+          "TAPSE is measured at the wrong time",
+          "FAC is always lower than TAPSE"
+        ],
+        "right": 0,
+        "why": "TAPSE measures the longitudinal motion of the lateral annulus. In a maladapted RV the base often keeps its motion, so TAPSE can overestimate RV function; FAC also includes the radial motion of the free wall and the septum."
+      }
+    ],
+    "stress": [
+      {
+        "q": "A segment is normal at rest and becomes akinetic at peak dobutamine stress. What is the response?",
+        "opts": [
+          "Ischemic",
+          "Fixed (scar)",
+          "Viable"
+        ],
+        "right": 0,
+        "why": "A new wall motion abnormality with stress in a segment that is normal at rest is an ischemic response."
+      },
+      {
+        "q": "An akinetic segment improves at 10 µg/kg/min and is akinetic again at peak dose. What does this response indicate?",
+        "opts": [
+          "Viable myocardium, ischemic at higher doses (biphasic response)",
+          "Scar",
+          "A normal response"
+        ],
+        "right": 0,
+        "why": "Improvement at low dose shows contractile reserve, and worsening at higher doses shows ischemia. This biphasic response has the highest positive predictive value for recovery of function after revascularization."
+      },
+      {
+        "q": "A 70-year-old patient reaches 120/min at peak dobutamine stress, with no wall motion abnormality. Is the stress adequate?",
+        "opts": [
+          "No: the target is about 128/min",
+          "Yes: 120/min is above 100/min",
+          "Yes: any rise above the resting rate is enough"
+        ],
+        "right": 0,
+        "why": "The target is 85% of the age-predicted maximum, 0.85 × (220 − 70) ≈ 128/min. A test that does not reach the target heart rate is less sensitive for ischemia."
+      }
+    ],
+    "ivc": [
+      {
+        "q": "The IVC measures 2.4 cm at end-expiration and collapses by 30% with a sniff. What RA pressure is estimated?",
+        "opts": [
+          "3 mmHg",
+          "8 mmHg",
+          "15 mmHg"
+        ],
+        "right": 2,
+        "why": "An IVC wider than 2.1 cm that collapses by less than 50% with a sniff gives an RA pressure of 15 mmHg (range 10–20 mmHg) in the 2025 ASE guideline."
+      },
+      {
+        "q": "Where is the IVC diameter measured?",
+        "opts": [
+          "At the diaphragm, from the apical window",
+          "1 to 2 cm from the RA junction, in the subcostal view",
+          "In the parasternal short-axis view"
+        ],
+        "right": 1,
+        "why": "In the ASE guideline, the IVC is measured in the subcostal long-axis view, 1 to 2 cm from the right atrial junction, at its largest diameter, which usually occurs in expiration."
+      },
+      {
+        "q": "A patient receives positive-pressure ventilation. How is the IVC collapse used to estimate the RA pressure?",
+        "opts": [
+          "As in a patient who breathes spontaneously",
+          "It is not used",
+          "With a cut-off of 20%"
+        ],
+        "right": 1,
+        "why": "Under positive-pressure ventilation, the IVC collapse does not estimate the RA pressure. If the RA pressure is clinically relevant, an invasive measurement should replace the estimate."
+      },
+      {
+        "q": "In the subcostal view, which finding identifies the abdominal aorta rather than the IVC?",
+        "opts": [
+          "It pulses with each beat",
+          "It does not change with respiration",
+          "It lies within the liver"
+        ],
+        "right": 1,
+        "why": "The aorta does not respond to respiration. Pulsation alone does not identify it: in hyperdynamic states and in TR, the IVC can pulse more than the aorta. The IVC, not the aorta, lies within the liver."
+      }
+    ],
+    "ai": [
+      {
+        "q": "In EchoPrime's anatomical attention, which view group carries the most weight for the IVC section?",
+        "opts": [
+          "Subcostal",
+          "Apical four-chamber",
+          "Parasternal long axis"
+        ],
+        "right": 0,
+        "why": "In the public weights, the IVC row is 1.00 for the subcostal group, 0.27 for the suprasternal group and 0.02 for the apical four-chamber group."
+      },
+      {
+        "q": "How does EchoPrime give a number such as the LVEF?",
+        "opts": [
+          "The mean of the values of the 50 most similar earlier studies",
+          "A caliper on the apical four-chamber frame with the largest LV",
+          "The LVEF of the single most similar study"
+        ],
+        "right": 0,
+        "why": "For each section, EchoPrime finds the 50 earlier studies whose embeddings lie closest. A number is their mean, and a finding is reported when more than half of them carry it."
+      },
+      {
+        "q": "In a blinded randomized trial, a cardiologist finalized an initial LVEF from AI or from a sonographer. What was the result?",
+        "opts": [
+          "The cardiologist changed the AI assessment less often (16.8% against 27.2%)",
+          "The cardiologist changed the AI assessment more often",
+          "There was no difference"
+        ],
+        "right": 0,
+        "why": "A change of more than 5% occurred in 16.8% of the AI assessments and 27.2% of the sonographer assessments; AI was non-inferior and superior."
+      },
+      {
+        "q": "Which images were left out of EchoPrime's training?",
+        "opts": [
+          "Spectral Doppler and M-mode recordings",
+          "Color Doppler videos",
+          "Subcostal videos"
+        ],
+        "right": 0,
+        "why": "EchoPrime's encoder takes videos. Spectral Doppler and M-mode recordings are still images, so they were excluded from training."
+      }
+    ],
+    "measure": [
+      {
+        "q": "How does EchoNet-Measurements find the end of a caliper?",
+        "opts": [
+          "The weighted center of a heat map that the model outputs",
+          "The brightest pixel of the image",
+          "An edge found by a fixed threshold"
+        ],
+        "right": 0,
+        "why": "Each model outputs a heat map for each point that it looks for, and the public code takes the weighted center of the map as the point."
+      },
+      {
+        "q": "A video is exported without its DICOM header. What can the model still do?",
+        "opts": [
+          "Find the caliper ends, but not convert them to centimeters",
+          "Measure in centimeters as before",
+          "Nothing: it needs the header to find the points"
+        ],
+        "right": 0,
+        "why": "The points come from the image. The pixel size that converts pixels to centimeters, and the velocity per pixel of a Doppler image, come from the DICOM file."
+      },
+      {
+        "q": "A heat map has two peaks of equal height, at the septum and at an RV trabeculation. Where does the point fall?",
+        "opts": [
+          "Between the two peaks",
+          "On the septum",
+          "On the trabeculation"
+        ],
+        "right": 0,
+        "why": "The weighted center of two equal peaks lies midway between them, on neither structure, so the wall measures wrong."
+      }
+    ],
+    "shunts": [
+      {
+        "q": "Across a restrictive atrial communication, the peak septal velocity is 2.0 m/s, and the RA pressure is 8 mmHg. What is the peak LA pressure?",
+        "opts": [
+          "16 mmHg",
+          "24 mmHg",
+          "32 mmHg"
+        ],
+        "right": 1,
+        "why": "The peak LA–RA gradient is 4 × 2.0² = 16 mmHg. The peak LA pressure is the RA pressure + the gradient: 8 + 16 = 24 mmHg."
+      },
+      {
+        "q": "Why can the flow across a large secundum ASD not show a raised LA pressure?",
+        "opts": [
+          "The flow is right to left",
+          "The atrial pressures equalize, so the gradient stays at about 1 mmHg",
+          "CW Doppler cannot record flow across the atrial septum"
+        ],
+        "right": 1,
+        "why": "A large defect lets the LA and RA pressures equalize. In ASD the mean transatrial septal velocity is about 0.4 m/s, a gradient of about 1 mmHg, so the LA pressure is close to the RA pressure. Only a restrictive communication keeps a gradient that gives the LA pressure."
+      }
+    ],
+    "mteer": [
+      {
+        "q": "The sheath tents the fossa ovalis. In the four-chamber view, how high above the point where the clip will grasp should the tent be?",
+        "opts": [
+          "2.0–3.0 cm",
+          "4.5–5.0 cm",
+          "6.0–7.0 cm"
+        ],
+        "right": 1,
+        "why": "ASE 2026 gives about 4.5–5.0 cm above the point of grasp, which lies at or a little above the annulus for a flail or prolapse and can lie below it in secondary MR. The bicaval and short-axis views place the tent high and posterior."
+      },
+      {
+        "q": "Above the valve, the clip's arms are open and square to the line of coaptation. What does the commissural view (55–75°) show?",
+        "opts": [
+          "Both arms at full length",
+          "The arms edge-on, as one line",
+          "The arms as a V, open toward the LV"
+        ],
+        "right": 1,
+        "why": "The commissural view lies along the line of coaptation, so the two arms, square to it, show edge-on, as one line. The long-axis view (100–160°) shows both arms at full length."
+      },
+      {
+        "q": "Two thin jets remain after the clip, one on each side of it. How is the residual MR graded?",
+        "opts": [
+          "By PISA and the EROA of each jet",
+          "By the vena contracta of each jet and the other signs, not by PISA",
+          "By the sum of the color jet areas"
+        ],
+        "right": 1,
+        "why": "The clip distorts the hemispheric flow convergence that PISA assumes, and there are often two or more jets, so ASE 2019 and 2026 do not recommend PISA after TEER. A vena contracta of 0.7 cm or more in any jet is specific for severe MR; with several jets, 3D TEE adds their vena contracta areas."
+      },
+      {
+        "q": "Before release, the mean gradient across the double orifice is measured. Which result does ASE 2026 prefer?",
+        "opts": [
+          "Under 5 mmHg, with a valve area of 2.0 cm² or more",
+          "Under 10 mmHg at any heart rate",
+          "Any value, if the MR is mild"
+        ],
+        "right": 0,
+        "why": "ASE 2026 prefers a residual mean gradient under 5 mmHg with a valve area of 2.0 cm² or more, reported with the heart rate. In 268 patients, an invasive gradient above 5 mmHg just after implantation predicted a worse long-term outcome."
+      }
+    ],
+    "tteer": [
+      {
+        "q": "Which pair of leaflets can a tricuspid clip grasp to reduce TR?",
+        "opts": [
+          "The anterior and posterior leaflets",
+          "The septal leaflet with the anterior or the posterior leaflet",
+          "Any two leaflets, with the same effect"
+        ],
+        "right": 1,
+        "why": "The septal leaflet is grasped with the anterior or the posterior leaflet. A grasp of the anterior and posterior leaflets alone has not been shown to reduce TR. Without a focal defect, the anteroseptal line, usually the longest, comes first."
+      },
+      {
+        "q": "The arms lie square to the anteroseptal line of coaptation. Which view shows their orientation most accurately?",
+        "opts": [
+          "The 3D en face view of the valve",
+          "The bicaval view",
+          "The parasternal long axis on TTE"
+        ],
+        "right": 0,
+        "why": "The 3D en face view, with multiplanar reconstruction to place the two 2D planes at the site of the grasp, shows the orientation most accurately. The transgastric short axis of the leaflet tips is the other check, with care for off-axis cuts."
+      },
+      {
+        "q": "After the grasp, the residual TR must be graded. Which method grades it best with a clip in place?",
+        "opts": [
+          "PISA and its EROA",
+          "The 3D vena contracta area",
+          "The color jet area in the RA"
+        ],
+        "right": 1,
+        "why": "With a clip in place, PISA tends to overestimate the residual TR. The 3D vena contracta area grades it best."
+      },
+      {
+        "q": "In TRILUMINATE Pivotal, which outcome carried the primary end point at 1 year?",
+        "opts": [
+          "Fewer deaths",
+          "Fewer heart failure hospitalizations",
+          "A better quality of life (KCCQ)"
+        ],
+        "right": 2,
+        "why": "Death or tricuspid surgery and heart failure hospitalization did not appear to differ at 1 year. The KCCQ score rose by 12.3 points with TEER and by 0.6 points with medical therapy alone. In the hierarchy, a KCCQ gain of at least 15 points gave 21% of the wins to TEER and 7% to the control group."
+      }
+    ],
+    "tavr": [
+      {
+        "q": "Where is the aortic annulus measured on TEE to size a transcatheter valve?",
+        "opts": [
+          "At the sinotubular junction, in diastole",
+          "At the hinge points of the cusps, in systole, inner edge to inner edge",
+          "At the tips of the open cusps, in systole"
+        ],
+        "right": 1,
+        "why": "The annulus that sizes the valve is the diameter at the hinge points of the cusps, measured in systole on a zoomed long axis, inner edge to inner edge (ASE 2022). CT is the reference for sizing; 3D TEE measures 3.5–7.4% smaller, usually without a change of valve size (EACVI 2023)."
+      },
+      {
+        "q": "A 26-mm SAPIEN 3 sits across the annulus before its balloon is inflated. What final depth is the target?",
+        "opts": [
+          "80/20 to 90/10 of the frame's height, aortic to ventricular",
+          "50/50: the middle of the frame at the annulus",
+          "The whole frame below the annulus, in the LVOT"
+        ],
+        "right": 0,
+        "why": "A SAPIEN 3 is placed for a final depth of 80/20 to 90/10 of its frame's height, aortic to ventricular (Blackman 2021). The frame shortens as it expands, mostly at its ventricular end, from 27 to 20 mm for the 26-mm valve (Schymik 2015), so that end rises toward the annulus as the balloon fills."
+      },
+      {
+        "q": "At the check, two paravalvular jets take 20% of the frame's circumference. What is the grade?",
+        "opts": [
+          "Mild",
+          "Moderate",
+          "Severe"
+        ],
+        "right": 1,
+        "why": "The circumferential extent is the sum of the jets' vena contracta arcs divided by the circumference of the valve's outer edge: less than 10% is mild, 10–29% moderate and 30% or more severe, best read with the vena contracta (ASE 2024). A jet counts only where it enters the LV at the frame's ventricular edge; color in the sinuses above the skirt is not a leak (ASE 2019)."
+      },
+      {
+        "q": "Which result meets the valve's intended performance in VARC-3?",
+        "opts": [
+          "A mean gradient of 25 mmHg and a DVI of 0.40",
+          "A mean gradient of 10 mmHg, a peak velocity of 2.2 m/s, a DVI of 0.46 and mild paravalvular regurgitation",
+          "A peak velocity of 3.4 m/s with no regurgitation"
+        ],
+        "right": 1,
+        "why": "VARC-3 asks for a mean gradient below 20 mmHg, a peak velocity below 3 m/s, a DVI of 0.25 or more and less than moderate regurgitation (Généreux 2021). Mild paravalvular regurgitation meets it; with the SAPIEN 3, at least moderate regurgitation at 30 days carried a hazard ratio of 2.40 for death at 1 year (Pibarot 2017)."
+      }
+    ]
+  },
+  "REFS": {
+    "abbottg4": {
+      "text": "Abbott. MitraClip G4: tailored, optimized, proven. Product brochure MAT-2103793 v1.0. Abbott; 2021.",
+      "url": "https://www.cardiovascular.abbott/content/dam/cv/cardiovascular/au/hcp/structural-heart/pdfs/mitraclip/g4-material-update-brochure.pdf"
+    },
+    "abbottg4guide": {
+      "text": "Abbott. MitraClip G4 System procedural positioning and imaging guide. MAT-2005413 v1.0. Abbott; 2020.",
+      "url": "https://www.structuralheart.abbott/int/fileadmin/content/Solutions-Products/Mitraclip/G4_Procedural_Positioning_and_Imaging_Guide_MAT-2005413_v1.0.pdf"
+    },
+    "abbottifu2019": {
+      "text": "Abbott. MitraClip Clip Delivery System: instructions for use (NTR and XTR implants). EL2123340. Abbott; 2019.",
+      "url": "https://manuals.eifu.abbott/content/dam/av/manuals-eifu/vascular/EL2123340.pdf"
+    },
+    "adler2015": {
+      "text": "Adler Y, Charron P, Imazio M, et al. 2015 ESC Guidelines for the diagnosis and management of pericardial diseases. Eur Heart J 2015;36:2921-2964.",
+      "doi": "10.1093/eurheartj/ehv318",
+      "pmid": "26320112"
+    },
+    "afshar2026": {
+      "text": "Afshar EJ, Tayebi A, Samimisedeh P, et al. Clinical and Imaging Findings in 504 Cases With Left Ventricular Pseudoaneurysm Following Myocardial Infarction: A Comprehensive Systematic Review and Meta-Analysis. Cardiol Res Pract 2026;2026:9208154.",
+      "doi": "10.1155/crp/9208154",
+      "pmid": "42609766"
+    },
+    "agricola2023": {
+      "text": "Agricola E, Ancona F, Bartel T, et al. Multimodality imaging for patient selection, procedural guidance, and follow-up of transcatheter interventions for structural heart disease: a consensus document of the EACVI Task Force on Interventional Cardiovascular Imaging: part 1: access routes, transcatheter aortic valve implantation, and transcatheter mitral valve interventions. Eur Heart J Cardiovasc Imaging 2023;24:e209-e268.",
+      "doi": "10.1093/ehjci/jead096",
+      "pmid": "37283275"
+    },
+    "alhakak2025": {
+      "text": "Alhakak AS, Olsen FJ, Skaarup KG, et al. Age- and sex-based normal reference ranges of the cardiac time intervals: the Copenhagen City Heart Study. Clin Res Cardiol 2025;114:430-442.",
+      "doi": "10.1007/s00392-023-02269-2",
+      "pmid": "37522900"
+    },
+    "anker2024": {
+      "text": "Anker SD, Friede T, von Bardeleben RS, et al. Transcatheter Valve Repair in Heart Failure with Moderate to Severe Mitral Regurgitation. N Engl J Med 2024;391:1799-1809.",
+      "doi": "10.1056/NEJMoa2314328",
+      "pmid": "39216092"
+    },
+    "antonini2013": {
+      "text": "Antonini-Canterin F, Poli S, Vriz O, et al. The Ventricular-Arterial Coupling: From Basic Pathophysiology to Clinical Application in the Echocardiography Laboratory. J Cardiovasc Echogr 2013;23:91-95.",
+      "doi": "10.4103/2211-4122.127408",
+      "pmid": "28465893"
+    },
+    "arbelo2023": {
+      "text": "Arbelo E, Protonotarios A, Gimeno JR, et al. 2023 ESC Guidelines for the management of cardiomyopathies. Eur Heart J 2023;44:3503-3626.",
+      "doi": "10.1093/eurheartj/ehad194",
+      "pmid": "37622657"
+    },
+    "arnold2024": {
+      "text": "Arnold SV, Manandhar P, Vemulapalli S, et al. Trends in Transcatheter Aortic Valve Replacement Outcomes: Insights From the STS/ACC TVT Registry. JAMA Cardiol 2024;9:1115-1123.",
+      "doi": "10.1001/jamacardio.2024.3453",
+      "pmid": "39412793"
+    },
+    "asanoi1989": {
+      "text": "Asanoi H, Sasayama S, Kameyama T. Ventriculoarterial coupling in normal and failing heart in humans. Circ Res 1989;65:483-493.",
+      "doi": "10.1161/01.res.65.2.483",
+      "pmid": "2752553"
+    },
+    "asch2021": {
+      "text": "Asch FM, Little SH, Mackensen GB, et al. Incidence and standardised definitions of mitral valve leaflet adverse events after transcatheter mitral valve repair: the EXPAND study. EuroIntervention 2021;17:e932-e941.",
+      "doi": "10.4244/EIJ-D-21-00012",
+      "pmid": "34031024"
+    },
+    "assavapokee2024": {
+      "text": "Assavapokee T, Rola P, Assavapokee N, Koratala A. Decoding VExUS: a practical guide for excelling in point-of-care ultrasound assessment of venous congestion. Ultrasound J 2024;16:48.",
+      "doi": "10.1186/s13089-024-00396-z",
+      "pmid": "39560910"
+    },
+    "baddour2015": {
+      "text": "Baddour LM, Wilson WR, Bayer AS, et al. Infective Endocarditis in Adults: Diagnosis, Antimicrobial Therapy, and Management of Complications: A Scientific Statement for Healthcare Professionals From the American Heart Association. Circulation 2015;132:1435-1486.",
+      "doi": "10.1161/CIR.0000000000000296",
+      "pmid": "26373316"
+    },
+    "bastos2020": {
+      "text": "Bastos MB, Burkhoff D, Maly J, et al. Invasive left ventricle pressure-volume analysis: overview and practical clinical implications. Eur Heart J 2020;41:1286-1297.",
+      "doi": "10.1093/eurheartj/ehz552",
+      "pmid": "31435675"
+    },
+    "baumgartner2009": {
+      "text": "Baumgartner H, Hung J, Bermejo J, et al. Echocardiographic assessment of valve stenosis: EAE/ASE recommendations for clinical practice. J Am Soc Echocardiogr 2009;22:1-23.",
+      "doi": "10.1016/j.echo.2008.11.029",
+      "pmid": "19130998"
+    },
+    "baumgartner2017": {
+      "text": "Baumgartner H, Hung J, Bermejo J, et al. Recommendations on the echocardiographic assessment of aortic valve stenosis: a focused update from the European Association of Cardiovascular Imaging and the American Society of Echocardiography. J Am Soc Echocardiogr 2017;30:372-392.",
+      "doi": "10.1016/j.echo.2017.02.009",
+      "pmid": "28385280"
+    },
+    "baumgartner2020": {
+      "text": "Baumgartner H, De Backer J, Babu-Narayan SV, et al. 2020 ESC Guidelines for the management of adult congenital heart disease. Eur Heart J 2021;42:563-645.",
+      "doi": "10.1093/eurheartj/ehaa554",
+      "pmid": "32860028"
+    },
+    "bertrand2016": {
+      "text": "Bertrand PB, Levine RA, Isselbacher EM, et al. Fact or Artifact in Two-Dimensional Echocardiography: Avoiding Misdiagnosis and Missed Diagnosis. J Am Soc Echocardiogr 2016;29:381-391.",
+      "doi": "10.1016/j.echo.2016.01.009",
+      "pmid": "26969139"
+    },
+    "besler2018": {
+      "text": "Besler C, Orban M, Rommel KP, et al. Predictors of Procedural and Clinical Outcomes in Patients With Symptomatic Tricuspid Regurgitation Undergoing Transcatheter Edge-to-Edge Repair. JACC Cardiovasc Interv 2018;11:1119-1128.",
+      "doi": "10.1016/j.jcin.2018.05.002",
+      "pmid": "29929631"
+    },
+    "blackman2021": {
+      "text": "Blackman D, Gabbieri D, Del Blanco BG, et al. Expert Consensus on Sizing and Positioning of SAPIEN 3/Ultra in Bicuspid Aortic Valves. Cardiol Ther 2021;10:277-288.",
+      "doi": "10.1007/s40119-021-00223-9",
+      "pmid": "34081277"
+    },
+    "boldrini2020": {
+      "text": "Boldrini M, Cappelli F, Chacko L, et al. Multiparametric Echocardiography Scores for the Diagnosis of Cardiac Amyloidosis. JACC Cardiovasc Imaging 2020;13:909-920.",
+      "doi": "10.1016/j.jcmg.2019.10.011",
+      "pmid": "31864973"
+    },
+    "boudoulas1981": {
+      "text": "Boudoulas H, Geleris P, Lewis RP, et al. Linear relationship between electrical systole, mechanical systole, and heart rate. Chest 1981;80:613-617.",
+      "doi": "10.1378/chest.80.5.613",
+      "pmid": "7297154"
+    },
+    "bravo2019": {
+      "text": "Bravo PE, Fujikura K, Kijewski MF, et al. Relative Apical Sparing of Myocardial Longitudinal Strain Is Explained by Regional Differences in Total Amyloid Mass Rather Than the Proportion of Amyloid Deposits. JACC Cardiovasc Imaging 2019;12:1165-1173.",
+      "doi": "10.1016/j.jcmg.2018.06.016",
+      "pmid": "30121266"
+    },
+    "brown1997": {
+      "text": "Brown SL, Gropler RJ, Harris KM. Distinguishing left ventricular aneurysm from pseudoaneurysm. A review of the literature. Chest 1997;111:1403-1409.",
+      "doi": "10.1378/chest.111.5.1403",
+      "pmid": "9149600"
+    },
+    "bs2016": {
+      "text": "Biering-Sørensen T, Mogelvang R, de Knegt MC, et al. Cardiac Time Intervals by Tissue Doppler Imaging M-Mode: Normal Values and Association with Established Echocardiographic and Invasive Measures of Systolic and Diastolic Function. PLoS One 2016;11:e0153636.",
+      "doi": "10.1371/journal.pone.0153636",
+      "pmid": "27093636"
+    },
+    "bse2020": {
+      "text": "Robinson S, Rana B, Oxborough D, et al. A practical guideline for performing a comprehensive transthoracic echocardiogram in adults: the British Society of Echocardiography minimum dataset. Echo Res Pract 2020;7:G59-G93.",
+      "doi": "10.1530/ERP-20-0026",
+      "pmid": "33112828"
+    },
+    "burkhoff2005": {
+      "text": "Burkhoff D, Mirsky I, Suga H. Assessment of systolic and diastolic ventricular properties via pressure-volume analysis: a guide for clinical, translational, and basic researchers. Am J Physiol Heart Circ Physiol 2005;289:H501-H512.",
+      "doi": "10.1152/ajpheart.00138.2005",
+      "pmid": "16014610"
+    },
+    "burkhoffsagawa1986": {
+      "text": "Burkhoff D, Sagawa K. Ventricular efficiency predicted by an analytical model. Am J Physiol 1986;250:R1021-R1027.",
+      "doi": "10.1152/ajpregu.1986.250.6.R1021",
+      "pmid": "3717375"
+    },
+    "butala2020": {
+      "text": "Butala NM, Chung M, Secemsky EA, et al. Conscious Sedation Versus General Anesthesia for Transcatheter Aortic Valve Replacement: Variation in Practice and Outcomes. JACC Cardiovasc Interv 2020;13:1277-1287.",
+      "doi": "10.1016/j.jcin.2020.03.008",
+      "pmid": "32499018"
+    },
+    "casazza2005": {
+      "text": "Casazza F, Bongarzoni A, Capozi A, Agostoni O. Regional right ventricular dysfunction in acute pulmonary embolism and right ventricular infarction. Eur J Echocardiogr 2005;6:11-14.",
+      "doi": "10.1016/j.euje.2004.06.002",
+      "pmid": "15664548"
+    },
+    "cerqueira2002": {
+      "text": "Cerqueira MD, Weissman NJ, Dilsizian V, et al. Standardized myocardial segmentation and nomenclature for tomographic imaging of the heart. A statement for healthcare professionals from the Cardiac Imaging Committee of the Council on Clinical Cardiology of the American Heart Association. Circulation 2002;105:539-42.",
+      "doi": "10.1161/hc0402.102975",
+      "pmid": "11815441"
+    },
+    "chantler2008": {
+      "text": "Chantler PD, Lakatta EG, Najjar SS. Arterial-ventricular coupling: mechanistic insights into cardiovascular performance at rest and during exercise. J Appl Physiol 2008;105:1342-1351.",
+      "doi": "10.1152/japplphysiol.90600.2008",
+      "pmid": "18617626"
+    },
+    "chantlerlakatta2012": {
+      "text": "Chantler PD, Lakatta EG. Arterial-Ventricular Coupling with Aging and Disease. Front Physiol 2012;3:90.",
+      "doi": "10.3389/fphys.2012.00090",
+      "pmid": "22586401"
+    },
+    "chen1998": {
+      "text": "Chen CH, Nakayama M, Nevo E, et al. Coupled systolic-ventricular and vascular stiffening with age: implications for pressure regulation and cardiac reserve in the elderly. J Am Coll Cardiol 1998;32:1221-1227.",
+      "doi": "10.1016/s0735-1097(98)00374-x",
+      "pmid": "9809929"
+    },
+    "chen2001": {
+      "text": "Chen CH, Fetics B, Nevo E, et al. Noninvasive single-beat determination of left ventricular end-systolic elastance in humans. J Am Coll Cardiol 2001;38:2028-2034.",
+      "doi": "10.1016/s0735-1097(01)01651-5",
+      "pmid": "11738311"
+    },
+    "chen2022": {
+      "text": "Chen T, Liu Y, Zhang J, et al. Comparison between Cardiac CTA and Echocardiography for Assessment of Ventricular Septal Rupture Diameter and Its Effect on Transcatheter Closure. Cardiovasc Ther 2022;2022:5011286.",
+      "doi": "10.1155/2022/5011286",
+      "pmid": "36320646"
+    },
+    "christensen2024": {
+      "text": "Christensen M, Vukadinovic M, Yuan N, et al. Vision-language foundation model for echocardiogram interpretation. Nat Med 2024;30:1481-1488.",
+      "doi": "10.1038/s41591-024-02959-y",
+      "pmid": "38689062"
+    },
+    "cloutier2021": {
+      "text": "Cloutier G, Destrempes F, Yu F, et al. Quantitative ultrasound imaging of soft biological tissues: a primer for radiologists and medical physicists. Insights Imaging 2021;12:127.",
+      "doi": "10.1186/s13244-021-01071-w",
+      "pmid": "34499249"
+    },
+    "coisne2023": {
+      "text": "Coisne A, Scotti A, Taramasso M, et al. Prognostic Value of Tricuspid Valve Gradient After Transcatheter Edge-to-Edge Repair: Insights From the TriValve Registry. JACC Cardiovasc Interv 2023;16:706-717.",
+      "doi": "10.1016/j.jcin.2023.01.375",
+      "pmid": "36948892"
+    },
+    "cotella2024": {
+      "text": "Cotella J, Randazzo M, Maurer MS, et al. Limitations of apical sparing pattern in cardiac amyloidosis: a multicentre echocardiographic study. Eur Heart J Cardiovasc Imaging 2024;25:754-761.",
+      "doi": "10.1093/ehjci/jeae021",
+      "pmid": "38243591"
+    },
+    "czarnecki2008": {
+      "text": "Czarnecki A, Thakrar A, Fang T, et al. Acute severe mitral regurgitation: consideration of papillary muscle architecture. Cardiovasc Ultrasound 2008;6:5.",
+      "doi": "10.1186/1476-7120-6-5",
+      "pmid": "18205938"
+    },
+    "dalbianco2013": {
+      "text": "Dal-Bianco JP, Levine RA. Anatomy of the mitral valve apparatus: role of 2D and 3D echocardiography. Cardiol Clin 2013;31:151-164.",
+      "doi": "10.1016/j.ccl.2013.03.001",
+      "pmid": "23743068"
+    },
+    "damluji2021": {
+      "text": "Damluji AA, van Diepen S, Katz JN, et al. Mechanical Complications of Acute Myocardial Infarction: A Scientific Statement From the American Heart Association. Circulation 2021;144:e16-e35.",
+      "doi": "10.1161/CIR.0000000000000985",
+      "pmid": "34126755"
+    },
+    "delgado2023": {
+      "text": "Delgado V, Ajmone Marsan N, de Waha S, et al. 2023 ESC Guidelines for the management of endocarditis. Eur Heart J 2023;44:3948-4042.",
+      "doi": "10.1093/eurheartj/ehad193",
+      "pmid": "37622656"
+    },
+    "donal2024": {
+      "text": "Donal E, Sitges M, Panis V, et al. Characterization of Tricuspid Valve Anatomy and Coaptation Gap in Subjects Receiving Tricuspid Transcatheter Edge-To-Edge Repair: Observations From the bRIGHT TriClip Study. J Am Soc Echocardiogr 2024;37:397-404.",
+      "doi": "10.1016/j.echo.2023.12.002",
+      "pmid": "38072288"
+    },
+    "donal2025": {
+      "text": "Donal E, Dreyfus J, Leurent G, et al. Transcatheter Edge-to-Edge Repair for Severe Isolated Tricuspid Regurgitation: The Tri.Fr Randomized Clinical Trial. JAMA 2025;333:124-132.",
+      "doi": "10.1001/jama.2024.21189",
+      "pmid": "39602173"
+    },
+    "douglas2019kde": {
+      "text": "Douglas PS, Carabello BA, Lang RM, et al. 2019 ACC/AHA/ASE Key Data Elements and Definitions for Transthoracic Echocardiography: A Report of the American College of Cardiology/American Heart Association Task Force on Clinical Data Standards (Writing Committee to Develop Clinical Data Standards for Transthoracic Echocardiography) and the American Society of Echocardiography. J Am Soc Echocardiogr 2019;32:1161-1248.",
+      "doi": "10.1016/j.echo.2019.05.006",
+      "pmid": "31248777"
+    },
+    "duffy2022": {
+      "text": "Duffy G, Cheng PP, Yuan N, et al. High-throughput precision phenotyping of left ventricular hypertrophy with cardiovascular deep learning. JAMA Cardiol 2022;7:386-395.",
+      "doi": "10.1001/jamacardio.2021.6059",
+      "pmid": "35195663"
+    },
+    "dweck2023": {
+      "text": "Dweck MR, Loganath K, Bing R, et al. Multi-modality imaging in aortic stenosis: an EACVI clinical consensus document. Eur Heart J Cardiovasc Imaging 2023;24:1430-1443.",
+      "doi": "10.1093/ehjci/jead153",
+      "pmid": "37395329"
+    },
+    "efrimescu2024": {
+      "text": "Efrimescu CI, Ng WCK, Vegas A. Perioperative 3D transoesophageal echocardiography. Part 1: fundamental principles. BJA Educ 2024;24:217-226.",
+      "doi": "10.1016/j.bjae.2024.03.001",
+      "pmid": "38764440"
+    },
+    "esc2021": {
+      "text": "Garcia-Pavia P, Rapezzi C, Adler Y, et al. Diagnosis and treatment of cardiac amyloidosis: a position statement of the ESC Working Group on Myocardial and Pericardial Diseases. Eur Heart J 2021;42:1554-1568.",
+      "doi": "10.1093/eurheartj/ehab072",
+      "pmid": "33825853"
+    },
+    "estep2024": {
+      "text": "Estep JD, Nicoara A, Cavalcante J, et al. Recommendations for Multimodality Imaging of Patients With Left Ventricular Assist Devices and Temporary Mechanical Support: Updated Recommendations from the American Society of Echocardiography. J Am Soc Echocardiogr 2024;37:820-871.",
+      "doi": "10.1016/j.echo.2024.06.005",
+      "pmid": "39237244"
+    },
+    "falster2022": {
+      "text": "Falster C, Jacobsen N, Coman KE, et al. Diagnostic accuracy of focused deep venous, lung, cardiac and multiorgan ultrasound in suspected pulmonary embolism: a systematic review and meta-analysis. Thorax 2022;77:679-689.",
+      "doi": "10.1136/thoraxjnl-2021-216838",
+      "pmid": "34497138"
+    },
+    "farsalinos2015": {
+      "text": "Farsalinos KE, Daraban AM, Ünlü S, et al. Head-to-Head Comparison of Global Longitudinal Strain Measurements among Nine Different Vendors: The EACVI/ASE Inter-Vendor Comparison Study. J Am Soc Echocardiogr 2015;28:1171-1181.e2.",
+      "doi": "10.1016/j.echo.2015.06.011",
+      "pmid": "26209911"
+    },
+    "fda2019": {
+      "text": "US Food and Drug Administration. Marketing Clearance of Diagnostic Ultrasound Systems and Transducers: Guidance for Industry and Food and Drug Administration Staff. Silver Spring (MD): FDA; June 27, 2019.",
+      "url": "https://www.fda.gov/media/71100/download"
+    },
+    "fda2023": {
+      "text": "US Food and Drug Administration. Medtronic HeartWare Ventricular Assist Device (HVAD) System. Silver Spring (MD): FDA; updated September 22, 2023.",
+      "url": "https://www.fda.gov/medical-devices/cardiovascular-devices/medtronic-heartware-ventricular-assist-device-hvad-system"
+    },
+    "fdaevolut": {
+      "text": "US Food and Drug Administration. Medtronic CoreValve Evolut R System and Evolut PRO System: instructions for use. PMA P130021/S058. Silver Spring (MD): FDA; 2019.",
+      "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf13/P130021S058D.pdf"
+    },
+    "fdap100009": {
+      "text": "US Food and Drug Administration. Summary of Safety and Effectiveness Data: MitraClip Clip Delivery System (PMA P100009). Silver Spring (MD): FDA; October 24, 2013.",
+      "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf10/P100009B.pdf"
+    },
+    "fdap100009s028": {
+      "text": "US Food and Drug Administration. Premarket Approval Supplement P100009/S028: MitraClip NT and NTR/XTR Clip Delivery Systems. Silver Spring (MD): FDA; March 14, 2019.",
+      "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P100009S028"
+    },
+    "fdap230007": {
+      "text": "U.S. Food and Drug Administration. Premarket approval P230007, TriClip G4 System (Abbott Medical): approval order. April 1, 2024.",
+      "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230007A.pdf"
+    },
+    "fdap230007b": {
+      "text": "U.S. Food and Drug Administration. Summary of Safety and Effectiveness Data: TriClip G4 System, P230007. 2024.",
+      "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230007B.pdf"
+    },
+    "fdap230007c": {
+      "text": "Abbott. TriClip G4 System: instructions for use (approved labeling, P230007). 2024.",
+      "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf23/P230007C.pdf"
+    },
+    "fdapanel2024": {
+      "text": "U.S. Food and Drug Administration. Circulatory System Devices Panel, February 13, 2024: TriClip G4 System, FDA executive summary. 2024.",
+      "url": "https://www.fda.gov/media/176091/download"
+    },
+    "fdas3": {
+      "text": "US Food and Drug Administration. Edwards SAPIEN 3 Transcatheter Heart Valve System with Edwards Commander Delivery System: instructions for use. PMA P140031/S085. Silver Spring (MD): FDA; 2019.",
+      "url": "https://www.accessdata.fda.gov/cdrh_docs/pdf14/P140031S085D.pdf"
+    },
+    "feldman2011": {
+      "text": "Feldman T, Foster E, Glower DD, et al. Percutaneous repair or surgery for mitral regurgitation. N Engl J Med 2011;364:1395-1406.",
+      "doi": "10.1056/NEJMoa1009355",
+      "pmid": "21463154"
+    },
+    "fortin1991": {
+      "text": "Fortin DF, Sheikh KH, Kisslo J. The utility of echocardiography in the diagnostic strategy of postinfarction ventricular septal rupture: a comparison of two-dimensional echocardiography versus Doppler color flow imaging. Am Heart J 1991;121:25-32.",
+      "doi": "10.1016/0002-8703(91)90951-d",
+      "pmid": "1985374"
+    },
+    "fowler2023": {
+      "text": "Fowler VG Jr, Durack DT, Selton-Suty C, et al. The 2023 Duke-International Society for Cardiovascular Infectious Diseases Criteria for Infective Endocarditis: Updating the Modified Duke Criteria. Clin Infect Dis 2023;77:518-526.",
+      "doi": "10.1093/cid/ciad271",
+      "pmid": "37138445"
+    },
+    "frances1998": {
+      "text": "Frances C, Romero A, Grady D. Left ventricular pseudoaneurysm. J Am Coll Cardiol 1998;32:557-561.",
+      "doi": "10.1016/s0735-1097(98)00290-3",
+      "pmid": "9741493"
+    },
+    "galderisi2017": {
+      "text": "Galderisi M, Cosyns B, Edvardsen T, et al. Standardization of adult transthoracic echocardiography reporting in agreement with recent chamber quantification, diastolic function, and heart valve disease recommendations: an expert consensus document of the European Association of Cardiovascular Imaging. Eur Heart J Cardiovasc Imaging 2017;18:1301-1310.",
+      "doi": "10.1093/ehjci/jex244",
+      "pmid": "29045589"
+    },
+    "gardin2002": {
+      "text": "Gardin JM, Adams DB, Douglas PS, et al. Recommendations for a standardized report for adult transthoracic echocardiography: a report from the American Society of Echocardiography's Nomenclature and Standards Committee and Task Force for a Standardized Echocardiography Report. J Am Soc Echocardiogr 2002;15:275-290.",
+      "doi": "10.1067/mje.2002.121536",
+      "pmid": "11875394"
+    },
+    "gatewood1980": {
+      "text": "Gatewood RP Jr, Nanda NC. Differentiation of left ventricular pseudoaneurysm from true aneurysm with two dimensional echocardiography. Am J Cardiol 1980;46:869-878.",
+      "doi": "10.1016/0002-9149(80)90442-7",
+      "pmid": "7435399"
+    },
+    "gavazzoni2022": {
+      "text": "Gavazzoni M, Zuber M, Taramasso M, et al. Transesophageal echocardiography for the assessment of left atrial pressure after trans-septal mitral valve interventions. Am J Cardiol 2022;177:100-107.",
+      "doi": "10.1016/j.amjcard.2022.04.055",
+      "pmid": "35738912"
+    },
+    "genereux2021": {
+      "text": "VARC-3 Writing Committee, Généreux P, Piazza N, et al. Valve Academic Research Consortium 3: updated endpoint definitions for aortic valve clinical research. Eur Heart J 2021;42:1825-1857.",
+      "doi": "10.1093/eurheartj/ehaa799",
+      "pmid": "33871579"
+    },
+    "gill2010": {
+      "text": "Gill H, Hoffmann A. The timing of onset of mechanical systole and diastole in reference to the QRS-T complex: a study to determine performance criteria for a non-invasive diastolic timed vibration massage system in treatment of potentially unstable cardiac disorders. Cardiovasc Eng 2010;10:235-245.",
+      "doi": "10.1007/s10558-010-9108-x",
+      "pmid": "21113800"
+    },
+    "gillam1983": {
+      "text": "Gillam LD, Guyer DE, Gibson TC, et al. Hydrodynamic compression of the right atrium: a new echocardiographic sign of cardiac tamponade. Circulation 1983;68:294-301.",
+      "doi": "10.1161/01.cir.68.2.294",
+      "pmid": "6861307"
+    },
+    "goldstein2015": {
+      "text": "Goldstein SA, Evangelista A, Abbara S, et al. Multimodality Imaging of Diseases of the Thoracic Aorta in Adults: From the American Society of Echocardiography and the European Association of Cardiovascular Imaging: Endorsed by the Society of Cardiovascular Computed Tomography and Society for Cardiovascular Magnetic Resonance. J Am Soc Echocardiogr 2015;28:119-182.",
+      "doi": "10.1016/j.echo.2014.11.015",
+      "pmid": "25623219"
+    },
+    "gorcsan1991": {
+      "text": "Gorcsan J 3rd, Snow FR, Paulsen W, et al. Noninvasive estimation of left atrial pressure in patients with congestive heart failure and mitral regurgitation by Doppler echocardiography. Am Heart J 1991;121:858-863.",
+      "doi": "10.1016/0002-8703(91)90199-r",
+      "pmid": "2000753"
+    },
+    "gowda2003": {
+      "text": "Gowda RM, Khan IA, Nair CK, et al. Cardiac papillary fibroelastoma: a comprehensive analysis of 725 cases. Am Heart J 2003;146:404-410.",
+      "doi": "10.1016/S0002-8703(03)00249-7",
+      "pmid": "12947356"
+    },
+    "grubb2025": {
+      "text": "Grubb KJ, Gada H, Fraser D, et al. Global Results From the Optimize PRO Study: Standardized TAVR Technique and Care Pathway. J Soc Cardiovasc Angiogr Interv 2025;4:103515.",
+      "doi": "10.1016/j.jscai.2025.103515",
+      "pmid": "40454273"
+    },
+    "guarracino2013": {
+      "text": "Guarracino F, Baldassarri R, Pinsky MR. Ventriculo-arterial decoupling in acutely altered hemodynamic states. Crit Care 2013;17:213.",
+      "doi": "10.1186/cc12522",
+      "pmid": "23510336"
+    },
+    "habib2015": {
+      "text": "Habib G, Lancellotti P, Antunes MJ, et al. 2015 ESC Guidelines for the management of infective endocarditis. Eur Heart J 2015;36:3075-3128.",
+      "doi": "10.1093/eurheartj/ehv319",
+      "pmid": "26320109"
+    },
+    "hahn2013": {
+      "text": "Hahn RT, Abraham T, Adams MS, et al. Guidelines for performing a comprehensive transesophageal echocardiographic examination: recommendations from the American Society of Echocardiography and the Society of Cardiovascular Anesthesiologists. J Am Soc Echocardiogr 2013;26:921-964.",
+      "doi": "10.1016/j.echo.2013.07.009",
+      "pmid": "23998692"
+    },
+    "hahn2015": {
+      "text": "Hahn RT, Kodali S, Tuzcu EM, et al. Echocardiographic imaging of procedural complications during balloon-expandable transcatheter aortic valve replacement. JACC Cardiovasc Imaging 2015;8:288-318.",
+      "doi": "10.1016/j.jcmg.2014.12.013",
+      "pmid": "25772835"
+    },
+    "hahn2022": {
+      "text": "Hahn RT, Saric M, Faletra FF, et al. Recommended Standards for the Performance of Transesophageal Echocardiographic Screening for Structural Heart Intervention: From the American Society of Echocardiography. J Am Soc Echocardiogr 2022;35:1-76.",
+      "doi": "10.1016/j.echo.2021.07.006",
+      "pmid": "34280494"
+    },
+    "hahn2023": {
+      "text": "Hahn RT, Lawlor MK, Davidson CJ, et al. Tricuspid Valve Academic Research Consortium Definitions for Tricuspid Regurgitation and Trial Endpoints. Eur Heart J 2023;44:4508-4532.",
+      "doi": "10.1093/eurheartj/ehad653",
+      "pmid": "37793121"
+    },
+    "hahn2025": {
+      "text": "Hahn RT. Echocardiographic Imaging to Guide Tricuspid Interventions. Struct Heart 2025;9:100669.",
+      "doi": "10.1016/j.shj.2025.100669",
+      "pmid": "40704358"
+    },
+    "hatle1979": {
+      "text": "Hatle L, Angelsen B, Tromsdal A. Noninvasive assessment of atrioventricular pressure half-time by Doppler ultrasound. Circulation 1979;60:1096-1104.",
+      "doi": "10.1161/01.cir.60.5.1096",
+      "pmid": "487543"
+    },
+    "hatle1989": {
+      "text": "Hatle LK, Appleton CP, Popp RL. Differentiation of constrictive pericarditis and restrictive cardiomyopathy by Doppler echocardiography. Circulation 1989;79:357-370.",
+      "doi": "10.1161/01.cir.79.2.357",
+      "pmid": "2914352"
+    },
+    "hawkins2008": {
+      "text": "Hawkins K, Henry JS, Krasuski RA. Tissue harmonic imaging in echocardiography: better valve imaging, but at what cost? Echocardiography 2008;25:119-123.",
+      "doi": "10.1111/j.1540-8175.2007.00575.x",
+      "pmid": "18269555"
+    },
+    "he2023": {
+      "text": "He B, Kwan AC, Cho JH, et al. Blinded, randomized trial of sonographer versus AI cardiac function assessment. Nature 2023;616:520-524.",
+      "doi": "10.1038/s41586-023-05947-3",
+      "pmid": "37020027"
+    },
+    "heidenreich2022": {
+      "text": "Heidenreich PA, Bozkurt B, Aguilar D, et al. 2022 AHA/ACC/HFSA guideline for the management of heart failure: a report of the American College of Cardiology/American Heart Association Joint Committee on Clinical Practice Guidelines. Circulation 2022;145:e895-e1032.",
+      "doi": "10.1161/CIR.0000000000001063",
+      "pmid": "35363499"
+    },
+    "herrmann2022": {
+      "text": "Herrmann J, Lenihan D, Armenian S, et al. Defining cardiovascular toxicities of cancer therapies: an International Cardio-Oncology Society (IC-OS) consensus statement. Eur Heart J 2022;43:280-299.",
+      "doi": "10.1093/eurheartj/ehab674",
+      "pmid": "34904661"
+    },
+    "holste2025": {
+      "text": "Holste G, Oikonomou EK, Tokodi M, et al. Complete AI-enabled echocardiography interpretation with multitask deep learning. JAMA 2025;334:306-318.",
+      "doi": "10.1001/jama.2025.8731",
+      "pmid": "40549400"
+    },
+    "humbert2022": {
+      "text": "Humbert M, Kovacs G, Hoeper MM, et al. 2022 ESC/ERS Guidelines for the diagnosis and treatment of pulmonary hypertension. Eur Heart J 2022;43:3618-731.",
+      "doi": "10.1093/eurheartj/ehac237",
+      "pmid": "36017548"
+    },
+    "iac2025": {
+      "text": "Intersocietal Accreditation Commission. IAC Standards and Guidelines for Adult Echocardiography Accreditation. Published April 1, 2025.",
+      "url": "https://intersocietal.org/wp-content/uploads/2025/08/IACAdultEchocardiographyStandards2025.pdf"
+    },
+    "iaea2014": {
+      "text": "Lacefield JC. Physics of ultrasound; Ultrasound imaging. In: Dance DR, Christofides S, Maidment ADA, et al, eds. Diagnostic Radiology Physics: A Handbook for Teachers and Students. Vienna: International Atomic Energy Agency; 2014:291-331.",
+      "url": "https://www-pub.iaea.org/MTCD/Publications/PDF/Pub1564webNew-74666420.pdf"
+    },
+    "isselbacher2022": {
+      "text": "Isselbacher EM, Preventza O, Hamilton Black J 3rd, et al. 2022 ACC/AHA Guideline for the Diagnosis and Management of Aortic Disease: A Report of the American Heart Association/American College of Cardiology Joint Committee on Clinical Practice Guidelines. Circulation 2022;146:e334-e482.",
+      "doi": "10.1161/CIR.0000000000001106",
+      "pmid": "36322642"
+    },
+    "javadi2010": {
+      "text": "Javadi MS, Lautamäki R, Merrill J, et al. Definition of vascular territories on myocardial perfusion images by integration with true coronary anatomy: a hybrid PET/CT analysis. J Nucl Med 2010;51:198-203.",
+      "doi": "10.2967/jnumed.109.067488",
+      "pmid": "20080895"
+    },
+    "johnston1986": {
+      "text": "Johnston DL, Kostuk WJ. Left and right ventricular function during symptom-limited exercise in patients with isolated mitral stenosis. Chest 1986;89:186-191.",
+      "doi": "10.1378/chest.89.2.186",
+      "pmid": "3943378"
+    },
+    "jue1992": {
+      "text": "Jue J, Chung W, Schiller NB. Does inferior vena cava size predict right atrial pressures in patients receiving mechanical ventilation? J Am Soc Echocardiogr 1992;5:613-619.",
+      "doi": "10.1016/s0894-7317(14)80327-1",
+      "pmid": "1466886"
+    },
+    "kar2025": {
+      "text": "Kar S, Makkar RR, Whisenant BK, et al. Two-Year Outcomes of Transcatheter Edge-to-Edge Repair for Severe Tricuspid Regurgitation: The TRILUMINATE Pivotal Randomized Controlled Trial. Circulation 2025;151:1630-1638.",
+      "doi": "10.1161/CIRCULATIONAHA.125.074536",
+      "pmid": "40159089"
+    },
+    "karagodin2020": {
+      "text": "Karagodin I, Singh A, Lang RM. Pathoanatomy of Mitral Regurgitation. Struct Heart 2020;4:254-263.",
+      "doi": "10.1080/24748706.2020.1765055",
+      "pmid": "32885130"
+    },
+    "kavinsky2022": {
+      "text": "Kavinsky CJ, Szerlip M, Goldsweig AM, et al. SCAI Guidelines for the Management of Patent Foramen Ovale. J Soc Cardiovasc Angiogr Interv 2022;1:100039.",
+      "doi": "10.1016/j.jscai.2022.100039",
+      "pmid": "39131947"
+    },
+    "kelly1992": {
+      "text": "Kelly RP, Ting CT, Yang TM, et al. Effective arterial elastance as index of arterial vascular load in humans. Circulation 1992;86:513-521.",
+      "doi": "10.1161/01.cir.86.2.513",
+      "pmid": "1638719"
+    },
+    "klabunde_mr": {
+      "text": "Klabunde RE. Mitral regurgitation. Cardiovascular Physiology Concepts (cvphysiology.com). Revised 02/03/2024.",
+      "url": "https://cvphysiology.com/heart-disease/hd009c"
+    },
+    "klein2001": {
+      "text": "Klein AL, Grimm RA, Murray RD, et al. Use of transesophageal echocardiography to guide cardioversion in patients with atrial fibrillation. N Engl J Med 2001;344:1411-1420.",
+      "doi": "10.1056/NEJM200105103441901",
+      "pmid": "11346805"
+    },
+    "klein2013": {
+      "text": "Klein AL, Abbara S, Agler DA, et al. American Society of Echocardiography clinical recommendations for multimodality cardiovascular imaging of patients with pericardial disease: endorsed by the Society for Cardiovascular Magnetic Resonance and Society of Cardiovascular Computed Tomography. J Am Soc Echocardiogr 2013;26:965-1012.e15.",
+      "doi": "10.1016/j.echo.2013.06.023",
+      "pmid": "23998693"
+    },
+    "klein2024": {
+      "text": "Klein AL, Wang TKM, Cremer PC, et al. Pericardial diseases: international position statement on new concepts and advances in multimodality cardiac imaging. JACC Cardiovasc Imaging 2024;17:937-988.",
+      "doi": "10.1016/j.jcmg.2024.04.010",
+      "pmid": "39111992"
+    },
+    "konstantinides1997": {
+      "text": "Konstantinides S, Geibel A, Kasper W, et al. Noninvasive estimation of right ventricular systolic pressure in postinfarction ventricular septal rupture: an assessment of two Doppler echocardiographic methods. Crit Care Med 1997;25:1167-1174.",
+      "doi": "10.1097/00003246-199707000-00018",
+      "pmid": "9233743"
+    },
+    "konstantinides2019": {
+      "text": "Konstantinides SV, Meyer G, Becattini C, et al. 2019 ESC Guidelines for the diagnosis and management of acute pulmonary embolism developed in collaboration with the European Respiratory Society (ERS). Eur Heart J 2020;41:543-603.",
+      "doi": "10.1093/eurheartj/ehz405",
+      "pmid": "31504429"
+    },
+    "kovacs2009": {
+      "text": "Kovacs G, Berghold A, Scheidl S, et al. Pulmonary arterial pressure during rest and exercise in healthy subjects: a systematic review. Eur Respir J 2009;34:888-894.",
+      "doi": "10.1183/09031936.00145608",
+      "pmid": "19324955"
+    },
+    "kubiak2019": {
+      "text": "Kubiak GM, Ciarka A, Biniecka M, et al. Right Heart Catheterization-Background, Physiological Basics, and Clinical Implications. J Clin Med 2019;8:1331.",
+      "doi": "10.3390/jcm8091331",
+      "pmid": "31466390"
+    },
+    "kurnicka2016": {
+      "text": "Kurnicka K, Lichodziejewska B, Goliszek S, et al. Echocardiographic Pattern of Acute Pulmonary Embolism: Analysis of 511 Consecutive Patients. J Am Soc Echocardiogr 2016;29:907-913.",
+      "doi": "10.1016/j.echo.2016.05.016",
+      "pmid": "27427291"
+    },
+    "kurzyna2002": {
+      "text": "Kurzyna M, Torbicki A, Pruszczyk P, et al. Disturbed right ventricular ejection pattern as a new Doppler echocardiographic sign of acute pulmonary embolism. Am J Cardiol 2002;90:507-511.",
+      "doi": "10.1016/s0002-9149(02)02523-7",
+      "pmid": "12208411"
+    },
+    "lababidi2025": {
+      "text": "Lababidi H, Rahi W, Smiseth OA, et al. New algorithm for estimating left ventricular filling pressure by echocardiography. Circulation 2025;152:424-435.",
+      "doi": "10.1161/CIRCULATIONAHA.125.074974",
+      "pmid": "40577123"
+    },
+    "lancellotti2017": {
+      "text": "Lancellotti P, Pellikka PA, Budts W, et al. The Clinical Use of Stress Echocardiography in Non-Ischaemic Heart Disease: Recommendations from the European Association of Cardiovascular Imaging and the American Society of Echocardiography. J Am Soc Echocardiogr 2017;30:101-138.",
+      "doi": "10.1016/j.echo.2016.10.016",
+      "pmid": "28164802"
+    },
+    "lancellotti2022": {
+      "text": "Lancellotti P, Pibarot P, Chambers J, et al. Multi-modality imaging assessment of native valvular regurgitation: an EACVI and ESC council of valvular heart disease position paper. Eur Heart J Cardiovasc Imaging 2022;23:e171-e232.",
+      "doi": "10.1093/ehjci/jeab253",
+      "pmid": "35292799"
+    },
+    "lang2012": {
+      "text": "Lang RM, Badano LP, Tsang W, et al. EAE/ASE recommendations for image acquisition and display using three-dimensional echocardiography. J Am Soc Echocardiogr 2012;25:3-46.",
+      "doi": "10.1016/j.echo.2011.11.010",
+      "pmid": "22183020"
+    },
+    "lang2015": {
+      "text": "Lang RM, Badano LP, Mor-Avi V, et al. Recommendations for Cardiac Chamber Quantification by Echocardiography in Adults: An Update from the American Society of Echocardiography and the European Association of Cardiovascular Imaging. J Am Soc Echocardiogr 2015;28:1-39.e14.",
+      "doi": "10.1016/j.echo.2014.10.003",
+      "pmid": "25559473"
+    },
+    "le2016": {
+      "text": "Le HT, Hangiandreou N, Timmerman R, et al. Imaging Artifacts in Echocardiography. Anesth Analg 2016;122:633-646.",
+      "doi": "10.1213/ANE.0000000000001085",
+      "pmid": "26891389"
+    },
+    "lee2026": {
+      "text": "Lee KK, Kumar N, Eusuff S, et al. AI echo INSIGHT study: a prospective blinded randomized trial of artificial intelligence echocardiogram interpretation. Contemp Clin Trials 2026;169:108431.",
+      "doi": "10.1016/j.cct.2026.108431",
+      "pmid": "42571809"
+    },
+    "leon2010": {
+      "text": "Leon MB, Smith CR, Mack M, et al. Transcatheter aortic-valve implantation for aortic stenosis in patients who cannot undergo surgery. N Engl J Med 2010;363:1597-1607.",
+      "doi": "10.1056/NEJMoa1008232",
+      "pmid": "20961243"
+    },
+    "levine2022": {
+      "text": "Levine GN, McEvoy JW, Fang JC, et al. Management of Patients at Risk for and With Left Ventricular Thrombus: A Scientific Statement From the American Heart Association. Circulation 2022;146:e205-e223.",
+      "doi": "10.1161/CIR.0000000000001092",
+      "pmid": "36106537"
+    },
+    "li2023": {
+      "text": "Li S, Fang L, Wu W, et al. Echocardiographic diagnosis of rupture of mitral valve papillary muscle. Int J Cardiol 2023;391:131273.",
+      "doi": "10.1016/j.ijcard.2023.131273",
+      "pmid": "37598909"
+    },
+    "lin1988": {
+      "text": "Lin FC, Fu M, Yeh SJ, Wu D. Doppler atrial shunt flow patterns in patients with secundum atrial septal defect: determinants, limitations, and pitfalls. J Am Soc Echocardiogr 1988;1:141-149.",
+      "doi": "10.1016/s0894-7317(88)80096-8",
+      "pmid": "3272760"
+    },
+    "little2023": {
+      "text": "Little SH, Rigolin VH, Garcia-Sayan E, et al. Recommendations for Special Competency in Echocardiographic Guidance of Structural Heart Disease Interventions: From the American Society of Echocardiography. J Am Soc Echocardiogr 2023;36:350-365.",
+      "doi": "10.1016/j.echo.2023.01.014",
+      "pmid": "36841670"
+    },
+    "little2026": {
+      "text": "Little SH, Quader N, Brady MB, et al. Guidelines for the Intraprocedural Imaging for Mitral Valve Transcatheter Edge-to-Edge Repair (M-TEER): Recommendations from the American Society of Echocardiography. J Am Soc Echocardiogr 2026;39:529-550.",
+      "doi": "10.1016/j.echo.2026.03.003",
+      "pmid": "42242827"
+    },
+    "lopez2024": {
+      "text": "Lopez L, Saurers DL, Barker PCA, et al. Guidelines for Performing a Comprehensive Pediatric Transthoracic Echocardiogram: Recommendations From the American Society of Echocardiography. J Am Soc Echocardiogr 2024;37:119-170.",
+      "doi": "10.1016/j.echo.2023.11.015",
+      "pmid": "38309834"
+    },
+    "lurz2023": {
+      "text": "Lurz P, Besler C, Schmitz T, et al. Short-Term Outcomes of Tricuspid Edge-to-Edge Repair in Clinical Practice. J Am Coll Cardiol 2023;82:281-291.",
+      "doi": "10.1016/j.jacc.2023.05.008",
+      "pmid": "37207923"
+    },
+    "lurz2024": {
+      "text": "Lurz P, Rommel KP, Schmitz T, et al. Real-World 1-Year Results of Tricuspid Edge-to-Edge Repair From the bRIGHT Study. J Am Coll Cardiol 2024;84:607-616.",
+      "doi": "10.1016/j.jacc.2024.05.006",
+      "pmid": "38759905"
+    },
+    "lyon2022": {
+      "text": "Lyon AR, López-Fernández T, Couch LS, et al. 2022 ESC Guidelines on cardio-oncology developed in collaboration with the European Hematology Association (EHA), the European Society for Therapeutic Radiology and Oncology (ESTRO) and the International Cardio-Oncology Society (IC-OS). Eur Heart J 2022;43:4229-4361.",
+      "doi": "10.1093/eurheartj/ehac244",
+      "pmid": "36017568"
+    },
+    "mack2019": {
+      "text": "Mack MJ, Leon MB, Thourani VH, et al. Transcatheter Aortic-Valve Replacement with a Balloon-Expandable Valve in Low-Risk Patients. N Engl J Med 2019;380:1695-1705.",
+      "doi": "10.1056/NEJMoa1814052",
+      "pmid": "30883058"
+    },
+    "madani2018": {
+      "text": "Madani A, Arnaout R, Mofrad M, et al. Fast and accurate view classification of echocardiograms using deep learning. NPJ Digit Med 2018;1:6.",
+      "doi": "10.1038/s41746-017-0013-1",
+      "pmid": "30828647"
+    },
+    "malik2017": {
+      "text": "Malik SB, Chen N, Parker RA 3rd, Hsu JY. Transthoracic Echocardiography: Pitfalls and Limitations as Delineated at Cardiac CT and MR Imaging. Radiographics 2017;37:383-406.",
+      "doi": "10.1148/rg.2017160105",
+      "pmid": "28212053"
+    },
+    "marin2016": {
+      "text": "Marin JR, Abo AM, Arroyo AC, et al. Pediatric emergency medicine point-of-care ultrasound: summary of the evidence. Crit Ultrasound J 2016;8:16.",
+      "doi": "10.1186/s13089-016-0049-5",
+      "pmid": "27812885"
+    },
+    "maron2003": {
+      "text": "Maron MS, Olivotto I, Betocchi S, et al. Effect of left ventricular outflow tract obstruction on clinical outcome in hypertrophic cardiomyopathy. N Engl J Med 2003;348:295-303.",
+      "doi": "10.1056/NEJMoa021332",
+      "pmid": "12540642"
+    },
+    "maron2006": {
+      "text": "Maron MS, Olivotto I, Zenovich AG, et al. Hypertrophic cardiomyopathy is predominantly a disease of left ventricular outflow tract obstruction. Circulation 2006;114:2232-2239.",
+      "doi": "10.1161/CIRCULATIONAHA.106.644682",
+      "pmid": "17088454"
+    },
+    "marx1985": {
+      "text": "Marx GR, Allen HD, Goldberg SJ, Flinn CJ. Transatrial septal velocity measurement by Doppler echocardiography in atrial septal defect: correlation with Qp:Qs ratio. Am J Cardiol 1985;55:1162-1167.",
+      "doi": "10.1016/0002-9149(85)90656-3",
+      "pmid": "3984895"
+    },
+    "mcconnell1996": {
+      "text": "McConnell MV, Solomon SD, Rayan ME, et al. Regional right ventricular dysfunction detected by echocardiography in acute pulmonary embolism. Am J Cardiol 1996;78:469-473.",
+      "doi": "10.1016/s0002-9149(96)00339-6",
+      "pmid": "8752195"
+    },
+    "mediratta2016": {
+      "text": "Mediratta A, Addetia K, Medvedofsky D, et al. Echocardiographic Diagnosis of Acute Pulmonary Embolism in Patients with McConnell's Sign. Echocardiography 2016;33:696-702.",
+      "doi": "10.1111/echo.13142",
+      "pmid": "26669928"
+    },
+    "merck_pressures": {
+      "text": "Merck Manual Professional Version. Normal pressures in the heart and great vessels (adapted from Fowler NO. Cardiac Diagnosis and Treatment. 3rd ed. Philadelphia: Lippincott; 1980).",
+      "url": "https://www.merckmanuals.com/professional/multimedia/table/normal-pressures-in-the-heart-and-great-vessels"
+    },
+    "mitchell2019": {
+      "text": "Mitchell C, Rahko PS, Blauwet LA, et al. Guidelines for Performing a Comprehensive Transthoracic Echocardiographic Examination in Adults: Recommendations from the American Society of Echocardiography. J Am Soc Echocardiogr 2019;32:1-64.",
+      "doi": "10.1016/j.echo.2018.06.004",
+      "pmid": "30282592"
+    },
+    "mitchellwang2014": {
+      "text": "Mitchell JR, Wang JJ. Expanding application of the Wiggers diagram to teach cardiovascular physiology. Adv Physiol Educ 2014;38:170-175.",
+      "doi": "10.1152/advan.00123.2013",
+      "pmid": "24913453"
+    },
+    "mongegarcia2020": {
+      "text": "Monge García MI, Santos A. Understanding ventriculo-arterial coupling. Ann Transl Med 2020;8:795.",
+      "doi": "10.21037/atm.2020.04.10",
+      "pmid": "32647720"
+    },
+    "moody2023": {
+      "text": "Moody WE, Turvey-Haigh L, Knight D, et al. British Society of Echocardiography guideline for the transthoracic echocardiographic assessment of cardiac amyloidosis. Echo Res Pract 2023;10:13.",
+      "doi": "10.1186/s44156-023-00028-7",
+      "pmid": "37653443"
+    },
+    "mukherjee2025": {
+      "text": "Mukherjee M, Rudski LG, Addetia K, et al. Guidelines for the echocardiographic assessment of the right heart in adults and special considerations in pulmonary hypertension: recommendations from the American Society of Echocardiography. J Am Soc Echocardiogr 2025;38:141-86.",
+      "doi": "10.1016/j.echo.2025.01.006",
+      "pmid": "40044341"
+    },
+    "murphy1986": {
+      "text": "Murphy DJ Jr, Ludomirsky A, Huhta JC. Continuous-wave Doppler in children with ventricular septal defect: noninvasive estimation of interventricular pressure gradient. Am J Cardiol 1986;57:428-432.",
+      "doi": "10.1016/0002-9149(86)90766-6",
+      "pmid": "3946259"
+    },
+    "nagueh1997": {
+      "text": "Nagueh SF, Middleton KJ, Kopelen HA, et al. Doppler tissue imaging: a noninvasive technique for evaluation of left ventricular relaxation and estimation of filling pressures. J Am Coll Cardiol 1997;30:1527-1533.",
+      "doi": "10.1016/s0735-1097(97)00344-6",
+      "pmid": "9362412"
+    },
+    "nagueh2009": {
+      "text": "Nagueh SF, Appleton CP, Gillebert TC, et al. Recommendations for the Evaluation of Left Ventricular Diastolic Function by Echocardiography. J Am Soc Echocardiogr 2009;22:107-133.",
+      "doi": "10.1016/j.echo.2008.11.023",
+      "pmid": "19187853"
+    },
+    "nagueh2016": {
+      "text": "Nagueh SF, Smiseth OA, Appleton CP, et al. Recommendations for the Evaluation of Left Ventricular Diastolic Function by Echocardiography: An Update from the American Society of Echocardiography and the European Association of Cardiovascular Imaging. J Am Soc Echocardiogr 2016;29:277-314.",
+      "doi": "10.1016/j.echo.2016.01.011",
+      "pmid": "27037982"
+    },
+    "nagueh2022": {
+      "text": "Nagueh SF, Phelan D, Abraham T, et al. Recommendations for Multimodality Cardiovascular Imaging of Patients with Hypertrophic Cardiomyopathy: An Update from the American Society of Echocardiography, in Collaboration with the American Society of Nuclear Cardiology, the Society for Cardiovascular Magnetic Resonance, and the Society of Cardiovascular Computed Tomography. J Am Soc Echocardiogr 2022;35:533-569.",
+      "doi": "10.1016/j.echo.2022.03.012",
+      "pmid": "35659037"
+    },
+    "nagueh2025": {
+      "text": "Nagueh SF, Sanborn DY, Oh JK, et al. Recommendations for the Evaluation of Left Ventricular Diastolic Function by Echocardiography and for Heart Failure With Preserved Ejection Fraction Diagnosis: An Update From the American Society of Echocardiography. J Am Soc Echocardiogr 2025;38:537-569.",
+      "doi": "10.1016/j.echo.2025.03.011",
+      "pmid": "40617625"
+    },
+    "naik2025": {
+      "text": "Naik H, Price MJ, Kapadia S, et al. Tricuspid Transcatheter Edge-to-Edge Repair in Patients With Transvalvular CIED Leads: The TRILUMINATE Pivotal Trial. JACC Clin Electrophysiol 2025;11:1012-1020.",
+      "doi": "10.1016/j.jacep.2025.01.001",
+      "pmid": "39903153"
+    },
+    "najjar2004": {
+      "text": "Najjar SS, Schulman SP, Gerstenblith G, et al. Age and gender affect ventricular-vascular coupling during aerobic exercise. J Am Coll Cardiol 2004;44:611-617.",
+      "doi": "10.1016/j.jacc.2004.04.041",
+      "pmid": "15358029"
+    },
+    "najjar2020": {
+      "text": "Najjar E, Thorvaldsen T, Dalén M, et al. Validation of non-invasive ramp testing for HeartMate 3. ESC Heart Fail 2020;7:663-672.",
+      "doi": "10.1002/ehf2.12638",
+      "pmid": "32037731"
+    },
+    "narang2021": {
+      "text": "Narang A, Bae R, Hong H, et al. Utility of a deep-learning algorithm to guide novices to acquire echocardiograms for limited diagnostic use. JAMA Cardiol 2021;6:624-632.",
+      "doi": "10.1001/jamacardio.2021.0185",
+      "pmid": "33599681"
+    },
+    "neema2025": {
+      "text": "Neema PK, Panidapu N. The Mechanisms and Pathophysiology of Mitral Regurgitation: A Narrative Review. Ann Card Anaesth 2025;28:109-118.",
+      "doi": "10.4103/aca.aca_221_24",
+      "pmid": "40237656"
+    },
+    "negishi2023": {
+      "text": "Negishi T, Thavendiranathan P, Penicka M, et al. Cardioprotection Using Strain-Guided Management of Potentially Cardiotoxic Cancer Therapy: 3-Year Results of the SUCCOUR Trial. JACC Cardiovasc Imaging 2023;16:269-278.",
+      "doi": "10.1016/j.jcmg.2022.10.010",
+      "pmid": "36435732"
+    },
+    "nesto1987": {
+      "text": "Nesto RW, Kowalchuk GJ. The ischemic cascade: temporal sequence of hemodynamic, electrocardiographic and symptomatic expressions of ischemia. Am J Cardiol 1987;59:23C-30C.",
+      "doi": "10.1016/0002-9149(87)90192-5",
+      "pmid": "2950748"
+    },
+    "neuss2017": {
+      "text": "Neuss M, Schau T, Isotani A, et al. Elevated mitral valve pressure gradient after MitraClip implantation deteriorates long-term outcome in patients with severe mitral regurgitation and severe heart failure. JACC Cardiovasc Interv 2017;10:931-939.",
+      "doi": "10.1016/j.jcin.2016.12.280",
+      "pmid": "28473116"
+    },
+    "ng2011": {
+      "text": "Ng A, Swanevelder J. Resolution in ultrasound imaging. Contin Educ Anaesth Crit Care Pain 2011;11:186-192.",
+      "doi": "10.1093/bjaceaccp/mkr030"
+    },
+    "nickenig2019": {
+      "text": "Nickenig G, Weber M, Lurz P, et al. Transcatheter edge-to-edge repair for reduction of tricuspid regurgitation: 6-month outcomes of the TRILUMINATE single-arm study. Lancet 2019;394:2002-2011.",
+      "doi": "10.1016/S0140-6736(19)32600-5",
+      "pmid": "31708188"
+    },
+    "nishimura2014es": {
+      "text": "Nishimura RA, Otto CM, Bonow RO, et al. 2014 AHA/ACC guideline for the management of patients with valvular heart disease: executive summary: a report of the American College of Cardiology/American Heart Association Task Force on Practice Guidelines. Circulation 2014;129:2440-2492.",
+      "doi": "10.1161/CIR.0000000000000029",
+      "pmid": "24589852"
+    },
+    "norton2001": {
+      "text": "Norton JM. Toward consistent definitions for preload and afterload. Adv Physiol Educ 2001;25:53-61.",
+      "doi": "10.1152/advances.2001.25.1.53",
+      "pmid": "11824209"
+    },
+    "obadia2018": {
+      "text": "Obadia JF, Messika-Zeitoun D, Leurent G, et al. Percutaneous Repair or Medical Treatment for Secondary Mitral Regurgitation. N Engl J Med 2018;379:2297-2306.",
+      "doi": "10.1056/NEJMoa1805374",
+      "pmid": "30145927"
+    },
+    "oh1994": {
+      "text": "Oh JK, Hatle LK, Seward JB, et al. Diagnostic role of Doppler echocardiography in constrictive pericarditis. J Am Coll Cardiol 1994;23:154-162.",
+      "doi": "10.1016/0735-1097(94)90514-2",
+      "pmid": "8277074"
+    },
+    "olsthoorn2020": {
+      "text": "Olsthoorn J, Lam KY, van Straten AHM. Surgical treatment of a chronic postmyocardial infarction ventricular septal rupture. Multimed Man Cardiothorac Surg 2020;2020.",
+      "doi": "10.1510/mmcts.2020.065",
+      "pmid": "33263363"
+    },
+    "ommen2024": {
+      "text": "Ommen SR, Ho CY, Asif IM, et al. 2024 AHA/ACC/AMSSM/HRS/PACES/SCMR Guideline for the Management of Hypertrophic Cardiomyopathy: A Report of the American Heart Association/American College of Cardiology Joint Committee on Clinical Practice Guidelines. Circulation 2024;149:e1239-e1311.",
+      "doi": "10.1161/CIR.0000000000001250",
+      "pmid": "38718139"
+    },
+    "onishi2026": {
+      "text": "Onishi T, Tang GHL, Lerakis S, et al. How to mirror tricuspid transcatheter edge-to-edge repair (TEER) to mitral TEER in terms of procedural imaging and device workflow: a step-by-step primer. Ann Cardiothorac Surg 2026;15:20.",
+      "doi": "10.21037/acs-2025-aw-27-tvd",
+      "pmid": "41988455"
+    },
+    "openstax2022": {
+      "text": "Urone PP, Hinrichs R. College Physics 2e. Section 17.7: Ultrasound. Houston (TX): OpenStax; 2022. ISBN 978-1-951693-60-2 (digital); 978-1-711470-83-2 (print).",
+      "url": "https://openstax.org/books/college-physics-2e/pages/17-7-ultrasound"
+    },
+    "otto2020": {
+      "text": "Otto CM, Nishimura RA, Bonow RO, et al. 2020 ACC/AHA guideline for the management of patients with valvular heart disease: a report of the American College of Cardiology/American Heart Association Joint Committee on Clinical Practice Guidelines. Circulation 2021;143:e72-e227.",
+      "doi": "10.1161/CIR.0000000000000923",
+      "pmid": "33332150"
+    },
+    "ouyang2020": {
+      "text": "Ouyang D, He B, Ghorbani A, et al. Video-based AI for beat-to-beat assessment of cardiac function. Nature 2020;580:252-256.",
+      "doi": "10.1038/s41586-020-2145-8",
+      "pmid": "32269341"
+    },
+    "paeng2025": {
+      "text": "Paeng DG, Lee CA, Imtiaz C. Principles of Doppler ultrasound and emerging blood flow imaging. Ultrasonography 2025;44:409-424.",
+      "doi": "10.14366/usg.25152",
+      "pmid": "41157819"
+    },
+    "pagourelias2017": {
+      "text": "Pagourelias ED, Mirea O, Duchenne J, et al. Echo Parameters for Differential Diagnosis in Cardiac Amyloidosis: A Head-to-Head Comparison of Deformation and Nondeformation Parameters. Circ Cardiovasc Imaging 2017;10:e005588.",
+      "doi": "10.1161/CIRCIMAGING.116.005588",
+      "pmid": "28298286"
+    },
+    "pak2010": {
+      "text": "Pak SW, Uriel N, Takayama H, et al. Prevalence of de novo aortic insufficiency during long-term support with left ventricular assist devices. J Heart Lung Transplant 2010;29:1172-1176.",
+      "doi": "10.1016/j.healun.2010.05.018",
+      "pmid": "20619680"
+    },
+    "pandian2023": {
+      "text": "Pandian NG, Kim JK, Arias-Godinez JA, et al. Recommendations for the use of echocardiography in the evaluation of rheumatic heart disease: a report from the American Society of Echocardiography. J Am Soc Echocardiogr 2023;36:3-28.",
+      "doi": "10.1016/j.echo.2022.10.009",
+      "pmid": "36428195"
+    },
+    "pathan2017": {
+      "text": "Pathan F, D'Elia N, Nolan MT, et al. Normal ranges of left atrial strain by speckle-tracking echocardiography: a systematic review and meta-analysis. J Am Soc Echocardiogr 2017;30:59-70.e8.",
+      "doi": "10.1016/j.echo.2016.09.007",
+      "pmid": "28341032"
+    },
+    "pellikka2020": {
+      "text": "Pellikka PA, Arruda-Olson A, Chaudhry FA, et al. Guidelines for Performance, Interpretation, and Application of Stress Echocardiography in Ischemic Heart Disease: From the American Society of Echocardiography. J Am Soc Echocardiogr 2020;33:1-41.e8.",
+      "doi": "10.1016/j.echo.2019.07.001",
+      "pmid": "31740370"
+    },
+    "phelan2012": {
+      "text": "Phelan D, Collier P, Thavendiranathan P, et al. Relative apical sparing of longitudinal strain using two-dimensional speckle-tracking echocardiography is both sensitive and specific for the diagnosis of cardiac amyloidosis. Heart 2012;98:1442-1448.",
+      "doi": "10.1136/heartjnl-2012-302353",
+      "pmid": "22865865"
+    },
+    "pibarot2006": {
+      "text": "Pibarot P, Dumesnil JG. Prosthesis-patient mismatch: definition, clinical impact, and prevention. Heart 2006;92:1022-1029.",
+      "doi": "10.1136/hrt.2005.067363",
+      "pmid": "16251232"
+    },
+    "pibarot2017": {
+      "text": "Pibarot P, Hahn RT, Weissman NJ, et al. Association of Paravalvular Regurgitation With 1-Year Outcomes After Transcatheter Aortic Valve Replacement With the SAPIEN 3 Valve. JAMA Cardiol 2017;2:1208-1216.",
+      "doi": "10.1001/jamacardio.2017.3425",
+      "pmid": "28973091"
+    },
+    "picard2011": {
+      "text": "Picard MH, Adams D, Bierig SM, et al. American Society of Echocardiography recommendations for quality echocardiography laboratory operations. J Am Soc Echocardiogr 2011;24:1-10.",
+      "doi": "10.1016/j.echo.2010.11.006",
+      "pmid": "21172594"
+    },
+    "pinede2001": {
+      "text": "Pinede L, Duhaut P, Loire R. Clinical presentation of left atrial cardiac myxoma. A series of 112 consecutive cases. Medicine (Baltimore) 2001;80:159-172.",
+      "doi": "10.1097/00005792-200105000-00002",
+      "pmid": "11388092"
+    },
+    "plana2014": {
+      "text": "Plana JC, Galderisi M, Barac A, et al. Expert consensus for multimodality imaging evaluation of adult patients during and after cancer therapy: a report from the American Society of Echocardiography and the European Association of Cardiovascular Imaging. J Am Soc Echocardiogr 2014;27:911-939.",
+      "doi": "10.1016/j.echo.2014.07.012",
+      "pmid": "25172399"
+    },
+    "pollick1984": {
+      "text": "Pollick C, Rakowski H, Wigle ED. Muscular subaortic stenosis: the quantitative relationship between systolic anterior motion and the pressure gradient. Circulation 1984;69:43-49.",
+      "doi": "10.1161/01.cir.69.1.43",
+      "pmid": "6537786"
+    },
+    "popma2019": {
+      "text": "Popma JJ, Deeb GM, Yakubov SJ, et al. Transcatheter Aortic-Valve Replacement with a Self-Expanding Valve in Low-Risk Patients. N Engl J Med 2019;380:1706-1715.",
+      "doi": "10.1056/NEJMoa1816885",
+      "pmid": "30883053"
+    },
+    "porter2018": {
+      "text": "Porter TR, Mulvagh SL, Abdelmoneim SS, et al. Clinical Applications of Ultrasonic Enhancing Agents in Echocardiography: 2018 American Society of Echocardiography Guidelines Update. J Am Soc Echocardiogr 2018;31:241-274.",
+      "doi": "10.1016/j.echo.2017.11.013",
+      "pmid": "29502588"
+    },
+    "praz2025": {
+      "text": "Praz F, Borger MA, Lanz J, et al. 2025 ESC/EACTS Guidelines for the management of valvular heart disease. Eur Heart J 2025;46:4635-4736.",
+      "doi": "10.1093/eurheartj/ehaf194",
+      "pmid": "40878295"
+    },
+    "qamruddin2019": {
+      "text": "Qamruddin S, Alkharabsheh SK, Sato K, et al. Differentiating constriction from restriction (from the Mayo Clinic echocardiographic criteria). Am J Cardiol 2019;124:932-938.",
+      "doi": "10.1016/j.amjcard.2019.06.002",
+      "pmid": "31353007"
+    },
+    "quien2018": {
+      "text": "Quien MM, Saric M. Ultrasound imaging artifacts: How to recognize them and how to avoid them. Echocardiography 2018;35:1388-1401.",
+      "doi": "10.1111/echo.14116",
+      "pmid": "30079966"
+    },
+    "quinones2002": {
+      "text": "Quiñones MA, Otto CM, Stoddard M, et al. Recommendations for quantification of Doppler echocardiography: a report from the Doppler Quantification Task Force of the Nomenclature and Standards Committee of the American Society of Echocardiography. J Am Soc Echocardiogr 2002;15:167-184.",
+      "doi": "10.1067/mje.2002.120202",
+      "pmid": "11836492"
+    },
+    "reeves2013": {
+      "text": "Reeves ST, Finley AC, Skubas NJ, et al. Basic perioperative transesophageal echocardiography examination: a consensus statement of the American Society of Echocardiography and the Society of Cardiovascular Anesthesiologists. J Am Soc Echocardiogr 2013;26:443-456.",
+      "doi": "10.1016/j.echo.2013.02.015",
+      "pmid": "23622926"
+    },
+    "rubin2000": {
+      "text": "Rubin DN, Yazbek N, Garcia MJ, et al. Qualitative and quantitative effects of harmonic echocardiographic imaging on endocardial edge definition and side-lobe artifacts. J Am Soc Echocardiogr 2000;13:1012-1018.",
+      "doi": "10.1067/mje.2000.108348",
+      "pmid": "11093103"
+    },
+    "rudski2010": {
+      "text": "Rudski LG, Lai WW, Afilalo J, et al. Guidelines for the echocardiographic assessment of the right heart in adults: a report from the American Society of Echocardiography. J Am Soc Echocardiogr 2010;23:685-713.",
+      "doi": "10.1016/j.echo.2010.05.010",
+      "pmid": "20620859"
+    },
+    "ryan1985": {
+      "text": "Ryan T, Petrovic O, Dillon JC, et al. An echocardiographic index for separation of right ventricular volume and pressure overload. J Am Coll Cardiol 1985;5:918-27.",
+      "doi": "10.1016/s0735-1097(85)80433-2",
+      "pmid": "3973294"
+    },
+    "sagar1987": {
+      "text": "Sagar KB, Wann LS, Paulson WJ, et al. Role of exercise Doppler echocardiography in isolated mitral stenosis. Chest 1987;92:27-30.",
+      "doi": "10.1378/chest.92.1.27",
+      "pmid": "3595246"
+    },
+    "sahashi2025": {
+      "text": "Sahashi Y, Ieki H, Yuan V, et al. Artificial intelligence automation of echocardiographic measurements. J Am Coll Cardiol 2025;86:964-978.",
+      "doi": "10.1016/j.jacc.2025.07.053",
+      "pmid": "40914895"
+    },
+    "sakul2026": {
+      "text": "Sakul S, DiazSaravia S, Berman B, et al. Echo-derived estimate of peak left atrial pressure in patients with iatrogenic atrial septal defects following transcatheter mitral edge-to-edge repair. Int J Cardiol 2026;444:133975.",
+      "doi": "10.1016/j.ijcard.2025.133975",
+      "pmid": "41591311"
+    },
+    "saric2016": {
+      "text": "Saric M, Armour AC, Arnaout MS, et al. Guidelines for the Use of Echocardiography in the Evaluation of a Cardiac Source of Embolism. J Am Soc Echocardiogr 2016;29:1-42.",
+      "doi": "10.1016/j.echo.2015.09.011",
+      "pmid": "26765302"
+    },
+    "saric2026": {
+      "text": "Saric M, Sadeghpour A, Alizade L, et al. Recommendations for the Identification and Mitigation of Cardiac Ultrasound Artifacts: A Guideline from the American Society of Echocardiography. J Am Soc Echocardiogr 2026;39:435-475.",
+      "doi": "10.1016/j.echo.2026.01.007",
+      "pmid": "42070896"
+    },
+    "schimpf2008": {
+      "text": "Schimpf R, Antzelevitch C, Haghi D, et al. Electromechanical coupling in patients with the short QT syndrome: further insights into the mechanoelectrical hypothesis of the U wave. Heart Rhythm 2008;5:241-245.",
+      "doi": "10.1016/j.hrthm.2007.10.015",
+      "pmid": "18242547"
+    },
+    "schueler2015": {
+      "text": "Schueler R, Öztürk C, Wedekind JA, et al. Persistence of iatrogenic atrial septal defect after interventional mitral valve repair with the MitraClip system: a note of caution. JACC Cardiovasc Interv 2015;8:450-459.",
+      "doi": "10.1016/j.jcin.2014.10.024",
+      "pmid": "25703879"
+    },
+    "schulzmenger2025": {
+      "text": "Schulz-Menger J, Collini V, Gröschel J, et al. 2025 ESC Guidelines for the management of myocarditis and pericarditis. Eur Heart J 2025;46:3952-4041.",
+      "doi": "10.1093/eurheartj/ehaf192",
+      "pmid": "40878297"
+    },
+    "schymik2015": {
+      "text": "Schymik G, Schröfel H, Heimeshoff M, et al. How to adapt the implantation technique for the new SAPIEN 3 transcatheter heart valve design. J Interv Cardiol 2015;28:82-89.",
+      "doi": "10.1111/joic.12165",
+      "pmid": "25495073"
+    },
+    "seol2014": {
+      "text": "Seol SH, Lindner JR. A primer on the methods and applications for contrast echocardiography in clinical imaging. J Cardiovasc Ultrasound 2014;22:101-110.",
+      "doi": "10.4250/jcu.2014.22.3.101",
+      "pmid": "25309685"
+    },
+    "shanewise1999": {
+      "text": "Shanewise JS, Cheung AT, Aronson S, et al. ASE/SCA guidelines for performing a comprehensive intraoperative multiplane transesophageal echocardiography examination: recommendations of the American Society of Echocardiography Council for Intraoperative Echocardiography and the Society of Cardiovascular Anesthesiologists Task Force for Certification in Perioperative Transesophageal Echocardiography. J Am Soc Echocardiogr 1999;12:884-900.",
+      "doi": "10.1016/s0894-7317(99)70199-9",
+      "pmid": "10511663"
+    },
+    "sherrid2000": {
+      "text": "Sherrid MV, Gunsburg DZ, Moldenhauer S, Pearle G. Systolic anterior motion begins at low left ventricular outflow tract velocity in obstructive hypertrophic cardiomyopathy. J Am Coll Cardiol 2000;36:1344-1354.",
+      "doi": "10.1016/s0735-1097(00)00830-5",
+      "pmid": "11028493"
+    },
+    "silbert1986": {
+      "text": "Silbert DR, Brunson SC, Schiff R, Diamant S. Determination of right ventricular pressure in the presence of a ventricular septal defect using continuous wave Doppler ultrasound. J Am Coll Cardiol 1986;8:379-384.",
+      "doi": "10.1016/s0735-1097(86)80054-7",
+      "pmid": "2942594"
+    },
+    "silvestry2015": {
+      "text": "Silvestry FE, Cohen MS, Armsby LB, et al. Guidelines for the Echocardiographic Assessment of Atrial Septal Defect and Patent Foramen Ovale: From the American Society of Echocardiography and Society for Cardiac Angiography and Interventions. J Am Soc Echocardiogr 2015;28:910-958.",
+      "doi": "10.1016/j.echo.2015.05.015",
+      "pmid": "26239900"
+    },
+    "sorajja2023": {
+      "text": "Sorajja P, Whisenant B, Hamid N, et al. Transcatheter Repair for Patients with Tricuspid Regurgitation. N Engl J Med 2023;388:1833-1842.",
+      "doi": "10.1056/NEJMoa2300525",
+      "pmid": "36876753"
+    },
+    "spirito2000": {
+      "text": "Spirito P, Bellone P, Harris KM, et al. Magnitude of left ventricular hypertrophy and risk of sudden death in hypertrophic cardiomyopathy. N Engl J Med 2000;342:1778-1785.",
+      "doi": "10.1056/NEJM200006153422403",
+      "pmid": "10853000"
+    },
+    "spodick2003": {
+      "text": "Spodick DH. Acute cardiac tamponade. N Engl J Med 2003;349:684-690.",
+      "doi": "10.1056/NEJMra022643",
+      "pmid": "12917306"
+    },
+    "stainback2015": {
+      "text": "Stainback RF, Estep JD, Agler DA, et al. Echocardiography in the Management of Patients with Left Ventricular Assist Devices: Recommendations from the American Society of Echocardiography. J Am Soc Echocardiogr 2015;28:853-909.",
+      "doi": "10.1016/j.echo.2015.05.008",
+      "pmid": "26239899"
+    },
+    "starkoff2014": {
+      "text": "Starkoff B. Ultrasound physical principles in today's technology. Australas J Ultrasound Med 2014;17:4-10.",
+      "doi": "10.1002/j.2205-0140.2014.tb00086.x",
+      "pmid": "28191202"
+    },
+    "starling1993": {
+      "text": "Starling MR. Left ventricular-arterial coupling relations in the normal human heart. Am Heart J 1993;125:1659-1666.",
+      "doi": "10.1016/0002-8703(93)90756-y",
+      "pmid": "8498308"
+    },
+    "stone2018": {
+      "text": "Stone GW, Lindenfeld J, Abraham WT, et al. Transcatheter Mitral-Valve Repair in Patients with Heart Failure. N Engl J Med 2018;379:2307-2318.",
+      "doi": "10.1056/NEJMoa1806640",
+      "pmid": "30280640"
+    },
+    "stout2018": {
+      "text": "Stout KK, Daniels CJ, Aboulhosn JA, et al. 2018 AHA/ACC Guideline for the Management of Adults With Congenital Heart Disease: Executive Summary: A Report of the American College of Cardiology/American Heart Association Task Force on Clinical Practice Guidelines. Circulation 2019;139:e637-e697.",
+      "doi": "10.1161/CIR.0000000000000602",
+      "pmid": "30586768"
+    },
+    "suga1973": {
+      "text": "Suga H, Sagawa K, Shoukas AA. Load independence of the instantaneous pressure-volume ratio of the canine left ventricle and effects of epinephrine and heart rate on the ratio. Circ Res 1973;32:314-322.",
+      "doi": "10.1161/01.res.32.3.314",
+      "pmid": "4691336"
+    },
+    "sun2001": {
+      "text": "Sun JP, Asher CR, Yang XS, et al. Clinical and echocardiographic characteristics of papillary fibroelastomas: a retrospective and prospective study in 162 patients. Circulation 2001;103:2687-2693.",
+      "doi": "10.1161/01.cir.103.22.2687",
+      "pmid": "11390338"
+    },
+    "sunagawa1983": {
+      "text": "Sunagawa K, Maughan WL, Burkhoff D, et al. Left ventricular interaction with arterial load studied in isolated canine ventricle. Am J Physiol 1983;245:H773-H780.",
+      "doi": "10.1152/ajpheart.1983.245.5.H773",
+      "pmid": "6638199"
+    },
+    "sunagawa1985": {
+      "text": "Sunagawa K, Maughan WL, Sagawa K. Optimal arterial resistance for the maximal stroke work studied in isolated canine left ventricle. Circ Res 1985;56:586-595.",
+      "doi": "10.1161/01.res.56.4.586",
+      "pmid": "3978773"
+    },
+    "tanaka2001": {
+      "text": "Tanaka H, Monahan KD, Seals DR. Age-predicted maximal heart rate revisited. J Am Coll Cardiol 2001;37:153-156.",
+      "doi": "10.1016/s0735-1097(00)01054-8",
+      "pmid": "11153730"
+    },
+    "taub2025": {
+      "text": "Taub CC, Stainback RF, Abraham T, et al. Guidelines for the standardization of adult echocardiography reporting: recommendations from the American Society of Echocardiography. J Am Soc Echocardiogr 2025;38:735-74.",
+      "doi": "10.1016/j.echo.2025.06.001",
+      "pmid": "40912865"
+    },
+    "thavendiranathan2013": {
+      "text": "Thavendiranathan P, Grant AD, Negishi T, et al. Reproducibility of echocardiographic techniques for sequential assessment of left ventricular ejection fraction and volumes: application to patients undergoing cancer chemotherapy. J Am Coll Cardiol 2013;61:77-84.",
+      "doi": "10.1016/j.jacc.2012.09.035",
+      "pmid": "23199515"
+    },
+    "thavendiranathan2021": {
+      "text": "Thavendiranathan P, Negishi T, Somerset E, et al. Strain-Guided Management of Potentially Cardiotoxic Cancer Therapy. J Am Coll Cardiol 2021;77:392-401.",
+      "doi": "10.1016/j.jacc.2020.11.020",
+      "pmid": "33220426"
+    },
+    "thomas1998": {
+      "text": "Thomas JD, Rubin DN. Tissue harmonic imaging: why does it work? J Am Soc Echocardiogr 1998;11:803-808.",
+      "doi": "10.1016/s0894-7317(98)70055-0",
+      "pmid": "9719092"
+    },
+    "thomas2025": {
+      "text": "Thomas JD, Edvardsen T, Abraham T, et al. Clinical applications of strain echocardiography: a clinical consensus statement from the American Society of Echocardiography developed in collaboration with the European Association of Cardiovascular Imaging of the European Society of Cardiology. J Am Soc Echocardiogr 2025;38:985-1020.",
+      "doi": "10.1016/j.echo.2025.07.007",
+      "pmid": "40864001"
+    },
+    "tissot2017": {
+      "text": "Tissot C, Muehlethaler V, Sekarski N. Basics of Functional Echocardiography in Children and Neonates. Front Pediatr 2017;5:235.",
+      "doi": "10.3389/fped.2017.00235",
+      "pmid": "29250515"
+    },
+    "tucker2023": {
+      "text": "Tucker WD, Shrestha R, Burns B. Anatomy, Abdomen and Pelvis: Inferior Vena Cava. In: StatPearls. Treasure Island (FL): StatPearls Publishing; 2023 (updated July 24, 2023).",
+      "pmid": "29493975",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK482353/"
+    },
+    "uriel2012": {
+      "text": "Uriel N, Morrison KA, Garan AR, et al. Development of a novel echocardiography ramp test for speed optimization and diagnosis of device thrombosis in continuous-flow left ventricular assist devices: the Columbia ramp study. J Am Coll Cardiol 2012;60:1764-1775.",
+      "doi": "10.1016/j.jacc.2012.07.052",
+      "pmid": "23040584"
+    },
+    "uriel2017": {
+      "text": "Uriel N, Adatya S, Malý J, et al. Clinical hemodynamic evaluation of patients implanted with a fully magnetically levitated left ventricular assist device (HeartMate 3). J Heart Lung Transplant 2017;36:28-35.",
+      "doi": "10.1016/j.healun.2016.07.008",
+      "pmid": "27773456"
+    },
+    "uriel2019": {
+      "text": "Uriel N, Medvedofsky D, Imamura T, et al. Echocardiographic Changes in Patients Implanted With a Fully Magnetically Levitated Left Ventricular Assist Device (Heartmate 3). J Card Fail 2019;25:36-43.",
+      "doi": "10.1016/j.cardfail.2018.11.015",
+      "pmid": "30472281"
+    },
+    "vincent2008": {
+      "text": "Vincent JL. Understanding cardiac output. Crit Care 2008;12:174.",
+      "doi": "10.1186/cc6975",
+      "pmid": "18771592"
+    },
+    "voigt2015": {
+      "text": "Voigt JU, Pedrizzetti G, Lysyansky P, et al. Definitions for a Common Standard for 2D Speckle Tracking Echocardiography: Consensus Document of the EACVI/ASE/Industry Task Force to Standardize Deformation Imaging. J Am Soc Echocardiogr 2015;28:183-193.",
+      "doi": "10.1016/j.echo.2014.11.003",
+      "pmid": "25623220"
+    },
+    "vukadinovic2026": {
+      "text": "Vukadinovic M, Chiu IM, Tang X, et al. Comprehensive echocardiogram evaluation with view primed vision language AI. Nature 2026;650:970-977.",
+      "doi": "10.1038/s41586-025-09850-x",
+      "pmid": "41219498"
+    },
+    "walley2016": {
+      "text": "Walley KR. Left ventricular function: time-varying elastance and left ventricular aortic coupling. Crit Care 2016;20:270.",
+      "doi": "10.1186/s13054-016-1439-6",
+      "pmid": "27613430"
+    },
+    "weinsaft2009": {
+      "text": "Weinsaft JW, Kim RJ, Ross M, et al. Contrast-enhanced anatomic imaging as compared to contrast-enhanced tissue characterization for detection of left ventricular thrombus. JACC Cardiovasc Imaging 2009;2:969-979.",
+      "doi": "10.1016/j.jcmg.2009.03.017",
+      "pmid": "19679285"
+    },
+    "welch2014": {
+      "text": "Welch TD, Ling LH, Espinosa RE, et al. Echocardiographic diagnosis of constrictive pericarditis: Mayo Clinic criteria. Circ Cardiovasc Imaging 2014;7:526-534.",
+      "doi": "10.1161/CIRCIMAGING.113.001613",
+      "pmid": "24633783"
+    },
+    "wu1993": {
+      "text": "Wu CC, Chen WJ, Chen MF, et al. Left-to-right shunt through patent foramen ovale in adult patients with left-sided cardiac lesions: a transesophageal echocardiographic study. Am Heart J 1993;125:1369-1374.",
+      "doi": "10.1016/0002-8703(93)91009-4",
+      "pmid": "8480591"
+    },
+    "wu2020": {
+      "text": "Wu WT, Chang KV, Hsu YC, et al. Artifacts in Musculoskeletal Ultrasonography: From Physics to Clinics. Diagnostics (Basel) 2020;10:645.",
+      "doi": "10.3390/diagnostics10090645",
+      "pmid": "32867385"
+    },
+    "yingchoncharoen2013": {
+      "text": "Yingchoncharoen T, Agarwal S, Popović ZB, Marwick TH. Normal ranges of left ventricular strain: a meta-analysis. J Am Soc Echocardiogr 2013;26:185-191.",
+      "doi": "10.1016/j.echo.2012.10.008",
+      "pmid": "23218891"
+    },
+    "zamorano2011": {
+      "text": "Zamorano JL, Badano LP, Bruce C, et al. EAE/ASE recommendations for the use of echocardiography in new transcatheter interventions for valvular heart disease. J Am Soc Echocardiogr 2011;24:937-965.",
+      "doi": "10.1016/j.echo.2011.07.003",
+      "pmid": "21867869"
+    },
+    "zander2020": {
+      "text": "Zander D, Hüske S, Hoffmann B, et al. Ultrasound Image Optimization (\"Knobology\"): B-Mode. Ultrasound Int Open 2020;6:E14-E24.",
+      "doi": "10.1055/a-1223-1134",
+      "pmid": "32885137"
+    },
+    "zhang2018": {
+      "text": "Zhang J, Gajjala S, Agrawal P, et al. Fully automated echocardiogram interpretation in clinical practice. Circulation 2018;138:1623-1635.",
+      "doi": "10.1161/CIRCULATIONAHA.118.034338",
+      "pmid": "30354459"
+    },
+    "zoghbi2017": {
+      "text": "Zoghbi WA, Adams D, Bonow RO, et al. Recommendations for Noninvasive Evaluation of Native Valvular Regurgitation: A Report from the American Society of Echocardiography Developed in Collaboration with the Society for Cardiovascular Magnetic Resonance. J Am Soc Echocardiogr 2017;30:303-371.",
+      "doi": "10.1016/j.echo.2017.01.007",
+      "pmid": "28314623"
+    },
+    "zoghbi2019": {
+      "text": "Zoghbi WA, Asch FM, Bruce C, et al. Guidelines for the evaluation of valvular regurgitation after percutaneous valve repair or replacement: a report from the American Society of Echocardiography developed in collaboration with the Society for Cardiovascular Angiography and Interventions, Japanese Society of Echocardiography, and Society for Cardiovascular Magnetic Resonance. J Am Soc Echocardiogr 2019;32:431-475.",
+      "doi": "10.1016/j.echo.2019.01.003",
+      "pmid": "30797660"
+    },
+    "zoghbi2024": {
+      "text": "Zoghbi WA, Jone PN, Chamsi-Pasha MA, et al. Guidelines for the evaluation of prosthetic valve function with cardiovascular imaging: a report from the American Society of Echocardiography developed in collaboration with the Society for Cardiovascular Magnetic Resonance and the Society of Cardiovascular Computed Tomography. J Am Soc Echocardiogr 2024;37:2-63.",
+      "doi": "10.1016/j.echo.2023.10.004",
+      "pmid": "38182282"
+    }
+  }
+}

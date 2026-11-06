@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="text-scale" content="scale">
-  <meta name="description" content="Dos guías interactivas para estudiar electrocardiografía: The Heart in Twelve Leads y Coronary Culprit.">
-  <title>Guías interactivas de ECG</title>
+  <meta name="description" content="Cuatro guías y simuladores de electrocardiografía, ecocardiografía y ventilación mecánica: The Heart in Twelve Leads, Coronary Culprit, Intro2Echo y Vent Lab.">
+  <title>Guías y simuladores clínicos</title>
   <style>
     * { box-sizing: border-box; }
     body { margin: 0; background: #f5f3ee; color: #202b35; font-family: system-ui, sans-serif; line-height: 1.6; overflow-wrap: anywhere; }
@@ -16,6 +16,8 @@
     .guides { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr)); gap: 1.5rem; margin-block: 2.5rem; }
     article { display: flex; flex-direction: column; min-width: 0; padding: 1.5rem; background: #fff; border: 1px solid #deddd8; border-top: .25rem solid #91637b; border-radius: .5rem; }
     article:nth-child(2) { border-top-color: #287776; }
+    article:nth-child(3) { border-top-color: #7460a2; }
+    article:nth-child(4) { border-top-color: #a16e2e; }
     .number { color: #697480; font-size: .8rem; font-weight: 700; }
     h2 { margin: .75rem 0; font-size: 1.65rem; line-height: 1.25; letter-spacing: -.03em; }
     article p { margin: .5rem 0; }
@@ -32,9 +34,9 @@
 <body>
   <main>
     <header>
-      <p class="eyebrow">Biblioteca de electrocardiografía</p>
-      <h1>Del corazón al trazado.</h1>
-      <p class="intro">Dos herramientas interactivas para recorrer la actividad eléctrica del corazón, explorar sus derivaciones y estudiar los patrones de oclusión coronaria. Contenido original en inglés.</p>
+      <p class="eyebrow">Biblioteca de simulación clínica</p>
+      <h1>Explora la fisiología.</h1>
+      <p class="intro">Cuatro herramientas interactivas para estudiar electrocardiografía, ecocardiografía y ventilación mecánica. Incluyen simulaciones, cursos y casos para practicar. Contenido original en inglés.</p>
     </header>
     <section class="guides" aria-label="Guías disponibles">
       <article>
@@ -59,9 +61,31 @@
         </div>
         <p class="credit">Diseñado por <a href="https://www.cliffreid.com/culprit/">Dr Cliff Reid</a>.</p>
       </article>
+      <article>
+        <span class="number" aria-hidden="true">03 / ECOCARDIOGRAFÍA</span>
+        <h2>Intro2Echo</h2>
+        <p>The Heart by Ultrasound: física del ultrasonido, vistas estándar, hemodinámica, función ventricular, valvulopatías y procedimientos estructurales.</p>
+        <p class="detail">22 capítulos principales · 11 complementarios · 89 preguntas</p>
+        <div class="actions">
+          <a class="open" href="intro2echo/sitio/index.html">Abrir Intro2Echo →</a>
+          <a href="https://github.com/DanielOpazoD/ecg-learning-guides/tree/main/intro2echo">Textos y archivos</a>
+        </div>
+        <p class="credit">Proyecto original de <a href="https://intro2echo.com/">David Ouyang, MD</a>.</p>
+      </article>
+      <article>
+        <span class="number" aria-hidden="true">04 / VENTILACIÓN MECÁNICA</span>
+        <h2>Vent Lab</h2>
+        <p>Simulador de ventilación mecánica con curvas de presión, flujo y volumen, un curso por sesiones y un desafío de asincronías.</p>
+        <p class="detail">30 lecciones · 52 actividades · 15 opciones de modo · 27 plantillas de casos</p>
+        <div class="actions">
+          <a class="open" href="vent-lab/sitio/vent-lab.html">Abrir Vent Lab →</a>
+          <a href="https://github.com/DanielOpazoD/ecg-learning-guides/tree/main/vent-lab">Textos y archivos</a>
+        </div>
+        <p class="credit">Proyecto original de <a href="https://www.boardsidereviews.com/vent-lab.html">Boardside Reviews</a>.</p>
+      </article>
     </section>
     <footer>
-      <p>Archivo de consulta de Daniel Opazo. Las aplicaciones conservan sus créditos originales. Las sesiones en vivo y los servicios externos de Coronary Culprit requieren conexión.</p>
+      <p>Archivo de consulta de Daniel Opazo. Las aplicaciones conservan sus créditos originales. Las sesiones en vivo, las clasificaciones compartidas y otros servicios externos requieren conexión.</p>
       <a href="https://github.com/DanielOpazoD/ecg-learning-guides">Repositorio y descarga de los archivos</a>
     </footer>
   </main>
